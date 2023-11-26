@@ -14,7 +14,9 @@ trying to convert the pytorch model.  I was able to convert the model with pytho
 access to the 32GB.  From checking task manager the process took about 24GB.
 
 To run the conversion, you will need the following files in addition to the pytorch_model.bin (place in same model folder).
-You can grab them from huggingface Files and versions tab (https://huggingface.co/EleutherAI/gpt-j-6b/tree/float16).  Download them using the 'Download file' icon.  Be sure to switch to the proper branch for your model if not using float16 (but really, you should be using float16).
+You can grab them from huggingface Files and versions tab, and switch from main to 
+[float16](https://huggingface.co/EleutherAI/gpt-j-6b/tree/float16).  Download them using the 'Download file' icon.  
+Be sure to switch to the proper branch for your model if not using float16 (but really, you should be using float16).
 ```
 config.json
 vocab.json
@@ -115,7 +117,7 @@ Turns out most models are based on data from OpenAI somehow, and this data has g
 
 Found this post on how to finetune a base model after removing all refusals:
 
-https://erichartford.com/uncensored-models
+[Based post on making uncensored models](https://erichartford.com/uncensored-models)
 
 The basic idea is to train from the base model, but the dataset needs to have all refusals/guardrails removed first.
 Then voila, your model is uncensored!
