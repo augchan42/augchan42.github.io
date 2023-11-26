@@ -4,7 +4,7 @@ I've been trying to run inference on a model based on EleutherAI/gpt-j-6B from H
 The model took about 15 to 30 minutes to respond to my prompt (including
 model load and text generation).  I'm on an X1 carbon gen 11with 64GB of RAM.  Simply unacceptable.
 
-I then found out about https://github.com/ggerganov/ggml/blob/master/examples/gpt-j/convert-h5-to-ggml.py
+I then found out about https://github.com/ggerganov/ggml/blob/master/examples/gpt-j/convert-h5-to-ggml.py.  
 After converting my float16 model to ggml format, with no further quantization, I was able to start get responses 
 in under 20 seconds, and generation was around 400ms per token!
 
@@ -13,7 +13,8 @@ I found out my WSL environment on my 32GB laptop only has 16GB of RAM available,
 trying to convert the pytorch model.  I was able to convert the model with python on my windows cmd shell, with full
 access to the 32GB.  From checking task manager the process took about 24GB.
 
-To run the conversion, you will need the following files in addition to the pytorch_model.bin (place in same model folder):
+To run the conversion, you will need the following files in addition to the pytorch_model.bin (place in same model folder).
+You can grab them from huggingface Files and versions tab (https://huggingface.co/EleutherAI/gpt-j-6b/tree/main).  Download them using the 'Download file' icon.
 ```
 config.json
 vocab.json
@@ -83,8 +84,30 @@ main:    total time = 101924.70 ms
 ```
 
 Please note, GGUF is the latest format from ggerganov, but it only supports llama at the moment.  
+There is a script to convert from GGML to GGUF:  https://github.com/ggerganov/llama.cpp/blob/master/convert-llama-ggml-to-gguf.py.  However, I get the following when trying to convert my model (maybe because my model is GPT-J and not llama):
 
-Thank you ggerganov!
+```
+C:\projects\llama.cpp>python convert-llama-ggml-to-gguf.py -i c:\Models\gpt4chan_model_float16\ggml-model-f16.bin -o c:\models\gpt4chan_model_float16\gguf-model-f16.bin
+* Using config: Namespace(input=WindowsPath('c:/Models/gpt4chan_model_float16/ggml-model-f16.bin'), output=WindowsPath('c:/models/gpt4chan_model_float16/gguf-model-f16.bin'), name=None, desc=None, gqa=1, eps='5.0e-06', context_length=2048, model_metadata_dir=None, vocab_dir=None, vocabtype='spm')
+
+=== WARNING === Be aware that this conversion script is best-effort. Use a native GGUF model if possible. === WARNING ===
+
+- Note: If converting LLaMA2, specifying "--eps 1e-5" is required. 70B models also need "--gqa 8".
+* Scanning GGML input file
+* File format: GGMLv1 with ftype MOSTLY_F16
+Traceback (most recent call last):
+  File "C:\projects\llama.cpp\convert-llama-ggml-to-gguf.py", line 445, in <module>
+    main()
+  File "C:\projects\llama.cpp\convert-llama-ggml-to-gguf.py", line 419, in main
+    offset = model.load(data, 0)  # noqa
+  File "C:\projects\llama.cpp\convert-llama-ggml-to-gguf.py", line 181, in load
+    offset += vocab.load(data, offset, hp.n_vocab)
+  File "C:\projects\llama.cpp\convert-llama-ggml-to-gguf.py", line 85, in load
+    assert itemlen < 4096, 'Absurd vocab item length'
+AssertionError: Absurd vocab item length
+```
+
+In any case, thank you https://github.com/ggerganov!
 
 ## Its Hard to find an Uncensored Model
 
@@ -129,6 +152,8 @@ The Reddit post you've referenced discusses various tools and libraries for load
    - GGML is no longer supported by Llama.cpp, and its support has been deprecated.
    - There are multiple frameworks (like Transformers, Llama.cpp, koboldcpp, ExLlama, etc.), and some support multiple quantization formats while others require specific formats.
 
-This discussion highlights the evolving landscape of AI model formats and the tools used for their management, emphasizing the importance of compatibility and the continuous development of these technologies.
+This discussion highlights the evolving landscape of AI model formats and the tools used for their management, emphasizing the importance of compatibility and the continuous development of these technologies.  
+
+Next, I will work on integrating a UI for my model.
 
 
