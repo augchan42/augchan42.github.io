@@ -125,7 +125,7 @@ filtered dataset further to see why.
 
 ## Spectacular Reddit Post on Huggingface Transformers / Llama.cpp / GGUF /GGML
 
-https://www.reddit.com/r/LocalLLaMA/comments/178el7j/transformers_llamacpp_gguf_ggml_gptq_other_animals/
+[Awesome Breakdown Post](https://www.reddit.com/r/LocalLLaMA/comments/178el7j/transformers_llamacpp_gguf_ggml_gptq_other_animals/)
 
 Some clarifications/findings from the above:
 GGML isn't necessarily quantized.  I ran the GGML converter on my GPT-J float 16 model.  It remained float 16,
