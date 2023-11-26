@@ -4,17 +4,17 @@ I've been trying to run inference on a model based on EleutherAI/gpt-j-6B from H
 The model took about 15 to 30 minutes to respond to my prompt (including
 model load and text generation).  I'm on an X1 carbon gen 11with 64GB of RAM.  Simply unacceptable.
 
-I then found out about https://github.com/ggerganov/ggml/blob/master/examples/gpt-j/convert-h5-to-ggml.py.  
+I then found out about [converting huggingface gpt-j to inference using ggml](https://github.com/ggerganov/ggml/blob/master/examples/gpt-j/convert-h5-to-ggml.py).  
 After converting my float16 model to ggml format, with no further quantization, I was able to start get responses 
-in under 20 seconds, and generation was around 400ms per token!
+in under 20 seconds, and inference generation was around 400ms per token!
 
 First, you'll need to convert your gpt-j pytorch_model.bin to ggml format.  This will require a fair amount of memory.
 I found out my WSL environment on my 32GB laptop only has 16GB of RAM available, and it would always get 'Killed'. when
-trying to convert the pytorch model.  I was able to convert the model with python on my windows cmd shell, with full
+trying to convert the pytorch model.  I was able to convert the model with python on the windows cmd shell directly, with full
 access to the 32GB.  From checking task manager the process took about 24GB.
 
 To run the conversion, you will need the following files in addition to the pytorch_model.bin (place in same model folder).
-You can grab them from huggingface Files and versions tab (https://huggingface.co/EleutherAI/gpt-j-6b/tree/main).  Download them using the 'Download file' icon.
+You can grab them from huggingface Files and versions tab (https://huggingface.co/EleutherAI/gpt-j-6b/tree/float16).  Download them using the 'Download file' icon.  Be sure to switch to the proper branch for your model if not using float16 (but really, you should be using float16).
 ```
 config.json
 vocab.json
@@ -84,7 +84,7 @@ main:    total time = 101924.70 ms
 ```
 
 Please note, GGUF is the latest format from ggerganov, but it only supports llama at the moment.  
-There is a script to convert from GGML to GGUF:  https://github.com/ggerganov/llama.cpp/blob/master/convert-llama-ggml-to-gguf.py.  However, I get the following when trying to convert my model (maybe because my model is GPT-J and not llama):
+[There is a script to convert from GGML to GGUF](https://github.com/ggerganov/llama.cpp/blob/master/convert-llama-ggml-to-gguf.py).  However, I get the following when trying to convert my model (maybe because my model is GPT-J and not llama):
 
 ```
 C:\projects\llama.cpp>python convert-llama-ggml-to-gguf.py -i c:\Models\gpt4chan_model_float16\ggml-model-f16.bin -o c:\models\gpt4chan_model_float16\gguf-model-f16.bin
@@ -107,7 +107,7 @@ Traceback (most recent call last):
 AssertionError: Absurd vocab item length
 ```
 
-In any case, thank you https://github.com/ggerganov!
+In any case, thank you [ggerganov](https://github.com/ggerganov)!
 
 ## Its Hard to find an Uncensored Model
 
