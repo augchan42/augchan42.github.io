@@ -1,5 +1,5 @@
-Here you can say lots of fun things about your site.
+Welcome.  This is just a blog to keep track of what I've learned so far.  
+Hope it can help you in some small way.
+Sincerely,
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Aug
