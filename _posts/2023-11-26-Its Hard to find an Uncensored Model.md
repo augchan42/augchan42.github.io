@@ -71,7 +71,7 @@ make -j4 gpt-j
 
 Finally, you can run inference:
 ```
-(.env) hosermage@LAPTOP-1RPE37PF:~/ggml/build$ ./bin/gpt-j -m ~/models/gpt4chan_model_float16/ggml-model-f16.bin -p "what is the smartest race?"
+(.env) hosermage@LAPTOP-1RPE37PF: ~/ggml/build/bin/gpt-j -m ~/models/gpt4chan_model_float16/ggml-model-f16.bin -p "what is the smartest race?"
 
 >What's the smartest race?
 
