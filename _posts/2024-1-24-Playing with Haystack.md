@@ -19,3 +19,8 @@ if there are any bugs you can just fix it and push the commit to your own fork, 
 you install dependencies with `python -m pip install .`
 6) To make sure you are using your forked Haystack and not one from the package, run `pip uninstall haystack-ai` to remove
 the beta package and `pip uninstall farm-haystack` to remove any 1.x package.
+7) To work on 1.x in your fork, you'll need to fetch all the upstream tags from your fork with `git fetch upstream --tags`,
+then checkout the latest 1.x release.  For me that was `git checkout tags/v1.23.0`, then `git branch my-branch` to create
+a new branch based on this release, and then `git status` to make sure your branch is up to date and you are not in 
+any detached state. 
+    * `git checkout tags/v1.23.0` should reattach your head to that specific version.
