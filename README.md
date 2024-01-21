@@ -1,4 +1,4 @@
-[Augmented42 Blog](https://iterative.day)
+[Augmented42 Blog](https://memorymesh.ai)
 ================================
 
 > The noblest pleasure is the joy of understanding.
