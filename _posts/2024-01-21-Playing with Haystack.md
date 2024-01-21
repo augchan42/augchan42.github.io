@@ -32,3 +32,5 @@ a new branch based on this release, and then `git status` to make sure your bran
 any detached state.
 
     If you are in a detached state, `git checkout tags/v1.23.0` should reattach your head to that specific version.
+
+8) Run `pip install --upgrade pip` and `pip install -e '.[all]'` to install the forked repo and all optional dependencies.  This should be done from within a python virtual environment.
