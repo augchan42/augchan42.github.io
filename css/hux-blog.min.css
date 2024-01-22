@@ -1189,9 +1189,9 @@ samp {
   line-height: 1.7;
   font-size: 18px;
   line-height: 1.1;
-  display: block;
   font-weight: 300;
-  margin: 10px 0 0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  /* Creating an outline effect */
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
