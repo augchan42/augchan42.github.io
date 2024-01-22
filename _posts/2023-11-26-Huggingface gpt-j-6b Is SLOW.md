@@ -11,8 +11,6 @@ tags:
     - GPT
     - GGUF
 ---
-## Huggingface gpt-j-6b Is SLOW!  So, Convert it to GGML
-
 I've been trying to run inference on a model based on EleutherAI/gpt-j-6B from Huggingface, and it was super slow!
 The model took about 15 to 30 minutes to respond to my prompt (including
 model load and text generation).  I'm on an X1 carbon gen 11with 64GB of RAM.  Simply unacceptable.

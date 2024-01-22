@@ -13,8 +13,6 @@ tags:
     - GGML
     - Llama.cpp
 ---
-## Spectacular Reddit Post on Huggingface Transformers / Llama.cpp / GGUF /GGML
-
 [Awesome Breakdown Post](https://www.reddit.com/r/LocalLLaMA/comments/178el7j/transformers_llamacpp_gguf_ggml_gptq_other_animals/)
 
 Some clarifications/findings from the above:
