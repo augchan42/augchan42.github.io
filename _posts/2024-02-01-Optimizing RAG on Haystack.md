@@ -45,17 +45,19 @@ It can be tricky to actually save new documents and have them available for simi
 
 BTW Haystack integrates with [serper.dev](https://serper.dev) for Google searches.
 
-4) The Agent works by trying to find a conclusive final Answer.  The `ConversationalAgent` defaults to try up to 5 times among the tools it has to try to arrive at a final Answer.  If it can't it will reply with an 'Inconclusive'.  This is controlled by the `prompt_template` provided to the `ConversationalAgent` configuration.
+4) The Agent works by trying to find a conclusive final Answer.  The `ConversationalAgent` defaults to try up to 5 times among the tools it has to try to arrive at a final Answer.  If it can't it will reply with an 'Inconclusive'.  Agent logic is controlled by the `prompt_template` provided to the `ConversationalAgent` configuration.
 
 5) There are some deficiencies with my approach to incrementally new information in the local FAISS vector db:
 
-If a conclusive answer isn't found from the Google search, the response will still get indexed.  This means that the local FAISS vector still won't have a conclusive answer either, and a Google search would be fired for the same question again.  Which then indexes another inconclusive answer (as it's generative and slightly different from the previous inconclusive answer)
+If a conclusive answer isn't found from the Google search, the response will still get indexed.  This means that the local FAISS vector still won't have a conclusive answer either, and a Google search would be fired for the same question again.  Which then indexes another inconclusive answer (as it's generative and slightly different from the previous inconclusive answer).  Unfortunately, I don't know at indexing time whether the retrieved info from Google will lead to a conclusive answer or not.  This only happens after the search results are sent to the LLM and thoughts are generated.
 
 6) Future improvements:  
 
 I will make the responses from the Google searches more deterministic (likely by eliminating the generative portion) so that I can avoid creating new documents for the same search results to the same questions over and over.
 
 I will add some more metadata to the indexed google responses so that I can filter irrelevant information more easily (e.g., I don't need travel insurance info for the Philippines if I'm doing a search on Bali)
+
+I don't need the Agent to bounce around 5 times before determining Inconclusive, it just needs to try each `Tool` once.
 
 For the code, please check the following at my [github](https://github.com/augchan42/haystack):
 
