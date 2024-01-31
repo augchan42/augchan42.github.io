@@ -49,7 +49,7 @@ BTW Haystack integrates with [serper.dev](https://serper.dev) for Google searche
 
 5) There are some deficiencies with my approach to incrementally index new information in the local FAISS vector db:
 
-If a conclusive answer isn't found from the Google search, the response will still get indexed.  This means that the local FAISS vector still won't have a conclusive answer either, and a Google search would be fired for the same question again.  Which then indexes another inconclusive answer (as it's generative and slightly different from the previous inconclusive answer).  Unfortunately, I don't know at indexing time whether the retrieved info from Google will lead to a conclusive answer or not.  This only happens after the search results are sent to the LLM and thoughts are generated.
+If a conclusive answer isn't found from the Google search, the generated response based on the search results will still get indexed.  This means that the local FAISS vector db still won't have a conclusive answer either, and a Google search would be fired for the same question again.  Which then indexes another inconclusive answer (as it's generative and slightly different from the previous inconclusive answer).  Unfortunately, I don't know at indexing time whether the retrieved info from Google will lead to a conclusive answer or not.  This only happens after the search results are sent to the LLM and thoughts are generated.
 
 6) Future improvements:  
 
