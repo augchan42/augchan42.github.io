@@ -41,7 +41,7 @@ document_store.update_embeddings
 document_store.save
 ```
 
-3) The Agent is setup with two `Tool`s to find answers - one that uses Google search (now enhanced with logic to index anything it finds in the local vector db) and another that does a similarity search against the local vector FAISS db.  I customized the Agent logic (by customizing the `prompt_template` used in the `ConversationalAgent` - it's wild) to use the tools in sequence, and to try to find answers in the local database before searching Google.  With the custom indexing logic I added, the local db should slowly get smarter with new information and if the same question is asked again, the local db should be able to handle it.
+3) The Agent is setup with two `Tool`s to find answers - One that does a similarity search against the local vector FAISS db, and one that uses Google search (now enhanced with logic to index anything it finds in the local vector db).  I customized the Agent logic (by customizing the `prompt_template` used in the `ConversationalAgent` - wild!) to use the tools in sequence, and to try to find answers in the local database before searching Google.  With the custom indexing logic I added, the local db should gradually get smarter with new information and if the same question is asked again, the local db should be able to handle it first.
 
 BTW Haystack integrates with [serper.dev](https://serper.dev) for Google searches.
 
