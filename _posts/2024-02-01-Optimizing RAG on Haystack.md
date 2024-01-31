@@ -40,6 +40,7 @@ It can be tricky to actually save new documents and have them available for simi
     document_store.update_embeddings
     document_store.save
     ```
+
 3) The Agent is setup with two `Tool`s to find answers - one that uses Google search (now enhanced with logic to index anything it finds in the local vector db) and another that does a similarity search against the local vector FAISS db.  I customized the Agent logic (by customizing the `prompt_template` used in the `ConversationalAgent` - it's wild) to use the tools in sequence, and to try to find answers in the local database before searching Google.  With the custom indexing logic I added, the local db should slowly get smarter with new information and if the same question is asked again, the local db should be able to handle it.
 
 BTW Haystack integrates with [serper.dev](https://serper.dev) for Google searches.
@@ -52,11 +53,11 @@ If a conclusive answer isn't found from the Google search, the response will sti
 
 6) Future improvements:  
 
-I will make the responses from the Google searches more deterministic (likely by eliminating the generative portion) so that I don't create new documents for the same search results to the same questions over and over.
+I will make the responses from the Google searches more deterministic (likely by eliminating the generative portion) so that I can avoid creating new documents for the same search results to the same questions over and over.
 
 I will add some more metadata to the indexed google responses so that I can filter irrelevant information more easily (e.g., I don't need travel insurance info for the Philippines if I'm doing a search on Bali)
 
-For the code, please check the following at my github https://github.com/augchan42/haystack:
+For the code, please check the following at my [github](https://github.com/augchan42/haystack):
 
 ```
 examples/tb_conversational_agent.py
