@@ -1177,7 +1177,8 @@ samp {
 .intro-header .page-heading h1 {
   margin-top: 0;
   font-size: 50px;
-  -webkit-text-stroke: 1px black;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  /* Creating an outline effect */
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
