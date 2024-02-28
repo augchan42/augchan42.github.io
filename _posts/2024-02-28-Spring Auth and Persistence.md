@@ -27,6 +27,8 @@ Also learned about @CollectionTable and @JoinColumn for 1:Many child tables
 
 By using these annotations, I don't need to write any jdbc code, or manage any database connections, or any SQL at all.  I didn't need to write any DDL to create the underlying tables either.
 
+**Spring Security**
+
 As for security, I learned about the Spring SecurityFilterChain to restrict url patterns, specify what roles are allowed to what patterns, and enable stateless Session Management.
 
 Also learned about JWT for Stateless Authorization, loading a jwt secret from property which is then used to generate a signing key using HMAC-SHA.

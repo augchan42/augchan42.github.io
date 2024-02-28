@@ -72,16 +72,5 @@ can resolve to the private IP properly.  I used ChatGPT to help me figure out wh
 docker run -d --restart unless-stopped --dns "10.0.0.2" -e "SPRING_PROFILES_ACTIVE=aws" -e "OPENAPI_SERVER_URL=https://develop.lyla.travelbox.tech" --name backend -p 8080:8080 docker.io/library/lyla-backend:0.0.1-SNAPSHOT || exit 4
 `
 
-**Numerous Spring Abstractions and Annotations**
-
-The Java app I used to work on was over 15 years old.  It pre-dated Spring and didn't use annotations (except for very small bits of later code used in the front end).  It could be deployed to JBoss, Websphere, or Weblogic.  It had its own db abstraction layer, custom security and authorization, etc.
-
-With Spring a lot of that is handled for you (I'm using spring-boot-starter-data-jpa -> 3.0.4 for persistence and org.springframework.boot:spring-boot-starter-security -> 3.0.4 for security).  You write a lot less code but for someone not familiar with Spring, they will get lost since the annotations pack a lot of functionality and
-code behind the scenes.
-
-I learned about @Entity, @Id, @GeneratedValue to create tables with auto incrementing
-id columns.
-Also learned about @CollectionTable and @JoinColumn for 1:Many child tables
-
 
 
