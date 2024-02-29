@@ -24,13 +24,13 @@ you think about it.  The system requires some specific domain knowledge on what 
 
 There should be multiple phases of metadata extraction - from simple to complex:
 
-Convolutional Neural Networks (CNNs):
-- Basic metadata like resolution, camera make and model, colors
-- Scene recognition (what's in the photo (monument), what is the setting (Eiffel Tower)
-- GPS Location (Paris)
-- Style and Aesthetics (hue, saturation value, duotones) - however from my check on arxiv and mdpi there's nothing really great yet) 
+Basic Metadata:
+- filename, resolution, camera make and model, colors, gps
 
-This raw data is the basis of the context that would be sent to a smart, reasoning Instruct capable LLM.
+Convolutional Neural Networks (CNNs):
+- Scene recognition (what's in the photo (monument), what is the setting (Eiffel Tower)
+- Location (e.g., Paris - if available from landmarks)
+- Face detection, features, expressions
 
 CLIP (Contrastive Language-Image Pre-training) developed by OpenAI:
 - Image Captioning - generate descriptive text for a given image
@@ -38,9 +38,10 @@ CLIP (Contrastive Language-Image Pre-training) developed by OpenAI:
 - Type of Photo - landscape/urban/portrait
 - Outlier detection - unusual subject matter, unconventional composition
 
+The above is part of the context that would be sent to a smart, reasoning Instruct capable LLM.
 
 LLMs:
-- Generating the actual critique based on the RAW findings from the above
+- Generating a coherent critique based on the RAW findings from the above
 - Reason on aesthetics, complementary colors
 - Understanding cultural significance (notes on Paris/Eiffel Tower)
 - Chatting and back and forth for the critique
@@ -49,6 +50,8 @@ LLMs:
 **Todos**
 
 CNN investigation - VGGNet, ResNet, Inception
+
 LLM investigation - VLMax, LLava 32B, Cogvlm, Bard
+
 CLIP investigation - OpenAI - maybe I can just use this for the prototype?
 
