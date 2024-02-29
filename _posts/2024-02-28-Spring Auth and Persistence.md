@@ -38,7 +38,7 @@ User passwords are encrypted in the database with BCryptPasswordEncoder.
 The Spring UserRepository is used to load credentials from the User table.  The Spring AuthenticationManager is used to authenticate the password from the login request against the
 password from the db on login.  After authentication a jwt authentication token is returned along with the username, email, and profile info (name, title, etc).  The jwt needs to be passed as part of the header on subsequent requests to auth the session.
 
-I tried navigating to the Spring AuthenticationManager impl code but wasn't able to (ctrl click on authenticate method didn't work quite right for me).
+I tried navigating to the Spring AuthenticationManager impl code but wasn't able to (ctrl click on authenticate method in VSCode didn't work quite right for me).
 
 
 
