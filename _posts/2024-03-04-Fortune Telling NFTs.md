@@ -43,12 +43,11 @@ If the flow of energy (as understood through the context of a specific situation
 
 **NFT Minting Process**
 
-Current thinking is the mint process is revealing a fortune specific to your 4 Pillars of Destiny.  So you ask your question, enter your birth hour/day/month/year, and a hexagram is revealed, line by line.  With some cool yarrow stalk animation as each line is revealed.  And I could just build this portion first and deal with the NFT aspect later.
+Current thinking is the mint process is revealing a fortune specific to your 4 Pillars of Destiny.  So you ask your question, enter your birth hour/day/month/year, and a hexagram is revealed, line by line.  With some cool yarrow stalk animation as each line is revealed.  
 
-As each line is reveled a partial interpretation is given.  So the fortune progresses as lines are revealed until all 6 lines in the hexagram are revelead.
+As each line is revealed a partial interpretation within the trigram is given.  As each trigram completes, its nature is revealed, energy flow is explained, and a partial interpretation given.  Once both trigrams complete, the final fortune is given, and the interplay between the bottom trigram and top trigram is explained.
 
 The reason for doing it this way is to teach the fundamentals of Taoism and the I-Ching, yin/yang, elements, and nature.
-
 
 **Todos** 
 
