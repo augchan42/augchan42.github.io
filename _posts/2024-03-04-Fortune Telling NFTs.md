@@ -33,14 +33,28 @@ Bottom Line - The foundation, youth, new beginnings.  The root or base from whic
 
 Middle Line - The mediator, connector.  Process, growth.  The current state or heart of the matter.
 
-Top Line - culmination/conclusion of the situation.  Maturity, wisdom, final stages of the event.  Leadership, authority.  Consequences/outcomes/future direction derived
-from the previous lines.
+Top Line - culmination/conclusion of the situation.  Maturity, wisdom, final stages of the event.  Leadership, authority.  Represents the Consequences/outcomes/future direction derived from the previous two lines.
 
-The lower trigram is read first and sets the stage, and the upper trigram represents culmination.
+The lower trigram is read first and sets the stage (internal states), and the upper trigram represents culmination (outside world).
 
 The imagery and symbolism associated with each trigram can also guide the understanding of energy flow. For example, if the wind (Xun) trigram is below the lake (Dui) trigram, this could symbolize gentle winds spreading over a lake's surface, suggesting a spread of influence or ideas in a calm and steady manner.
 
 If the flow of energy (as understood through the context of a specific situation or reading) seems contrary to the ordering of the lines, this can indicate imbalance, tension, or the need for transformation. For example, a lower trigram full of yang energy surmounted by a yin-dominated upper trigram might suggest a situation where foundational strength and activity (yang) are meeting with receptivity, passivity, or obstacles (yin).
+
+**NFT Minting Process**
+
+Current thinking is the mint process is revealing a fortune specific to your 4 Pillars of Destiny.  So you ask your question, enter your birth hour/day/month/year, and a hexagram is revealed, line by line.  With some cool yarrow stalk animation as each line is revealed.  And I could just build this portion first and deal with the NFT aspect later.
+
+As each line is reveled a partial interpretation is given.  So the fortune progresses as lines are revealed until all 6 lines in the hexagram are revelead.
+
+The reason for doing it this way is to teach the fundamentals of Taoism and the I-Ching, yin/yang, elements, and nature.
+
+
+**Todos** 
+
+Think about nft collection supply/tokenomics (ERC-404, SPL-22)
+
+Develop prototype (specialized fortunetelling RAG on top of some LLM)
 
 **Appendix of Trigrams**
 
@@ -59,20 +73,5 @@ Kan (☵) - Water: Symbolizes danger, the unknown, and the abyss. Associated wit
 Gen (☶) - Mountain: Represents stillness, stability, and rest. Associated with the youngest son, it symbolizes the mountain – unmoving and serene. Gen is about contemplation, stopping unnecessary movement, and maintaining inner and outer peace.
 
 Kun (☷) - Earth: Represents receptivity, nourishment, and the mother. It is characterized by strong yin energy and symbolizes the earth, motherhood, and support. Kun is about acceptance, devotion, and the sustenance of life.
-
-**NFT Minting**
-
-Current thinking is the mint process is revealing a fortune specific to your 4 Pillars of Destiny.  So you ask your question, enter your birth hour/day/month/year, and a hexagram is reveled, line by line.
-
-As each line is reveled a partial interpretation is given.  So the fortune progresses as lines are revealed until all 6 lines in the hexagram are revelead.
-
-The reason for doing it this way is to teach the fundamentals of Taoism and the I-Ching, yin/yang, elements, and nature.
-
-
-**Todos** 
-
-Think about nft collection supply/tokenomics (ERC-404, SPL-22)
-
-Develop prototype (specialized fortunetelling RAG on top of some LLM)
 
 
