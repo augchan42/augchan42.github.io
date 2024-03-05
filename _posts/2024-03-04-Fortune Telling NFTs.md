@@ -39,21 +39,36 @@ The lower trigram is read first and sets the stage (internal states), and the up
 
 The imagery and symbolism associated with each trigram can also guide the understanding of energy flow. For example, if the wind (Xun) trigram is below the lake (Dui) trigram, this could symbolize gentle winds spreading over a lake's surface, suggesting a spread of influence or ideas in a calm and steady manner.
 
-If the flow of energy (as understood through the context of a specific situation or reading) seems contrary to the ordering of the lines, this can indicate imbalance, tension, or the need for transformation. For example, a lower trigram full of yang energy surmounted by a yin-dominated upper trigram might suggest a situation where foundational strength and activity (yang) are meeting with receptivity, passivity, or obstacles (yin).
+**Energy Flow in Conflict with the Situation**
 
-**NFT Minting Process**
+If the flow of energy (as understood through the context of a specific situation or reading) is in conflict with the situation or question (e.g., strong yin in one hexagram, strong yang in the other), this can indicate imbalance, tension, or the need for transformation.
 
-Current thinking is the mint process is revealing a fortune specific to your 4 Pillars of Destiny.  So you ask your question, enter your birth hour/day/month/year, and a hexagram is revealed, line by line.  With some cool yarrow stalk animation as each line is revealed.  
+If the situation suggests that things should be evolving or progressing (such as moving from planning to action, or from inertia to change), but the hexagram presents a movement from yang to yin (action leading to passivity), this could highlight an imbalance or a warning. It might suggest that despite a natural inclination or need to move forward, there may be unexpected stagnation or a need for reconsideration.
 
-As each line is revealed a partial interpretation within the trigram is given.  As each trigram completes, its nature is revealed, energy flow is explained, and a partial interpretation given.  Once both trigrams complete, the final fortune is given, and the interplay between the bottom trigram and top trigram is explained.
+Conversely, if the situation or question seems to call for stability or reflection, but the hexagram indicates a transition from yin to yang (reflectiveness moving to action), this might point out a premature push, a misunderstanding of the situation, or the need to shift from waiting to acting more swiftly than anticipated.
 
-The reason for doing it this way is to teach the fundamentals of Taoism and the I-Ching, yin/yang, elements, and nature.
+The I Ching is advising that the actual dynamics at play may be different from what is outwardly apparent or initially understood, urging a closer look at underlying factors or reassessment of one's actions or attitudes.
+
+**Fortune Telling Process**
+
+An animated version of the traditional yarrow stalk ritual is used to generate each line. 
+
+Animations depict the flow of energy for each line: smooth flows suggest harmony, while erratic ones indicate tension or conflict. This visual guide enhances your understanding of how each trigram interacts with your query.
+
+The fortune is specific to the question and your 4 Pillars of Destiny and unfolds line by line, forming trigrams and eventually the complete hexagram.  You ask your question and enter your birth hour/day/month/year.  An animated yarrow stalk ritual is used to generate each line, and as each line is revealed there are animations showing energy flow.  The energy flow can be either erratic or smooth depending on if the trigrams/hexagram is in-tune with the question.  We can also display and animate changing vs static yin/yang lines differently.  
+
+The LLM can detect whether a question is in conflict or in harmony as the fortune progresses to the final hexagram.  The energy flow can change behavior as the lines form the bottom trigram, then top trigram, and finally the complete hexagram.  After considering any changing yin/yang lines, the hexagram can change again depending on the interplay between the question and changing lines.
+
+As the reading progresses, preliminary interpretations accompany each line and trigram, gradually unveiling the wisdom of the I-Ching. Upon the formation of the final hexagram, a detailed interpretation reveals how the interplay of energies answers your question."
+
+The reason for doing it this way is to teach the fundamentals of Taoism and the I-Ching, yin/yang, elements, and nature.  And to better illustrate nature's rhythm through the I-Ching.
 
 **Todos** 
 
-Think about nft collection supply/tokenomics (ERC-404, SPL-22)
-
 Develop prototype (specialized fortunetelling RAG on top of some LLM)
+
+Think about web3 integration/nft collection supply/tokenomics (ERC-404, SPL-22)
+
 
 **Appendix of Trigrams**
 
