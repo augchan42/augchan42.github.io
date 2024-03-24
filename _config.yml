@@ -69,8 +69,10 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Tag Manager
-gtm_id: "G-077BT1Q7PJ"
+# gtm_id: "GTM-MCXT2HK5"
+
 # Google Analytics
+gtag_id: "G-077BT1Q7PJ"
 ga_track_id: "" # Format: UA-xxxxxx-xx
 ga_domain: 
 
