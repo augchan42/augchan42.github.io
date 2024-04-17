@@ -7,31 +7,58 @@ catalog:      true
 tags:
     - Smooth Typing
     - React
+    - Internationalization
 ---
 
 (Notes for myself - you can check out the effect at 8bitoracle.ai)
 
-To achieve a smooth and error-free typing animation in your React component, several key requirements and adjustments were necessary:
+Getting a typing effect working properly is pretty hard.  A few tips:
 
-1. **Use of [useRef](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react/src/components/Title.js#1%2C51-1%2C51) for Interval ID**: 
-   - Switching from [useState](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react/src/components/Title.js#1%2C17-1%2C17) to [useRef](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react/src/components/Title.js#1%2C51-1%2C51) for managing the typing interval ID ([typingIntervalId](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react/src/components/Title.js#10%2C9-10%2C9)) was crucial. This change prevents unnecessary re-renders that [useState](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react/src/components/Title.js#1%2C17-1%2C17) could cause and ensures that the interval ID can be accessed and modified directly without triggering component updates.
+1) DOM Manipulating is frequently buggy, so you are best off updating the html elements themselves.
 
-2. **Stable [clearTypingInterval](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react#15%2C65-15%2C65) Function**:
-   - Wrapping the [clearTypingInterval](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react#15%2C65-15%2C65) function with [useCallback](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react#14%2C226-14%2C226) without any dependencies ensures that it has a stable reference across renders. This stability is important for including it in dependency arrays of other [useEffect](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react#14%2C70-14%2C70) or [useCallback](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react#14%2C226-14%2C226) hooks without causing infinite loops or excessive executions.
+2) It's easier to simulate a typing effect using hidden/visible rather than trying to 
+actually generate characters or copy them from a hidden data element.
 
-3. **Direct Management of Interval with Ref**:
-   - Directly managing the interval using the `.current` property of the [useRef](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react/src/components/Title.js#1%2C51-1%2C51) object allows for starting, updating, and clearing the typing animation interval without relying on state updates. This approach simplifies the logic and avoids potential issues with asynchronous state updates.
+Certainly! Here are the key lessons learned from the provided code for implementing a typing effect in React:
 
-4. **Proper Cleanup**:
-   - Ensuring proper cleanup of the interval when the component unmounts or before starting a new typing animation prevents memory leaks and ensures that only one typing animation runs at a time. This is achieved by clearing the interval in the [clearTypingInterval](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react#15%2C65-15%2C65) function and calling this function both in the cleanup phase of [useEffect](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react#14%2C70-14%2C70) and before setting a new interval in the [typeEffect](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react/src/components/Title.js#13%2C5-13%2C5) function.
+1. State Management:
+   - Use the `useState` hook to manage the state of the current paragraph index (`currentParagraphIndex`) and the number of visible characters (`visibleCharacters`).
+   - Update the state variables accordingly to control the typing effect and track the progress.
 
-5. **Conditional Rendering for Cursor**:
-   - Implementing conditional rendering for the cursor ([|](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react/src/index.css#1%2C2-1%2C2)) based on whether the displayed title matches the current title adds a dynamic aspect to the typing animation, making it more realistic.
+2. Parsing Paragraphs:
+   - Extract the paragraphs from the `backstory` object based on the selected language using `Object.entries` and `map`.
+   - Create an array of paragraph objects with `id` and `text` properties for easier rendering and tracking.
 
-6. **Handling Language Changes and User Interactions**:
-   - Reacting to language changes (using `i18n.language` as a dependency) and user interactions (like keyboard events and clicks) dynamically by re-triggering the typing animation ensures that the component is responsive and interactive.
+3. Typing Effect:
+   - Use the `useEffect` hook to control the typing effect based on the `visibleCharacters` and `currentParagraphIndex` state variables.
+   - Set a timeout to gradually increase the number of visible characters for the current paragraph.
+   - Move to the next paragraph after a delay when the current paragraph is fully typed.
+   - Clear the timeout when the component unmounts or the dependencies change to avoid memory leaks.
 
-7. **Memoization of Functions**:
-   - Using [useCallback](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react#14%2C226-14%2C226) for functions like [getRandomTitle](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react/src/components/Title.js#13%2C16-13%2C16) and [typeEffect](vscode-remote://wsl%2Bubuntu-20.04/home/hosermage/projects/8bitoracle-react/src/components/Title.js#13%2C5-13%2C5) with appropriate dependencies ensures that these functions are memoized and only recreated when necessary. This optimization prevents unnecessary re-executions of effects that depend on these functions.
+4. Skipping Animation:
+   - Implement a `skipTypingAnimation` function to allow the user to skip the typing animation and immediately reveal all characters of the current paragraph.
+   - Use the `useCallback` hook to memoize the function and optimize performance.
 
-By carefully managing the typing interval, ensuring function stability, and handling cleanup and user interactions appropriately, you can create a smooth and visually appealing typing animation in React. These adjustments and practices contribute to a more efficient and error-free implementation.
+5. Event Handlers:
+   - Add event handlers for keyboard and touch events to trigger the `skipTypingAnimation` function.
+   - Use `useEffect` hooks to attach and remove the event listeners based on the relevant dependencies.
+
+6. Rendering:
+   - Map over the `paragraphs` array to render each paragraph as a separate `<p>` element.
+   - Determine the visible and hidden parts of each paragraph based on the `currentParagraphIndex` and `visibleCharacters` state variables.
+   - Render the visible text, the typing cursor for the current paragraph, and optionally, the hidden text with a 'hidden' class.
+   - Add click and touch event handlers to each paragraph to allow skipping the animation.
+
+7. CSS Styling:
+   - Apply appropriate CSS classes to style the text content, cursor, and hidden text.
+   - Use CSS animations or transitions to create a blinking effect for the typing cursor.
+
+8. Performance Optimization:
+   - Use `useCallback` and `useMemo` hooks to memoize functions and values that don't need to be recomputed on every render.
+   - Optimize the rendering by only updating the necessary parts of the component based on state changes.
+
+9. Internationalization:
+   - Utilize the `useTranslation` hook from the `react-i18next` library to handle internationalization.
+   - Extract the appropriate translations from the `backstory` object based on the selected language.
+
+These are the main lessons learned from the provided code. By understanding and applying these concepts, you can create a typing effect component in React that is efficient, interactive, and supports internationalization.
