@@ -14,12 +14,12 @@ tags:
 
 Getting a typing effect working properly is pretty hard.  A few tips:
 
-1) DOM Manipulating is frequently buggy, so you are best off updating the html elements themselves.
+1) DOM Manipulation is frequently buggy, so you are best off updating the html elements themselves.
 
 2) It's easier to simulate a typing effect using hidden/visible rather than trying to 
 actually generate characters or copy them from a hidden data element.
 
-Certainly! Here are the key lessons learned from the provided code for implementing a typing effect in React:
+Here are the key lessons learned from the provided code for implementing a typing effect in React, applied to mulitple paragraphs of text with a way to skip animation at any time:
 
 1. State Management:
    - Use the `useState` hook to manage the state of the current paragraph index (`currentParagraphIndex`) and the number of visible characters (`visibleCharacters`).
