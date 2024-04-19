@@ -12,12 +12,14 @@ tags:
 
 (Notes for myself - you can check out the effect at 8bitoracle.ai)
 
-Getting a typing effect working properly is pretty hard.  A few tips:
+Getting a typing effect working properly is pretty hard.  I have a few paragraphs of text and wanted to have a typing effect over it, and allow the user to skip animation.  If a user presses a spacebar or clicks on a paragraph, the current paragraph completes and the next one begins typing.
+
+A few tips:
 
 1) DOM Manipulation is frequently buggy, so you are best off updating the html elements themselves.
 
-2) It's easier to simulate a typing effect using hidden/visible rather than trying to 
-actually generate characters or copy them from a hidden data element.
+2) It's easier to simulate a typing effect using hidden/visible rather than trying 
+to actually generate characters or copy them from a hidden data element.
 
 Here are the key lessons learned from the provided code for implementing a typing effect in React, applied to mulitple paragraphs of text with a way to skip animation at any time:
 
