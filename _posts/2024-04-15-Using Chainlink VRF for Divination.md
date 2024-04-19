@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Using Chainlink VRF for Divination"
+title:        "Using Chainlink VRF vs. Math.random() for Divination"
 author:       "Aug"
 header-style: text
 catalog:      true
@@ -20,13 +20,13 @@ Here's how it works:
 
 My problems with it:
 
-From a normal end-perspective they have no way of evaluating or determining the difference between a trusted server and a decentralized network that somehow generates randomness.  They won't have the ability to make the distinction.
+Normal end users have no way of evaluating or determining the difference between a trusted server and a decentralized network that somehow generates randomness.  They won't have the ability to make the distinction.
 
-Gas needs to be paid to the blockchain network, and Link tokens need to be paid for the VRF call.
+Calling Chainlink VRF requires Gas for the underlying blockchain, and Link tokens to be paid for the VRF call.
 
-I would need to deploy smart contracts to call into Chainlink VRF, so added complexity.
+I would need to deploy smart contracts to call into Chainlink VRF, which adds complexity.
 
-So little to no apparent benefit to my end-user, but a lot of additional costs, wallet transactions (unless I deploy something even more complex like opengsn), and dev complexity.
+So little to no apparent benefit to end-users, but a lot of additional costs, wallet transactions (unless I deploy something even more complex like opengsn), and dev complexity.
 
 Here's an AI generated (Claude) summary of alternative approaches:
 
@@ -40,3 +40,128 @@ External randomness services: There are centralized services that provide random
 
 Client-side randomness: If you want to give users more control and transparency, you can consider generating randomness on the client-side using JavaScript's built-in Math.random() function or more robust libraries like crypto.getRandomValues(). However, client-side randomness can be vulnerable to tampering and may not be suitable for critical applications.
 
+Some GPT4 Generated sample code that incorporates changing lines:
+
+To incorporate changing lines into your I-Ching hexagram generator, you can extend the basic random hexagram generation method. In I-Ching, each line of a hexagram can be in one of four states:
+
+1. **Old Yin (0)**: Represented as a broken line that changes into a solid line (yang).
+2. **Young Yang (1)**: Represented as a solid line that does not change.
+3. **Young Yin (2)**: Represented as a broken line that does not change.
+4. **Old Yang (3)**: Represented as a solid line that changes into a broken line (yin).
+
+The changing lines (Old Yin and Old Yang) are what lead to the creation of a second hexagram. Here's how you can generate a hexagram with the possibility of changing lines, and thus, an optional second hexagram:
+
+```javascript
+function generateIChingHexagram() {
+  let hexagram = [];
+  let changingLines = [];
+
+  for (let i = 0; i < 6; i++) {
+    // Generate a random state for each line (0 to 3)
+    const lineState = Math.floor(Math.random() * 4);
+    hexagram.push(lineState);
+
+    // Determine if the line is changing
+    if (lineState === 0 || lineState === 3) {
+      changingLines.push(i); // Store the index of the changing line
+    }
+  }
+
+  // Convert the hexagram to its visual representation
+  const visualHexagram = hexagram.map(line => {
+    switch (line) {
+      case 0: return "—  —"; // Old Yin
+      case 1: return "———"; // Young Yang
+      case 2: return "—  —"; // Young Yin
+      case 3: return "———"; // Old Yang
+    }
+  }).join("\n");
+
+  // Generate the second hexagram if there are changing lines
+  let secondHexagram = null;
+  if (changingLines.length > 0) {
+    secondHexagram = hexagram.map((line, index) => {
+      if (changingLines.includes(index)) {
+        // Change Old Yin to Young Yang and Old Yang to Young Yin
+        return line === 0 ? "———" : "—  —";
+      }
+      // Keep the original line for non-changing lines
+      return line === 1 || line === 3 ? "———" : "—  —";
+    }).join("\n");
+  }
+
+  return {
+    firstHexagram: visualHexagram,
+    secondHexagram: secondHexagram
+  };
+}
+
+const result = generateIChingHexagram();
+console.log("First Hexagram:\n" + result.firstHexagram);
+if (result.secondHexagram) {
+  console.log("\nSecond Hexagram (due to changing lines):\n" + result.secondHexagram);
+}
+```
+
+This solution generates a hexagram where each line has a random state (0 to 3). It then maps these states to their visual representations. If there are changing lines (Old Yin or Old Yang), it also generates a second hexagram by changing Old Yin to Young Yang and Old Yang to Young Yin, as per I-Ching principles.
+
+This approach provides a complete divination experience, reflecting the dynamic nature of I-Ching readings with the inclusion of changing lines and the generation of a subsequent hexagram.
+
+Here's a more secure version using crypto.getRandomValues()
+
+```javascript
+function generateIChingHexagramSecure() {
+  let hexagram = [];
+  let changingLines = [];
+
+  // Create a Uint8Array to hold 6 random values
+  const randomBytes = new Uint8Array(6);
+  // Fill the array with cryptographically secure random numbers
+  window.crypto.getRandomValues(randomBytes);
+
+  for (let i = 0; i < 6; i++) {
+    // Map the random byte to a value between 0 and 3
+    const lineState = randomBytes[i] % 4;
+    hexagram.push(lineState);
+
+    // Determine if the line is changing
+    if (lineState === 0 || lineState === 3) {
+      changingLines.push(i); // Store the index of the changing line
+    }
+  }
+
+  // Convert the hexagram to its visual representation
+  const visualHexagram = hexagram.map(line => {
+    switch (line) {
+      case 0: return "—  —"; // Old Yin
+      case 1: return "———"; // Young Yang
+      case 2: return "—  —"; // Young Yin
+      case 3: return "———"; // Old Yang
+    }
+  }).join("\n");
+
+  // Generate the second hexagram if there are changing lines
+  let secondHexagram = null;
+  if (changingLines.length > 0) {
+    secondHexagram = hexagram.map((line, index) => {
+      if (changingLines.includes(index)) {
+        // Change Old Yin to Young Yang and Old Yang to Young Yin
+        return line === 0 ? "———" : "—  —";
+      }
+      // Keep the original line for non-changing lines
+      return line === 1 || line === 3 ? "———" : "—  —";
+    }).join("\n");
+  }
+
+  return {
+    firstHexagram: visualHexagram,
+    secondHexagram: secondHexagram
+  };
+}
+
+const result = generateIChingHexagramSecure();
+console.log("First Hexagram:\n" + result.firstHexagram);
+if (result.secondHexagram) {
+  console.log("\nSecond Hexagram (due to changing lines):\n" + result.secondHexagram);
+}
+```
