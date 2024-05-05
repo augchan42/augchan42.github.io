@@ -11,7 +11,9 @@ tags:
     - Supabase Auth-UI 
 ---
 
-The [website](https://8bitoracle.ai) is close enough to describing what the app needs to do, now we need to setup
+Current Stack: nextjs (app router) + next-intl + tailwind css + supabase with auth-ui
+
+The [website](https://8bitoracle.ai) (hosted on netlify currently) is close enough to describing what the app needs to do, now we need to setup
 authentication and some kind of beta signup process.  This marks the beginning of setting up the backend - a database and login flow.
 
 For authentication, seems that some form of oauth2 is what people use nowadays.  For oauth2 I went with supabase auth, as I wanted to store user information and supabase has a built in integration between out of the box user/profile tables on postgres and the oauth2 flow from supabase auth.
