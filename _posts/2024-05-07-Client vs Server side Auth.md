@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Cleint vs Server side Auth"
+title:        "Client vs Server side Auth"
 author:       "Aug"
 header-style: text
 catalog:      true

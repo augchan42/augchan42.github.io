@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Getting down to Business"
+title:        "Wiring in Auth and DB - Getting down to Business"
 author:       "Aug"
 header-style: text
 catalog:      true
