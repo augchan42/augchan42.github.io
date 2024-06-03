@@ -114,9 +114,9 @@ actionstop = <iptables> -D <chain> -j f2b-<name>
              <iptables> -X f2b-<name>
 ```
 
-You can also manually run the rules individually for troubleshooting (this is default syntax for reference, this is different from my custom ban rule):
+You can also manually run the rules individually for troubleshooting:
 ```bash
-iptables -D <chain> -p <protocol> -m multiport --dports <port> -j f2b-<name>
+iptables -D <chain> -p <protocol> -j f2b-<name>
 iptables -F f2b-<name>
 iptables -X f2b-<name>
 ```
@@ -125,9 +125,9 @@ BTW, all rules must be deleted before a chain can be deleted (-X).  If you see a
 ### 6. Adjusting Rule Deletion for Non-default Actions
 Matching the rule deletion commands to the specific rules added by Fail2Ban, especially when using non-default ports.
 
-**Correct command to delete a specific rule (for default config using port 1000, not mine):**
+**Correct command to delete a specific rule:**
 ```bash
-sudo iptables -D INPUT -p tcp --dport 1000 -j f2b-sshd
+sudo iptables -D INPUT -p tcp -j f2b-sshd
 ```
 
 ## Conclusion
