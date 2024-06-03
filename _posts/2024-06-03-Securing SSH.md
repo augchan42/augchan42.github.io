@@ -125,10 +125,20 @@ BTW, all rules must be deleted before a chain can be deleted (-X).  If you see a
 ### 6. Adjusting Rule Deletion for Non-default Actions
 Matching the rule deletion commands to the specific rules added by Fail2Ban, especially when using non-default ports.
 
-**Correct command to delete a specific rule:**
+**Command to delete the f2b-sshd chain from the default INPUT chain:**
+I needed this command because the same f2b-sshd custom chain was defined multiple times in my INPUT chain due to previous issues.
+
 ```bash
 sudo iptables -D INPUT -p tcp -j f2b-sshd
 ```
+
+**Command to list and delete other rules from INPUT chain:**
+```bash
+sudo iptables -L INPUT --line-numbers
+sudo iptables -D INPUT <line-number-of-rule>
+```
+
+You can use the same --line-numbers method to directly delete individual rules from any chain.
 
 ## Conclusion
 Make sure to check the /var/log/fail2ban.log for any errors on startup or shutdown in adding ban rules, or removing rules on cleanup.  If there are any errors then the bans are likely not happening properly.  If you see lots of login activity in your /var/log/auth.log then the bans aren't working!
