@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Wiring in Auth and DB - Getting down to Business"
+title:        "Implementing Auth and Database for 8-Bit Oracle"
 author:       "Aug"
 header-style: text
 catalog:      true
@@ -11,20 +11,32 @@ tags:
     - Supabase Auth-UI 
 ---
 
-Current Stack: nextjs (app router) + next-intl + tailwind css + supabase with auth-ui
+## Current Tech Stack
+- **Framework**: Next.js (app router)
+- **Internationalization**: next-intl
+- **CSS**: Tailwind CSS
+- **Backend**: Supabase with Auth-UI
 
-The [website](https://8bitoracle.ai) (hosted on netlify currently) is close enough to describing what the app needs to do, now we need to setup
-authentication and some kind of beta signup process.  This marks the beginning of setting up the backend - a database and login flow.
+## Overview
+With the [website](https://8bitoracle.ai) detailing the app's needs, it’s time to set up authentication and beta signups, marking our dive into backend setup.
 
-For authentication, seems that some form of oauth2 is what people use nowadays.  For oauth2 I went with supabase auth, as I wanted to store user information and supabase has a built in integration between out of the box user/profile tables on postgres and the oauth2 flow from supabase auth.
+## Authentication Choices
+### Why OAuth2 with Supabase
+Chose OAuth2 for its ubiquity. Supabase Auth links directly to PostgreSQL user/profile tables, streamlining user data management.
 
-For auth widget, I went with [supabase auth-ui](https://github.com/supabase-community/auth-ui) - though keep in mind it seems to have gone out of maintenance since Feb 2024.  I also found cofiguring magic link with this widget quite easy.
+### Supabase Auth-UI
+Implemented [Supabase Auth-UI](https://github.com/supabase-community/auth-ui) for its ease in setting up magic links. Note: no updates since February 2024.
 
-I will revisit [web3auth](https://web3auth.io) when the time comes.  Reason I didn't do it initially
-is it needing manual integration with database (nothing is stored if using default web3auth flows).  
+## Web3Auth: Future Considerations
+[Web3Auth](https://web3auth.io) is on hold due to its manual database integration requirement.
 
-BTW in either scenario, you still need to setup the oauth2 provider itself (which in my case is google).  So there's no escaping that.  Another reason I went with supabase-auth is at least with supabase-auth I get integration to a db automatically.
+## OAuth2 Provider Setup
+Setting up Google as the OAuth2 provider was essential, ensuring smooth integration with Supabase Auth for automatic database linkage.
 
-I went supabase over firebase as supabase is opensource and I could in theory host it myself if supabase hosting went to shit.
+## Supabase vs. Firebase
+Opted for Supabase over Firebase for its open-source nature and potential for self-hosting.
 
-You can see the beta signup here:  [8-bit oracle beta signup](https://8bitoracle.ai/en/beta)
+## Beta Signup Live
+The beta signup is live at [8-bit oracle beta signup](https://8bitoracle.ai/en/beta). Check it out.
+
+Thanks for reading.
