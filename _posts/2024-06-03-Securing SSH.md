@@ -83,15 +83,38 @@ DROP       all  --  64.227.185.239       0.0.0.0/0
 The f2b-sshd chain needs to be evaluated before any UFW rules to ensure that banned IPs are blocked immediately.
 The action to add the chain should be Insert (I) not Append (A) and it should be inserted at the top.  INPUT 1 does this:
 
-**Command to insert the f2b-sshd chain at the top of the INPUT chain:**
+**Command in iptables-multiport.conf to insert the f2b-sshd chain at the top of the INPUT chain and restore bans from file when fail2ban starts:**
 ```bash
-sudo iptables -I INPUT 1 -j f2b-sshd
+actionstart = <iptables> -N f2b-<name>
+              <iptables> -I INPUT 1 -j f2b-<name>
+              <iptables> -I f2b-<name> 1 -j <returntype>
+              cat /etc/fail2ban/persistent.bans | awk '/^fail2ban-<name>/ {print $2}' \
+              | while read IP; do iptables -I f2b-<name> 1 -s $IP -j <blocktype>; done
+
 ```
 
-### 4. Cleaning Up Old Rules on Fail2Ban Restart
-Ensuring that all Fail2Ban rules are properly removed on restart was crucial to avoid conflicts with stale rules.  All rules need to be deleted, then rules flushed, then finally the chain itself can be deleted.  If any rules are still present, deleting the chain will fail!  The -D command needs to find the rules that were previously added with -A.  If the rules are different then they won't be deleted!
+### 4. Example actionban 
+**Command to ban an ip and add to persistent bans file:**
+This will add a rule to the f2b-sshd chain, which is referenced in the default iptables INPUT chain.
+
+```bash
+actionban = <iptables> -I f2b-<name> 1 -s <ip> -j <blocktype>
+        echo "fail2ban-<name> <ip>" >> /etc/fail2ban/persistent.bans
+```
+
+### 5. Cleaning Up Old Rules on Fail2Ban Restart
+Ensuring that all Fail2Ban rules are properly removed on restart was crucial to avoid conflicts with stale rules.  All rules need to be deleted, then rules flushed, then finally the chain itself can be deleted.  If any rules are still present, deleting the chain will fail!  The -D command needs to find the rules that were previously added with -A.  If the rules look different then they won't be deleted!
 
 **Commands used in `actionstop` to flush old rules:**
+Notice this -D command matches the above -I command (except for the syntax to insert rule at the first line of the chain which isn't relevant.)
+
+```bash
+actionstop = <iptables> -D <chain> -j f2b-<name>
+             <actionflush>
+             <iptables> -X f2b-<name>
+```
+
+You can also manually run the rules individually for troubleshooting (this is default syntax for reference, this is different from my custom ban rule):
 ```bash
 iptables -D <chain> -p <protocol> -m multiport --dports <port> -j f2b-<name>
 iptables -F f2b-<name>
@@ -99,10 +122,10 @@ iptables -X f2b-<name>
 ```
 BTW, all rules must be deleted before a chain can be deleted (-X).  If you see a rule chain can't be deleted, then it's probably because a rule in that chain is still there.  This is probably because the -D command can't find a rule to delete (because a rule was added with different syntax).
 
-### 5. Adjusting Rule Deletion for Non-default Actions
+### 6. Adjusting Rule Deletion for Non-default Actions
 Matching the rule deletion commands to the specific rules added by Fail2Ban, especially when using non-default ports.
 
-**Correct command to delete a specific rule:**
+**Correct command to delete a specific rule (for default config using port 1000, not mine):**
 ```bash
 sudo iptables -D INPUT -p tcp --dport 1000 -j f2b-sshd
 ```
