@@ -40,7 +40,7 @@ export function createSupabaseBrowserClient() {
 Conversely, for email authentication that employs a magic link, the link directs the user to an API confirm route located on the backend. This requires using `@supabase/ssr`'s `createServerClient` to retrieve session information after authentication is confirmed.
 For situations where cookie values need to be set (login, registration, signout) then the component flag should be false (default).
 
-```code
+```html
 import { type NextRequest, type NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { deleteCookie, getCookie, setCookie } from "cookies-next";
@@ -89,14 +89,16 @@ export function createSupabaseServerClient(component: boolean = false) {
 }
 ```
 
+
 ### Integrated Authentication UI
-A potentially confusing aspect is that [Supabase's auth-ui](https://supabase.com/docs/guides/auth/auth-helpers/auth-ui) can display both types of logins within the same widget. Moreover, the code samples from auth-ui use the older `createClient` from `@supabase/supabase-js`, which adds to the confusion.
+A potentially confusing aspect is that [Supabase's auth-ui](https://supabase.com/docs/guides/auth/auth-helpers/auth-ui) can display both types of logins within the same widget. Moreover, the code samples from auth-ui use the older `createClient` from `@supabase/supabase-js`, which adds to the confusion.  The view="magic_link" and providers={['google']} are configuring the same Auth widget.
+
 
 ```code
 <div className="justify-center w-full max-w-xs animate-in text-foreground">
     <Auth
-        view="magic_link"
-        appearance={{
+        view="magic_link"       
+        appearance={% raw %}{{
             theme: ThemeSupa,
             style: {
                 button: {
@@ -112,7 +114,7 @@ A potentially confusing aspect is that [Supabase's auth-ui](https://supabase.com
                     },
                 },
             },
-        }}
+        }}{% endraw %}    
         supabaseClient={supabase}
         providers={['google']}
         theme="dark"
@@ -121,6 +123,7 @@ A potentially confusing aspect is that [Supabase's auth-ui](https://supabase.com
     />
 </div>
 ```                                            
+
 
 ## Further Reading and Resources
 For those looking to deepen their understanding or set up their own authentication mechanisms, here are some valuable resources:
