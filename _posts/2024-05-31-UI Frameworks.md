@@ -22,7 +22,7 @@ tags:
 I think I've settled on [shadcn](https://ui.shadcn.com), but I'm still getting the hang of it.
 
 ### Evolution of the Project
-My project started out using plain Bootstrap, then transitioned to Create-React-App (which is distinct from React), and finally to Next.js.
+My project started out using plain Bootstrap, then transitioned to Create-React-App (which is distinct from React), and finally to Next.js App Router.
 
 ### UI Development Challenges
 However, building an app from scratch is a ton of work, especially with all the UI widgets and components required. There's a trend now towards granular component libraries, which are geared towards copying and pasting code directly into your project, instead of npm installing an entire framework.
@@ -31,7 +31,7 @@ However, building an app from scratch is a ton of work, especially with all the 
 Initially, I thought this approach was great, and this is how shadcn works. Since I am always concerned about bugs in whatever open source library I use, I usually fork the project, then import stuff from my fork. This gives me full visibility into the code and allows me to fix things as needed (assuming I can do it!).
 
 ### Component Libraries
-Component libraries like shadcn are geared towards copy-pasting components directly and don't require you to do an npm install (though shadcn does require npm installing underlying unstyled radix-ui components).
+Component libraries like shadcn are geared towards copy-pasting components directly and don't require you to do an npm install (though shadcn does require npm installing the underlying unstyled radix-ui components).
 
 ### Challenges with This Approach
 The issue, of course, is bugs, upgrades, and versioning. Once you do your copy/paste, you are effectively on your own little branch of the code not tied to anything.
