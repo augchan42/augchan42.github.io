@@ -1,15 +1,20 @@
 ---
 layout:       post
-title:        "Brainstorming Transcription"
+title:        "Harnessing AI to Transcribe and Visualize Family Histories: A Guide to Storytelling and Relationship Mapping"
 author:       "Aug"
 header-style: text
 catalog:      true
 tags:
-    - transcription
-    - stories
-    - family history
-    - narrator tracking
-    - graph
+    - AI Transcription
+    - Family Storytelling
+    - Genealogy
+    - Narrator Detection
+    - Relationship Mapping
+    - Voice Recognition
+    - Family History Graphs
+    - Ancestral Stories
+    - Cultural Heritage
+    - Audio to Text AI
 ---
 Transcribing Audio from Family Stories and Building a Graph
 

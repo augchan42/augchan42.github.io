@@ -1,17 +1,20 @@
 ---
 layout:       post
-title:        "Spectacular Reddit Post on Huggingface Transformers / Llama.cpp / GGUF /GGML"
+title:        "Exploring AI Model Formats: A Deep Dive into Llama.cpp, GGUF, GGML, and Huggingface Transformers"
 author:       "Aug"
 header-style: text
 catalog:      true
 tags:
-    - AI
-    - LLM
-    - Huggingface
-    - GPT
-    - GGUF
-    - GGML
-    - Llama.cpp
+   - AI Model Formats
+   - Llama.cpp
+   - GGUF
+   - GGML
+   - Huggingface Transformers
+   - Model Quantization
+   - AI Tools and Libraries
+   - Safetensors
+   - GPTQ Algorithm
+   - AI Development
 ---
 [Awesome Breakdown Post](https://www.reddit.com/r/LocalLLaMA/comments/178el7j/transformers_llamacpp_gguf_ggml_gptq_other_animals/)
 

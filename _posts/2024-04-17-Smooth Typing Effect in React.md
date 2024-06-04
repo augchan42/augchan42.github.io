@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Smooth Typing Effect in React"
+title:        "How to Create an Interactive Typing Effect in React with Skip Animation Feature"
 author:       "Aug"
 header-style: text
 catalog:      true

@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Fortune-Telling NFTs"
+title:        "Exploring Fortune-Telling NFTs: Integrating I-Ching and Blockchain for Spiritual Insights"
 author:       "Aug"
 header-style: text
 catalog:      true
@@ -13,6 +13,16 @@ tags:
     - Yin Yang
     - NFT
     - Solana Ethereum
+    - Fortune-Telling NFTs
+    - I-Ching
+    - Taoism and Technology
+    - Blockchain and Spirituality
+    - Yin Yang Dynamics
+    - Hexagrams and Trigrams
+    - Generative AI in Culture
+    - Solana and Ethereum NFTs
+    - Digital Divination
+    - Cultural Heritage NFTs
 ---
 
 My Dad was heavily into fortune-telling and the I-Ching.  He did a lot of self study, and even some programming.  I never

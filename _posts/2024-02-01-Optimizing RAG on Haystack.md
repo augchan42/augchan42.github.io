@@ -1,15 +1,20 @@
 ---
 layout:       post
-title:        "Agents and RAG on Haystack"
+title:        "Enhancing AI with RAG: Leveraging Haystack for Smarter Agents and Efficient Data Retrieval"
 author:       "Aug"
 header-style: text
 catalog:      true
 tags:
-    - RAG
-    - Vector DB
-    - Haystack
-    - Google Search
-    - FAISS
+    - Retrieval Augmented Generation
+    - Haystack Integration
+    - AI Agents
+    - FAISS Document Store
+    - Vector Databases
+    - Google Search Integration
+    - Machine Learning Optimization
+    - AI Knowledge Enhancement
+    - Custom AI Pipelines
+    - Smart Data Indexing
 ---
 What's RAG (Retrieval Augmented Generation)?
 

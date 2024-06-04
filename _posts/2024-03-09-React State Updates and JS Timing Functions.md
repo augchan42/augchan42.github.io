@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "React State Updates and JS Timing Functions"
+title:        "Mastering React State and JS Timing: Solving Double Execution in Development Mode"
 author:       "Aug"
 header-style: text
 catalog:      true
@@ -12,6 +12,16 @@ tags:
     - Ascii Animation
     - React Batching
     - Hot module reload issues
+    - React State Management
+    - JavaScript Timing Functions
+    - Animation in React
+    - Next.js Development
+    - Hot Module Reloading
+    - Debugging React Apps
+    - Web Development Best Practices
+    - useEffect Issues
+    - Sequential Execution in JavaScript
+    - Frontend Animation Techniques
 ---
 
 While figuring out how to properly animate yin/yang lines for my app, I ran into

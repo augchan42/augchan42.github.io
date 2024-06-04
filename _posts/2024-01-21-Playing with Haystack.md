@@ -1,15 +1,20 @@
 ---
 layout:       post
-title:        "Playing with Haystack"
+title:        "Exploring Haystack: Building Advanced NLP Applications with LLMs and Vector Search"
 author:       "Aug"
 header-style: text
 catalog:      true
 tags:
-    - AI
-    - LLM
-    - Haystack
-    - Chatbot
-    - python
+    - Haystack Framework
+    - Language Model Integration
+    - NLP Application Development
+    - Python Programming
+    - Open Source Contribution
+    - Version Control with Git
+    - AI and Machine Learning
+    - Chatbot Development
+    - Document Search
+    - Retrieval-Augmented Generation
 ---
 According to their github:
 >Haystack is an end-to-end LLM framework that enables you to build applications powered by LLMs, Transformer models, vector search and more. Whether you want to perform retrieval-augmented generation (RAG), documentation search, question answering or answer generation, you can use state-of-the-art embedding models and LLMs with Haystack to build end-to-end NLP applications to solve your use case.

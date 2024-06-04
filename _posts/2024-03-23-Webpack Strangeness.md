@@ -1,12 +1,20 @@
 ---
 layout:       post
-title:        "Webpack Strangeness - Fixing FOUC"
+title:        "Solving Webpack Issues: Eliminating Double Script Loading and FOUC"
 author:       "Aug"
 header-style: text
 catalog:      true
 tags:
     - Webpack
     - Flash of Unstyled Content (FOUC)
+    - JavaScript Bundling
+    - Web Development
+    - Frontend Optimization
+    - Code Efficiency
+    - Webpack Configuration
+    - CSS Loading
+    - Performance Improvement
+    - Webpack Tips
 ---
 
 Here's an brief summary of what Webpack is:

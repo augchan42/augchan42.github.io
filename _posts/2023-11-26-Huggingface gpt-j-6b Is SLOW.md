@@ -1,15 +1,20 @@
 ---
 layout:       post
-title:        "Huggingface gpt-j-6b Is SLOW!  So, Convert it to GGML"
+title:        "Boosting GPT-J Performance: Converting to GGML for Rapid Inference"
 author:       "Aug"
 header-style: text
 catalog:      true
 tags:
-    - AI
-    - LLM
-    - Huggingface
-    - GPT
-    - GGUF
+    - GPT-J Optimization
+    - GGML Conversion
+    - Huggingface Transformers
+    - AI Model Speed
+    - Machine Learning Efficiency
+    - Python Scripting
+    - Model Conversion Techniques
+    - AI Inference Acceleration
+    - GGUF Format
+    - LLM Performance Improvement
 ---
 I've been trying to run inference on a model based on EleutherAI/gpt-j-6B from Huggingface, and it was super slow!
 The model took about 15 to 30 minutes to respond to my prompt (including

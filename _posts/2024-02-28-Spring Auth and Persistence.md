@@ -1,15 +1,20 @@
 ---
 layout:       post
-title:        "Spring JWT Authentication and Persistence"
+title:        "Efficient JWT Authentication and Data Persistence in Spring Framework"
 author:       "Aug"
 header-style: text
 catalog:      true
 tags:
-    - Spring
-    - JWT
-    - JPA
-    - Persistence
-    - Security
+    - Spring Security
+    - JWT Authentication
+    - Java Persistence API (JPA)
+    - Spring Boot
+    - Database Security
+    - Stateless Session Management
+    - Encryption with BCrypt
+    - Spring Annotations
+    - Secure Web Applications
+    - API Security Best Practices
 ---
 
 With AI I've been able to implement Security and Persistence in Spring very quickly.  These are really notes for my own usage so I can better keep track of what the hell I did.
