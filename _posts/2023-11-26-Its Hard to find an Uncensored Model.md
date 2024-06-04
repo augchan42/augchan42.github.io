@@ -5,12 +5,16 @@ author:       "Aug"
 header-style: text
 catalog:      true
 tags:
-    - AI
-    - LLM
-    - Huggingface
-    - GPT
-    - GGUF
-    - Uncensored
+    - Uncensored AI
+    - AI Model Training
+    - Huggingface Models
+    - OpenAI Data
+    - GGUF Format
+    - Ethical AI
+    - Data Censorship in AI
+    - AI Model Customization
+    - Advanced AI Techniques
+    - Unbiased AI Models
 ---
 Turns out most models are based on data from OpenAI somehow, and this data has guardrails.
 
