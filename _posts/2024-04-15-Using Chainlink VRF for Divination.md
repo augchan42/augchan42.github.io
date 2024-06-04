@@ -1,12 +1,20 @@
 ---
 layout:       post
-title:        "Using Chainlink VRF vs. Math.random() for Divination"
+title:        "Exploring Divination Techniques: Chainlink VRF vs. Traditional Randomness Methods"
 author:       "Aug"
 header-style: text
 catalog:      true
 tags:
-    - VRF Verifiable Random Function
-    - I-Ching, Hexgrams, Divination, Fortunetelling
+    - Chainlink VRF
+    - Divination Techniques
+    - I-Ching Hexagrams
+    - Cryptographic Randomness
+    - Blockchain in Divination
+    - Smart Contracts
+    - Random Number Generation
+    - Spiritual Technology
+    - Yin Yang Symbolism
+    - Secure Randomness Methods
 ---
 
 I-Ching divination typically uses coin tosses or a yarrow stalk ceremony
