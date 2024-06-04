@@ -90,7 +90,7 @@ export function createSupabaseServerClient(component: boolean = false) {
 ```
 
 ### Integrated Authentication UI
-A potentially confusing aspect is that [Supabase's auth-ui](https://supabase.com/docs/guides/auth/auth-helpers/auth-ui) can display both types of logins within the same widget. Moreover, the code samples from auth-ui use the older `createClient` from `@supabase/supabase-js`, which adds to the confusion.  The view="magic_link" and providers={['google']} are configuring the same widget.
+A potentially confusing aspect is that [Supabase's auth-ui](https://supabase.com/docs/guides/auth/auth-helpers/auth-ui) can display both types of logins within the same widget. Moreover, the code samples from auth-ui use the older `createClient` from `@supabase/supabase-js`, which adds to the confusion.
 
 ```code
 <div className="justify-center w-full max-w-xs animate-in text-foreground">
