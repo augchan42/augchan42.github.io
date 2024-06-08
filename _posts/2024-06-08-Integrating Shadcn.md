@@ -21,6 +21,11 @@ tags:
 
 I wanted to make a blog post talking about my experience integrating with shadcn. Here's what I ran into.
 
+## Project Preparation
+
+Before diving into the integration, you need to prepare your project by following the instructions provided in the shadcn documentation: [https://ui.shadcn.com/docs/installation/next](https://ui.shadcn.com/docs/installation/next)
+
+
 ## Opinionated Styling
 
 The shadcn example at [https://ui.shadcn.com/](https://ui.shadcn.com/) is opinionated in that it assumes a dark theme with New York styling. That means your root layout needs to use the theme provider, and with my website colors defaulting to a black background, I needed to use the dark theme for the components to appear properly.
@@ -35,6 +40,10 @@ The shadcn example at [https://ui.shadcn.com/](https://ui.shadcn.com/) is opinio
   {/* Your content */}
 </ThemeProvider>
 ```
+
+## Styling Considerations
+
+The default shadcn project uses slate styling with CSS variable replacement ("cssVariables": true in the components.json). I did not follow their font styling. Instead, I had to move all my global styles to my own /styles/mystyles.css file because the /src/app/globals.css file gets overwritten by shadcn.
 
 ## New York Styling
 
