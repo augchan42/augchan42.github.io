@@ -164,6 +164,7 @@ async function fetchInitialAuthState() {
 }
 ```
 
+
 In this setup, any component that needs auth information can simply import and use the `useAuthStore` hook. There's no need to wrap these components in any special provider or pass down auth state as props.
 
 This approach not only simplifies your code but also makes it more maintainable and scalable. As your app grows, you can easily extend the auth store or create additional stores for other global state without changing your component structure.
