@@ -11,6 +11,7 @@ tags:
     - cosmos
     - stargaze
 ---
+
 # Deploying a Smart Contract to Stargaze Testnet
 
 ## Introduction
@@ -54,7 +55,7 @@ starsd config view client
 
 This should output something like this:
 
-```
+```toml
 # This is a TOML config file.
 # For more information, see https://github.com/toml-lang/toml
 
@@ -91,7 +92,8 @@ starsd keys list
 ```
 
 Example output:
-```
+
+```text
 Enter keyring passphrase (attempt 1/3):
 - address: stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c
   name: imported-wallet
@@ -101,8 +103,9 @@ Enter keyring passphrase (attempt 1/3):
 
 ### Getting Testnet Starz
 
-I used: https://testnet.ping.pub/stargaze/faucet
-I was able to get 5 testnet starz at a time, seems to be limited to once daily.
+You can get testnet STARS from the faucet at: https://testnet.ping.pub/stargaze/faucet
+
+The faucet provides 5 testnet STARS at a time and appears to be limited to one request per day.
 
 ### Setting Up Rust
 
@@ -135,13 +138,17 @@ rustup target list --installed  # Should include wasm32-unknown-unknown
 
 Clone the cw-plus contracts:
 
+```bash
 gh repo clone CosmWasm/cw-plus
+```
 
 I used the cw1_whitelist contract:
 
+```bash
 cd contracts/cw1-whitelist && cargo wasm
+```
 
-If any issues, do cargo clean/cargo update/cargo wasm in that order.
+If any issues, do `cargo clean`/`cargo update`/`cargo wasm` in that order.
 
 Before attempting to upload or instantiate a contract, I made sure it passed the compatibility check:
 
@@ -170,7 +177,8 @@ starsd query wasm contract stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8
 ```
 
 Output:
-```
+
+```yaml
 address: stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m
 contract_info:
   admin: stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c
@@ -231,7 +239,8 @@ starsd query wasm contract-state smart stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0
 ```
 
 Output:
-```
+
+```yaml
 address: stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m
 contract_info:
   admin: stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c
