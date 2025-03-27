@@ -257,6 +257,36 @@ data:
   - stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c
   mutable: true
 ```
+# Executing a function in the Smart Contract
+
+This will withdraw 0.5 STAR to the to_address (in this case the admin account)
+
+```bash
+starsd tx wasm execute stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m \
+'{"execute": {"msgs": [{
+    "bank": {
+        "send": {
+            "to_address": "stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c", 
+            "amount": [{"denom": "ustars", "amount": "500000"}]
+        }
+    }
+}]}}' \
+--from imported-wallet \
+--gas-prices 0.025ustars \
+--gas-adjustment 1.7 \
+--gas auto
+```
+
+## Confirm the updated balance
+
+```bash
+starsd query bank balances stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m
+balances:
+- amount: "500000"
+  denom: ustars
+pagination:
+  total: "1"
+```
 
 ## Tips for Analyzing a Standard CosmWasm Contract
 
