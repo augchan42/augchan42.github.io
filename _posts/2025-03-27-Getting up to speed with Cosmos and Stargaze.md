@@ -99,6 +99,11 @@ Enter keyring passphrase (attempt 1/3):
   type: local
 ```
 
+### Getting Testnet Starz
+
+I used: https://testnet.ping.pub/stargaze/faucet
+I was able to get 5 testnet starz at a time, seems to be limited to once daily.
+
 ### Setting Up Rust
 
 Next, I needed the correct Rust version:
