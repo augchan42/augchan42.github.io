@@ -167,6 +167,12 @@ starsd tx wasm store cw1_whitelist.wasm \
   --gas-adjustment 1.7 \
   --gas auto
 ```
+It's best to get the transaction hash from this command and then looking it up to get the code_id (in my case, its 5196).  
+
+```
+starsd q tx 0A1078B8364950CE7CE6F3992248662D9F1284676B912CEC2A64AA5176D63C64 | grep 'key: code_id' -A 1 | grep value | awk -F'"' '{print $2}'
+5196
+```
 
 ## Getting the Contract Code ID
 
