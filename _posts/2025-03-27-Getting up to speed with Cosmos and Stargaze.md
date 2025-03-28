@@ -158,7 +158,7 @@ cosmwasm-check ../../target/wasm32-unknown-unknown/release/cw1_whitelist.wasm
 
 ## Uploading the Contract
 
-This command uploads the compiled WASM contract:
+The `store` command uploads the compiled WASM contract:
 
 ```bash
 starsd tx wasm store cw1_whitelist.wasm \
@@ -167,16 +167,27 @@ starsd tx wasm store cw1_whitelist.wasm \
   --gas-adjustment 1.7 \
   --gas auto
 ```
-It's best to get the transaction hash from this command and then looking it up to get the code_id (in my case, its 5196).  
-
-```
-starsd q tx 0A1078B8364950CE7CE6F3992248662D9F1284676B912CEC2A64AA5176D63C64 | grep 'key: code_id' -A 1 | grep value | awk -F'"' '{print $2}'
-5196
-```
+Save the transaction hash from this command to look up the code_id later.
 
 ## Getting the Contract Code ID
 
-After uploading, I needed to check the contract details to get its `code_id`:
+With transaction hash (can get from `store` command)
+
+```bash
+starsd q tx 0A1078B8364950CE7CE6F3992248662D9F1284676B912CEC2A64AA5176D63C64 -o json | jq '.. | select(.key? == "code_id")'
+```
+
+Output:
+
+```bash
+{
+  "key": "code_id",
+  "value": "5196",
+  "index": true
+}
+```
+
+After uploading, can also get `code_id` from contract address with `query`:
 
 ```bash
 starsd query wasm contract stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m
