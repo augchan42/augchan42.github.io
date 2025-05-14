@@ -39,6 +39,184 @@ One of the first and most critical pieces for making passkeys work with an Andro
 
 You can typically host this file at `/.well-known/assetlinks.json` on your domain.
 
+### Android Passkey Digital Asset Links Setup
+
+To enable seamless passkey authentication between your website (Relying Party) and your Android application, you need to establish a secure association between them. This is achieved using Digital Asset Links (DAL).
+
+This guide will walk you through generating the necessary information for your `assetlinks.json` file, focusing on the `demoDebug` build variant of the PeepsApp.
+
+#### 1. Identify Your Build Variant and Package Name
+
+For passkeys to work, the `package_name` in your `assetlinks.json` file must exactly match the `applicationId` of your Android app build variant that will be handling passkey operations.
+
+- **Target Build Variant:** For development and testing, we are focusing on the `demoDebug` variant.
+- **Application ID for `demoDebug`:**
+  - The base `applicationId` is `ai.peepsapp.peopleapp`.
+  - The `debug` build type adds an `applicationIdSuffix` (e.g., `.debug`).
+  - The `demo` product flavor might also influence the final ID (in this project, it uses the `NiaFlavorDimension.contentType`).
+  - Based on the project structure (forked from "Now in Android" which uses `buildType.applicationIdSuffix` and flavor dimensions), the `applicationId` for `demoDebug` is typically `ai.peepsapp.peopleapp.demo.debug`. **Always verify this in your `app/build.gradle.kts` or by checking the generated `AndroidManifest.xml` for that specific variant.**
+
+> ℹ️ **Note:** While different `debug` variants (like `prodDebug` if it exists) will use the same debug signing certificate, their `applicationId` might differ if product flavors change it. Ensure the `package_name` in `assetlinks.json` corresponds to the specific `applicationId` you are targeting.
+
+#### 2. Obtain the SHA-256 Certificate Fingerprint
+
+The `assetlinks.json` file requires the SHA-256 fingerprint of the signing certificate used for your Android app.
+
+##### Primary Method: Gradle `signingReport`
+
+This is the recommended way to get the fingerprint.
+
+1.  Open your terminal in the project root directory.
+2.  Run the `signingReport` task:
+    ```bash
+    ./gradlew :app:signingReport
+    ```
+3.  If the above command fails due to a configuration cache issue (you might see an error like `Could not load the value of field dslSigningConfig`), try running it without the configuration cache:
+    ```bash
+    ./gradlew :app:signingReport --no-configuration-cache
+    ```
+4.  If you still encounter issues, try cleaning the project first:
+    ```bash
+    ./gradlew clean
+    ./gradlew :app:signingReport --no-configuration-cache # Or without the flag if clean fixed it
+    ```
+5.  In the output, look for the section corresponding to `Variant: demoDebug`. The debug keystore (`~/.android/debug.keystore`) is typically shared across all debug builds.
+    You need the **SHA-256** value. It will look like this:
+    `SHA-256: 6B:D3:BC:92:BD:94:4C:9E:5A:D1:75:39:DC:E5:ED:62:05:F1:79:B3:FD:7A:03:1B:8F:54:1B:83:FD:1D:2B:83`
+
+##### Alternative Method: `keytool`
+
+If the Gradle task is problematic, you can use `keytool` (a Java utility) directly. This is for the default debug keystore.
+
+- **On Windows (Command Prompt or PowerShell):**
+  ```shell
+  keytool -list -v -keystore "%USERPROFILE%\\.android\\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+  ```
+- **On Linux/macOS or WSL (Terminal):**
+  ```bash
+  keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+  ```
+  (If accessing the Windows keystore from WSL, the path might be `/mnt/c/Users/YourWindowsUser/.android/debug.keystore`)
+
+In the output, find the "Certificate fingerprints" section and copy the `SHA256` value.
+
+#### 3. Create Your `assetlinks.json` File
+
+Create a file named `assetlinks.json` with the following content.
+
+```json
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ai.peepsapp.peopleapp.demo.debug",
+      "sha256_cert_fingerprints": ["YOUR_SHA256_FINGERPRINT_HERE"]
+    }
+  }
+]
+```
+
+**Important:**
+
+- Replace `"ai.peepsapp.peopleapp.demo.debug"` with the correct `applicationId` for your target build variant if it differs.
+- Replace `"YOUR_SHA256_FINGERPRINT_HERE"` with the actual SHA-256 fingerprint you obtained in Step 2 (e.g., `"6B:D3:BC:92:BD:94:4C:9E:5A:D1:75:39:DC:E5:ED:62:05:F1:79:B3:FD:7A:03:1B:8F:54:1B:83:FD:1D:2B:83"`).
+- The `relation` array includes:
+  - `delegate_permission/common.handle_all_urls`: Standard for app linking.
+  - `delegate_permission/common.get_login_creds`: Essential for passkey/credential manager operations.
+
+#### 4. Host the `assetlinks.json` File
+
+Your web server must host this `assetlinks.json` file at the following specific location:
+
+`https://your.domain.com/.well-known/assetlinks.json`
+
+- Replace `your.domain.com` with your actual domain (for this project, it's `stage.peepsapp.ai`).
+- The file must be accessible via HTTPS.
+- The server should serve this file with the `Content-Type: application/json` HTTP header.
+
+##### Updating in Your `peepsAPI` Server Project
+
+For this project, the `assetlinks.json` file is in the peepsAPI project at `peepsAPI/static/.well-known/assetlinks.json`.
+
+1.  **Edit the file:** Open the `assetlinks.json` file in your `peepsAPI` project.
+2.  **Add the new fingerprint:** Your existing file might already have one or more fingerprints. You need to add the SHA-256 fingerprint obtained in Step 2 to the `sha256_cert_fingerprints` array for the `ai.peepsapp.peopleapp.demo.debug` package.
+
+    For example, if your `assetlinks.json` looks like this (as seen on [https://stage.peepsapp.ai/.well-known/assetlinks.json](https://stage.peepsapp.ai/.well-known/assetlinks.json)):
+
+    ```json
+    [
+      {
+        "relation": [
+          "delegate_permission/common.handle_all_urls",
+          "delegate_permission/common.get_login_creds"
+        ],
+        "target": {
+          "namespace": "android_app",
+          "package_name": "ai.peepsapp.peopleapp.demo.debug",
+          "sha256_cert_fingerprints": [
+            "BA:6E:84:EF:CC:B2:53:8A:49:DE:AD:F0:8A:4B:38:4F:A7:64:3D:09:8D:CD:84:86:3B:CF:95:B8:27:68:7A:EA"
+          ]
+        }
+      }
+    ]
+    ```
+
+    You would add your new fingerprint (e.g., `"6B:D3:BC:92:BD:94:4C:9E:5A:D1:75:39:DC:E5:ED:62:05:F1:79:B3:FD:7A:03:1B:8F:54:1B:83:FD:1D:2B:83"`) to the array:
+
+    ```json
+    [
+      {
+        "relation": [
+          "delegate_permission/common.handle_all_urls",
+          "delegate_permission/common.get_login_creds"
+        ],
+        "target": {
+          "namespace": "android_app",
+          "package_name": "ai.peepsapp.peopleapp.demo.debug",
+          "sha256_cert_fingerprints": [
+            "BA:6E:84:EF:CC:B2:53:8A:49:DE:AD:F0:8A:4B:38:4F:A7:64:3D:09:8D:CD:84:86:3B:CF:95:B8:27:68:7A:EA",
+            "6B:D3:BC:92:BD:94:4C:9E:5A:D1:75:39:DC:E5:ED:62:05:F1:79:B3:FD:7A:03:1B:8F:54:1B:83:FD:1D:2B:83"
+          ]
+        }
+      }
+    ]
+    ```
+
+3.  **Commit and Create a Pull Request:** Commit this change to your `peepsAPI` project and create a Pull Request to deploy it to your server environment (e.g., `stage.peepsapp.ai`).
+
+##### Confirming the Update
+
+After your changes to `assetlinks.json` have been deployed to the server:
+
+1.  Open your web browser.
+2.  Navigate to `https://stage.peepsapp.ai/.well-known/assetlinks.json`.
+3.  Perform a hard refresh (e.g., Ctrl+Shift+R or Cmd+Shift+R) to ensure you're not seeing a cached version.
+4.  Verify that the newly added SHA-256 fingerprint is present in the JSON content.
+
+#### 5. Verification (Optional but Recommended)
+
+You can use Google's Digital Asset Links API to verify your setup. Construct a URL like this in your browser:
+
+`https://digitalassetlinks.googleapis.com/v1/statements:list?source.web.site=https://your.domain.com&relation=delegate_permission/common.get_login_creds`
+
+(Replace `your.domain.com` with your domain).
+
+If successful, you should see a JSON response that includes the information from your `assetlinks.json` file, confirming the association.
+
+#### Important Considerations
+
+- **Release Builds:** When you create a `release` build of your app, it will be signed with a different (release) keystore. You will need to:
+  1.  Obtain the SHA-256 fingerprint of your **release certificate**.
+  2.  Add a new entry to your `assetlinks.json` file (or create a separate one for your production domain) with the release `package_name` (e.g., `ai.peepsapp.peopleapp` or `ai.peepsapp.peopleapp.demo` if it has a release suffix) and its corresponding SHA-256 fingerprint.
+- **Multiple `applicationId`s:** If you have different product flavors that result in distinct `applicationId`s and you want them all to support passkeys with the same web domain, you'll need to add a separate entry (a new JSON object within the top-level array) in the `assetlinks.json` for each `package_name` and its corresponding certificate fingerprint(s).
+- **Caching:** Changes to `assetlinks.json` might take some time to propagate or for Google Play Services to re-fetch, due to caching.
+
+This setup is crucial for the Android Credential Manager to securely associate your app with your website for passkey operations.
+
 ### 2. Dealing with `UnicodeDecodeError`: Serializing Binary Data
 
 FIDO2 operations involve a lot of binary data. Getting this data from a Python backend to a JSON-consuming client requires careful handling.
