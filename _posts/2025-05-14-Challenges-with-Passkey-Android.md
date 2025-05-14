@@ -5,6 +5,7 @@ author: "Aug"
 date: 2025-05-14
 header-style: text
 catalog: true
+description: "A backend developer's journey through the challenges of implementing FIDO2 passkeys for an Android app using Python, covering assetlinks.json, data serialization, and Base64URL encoding."
 tags:
   - python
   - fido2
@@ -13,6 +14,7 @@ tags:
   - backend
   - android
   - security
+  - fastapi
 ---
 
 # Implementing FIDO2 Passkeys for Android: A Backend Developer's Journey

@@ -1,18 +1,27 @@
 ---
-layout:       post
-title:        "Conditional Rendering in Next.js: Hiding Footer on Specific Pages"
-author:       "Aug"
+layout: post
+title: "Conditional Rendering in Next.js: Hiding Footer on Specific Pages"
+author: "Aug"
+date: 2024-06-21
 header-style: text
-catalog:      true
+catalog: true
+description: "A guide to conditionally rendering components, like a footer, in a Next.js 14 (App Router) application by bridging server and client components using React Context API and usePathname."
 tags:
-    - Next.js
-    - React
-    - Server Components
-    - Client Components
-    - Context API
+  - nextjs
+  - react
+  - nextjs-app-router
+  - server-components
+  - client-components
+  - conditional-rendering
+  - react-context
+  - usepathname
+  - react-hooks
+  - layout-management
+  - frontend-development
 ---
 
 ## Current Tech Stack
+
 - **Framework**: Next.js 14 (app router)
 - **Internationalization**: next-intl
 - **CSS**: Tailwind CSS
@@ -39,18 +48,17 @@ After some trial and error, we developed a solution that elegantly bridges the g
 ### Step 1: The Footer Context
 
 ```typescript
-'use client';
+"use client";
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
-
+import React, { createContext, useContext, useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const FooterContext = createContext({ showFooter: true });
 
 export function useFooterContext() {
   const context = useContext(FooterContext);
   if (context === undefined) {
-    throw new Error('useFooterContext must be used within a FooterProvider');
+    throw new Error("useFooterContext must be used within a FooterProvider");
   }
   return context;
 }
@@ -60,7 +68,7 @@ export function FooterProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    setShowFooter(!pathname.includes('/divination'));
+    setShowFooter(!pathname.includes("/divination"));
   }, [pathname]);
 
   return (
@@ -74,10 +82,10 @@ export function FooterProvider({ children }: { children: React.ReactNode }) {
 ### Step 2: The Client Footer Wrapper
 
 ```tsx
-'use client';
+"use client";
 
-import { useFooterContext } from '@/hooks/footerContext';
-import Footer from '@/components/Footer';
+import { useFooterContext } from "@/hooks/footerContext";
+import Footer from "@/components/Footer";
 
 export default function ClientFooterWrapper() {
   const { showFooter } = useFooterContext();
@@ -89,12 +97,12 @@ export default function ClientFooterWrapper() {
 ### Step 3: Updating the Layout
 
 ```tsx
-import { FooterProvider } from '@/hooks/footerContext';
-import ClientFooterWrapper from '@/components/ClientFooterWrapper';
+import { FooterProvider } from "@/hooks/footerContext";
+import ClientFooterWrapper from "@/components/ClientFooterWrapper";
 
 export default function LocaleLayout({
   children,
-  params: { locale }
+  params: { locale },
 }: {
   children: React.ReactNode;
   params: { locale: string };

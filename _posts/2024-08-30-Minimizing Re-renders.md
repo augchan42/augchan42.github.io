@@ -1,30 +1,43 @@
 ---
-layout:       post
-title:        "Optimizing React Authentication: Minimizing Re-renders and Improving Performance"
-author:       "Aug"
+layout: post
+title: "Optimizing React Authentication: Minimizing Re-renders and Improving Performance"
+author: "Aug"
+date: 2024-08-30
 header-style: text
-catalog:      true
+catalog: true
+description: "A guide to minimizing re-renders and optimizing performance in React/Next.js applications with authentication. Covers combining state, memoizing context with useMemo, tracking state changes with useRef, debouncing, and optimizing useEffect dependencies."
 tags:
-    - Next.js
-    - React
-    - Server Components
-    - Client Components
-    - Context API
+  - react
+  - nextjs
+  - react-performance
+  - nextjs-optimization
+  - re-renders
+  - state-management
+  - react-hooks
+  - usestate
+  - usememo
+  - useref
+  - useeffect
+  - context-api
+  - authentication
+  - supabase
+  - debounce
 ---
 
 ## Current Tech Stack
+
 - **Framework**: Next.js 14 (app router)
 - **Internationalization**: next-intl
 - **CSS**: Tailwind CSS
 - **Backend**: Supabase with Auth-UI
 
 ## The Challenge: Minimizing Re-renders
-I was noticing every time I tabbed out and tabbed back in to my Divination page, I noticed
-6-8 API calls to fetch the same data from a trigram tally table.  The divination page has a side
-information bar containing the results of a trigram personality quiz (using Voight Kampff style
-questions).  Only logged in users get this chart shown, anonymous users don't retrieve
-this data and so don't have this issue.  These were the steps I took to eliminate the issue.
 
+I was noticing every time I tabbed out and tabbed back in to my Divination page, I noticed
+6-8 API calls to fetch the same data from a trigram tally table. The divination page has a side
+information bar containing the results of a trigram personality quiz (using Voight Kampff style
+questions). Only logged in users get this chart shown, anonymous users don't retrieve
+this data and so don't have this issue. These were the steps I took to eliminate the issue.
 
 ## Combine Multiple State Variables
 
@@ -40,7 +53,7 @@ const [authState, setAuthState] = useState({
 });
 
 // Update state in one go
-setAuthState(prevState => ({
+setAuthState((prevState) => ({
   ...prevState,
   user: newUser,
   session: newSession,
@@ -53,19 +66,18 @@ setAuthState(prevState => ({
 Use useMemo to prevent unnecessary re-renders of components consuming the auth context.
 
 ```typescript
-const value = useMemo(() => ({
-  session: authState.session,
-  user: authState.user,
-  anonymousUserId: authState.anonymousUserId,
-  avatarUrl: authState.avatarUrl,
-  signOut: handleSignOut
-}), [authState, handleSignOut]);
-
-return (
-  <AuthContext.Provider value={value}>
-    {children}
-  </AuthContext.Provider>
+const value = useMemo(
+  () => ({
+    session: authState.session,
+    user: authState.user,
+    anonymousUserId: authState.anonymousUserId,
+    avatarUrl: authState.avatarUrl,
+    signOut: handleSignOut,
+  }),
+  [authState, handleSignOut]
 );
+
+return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 ```
 
 ## Ref-track Significant Auth State Changes
@@ -76,15 +88,23 @@ Use a ref to track the previous auth state and only update when there are meanin
 const prevAuthState = useRef({ userId: null, sessionId: null });
 
 useEffect(() => {
-  const { data: listener } = supabaseJSClient.auth.onAuthStateChange(async (_event, session) => {
-    const currentUserId = session?.user?.id;
-    const currentSessionId = session?.id;
+  const { data: listener } = supabaseJSClient.auth.onAuthStateChange(
+    async (_event, session) => {
+      const currentUserId = session?.user?.id;
+      const currentSessionId = session?.id;
 
-    if (currentUserId !== prevAuthState.current.userId || currentSessionId !== prevAuthState.current.sessionId) {
-      // Update auth state...
-      prevAuthState.current = { userId: currentUserId, sessionId: currentSessionId };
+      if (
+        currentUserId !== prevAuthState.current.userId ||
+        currentSessionId !== prevAuthState.current.sessionId
+      ) {
+        // Update auth state...
+        prevAuthState.current = {
+          userId: currentUserId,
+          sessionId: currentSessionId,
+        };
+      }
     }
-  });
+  );
 
   return () => listener?.subscription.unsubscribe();
 }, []);
@@ -117,5 +137,6 @@ useEffect(() => {
 ```
 
 ## Conclusion:
+
 These optimizations significantly reduce unnecessary re-renders and improve the overall performance of React applications with authentication. By combining state, memoizing values, tracking significant changes, and debouncing rapid updates, we create a more efficient and responsive user experience.
 Remember to test thoroughly after implementing these changes, especially around login, logout, and session management flows. Every application is unique, so some tweaking might be necessary to fit your specific use case.

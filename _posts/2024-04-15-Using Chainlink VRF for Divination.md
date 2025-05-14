@@ -1,26 +1,31 @@
 ---
-layout:       post
-title:        "Exploring Divination Techniques: Chainlink VRF vs. Traditional Randomness Methods"
-author:       "Aug"
+layout: post
+title: "Exploring Divination Techniques: Chainlink VRF vs. Traditional Randomness Methods"
+author: "Aug"
+date: 2024-04-15
 header-style: text
-catalog:      true
+catalog: true
+description: "An analysis of using Chainlink VRF for I-Ching divination, comparing it to traditional methods and other randomness generation techniques like PRNGs and client-side randomness. Discusses pros, cons, and includes JavaScript examples for hexagram generation with changing lines."
 tags:
-    - Chainlink VRF
-    - Divination Techniques
-    - I-Ching Hexagrams
-    - Cryptographic Randomness
-    - Blockchain in Divination
-    - Smart Contracts
-    - Random Number Generation
-    - Spiritual Technology
-    - Yin Yang Symbolism
-    - Secure Randomness Methods
+  - chainlink-vrf
+  - i-ching
+  - divination
+  - randomness
+  - blockchain
+  - smart-contracts
+  - cryptography
+  - javascript
+  - prng
+  - csprng
+  - hexagrams
+  - spiritual-technology
+  - yin-yang
 ---
 
 I-Ching divination typically uses coin tosses or a yarrow stalk ceremony
 to determine the yin yang lines that make up the hexagram.
 
-I looked into using Chainlink VRF, which is an on-chain way of generating randomness.  Sounds cool, but it I ultimately decided against it for now.
+I looked into using Chainlink VRF, which is an on-chain way of generating randomness. Sounds cool, but it I ultimately decided against it for now.
 
 Here's how it works:
 
@@ -28,7 +33,7 @@ Here's how it works:
 
 My problems with it:
 
-Normal end users have no way of evaluating or determining the difference between a trusted server and a decentralized network that somehow generates randomness.  They won't have the ability to make the distinction.
+Normal end users have no way of evaluating or determining the difference between a trusted server and a decentralized network that somehow generates randomness. They won't have the ability to make the distinction.
 
 Calling Chainlink VRF requires Gas for the underlying blockchain, and Link tokens to be paid for the VRF call.
 
@@ -76,38 +81,48 @@ function generateIChingHexagram() {
   }
 
   // Convert the hexagram to its visual representation
-  const visualHexagram = hexagram.map(line => {
-    switch (line) {
-      case 0: return "—  —"; // Old Yin
-      case 1: return "———"; // Young Yang
-      case 2: return "—  —"; // Young Yin
-      case 3: return "———"; // Old Yang
-    }
-  }).join("\n");
+  const visualHexagram = hexagram
+    .map((line) => {
+      switch (line) {
+        case 0:
+          return "—  —"; // Old Yin
+        case 1:
+          return "———"; // Young Yang
+        case 2:
+          return "—  —"; // Young Yin
+        case 3:
+          return "———"; // Old Yang
+      }
+    })
+    .join("\n");
 
   // Generate the second hexagram if there are changing lines
   let secondHexagram = null;
   if (changingLines.length > 0) {
-    secondHexagram = hexagram.map((line, index) => {
-      if (changingLines.includes(index)) {
-        // Change Old Yin to Young Yang and Old Yang to Young Yin
-        return line === 0 ? "———" : "—  —";
-      }
-      // Keep the original line for non-changing lines
-      return line === 1 || line === 3 ? "———" : "—  —";
-    }).join("\n");
+    secondHexagram = hexagram
+      .map((line, index) => {
+        if (changingLines.includes(index)) {
+          // Change Old Yin to Young Yang and Old Yang to Young Yin
+          return line === 0 ? "———" : "—  —";
+        }
+        // Keep the original line for non-changing lines
+        return line === 1 || line === 3 ? "———" : "—  —";
+      })
+      .join("\n");
   }
 
   return {
     firstHexagram: visualHexagram,
-    secondHexagram: secondHexagram
+    secondHexagram: secondHexagram,
   };
 }
 
 const result = generateIChingHexagram();
 console.log("First Hexagram:\n" + result.firstHexagram);
 if (result.secondHexagram) {
-  console.log("\nSecond Hexagram (due to changing lines):\n" + result.secondHexagram);
+  console.log(
+    "\nSecond Hexagram (due to changing lines):\n" + result.secondHexagram
+  );
 }
 ```
 
@@ -139,37 +154,47 @@ function generateIChingHexagramSecure() {
   }
 
   // Convert the hexagram to its visual representation
-  const visualHexagram = hexagram.map(line => {
-    switch (line) {
-      case 0: return "—  —"; // Old Yin
-      case 1: return "———"; // Young Yang
-      case 2: return "—  —"; // Young Yin
-      case 3: return "———"; // Old Yang
-    }
-  }).join("\n");
+  const visualHexagram = hexagram
+    .map((line) => {
+      switch (line) {
+        case 0:
+          return "—  —"; // Old Yin
+        case 1:
+          return "———"; // Young Yang
+        case 2:
+          return "—  —"; // Young Yin
+        case 3:
+          return "———"; // Old Yang
+      }
+    })
+    .join("\n");
 
   // Generate the second hexagram if there are changing lines
   let secondHexagram = null;
   if (changingLines.length > 0) {
-    secondHexagram = hexagram.map((line, index) => {
-      if (changingLines.includes(index)) {
-        // Change Old Yin to Young Yang and Old Yang to Young Yin
-        return line === 0 ? "———" : "—  —";
-      }
-      // Keep the original line for non-changing lines
-      return line === 1 || line === 3 ? "———" : "—  —";
-    }).join("\n");
+    secondHexagram = hexagram
+      .map((line, index) => {
+        if (changingLines.includes(index)) {
+          // Change Old Yin to Young Yang and Old Yang to Young Yin
+          return line === 0 ? "———" : "—  —";
+        }
+        // Keep the original line for non-changing lines
+        return line === 1 || line === 3 ? "———" : "—  —";
+      })
+      .join("\n");
   }
 
   return {
     firstHexagram: visualHexagram,
-    secondHexagram: secondHexagram
+    secondHexagram: secondHexagram,
   };
 }
 
 const result = generateIChingHexagramSecure();
 console.log("First Hexagram:\n" + result.firstHexagram);
 if (result.secondHexagram) {
-  console.log("\nSecond Hexagram (due to changing lines):\n" + result.secondHexagram);
+  console.log(
+    "\nSecond Hexagram (due to changing lines):\n" + result.secondHexagram
+  );
 }
 ```

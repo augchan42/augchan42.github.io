@@ -1,14 +1,23 @@
 ---
-layout:       post
-title:        "Brainstorming a new theory of Self-Directed Learning for AI, with AI"
-author:       "Aug"
+layout: post
+title: "Brainstorming a new theory of Self-Directed Learning for AI, with AI"
+author: "Aug"
+date: 2025-01-17
 header-style: text
-catalog:      true
+catalog: true
+description: "An exploration of using the I-Ching's King Wen sequence as a potential framework for self-directed learning in AGI. Details the thought process, key insights, and implications for AI development, including a link to a research paper."
 tags:
-    - King Wen Sequence
-    - I-Ching
-    - self-directed learning
-    - memory
+  - king-wen-sequence
+  - i-ching
+  - self-directed-learning
+  - memory
+  - agi
+  - artificial-general-intelligence
+  - meta-learning
+  - information-theory
+  - ancient-wisdom
+  - ai-research
+  - zenodo
 ---
 
 # The I-Ching as a Framework for Self-Directed AGI Learning: A Journey Through Questions
@@ -18,24 +27,31 @@ tags:
 The theory emerged through a series of probing questions, each building upon the insights of the previous ones:
 
 1. "If you were to focus on one area for AGI, what would it be?"
+
    - This initial question led to exploring self-directed learning as a crucial capability
 
 2. "If you were to design a Pareto optimal self-directed learning system, how would you start?"
+
    - This question helped establish the core components needed for effective learning
 
 3. "I will be building an autonomous agent for trading using the I-Ching. Is there a way to design in such a way as to help with this research?"
+
    - Here, the connection between ancient wisdom and modern AI began to emerge
 
 4. "Is there something to the King Wen sequence that can be used to predict outcomes?"
+
    - This question initiated the exploration of the sequence's underlying patterns
 
 5. "If we were to apply Fibonacci to try to derive a natural order to the hexagrams, would it be closer to the King Wen ordering or something else?"
+
    - This led to investigating mathematical properties of different ordering systems
 
 6. "If the concept is to push learning by maximizing Bayesian surprise, is there a way to use the concept to provide coverage for the missing hexagrams?"
+
    - This question connected information theory with the sequence's structure
 
 7. "Is the King Wen sequence already ordering for maximum surprise?"
+
    - This crucial question revealed the sophisticated nature of the sequence
 
 8. "Is gradient descent the SOTA learning algorithm? Does this map to the King Wen sequence ordering somehow?"
@@ -54,6 +70,7 @@ The investigation began with a fundamental question about self-directed learning
 ## Key Insights
 
 ### The King Wen Sequence: An Ancient Meta-Learning Algorithm?
+
 What emerged was startling: the King Wen sequence appears to implement sophisticated learning principles that we're only now rediscovering through AGI research. The sequence demonstrates:
 
 - Balanced optimization of surprise and familiarity
@@ -63,6 +80,7 @@ What emerged was startling: the King Wen sequence appears to implement sophistic
 - Sophisticated return loops for deeper understanding
 
 ### Beyond Gradient Descent
+
 While gradient descent is currently considered state-of-the-art in many machine learning applications, our analysis suggests the King Wen sequence might implement something more sophisticated. It naturally handles challenges that modern algorithms struggle with, such as:
 
 - Escaping local minima without manual intervention
@@ -91,16 +109,16 @@ interface KingWenLearning {
     transformationState: number;
   };
   transitions: {
-    smallSteps: Pattern[];    // Adjacent hexagram learning
-    leaps: Pattern[];         // Non-adjacent insights
-    returns: Pattern[];       // Revisiting patterns at deeper levels
+    smallSteps: Pattern[]; // Adjacent hexagram learning
+    leaps: Pattern[]; // Non-adjacent insights
+    returns: Pattern[]; // Revisiting patterns at deeper levels
   };
   dimensions: {
-    direct: boolean;          // Straightforward relationships
-    complementary: boolean;   // Opposite patterns
-    nuclear: boolean;         // Core patterns within patterns
-    transformative: boolean;  // Change patterns
-  }
+    direct: boolean; // Straightforward relationships
+    complementary: boolean; // Opposite patterns
+    nuclear: boolean; // Core patterns within patterns
+    transformative: boolean; // Change patterns
+  };
 }
 ```
 
@@ -121,4 +139,5 @@ Here's the zenodo link to the resultant research paper:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14679598.svg)](https://doi.org/10.5281/zenodo.14679598)
 
 ---
-*This post emerged from an exploration of self-directed learning systems with an AI assistant, leading to unexpected insights about the potential application of ancient wisdom to modern AGI development.*
+
+_This post emerged from an exploration of self-directed learning systems with an AI assistant, leading to unexpected insights about the potential application of ancient wisdom to modern AGI development._

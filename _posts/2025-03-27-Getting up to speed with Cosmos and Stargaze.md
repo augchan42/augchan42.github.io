@@ -1,15 +1,19 @@
 ---
-layout:       post
-title:        "Getting up to speed with Cosmos and Stargaze"
-author:       "Aug"
+layout: post
+title: "Getting up to speed with Cosmos and Stargaze"
+author: "Aug"
+date: 2025-03-27 # Assuming a date based on filename, adjust if needed
 header-style: text
-catalog:      true
+catalog: true
+description: "A developer's guide to deploying a CosmWasm smart contract on the Stargaze testnet, covering environment setup, starsd CLI usage, contract uploading, instantiation, and Rust version considerations."
 tags:
-    - rust / rustc
-    - smart contracts
-    - starsd
-    - cosmos
-    - stargaze
+  - rust
+  - cosmwasm
+  - smart contracts
+  - starsd
+  - cosmos
+  - stargaze
+  - testnet
 ---
 
 # Deploying a Smart Contract to Stargaze Testnet
@@ -167,6 +171,7 @@ starsd tx wasm store cw1_whitelist.wasm \
   --gas-adjustment 1.7 \
   --gas auto
 ```
+
 Save the transaction hash from this command to look up the code_id later.
 
 ## Getting the Contract Code ID
@@ -271,9 +276,10 @@ contract_info:
   label: StargazeContract
 data:
   admins:
-  - stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c
+    - stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c
   mutable: true
 ```
+
 # Executing a function in the Smart Contract
 
 This will withdraw 0.5 STAR to the to_address (in this case the admin account)
@@ -283,7 +289,7 @@ starsd tx wasm execute stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3ms
 '{"execute": {"msgs": [{
     "bank": {
         "send": {
-            "to_address": "stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c", 
+            "to_address": "stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c",
             "amount": [{"denom": "ustars", "amount": "500000"}]
         }
     }
@@ -310,31 +316,37 @@ pagination:
 When analyzing a standard CosmWasm contract, I typically look at the files in this order:
 
 1. **msg.rs** - First, because it defines the contract's interface:
+
    - Contains the `InstantiateMsg`, `ExecuteMsg`, and `QueryMsg` structs
    - Shows what actions the contract can perform
    - Gives you a high-level overview of the contract's capabilities
 
 2. **state.rs** - Second, because it defines the contract's data model:
+
    - Contains the contract's storage schema
    - Shows what data structures are being stored
    - Defines key-value store configurations
 
 3. **contract.rs** - Third, as it contains the main business logic:
+
    - Has the core instantiate/execute/query entry points
    - Contains the actual implementation of contract functions
    - Shows how the contract processes messages and manages state
 
 4. **error.rs** - Fourth, to understand error handling:
+
    - Defines custom error types
    - Shows what can go wrong
    - Helps understand validation and error cases
 
 5. **lib.rs** - Fifth, as it's the entry point but usually just re-exports:
+
    - Shows module organization
    - Contains crate-level attributes and configurations
    - Links all the components together
 
 6. **integration_tests.rs** - Last, to understand how it all works together:
+
    - Contains end-to-end tests
    - Shows real-world usage examples
    - Demonstrates expected behaviors
@@ -351,7 +363,6 @@ The tip https://cosmwasm.cosmos.network/tutorial/setup-environment is slightly w
 
 In vscode/cursor, you need to install the rust-analyzer extension.
 Then bring up the ctrl-shift-P menu to select the 'rust analyzer: Expand macro recursively' option.
-
 
 ## Useful Links
 

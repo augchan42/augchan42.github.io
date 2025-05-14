@@ -1,42 +1,47 @@
 ---
-layout:       post
-title:        "Enhancing AI with RAG: Leveraging Haystack for Smarter Agents and Efficient Data Retrieval"
-author:       "Aug"
+layout: post
+title: "Enhancing AI with RAG: Leveraging Haystack for Smarter Agents and Efficient Data Retrieval"
+author: "Aug"
+date: 2024-02-01
 header-style: text
-catalog:      true
+catalog: true
+description: "A guide to implementing and optimizing Retrieval Augmented Generation (RAG) using Haystack 1.x. Covers AI agents, conversational memory, custom pipelines with FAISS DocumentStore, Google Search integration, and strategies for incremental knowledge indexing."
 tags:
-    - Retrieval Augmented Generation
-    - Haystack Integration
-    - AI Agents
-    - FAISS Document Store
-    - Vector Databases
-    - Google Search Integration
-    - Machine Learning Optimization
-    - AI Knowledge Enhancement
-    - Custom AI Pipelines
-    - Smart Data Indexing
+  - retrieval-augmented-generation
+  - rag
+  - haystack-framework
+  - ai-agents
+  - faiss
+  - vector-database
+  - google-search-integration
+  - llm
+  - nlp
+  - custom-pipelines
+  - data-indexing
+  - conversational-ai
 ---
+
 What's RAG (Retrieval Augmented Generation)?
 
-I define RAG as any process that adds domain specific info to the prompt being sent to an LLM.  This means you can enhance an LLM with additional knowledge without any expensive finetuning.  Of course, that means the max context size of your LLM will determine how smart you can make the LLM with RAG.
+I define RAG as any process that adds domain specific info to the prompt being sent to an LLM. This means you can enhance an LLM with additional knowledge without any expensive finetuning. Of course, that means the max context size of your LLM will determine how smart you can make the LLM with RAG.
 
 What's an AI Agent?
 
-For Haystack an Agent uses the smarts and knowledge of an LLM to determine the actions needed to complete a task, and then executes them.  For Haystack it uses `Tool`s to find Answers.
+For Haystack an Agent uses the smarts and knowledge of an LLM to determine the actions needed to complete a task, and then executes them. For Haystack it uses `Tool`s to find Answers.
 
 Some pointers on using Agents in [Haystack](https://github.com/deepset-ai/haystack):
 
-1) Only 1.x supports Agents and Chat memory.
+1. Only 1.x supports Agents and Chat memory.
 
-2) I used:
+2. I used:
 
 Agent + Chat Memory: `ConversationalAgent`, `ConversationSummaryMemory`
 
-Pipelines: 
+Pipelines:
 
-A custom `WebQAPipeline` that also indexes the query + generated answer using the retrieved web document into my `FAISSDocumentStore`.  
+A custom `WebQAPipeline` that also indexes the query + generated answer using the retrieved web document into my `FAISSDocumentStore`.
 
-A custom pipeline that performs a faiss similarity search to retrieve relevant documents, then uses a PromptNode with `question_answering_with_references` prompt template to return an answer.  The `FAISSDocumentStore` uses `cosine` similarity with `intfloat/e5-base-v2` embedding model.
+A custom pipeline that performs a faiss similarity search to retrieve relevant documents, then uses a PromptNode with `question_answering_with_references` prompt template to return an answer. The `FAISSDocumentStore` uses `cosine` similarity with `intfloat/e5-base-v2` embedding model.
 
 It can be tricky to actually save new documents and have them available for similarity search in the vector db, you need to do the following steps to do so:
 
@@ -46,17 +51,17 @@ document_store.update_embeddings
 document_store.save
 ```
 
-3) The Agent is setup with two `Tool`s to find answers - One that does a similarity search against the local vector FAISS db, and one that uses Google search (now enhanced with logic to index anything it finds in the local vector db).  I customized the Agent logic (by customizing the `prompt_template` used in the `ConversationalAgent` - wild!) to use the tools in sequence, and to try to find answers in the local database before searching Google.  With the custom indexing logic I added, the local db should gradually get smarter with new information and if the same question is asked again, the local db should be able to handle it first.
+3. The Agent is setup with two `Tool`s to find answers - One that does a similarity search against the local vector FAISS db, and one that uses Google search (now enhanced with logic to index anything it finds in the local vector db). I customized the Agent logic (by customizing the `prompt_template` used in the `ConversationalAgent` - wild!) to use the tools in sequence, and to try to find answers in the local database before searching Google. With the custom indexing logic I added, the local db should gradually get smarter with new information and if the same question is asked again, the local db should be able to handle it first.
 
 BTW Haystack integrates with [serper.dev](https://serper.dev) for Google searches.
 
-4) The Agent works by trying to find a conclusive final Answer.  The `ConversationalAgent` defaults to try up to 5 times among the tools it has to try to arrive at a final Answer.  If it can't it will reply with an 'Inconclusive'.  Agent logic is controlled by the `prompt_template` provided to the `ConversationalAgent` configuration.
+4. The Agent works by trying to find a conclusive final Answer. The `ConversationalAgent` defaults to try up to 5 times among the tools it has to try to arrive at a final Answer. If it can't it will reply with an 'Inconclusive'. Agent logic is controlled by the `prompt_template` provided to the `ConversationalAgent` configuration.
 
-5) There are some deficiencies with my approach to incrementally index new information in the local FAISS vector db:
+5. There are some deficiencies with my approach to incrementally index new information in the local FAISS vector db:
 
-If a conclusive answer isn't found from the Google search, the generated response based on the search results will still get indexed.  This means that the local FAISS vector db still won't have a conclusive answer either, and a Google search would be fired for the same question again.  Which then indexes another inconclusive answer (as it's generative and slightly different from the previous inconclusive answer).  Unfortunately, I don't know at indexing time whether the retrieved info from Google will lead to a conclusive answer or not.  This only happens after the search results are sent to the LLM and thoughts are generated.
+If a conclusive answer isn't found from the Google search, the generated response based on the search results will still get indexed. This means that the local FAISS vector db still won't have a conclusive answer either, and a Google search would be fired for the same question again. Which then indexes another inconclusive answer (as it's generative and slightly different from the previous inconclusive answer). Unfortunately, I don't know at indexing time whether the retrieved info from Google will lead to a conclusive answer or not. This only happens after the search results are sent to the LLM and thoughts are generated.
 
-6) Future improvements:  
+6. Future improvements:
 
 I will make the responses from the Google searches more deterministic (likely by eliminating the generative portion) so that I can avoid creating new documents for the same search results to the same questions over and over.
 

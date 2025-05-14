@@ -1,20 +1,23 @@
 ---
-layout:       post
-title:        "Integrating with Shadcn: Tips and Insights for Seamless UI Component Integration"
-author:       "Aug"
+layout: post
+title: "Integrating with Shadcn: Tips and Insights for Seamless UI Component Integration"
+author: "Aug"
+date: 2024-06-08
 header-style: text
-catalog:      true
+catalog: true
+description: "A developer's experience integrating Shadcn UI components into a Next.js project. Covers project preparation, handling opinionated styling (dark theme, New York style), managing global CSS, and an example root layout incorporating ThemeProvider and Toaster."
 tags:
-    - Shadcn
-    - UI Components
-    - React
-    - Next.js
-    - Frontend Development
-    - Web Development
-    - Design Systems
-    - Component Libraries
-    - Developer Experience
-    - Styling    
+  - shadcn-ui
+  - ui-components
+  - react
+  - nextjs
+  - tailwindcss
+  - radix-ui
+  - frontend-development
+  - component-libraries
+  - theme-provider
+  - css-styling
+  - developer-experience
 ---
 
 # Integrating with Shadcn: My Experience and Insights
@@ -24,7 +27,6 @@ I wanted to make a blog post talking about my experience integrating with shadcn
 ## Project Preparation
 
 Before diving into the integration, you need to prepare your project by following the instructions provided in the shadcn documentation: [https://ui.shadcn.com/docs/installation/next](https://ui.shadcn.com/docs/installation/next)
-
 
 ## Opinionated Styling
 
@@ -54,16 +56,16 @@ The example components I'm using are using New York styling. So for example, the
 For reference, here's my root layout that incorporates auth, theme provider, next-intl, and the NY styled toaster notification:
 
 ```jsx
-import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { NextIntlClientProvider, useMessages } from "next-intl";
 import type { Metadata } from "next";
 import "../globals.css";
-import '../../../styles/fonts.css';
-import '../../../styles/mystyles.css';
-import Footer from '../../components/Footer';
-import GoogleAnalytics from '../../components/GoogleAnalytics';
-import { AuthProvider } from '../../hooks/Auth';
-import { ThemeProvider } from "@/components/theme-provider"
-import { Toaster as NewYorkToaster } from "@/registry/new-york/ui/toaster"
+import "../../../styles/fonts.css";
+import "../../../styles/mystyles.css";
+import Footer from "../../components/Footer";
+import GoogleAnalytics from "../../components/GoogleAnalytics";
+import { AuthProvider } from "../../hooks/Auth";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster as NewYorkToaster } from "@/registry/new-york/ui/toaster";
 
 export const metadata: Metadata = {
   title: "8-Bit Oracle - Generative I-Ching Fortuneteller",
@@ -72,10 +74,10 @@ export const metadata: Metadata = {
 
 export default function LocaleLayout({
   children,
-  params: { locale }
+  params: { locale },
 }: {
-  children: React.ReactNode;
-  params: { locale: string };
+  children: React.ReactNode,
+  params: { locale: string },
 }) {
   const messages = useMessages();
   return (
@@ -92,9 +94,7 @@ export default function LocaleLayout({
         >
           <NextIntlClientProvider locale={locale} messages={messages}>
             <AuthProvider>
-              <main>
-                {children}
-              </main>
+              <main>{children}</main>
               <NewYorkToaster />
               <Footer />
             </AuthProvider>

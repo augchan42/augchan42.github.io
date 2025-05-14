@@ -1,45 +1,49 @@
 ---
-layout:       post
-title:        "Boosting GPT-J Performance: Converting to GGML for Rapid Inference"
-author:       "Aug"
+layout: post
+title: "Boosting GPT-J Performance: Converting to GGML for Rapid Inference"
+author: "Aug"
+date: 2023-11-26
 header-style: text
-catalog:      true
+catalog: true
+description: "A guide on significantly improving GPT-J-6B inference speed by converting Huggingface models from H5 to GGML format. Covers the conversion process, memory considerations, and running inference with the optimized model."
 tags:
-    - GPT-J Optimization
-    - GGML Conversion
-    - Huggingface Transformers
-    - AI Model Speed
-    - Machine Learning Efficiency
-    - Python Scripting
-    - Model Conversion Techniques
-    - AI Inference Acceleration
-    - GGUF Format
-    - LLM Performance Improvement
+  - gpt-j
+  - llm
+  - inference-speed
+  - huggingface
+  - ggml
+  - gguf
+  - model-conversion
+  - performance-optimization
+  - python
 ---
+
 I've been trying to run inference on a model based on EleutherAI/gpt-j-6B from Huggingface, and it was super slow!
 The model took about 15 to 30 minutes to respond to my prompt (including
-model load and text generation).  I'm on an X1 carbon gen 11with 64GB of RAM.  Simply unacceptable.
+model load and text generation). I'm on an X1 carbon gen 11with 64GB of RAM. Simply unacceptable.
 
 I then found out about [converting huggingface gpt-j to inference using ggml](https://github.com/ggerganov/ggml/blob/master/examples/gpt-j/convert-h5-to-ggml.py).  
-After converting my float16 model to ggml format, with no further quantization, I was able to start get responses 
+After converting my float16 model to ggml format, with no further quantization, I was able to start get responses
 in under 20 seconds, and inference generation was around 400ms per token!
 
-First, you'll need to convert your gpt-j pytorch_model.bin to ggml format.  This will require a fair amount of memory.
+First, you'll need to convert your gpt-j pytorch_model.bin to ggml format. This will require a fair amount of memory.
 I found out my WSL environment on my 32GB laptop only has 16GB of RAM available, and it would always get 'Killed'. when
-trying to convert the pytorch model.  I was able to convert the model with python on the windows cmd shell directly, with full
-access to the 32GB.  From checking task manager the process took about 24GB.
+trying to convert the pytorch model. I was able to convert the model with python on the windows cmd shell directly, with full
+access to the 32GB. From checking task manager the process took about 24GB.
 
 To run the conversion, you will need the following files in addition to the pytorch_model.bin (place in same model folder).
-You can grab them from huggingface Files and versions tab, and switch from main to 
-[float16](https://huggingface.co/EleutherAI/gpt-j-6b/tree/float16).  Download them using the 'Download file' icon.  
+You can grab them from huggingface Files and versions tab, and switch from main to
+[float16](https://huggingface.co/EleutherAI/gpt-j-6b/tree/float16). Download them using the 'Download file' icon.  
 Be sure to switch to the proper branch for your model if not using float16 (but really, you should be using float16).
+
 ```
 config.json
 vocab.json
 added_tokens.json
 ```
 
-Then run the conversion script.  The 1 flag means float16:
+Then run the conversion script. The 1 flag means float16:
+
 ```
 python3 ./ggml/examples/gpt-j/convert-h5-to-ggml.py ./models/gpt4chan_model_float16 1
 ...
@@ -78,14 +82,15 @@ Second, you'll need to create the gpt-j binary so you can run inference against 
 You will need a linux environment for this (can't do this in windows).
 
 ```
-git clone https://github.com/ggerganov/ggml  
-cd ggml  
-mkdir build && cd build  
-cmake ..  
-make -j4 gpt-j  
+git clone https://github.com/ggerganov/ggml
+cd ggml
+mkdir build && cd build
+cmake ..
+make -j4 gpt-j
 ```
 
 Finally, you can run inference:
+
 ```
 (.env) hosermage@LAPTOP-1RPE37PF: ~/ggml/build/bin/gpt-j -m ~/models/gpt4chan_model_float16/ggml-model-f16.bin -p "what is the smartest race?"
 
@@ -102,7 +107,7 @@ main:    total time = 101924.70 ms
 ```
 
 Please note, GGUF is the latest format from ggerganov, but it only supports llama at the moment.  
-[There is a script to convert from GGML to GGUF](https://github.com/ggerganov/llama.cpp/blob/master/convert-llama-ggml-to-gguf.py).  However, I get the following when trying to convert my model (maybe because my model is GPT-J and not llama):
+[There is a script to convert from GGML to GGUF](https://github.com/ggerganov/llama.cpp/blob/master/convert-llama-ggml-to-gguf.py). However, I get the following when trying to convert my model (maybe because my model is GPT-J and not llama):
 
 ```
 C:\projects\llama.cpp>python convert-llama-ggml-to-gguf.py -i c:\Models\gpt4chan_model_float16\ggml-model-f16.bin -o c:\models\gpt4chan_model_float16\gguf-model-f16.bin

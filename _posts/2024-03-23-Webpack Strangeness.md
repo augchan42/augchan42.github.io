@@ -1,20 +1,22 @@
 ---
-layout:       post
-title:        "Solving Webpack Issues: Eliminating Double Script Loading and FOUC"
-author:       "Aug"
+layout: post
+title: "Solving Webpack Issues: Eliminating Double Script Loading and FOUC"
+author: "Aug"
+date: 2024-03-23
 header-style: text
-catalog:      true
+catalog: true
+description: "Troubleshooting common Webpack issues, including double script loading due to manual and Webpack config imports, and resolving Flash of Unstyled Content (FOUC) by correctly setting production mode with cross-env and configuring MiniCssExtractPlugin."
 tags:
-    - Webpack
-    - Flash of Unstyled Content (FOUC)
-    - JavaScript Bundling
-    - Web Development
-    - Frontend Optimization
-    - Code Efficiency
-    - Webpack Configuration
-    - CSS Loading
-    - Performance Improvement
-    - Webpack Tips
+  - webpack
+  - javascript-bundling
+  - fouc
+  - frontend-optimization
+  - webpack-configuration
+  - css-loading
+  - production-build
+  - cross-env
+  - mini-css-extract-plugin
+  - troubleshooting
 ---
 
 Here's an brief summary of what Webpack is:
@@ -23,18 +25,17 @@ Here's an brief summary of what Webpack is:
 
 > Webpack processes your application by starting from one or more entry points and then tracking down all the dependencies, creating a dependency graph. It then bundles all these dependencies into static assets. It's highly extensible via loaders and plugins, allowing it to handle not only JavaScript but also HTML, CSS, images, and more by converting them into valid modules.
 
-Be careful with how your javascript is being bundled 
-and injected with Webpack.  I was seeing strange behavior with
+Be careful with how your javascript is being bundled
+and injected with Webpack. I was seeing strange behavior with
 my app where things were happening twice (again!) and after checking the html generated in dist, I was the same
 script being imported twice!
 
 This was due to me manually importing the js in my index.html
-like: 
+like:
 
 ```
 <script src="dist/bundle.js"></script>
 ```
-
 
 And the same script being loaded in my webpack.config.js:
 
@@ -54,7 +55,7 @@ My package.json build target was previously:
 "build": "webpack --mode production",
 ```
 
-But this wasn't properly distributing my .css because production mode wasn't properly being registered.  I had to fix it by using cross-env:
+But this wasn't properly distributing my .css because production mode wasn't properly being registered. I had to fix it by using cross-env:
 
 ```
 build": "cross-env NODE_ENV=production webpack --mode production",
@@ -70,4 +71,3 @@ plugins: [
 ```
 
 This generates a main.css under dist that is properly preloaded in the head of my dist index.html.
-
