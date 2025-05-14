@@ -1,3 +1,8 @@
+---
+published: false
+sitemap: false
+---
+
 # Simon Willison Blog Writing Style Guide
 
 ## Core Style Elements
