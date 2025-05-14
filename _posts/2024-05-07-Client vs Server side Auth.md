@@ -30,63 +30,85 @@ tags:
 
 ## Introduction
 
-While implementing social login features for [8-Bit Oracle](https://8bitoracle.ai), I encountered the nuanced differences between client-side and server-side authentication. This post explores these distinctions with practical examples and useful resources.
+While adding social login features for [8-Bit Oracle](https://8bitoracle.ai), I learned about the detailed differences between client-side and server-side authentication. This post explains these differences with practical examples and useful resources.
 
 ## Client-Side vs Server-Side Authentication
 
-### Google OAuth2 Social Login
+### Google OAuth2 Social Login (Client-Side Flow)
 
-For Google social login, the login flow is managed client-side. In this setup, we utilize `@supabase/ssr`'s `createBrowserClient` method to retrieve session information post-authentication.
+For Google social login, the login process is managed on the client-side (in the user's browser). In this setup, we use the `createBrowserClient` method from `@supabase/ssr` to get session information after the user logs in.
 
-```code
+```typescript
 import { createBrowserClient } from "@supabase/ssr";
 
 export function createSupabaseBrowserClient() {
   return createBrowserClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
     // options
   );
 }
 ```
 
-### Magic Link Email Authentication
+### Magic Link Email Authentication (Server-Side Flow)
 
-Conversely, for email authentication that employs a magic link, the link directs the user to an API confirm route located on the backend. This requires using `@supabase/ssr`'s `createServerClient` to retrieve session information after authentication is confirmed.
-For situations where cookie values need to be set (login, registration, signout) then the component flag should be false (default).
+On the other hand, for email login using a magic link, the link takes the user to a confirmation address (API route) on our server (backend). This means we need to use `createServerClient` from `@supabase/ssr` to get session information after the login is confirmed on the server.
 
-```html
-import { type NextRequest, type NextResponse } from "next/server"; import {
-cookies } from "next/headers"; import { deleteCookie, getCookie, setCookie }
-from "cookies-next"; import { createServerClient, type CookieOptions } from
-"@supabase/ssr"; // server component can only get cookies and not set them,
-hence the "component" check export function
-createSupabaseServerClient(component: boolean = false) { const cookieStore =
-cookies(); return createServerClient( process.env.NEXT_PUBLIC_SUPABASE_URL!,
-process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, { cookies: { get(name: string) {
-const cookieValue = cookieStore.get(name)?.value; console.log(`Getting cookie:
-${name} = ${cookieValue}`); // Log the cookie retrieval return cookieValue; },
-set(name: string, value: string, options: CookieOptions) { if (component)
-return; console.log(`Not Setting cookie: ${name} = ${value}, options =
-${JSON.stringify(options)}`); // Log the cookie setting try { cookieStore.set({
-name, value, ...options }); console.log(`Cookie set successfully: ${name}`);
-//return { success: true, message: `Cookie set successfully: ${name}` }; } catch
-(error) { console.error(`Error setting cookie: ${name}`, error); //return {
-success: false, message: `Error setting cookie: ${name}`, error: error }; } },
-remove(name: string, options: CookieOptions) { if (component) return;
-console.log(`Removing cookie: ${name}, options = ${JSON.stringify(options)}`);
-// Log the cookie removal try { cookieStore.delete({ name, ...options });
-console.log(`Cookie removed successfully: ${name}`); //return { success: true,
-message: `Cookie removed successfully: ${name}` }; } catch (error) {
-console.error(`Error removing cookie: ${name}`, error); //return { success:
-false, message: `Error removing cookie: ${name}`, error: error }; } }, }, } ); }
+When using `createSupabaseServerClient`, if you need to set cookie values (like for login, registration, or signout), the `component` flag should be `false` (which is its default value). If you are only reading cookies within a server component and not modifying them, set `component: true`.
+
+```typescript
+import { type NextRequest, type NextResponse } from "next/server";
+import { cookies } from "next/headers";
+// import { deleteCookie, getCookie, setCookie } from "cookies-next"; // Not used in this specific function, consider removing if not used elsewhere
+import { createServerClient, type CookieOptions } from "@supabase/ssr";
+
+// Server components can only get cookies (component: true) and not set them.
+// Server actions or API routes can set cookies (component: false).
+export function createSupabaseServerClient(component: boolean = false) {
+  const cookieStore = cookies();
+  return createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        get(name: string) {
+          const cookieValue = cookieStore.get(name)?.value;
+          // console.log(`Getting cookie: ${name} = ${cookieValue}`); // Optional: Log cookie retrieval
+          return cookieValue;
+        },
+        set(name: string, value: string, options: CookieOptions) {
+          if (component) return; // Server Components cannot set cookies
+          // console.log(`Setting cookie: ${name} = ${value}, options = ${JSON.stringify(options)}`); // Optional: Log cookie setting
+          try {
+            cookieStore.set({ name, value, ...options });
+            // console.log(`Cookie set successfully: ${name}`);
+          } catch (error) {
+            console.error(`Error setting cookie: ${name}`, error);
+          }
+        },
+        remove(name: string, options: CookieOptions) {
+          if (component) return; // Server Components cannot remove cookies
+          // console.log(`Removing cookie: ${name}, options = ${JSON.stringify(options)}`); // Optional: Log cookie removal
+          try {
+            cookieStore.delete({ name, ...options });
+            // console.log(`Cookie removed successfully: ${name}`);
+          } catch (error) {
+            console.error(`Error removing cookie: ${name}`, error);
+          }
+        },
+      },
+    }
+  );
+}
 ```
 
 ### Integrated Authentication UI
 
-A potentially confusing aspect is that [Supabase's auth-ui](https://supabase.com/docs/guides/auth/auth-helpers/auth-ui) can display both types of logins within the same widget. Moreover, the code samples from auth-ui use the older `createClient` from `@supabase/supabase-js`, which adds to the confusion. The view="magic_link" and providers={['google']} are configuring the same Auth widget.
+It can be confusing that [Supabase's auth-ui](https://supabase.com/docs/guides/auth/auth-helpers/auth-ui) can show both login types (like Google and magic link) in the same UI element (widget). Also, the example code for auth-ui often uses an older function, `createClient` from `@supabase/supabase-js`, which can make things more confusing when you are trying to use the newer `@supabase/ssr` methods.
 
-```code
+Settings like `view="magic_link"` (for magic links) and `providers={['google']}` (for Google OAuth) are both used to set up the same Auth widget, allowing it to handle multiple authentication methods.
+
+```tsx
 <div className="justify-center w-full max-w-xs animate-in text-foreground">
     <Auth
         view="magic_link"
@@ -107,7 +129,7 @@ A potentially confusing aspect is that [Supabase's auth-ui](https://supabase.com
                 },
             },
         }}{% endraw %}
-        supabaseClient={supabase}
+        supabaseClient={supabase} // This should be a Supabase client instance
         providers={['google']}
         theme="dark"
         socialLayout="vertical"
@@ -118,10 +140,10 @@ A potentially confusing aspect is that [Supabase's auth-ui](https://supabase.com
 
 ## Further Reading and Resources
 
-For those looking to deepen their understanding or set up their own authentication mechanisms, here are some valuable resources:
+If you want to understand this better or set up your own login systems, here are some helpful resources:
 
 - [Reddit Post with Clarifications on Supabase Auth](https://www.reddit.com/r/Supabase/comments/17hbwqb/question_about_supabasessr_and)
 - [Comprehensive Guide on Supabase and Next.js 14 Authentication](https://ekremsonmezer.substack.com/p/supabase-and-nextjs-14-authentication)
 - [GitHub Sample Project Demonstrating Next.js with Supabase](https://github.com/SamuelSackey/nextjs-supabase-example)
 
-Thank you for reading, and I hope this post helps you navigate the complex landscape of web authentication more effectively!
+Thanks for reading! I hope this post helps you understand web authentication better.

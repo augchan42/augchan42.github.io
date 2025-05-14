@@ -22,47 +22,46 @@ tags:
   - yin-yang
 ---
 
-I-Ching divination typically uses coin tosses or a yarrow stalk ceremony
-to determine the yin yang lines that make up the hexagram.
+To tell fortunes with the I-Ching, people usually toss coins or use yarrow stalks. This helps them find the yin and yang lines that create a hexagram (a six-line symbol).
 
-I looked into using Chainlink VRF, which is an on-chain way of generating randomness. Sounds cool, but it I ultimately decided against it for now.
+I looked into using Chainlink VRF, which is a way to create randomness directly on the blockchain. It's an interesting idea, but I ultimately decided against it for now.
 
-Here's how it works:
+Here's how Chainlink VRF works:
 
 > Chainlink VRF works by having smart contracts request randomness from the Chainlink network. The VRF service then generates a random number along with a cryptographic proof of how that number was determined. The smart contract can verify this proof on-chain before accepting the random number as valid, ensuring the process's integrity and fairness.
 
-My problems with it:
+My problems with using it for this purpose:
 
-Normal end users have no way of evaluating or determining the difference between a trusted server and a decentralized network that somehow generates randomness. They won't have the ability to make the distinction.
+Most users cannot tell the difference between a trusted server and a decentralized network that creates random numbers. They won't be able to distinguish how the randomness is generated.
 
-Calling Chainlink VRF requires Gas for the underlying blockchain, and Link tokens to be paid for the VRF call.
+Using Chainlink VRF costs "Gas" (fees for the blockchain) and also Link tokens (another type of payment) for the VRF call.
 
-I would need to deploy smart contracts to call into Chainlink VRF, which adds complexity.
+I would need to set up smart contracts to use Chainlink VRF, which makes things more complicated.
 
-So little to no apparent benefit to end-users, but a lot of additional costs, wallet transactions (unless I deploy something even more complex like opengsn), and dev complexity.
+So, it offers little or no clear benefit to users for this specific application, but it adds many extra costs, requires wallet actions (unless I set up something even more complex like opengsn), and makes development harder.
 
-Here's an AI generated (Claude) summary of alternative approaches:
+Here's an AI-generated (Claude) summary of alternative ways to generate randomness:
 
 Alternative approaches for generating randomness:
 
-Pseudorandom number generators (PRNGs): You can use well-established PRNGs, such as the Mersenne Twister algorithm, to generate random numbers on your trusted server. PRNGs provide a deterministic sequence of numbers that appear random and can be suitable for most applications.
+Pseudorandom number generators (PRNGs): You can use known PRNGs, like the Mersenne Twister algorithm, to create random numbers on your server. PRNGs create a set sequence of numbers that look random and work well for most uses.
 
-Cryptographically secure PRNGs (CSPRNGs): If you require a higher level of randomness, you can use CSPRNGs, which are designed to be unpredictable and suitable for cryptographic purposes. Examples include the Fortuna algorithm or the CSPRNG provided by the operating system's crypto library.
+Cryptographically secure PRNGs (CSPRNGs): If you need much better randomness, use CSPRNGs. They are made to be unpredictable and are good for security uses. Examples are the Fortuna algorithm or the CSPRNG that comes with your computer's security software.
 
-External randomness services: There are centralized services that provide random number generation APIs, such as Random.org or API Fortress. These services claim to generate randomness from atmospheric noise or other external sources. While they rely on trusting the service provider, they can be a simple alternative to decentralized solutions like Chainlink VRF.
+External randomness services: Some companies offer services (APIs) that give you random numbers, like Random.org or API Fortress. These services say they create randomness from things like atmospheric noise. Although you need to trust the service provider, they can be a simple option instead of decentralized solutions like Chainlink VRF.
 
-Client-side randomness: If you want to give users more control and transparency, you can consider generating randomness on the client-side using JavaScript's built-in Math.random() function or more robust libraries like crypto.getRandomValues(). However, client-side randomness can be vulnerable to tampering and may not be suitable for critical applications.
+Client-side randomness: If you want users to have more control and see how it works, you can create randomness in the user's web browser. You can use JavaScript's built-in `Math.random()` function or stronger tools like `crypto.getRandomValues()`. However, client-side randomness can be changed by users and might not be good for important uses.
 
-Some GPT4 Generated sample code that incorporates changing lines:
+Some GPT4-Generated sample code that incorporates changing lines:
 
-To incorporate changing lines into your I-Ching hexagram generator, you can extend the basic random hexagram generation method. In I-Ching, each line of a hexagram can be in one of four states:
+To include changing lines in your I-Ching hexagram generator, you can modify the basic random hexagram generation method. In I-Ching, each line of a hexagram can be in one of four states:
 
-1. **Old Yin (0)**: Represented as a broken line that changes into a solid line (yang).
-2. **Young Yang (1)**: Represented as a solid line that does not change.
-3. **Young Yin (2)**: Represented as a broken line that does not change.
-4. **Old Yang (3)**: Represented as a solid line that changes into a broken line (yin).
+1.  **Old Yin (0)**: A broken line that changes into a solid line (yang).
+2.  **Young Yang (1)**: A solid line that does not change.
+3.  **Young Yin (2)**: A broken line that does not change.
+4.  **Old Yang (3)**: A solid line that changes into a broken line (yin).
 
-The changing lines (Old Yin and Old Yang) are what lead to the creation of a second hexagram. Here's how you can generate a hexagram with the possibility of changing lines, and thus, an optional second hexagram:
+The changing lines (Old Yin and Old Yang) are what lead to creating a second hexagram. Here's how you can generate a hexagram with possible changing lines, and therefore, an optional second hexagram:
 
 ```javascript
 function generateIChingHexagram() {
@@ -126,11 +125,11 @@ if (result.secondHexagram) {
 }
 ```
 
-This solution generates a hexagram where each line has a random state (0 to 3). It then maps these states to their visual representations. If there are changing lines (Old Yin or Old Yang), it also generates a second hexagram by changing Old Yin to Young Yang and Old Yang to Young Yin, as per I-Ching principles.
+This code creates a hexagram. Each line gets a random state (0 to 3). Then, it changes these states into the lines you see (like solid or broken lines). If any lines are "changing lines" (Old Yin or Old Yang), the code also creates a second hexagram. It does this by changing Old Yin to Young Yang, and Old Yang to Young Yin, following I-Ching rules.
 
-This approach provides a complete divination experience, reflecting the dynamic nature of I-Ching readings with the inclusion of changing lines and the generation of a subsequent hexagram.
+This method gives a full divination reading. It shows the active nature of I-Ching by including changing lines and creating a second hexagram.
 
-Here's a more secure version using crypto.getRandomValues()
+Here's a more secure version using `crypto.getRandomValues()`:
 
 ```javascript
 function generateIChingHexagramSecure() {

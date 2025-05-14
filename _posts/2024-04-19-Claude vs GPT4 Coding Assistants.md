@@ -21,14 +21,14 @@ tags:
 
 Some short notes and experiences.
 
-I use cursor.sh IDE integrated with GPT4 with my project, and I have Claude Opus in a standalone browser window.
+I use the cursor.sh IDE, which includes GPT4, for my project. I also use Claude Opus in a separate browser window.
 
-Claude in general is better at reasoning, gives better quality output, and is more up-to-date.
+Overall, Claude seems better at thinking things through, provides higher quality suggestions, and has more current information.
 
-I'm in the middle of migrating 8bitoracle.ai from raw webpack to React to Next.js with Tailwind.
+I'm currently migrating my website, 8bitoracle.ai, from using just Webpack to React, then Next.js with Tailwind.
 
-Next.js is in the middle of upgrading from their old Pages Router to their new App Router which separates components into client and server (which builds on top of React 18 server components). GPT4 fails miserably at handling recent changes, it assumes you are using the old pages router and has to be told specifically you wish assistance using the app router, and it frequently needs to be reminded.
+Next.js is currently updating from its old Pages Router to a new App Router. This new router divides parts of the website (components) into client-side (runs in the browser) and server-side (runs on the server), using features from React 18 server components. GPT4 performs very poorly with these recent Next.js changes. It assumes I'm using the old Pages Router, and I have to specifically tell it I need help with the new App Router. It often needs to be reminded of this.
 
-Claude detects what you are doing from the code you are sending, and gives appropriate responses.
+Claude understands what I'm trying to do from the code I provide and gives relevant answers.
 
-In general coding assistants have problems when frameworks undergo major changes, and they do better when trying to help with raw languages (js, python, css) rather than frameworks (next.js and to a lesser extent React)
+Generally, coding assistants struggle when software frameworks (like Next.js or React) have big updates. They tend to work better with fundamental programming languages (like JavaScript, Python, or CSS) than with these frameworks.

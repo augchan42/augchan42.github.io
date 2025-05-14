@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Securing SSH: A Deep Dive into Fail2Ban Configuration and Rule Management"
+title: "Securing SSH: A Detailed Look at Fail2Ban Configuration and Rule Management"
 author: "Aug"
 date: 2024-06-03
 header-style: text
@@ -22,14 +22,14 @@ tags:
 
 ## Understanding the Issue
 
-Despite having Fail2Ban and UFW installed, unauthorized login attempts were not blocked. I didnt understand the order of rule processing in iptables. I modified the rules to preserve bans on restart which started my issues (you shouldn't have these issues if you just keep the out of the box sshd rules).
+Even though I had Fail2Ban and UFW installed, they were not blocking unauthorized login attempts. I did not understand how `iptables` processes rules in order. I changed the rules to keep bans after a restart, and this caused my problems. (You should not have these problems if you use the standard `sshd` rules provided by Fail2Ban).
 
-The fail2ban jail is implemented as iptables rules, if there are no relevant rules or rules with all 0.0.0.0, then no blocks are happening!!!!
-If there are any startup errors for any jails, none of the jails will work (if xrdp jail fails, then ssh won't work either)
-Both ufw and fail2ban are wrappers around the underlying iptables packet filtering.
-If you continue to see unknown login attempts in /var/log/auth.log, then the JAIL ISNT WORKING.
+Fail2Ban's "jail" (its blocking mechanism) works by adding rules to `iptables`. If there are no relevant rules, or if rules exist but specify `0.0.0.0` (meaning any IP), then no IPs are actually being blocked.
+If any jail has startup errors, then none of the jails will work. For example, if the `xrdp` jail fails, the `ssh` jail won't work either.
+Both UFW and Fail2Ban are tools that manage the underlying `iptables` packet filtering system.
+If you keep seeing unknown login attempts in `/var/log/auth.log`, the Fail2Ban jail is not working.
 
-BTW for persistent bans, recommend you just use this package instead of implementing your own with custom actions:
+By the way, for bans that stay after a restart (persistent bans), I recommend using this package instead of creating your own custom setup:
 
 ```bash
 sudo apt-get install iptables-persistent
@@ -40,13 +40,13 @@ sudo netfilter-persistent save
 
 ### 1. Make sure the jail.local is configured properly
 
-To ensure that Fail2Ban functions effectively, the `jail.local` file must be correctly set up. This configuration file overrides the default settings in `jail.conf` and tailors the fail2ban service to your specific needs.
+To make sure Fail2Ban works well, you need to set up the `jail.local` file correctly. This file changes the default settings from `jail.conf` and adjusts Fail2Ban for what you need.
 
 #### Key Configurations:
 
-- **Jail Definition:** Define the [sshd] section if not already present, specifying the backend to use, the log path, and the specific filter and make sure its enabled.
+- **Jail Definition:** If it's not already there, define the `[sshd]` section. Specify the backend to use, the log path, the specific filter, and make sure it's enabled.
 
-```bash
+```ini
 [sshd]
 enabled = true
 port = 1000
@@ -60,15 +60,15 @@ maxretry = 1  # Number of retries before a ban
 
 ### 2. Check if any IPTABLES Rules are there
 
-fail2ban implements blocking rules using iptables. Check if there are any rules using this command:
+Fail2Ban implements blocking rules using `iptables`. Check if there are any rules using this command:
 
 ```bash
 sudo iptables -L -n
 ```
 
-Your rule chain (e.g., f2b-sshd) should appear before all other rules that allow traffic, such as ufw:
+Your Fail2Ban rule chain (like `f2b-sshd`) should be listed before any other rules that allow traffic (like UFW rules):
 
-```bash
+```text
 Chain INPUT (policy DROP)
 target     prot opt source               destination
 f2b-sshd   all  --  0.0.0.0/0            0.0.0.0/0
@@ -80,9 +80,9 @@ ufw-reject-input  all  --  0.0.0.0/0            0.0.0.0/0
 ufw-track-input  all  --  0.0.0.0/0            0.0.0.0/0
 ```
 
-There should be only 1 f2b-sshd chain (as above) and there should be DROP rules for the banned IPs:
+There should be only one `f2b-sshd` chain (as above), and it should contain `DROP` rules for the banned IPs:
 
-```bash
+```text
 Chain f2b-sshd (1 references)
 target     prot opt source               destination
 DROP       all  --  93.120.240.202       0.0.0.0/0
@@ -91,84 +91,85 @@ DROP       all  --  119.28.115.120       0.0.0.0/0
 DROP       all  --  64.227.185.239       0.0.0.0/0
 ```
 
-I had multiple f2b-sshd chains that weren't being cleaned up properly on fail2ban restart. I had to manually clean up the spurious rules and the f2b-sshd chains before I could get everything working.
+I had several `f2b-sshd` chains that were not removed correctly when Fail2Ban restarted. I had to manually remove these extra rules and `f2b-sshd` chains before I could resolve the issues.
 
 ### 3. Proper Ordering of the f2b-sshd Chain
 
-The f2b-sshd chain needs to be evaluated before any UFW rule chains to ensure that banned IPs are blocked immediately.
-The action to add the chain should be Insert (I) not Append (A) and it should be inserted at the top. The 'INPUT 1' flag does this:
+The `f2b-sshd` chain must be checked before any UFW rule chains. This ensures that banned IPs are blocked right away.
+The action to add the chain should be `Insert` (I), not `Append` (A), so it's placed at the top of the INPUT chain. The `INPUT 1` part of the command achieves this:
 
-**Command in iptables-multiport.conf to insert the f2b-sshd chain at the top of the INPUT chain and restore bans from file when fail2ban starts:**
+**Command in `iptables-multiport.conf` to insert the `f2b-<name>` chain at the top of the INPUT chain and restore bans from a file when Fail2Ban starts:**
 
-```bash
+```conf
 actionstart =
-    <iptables> -N f2b-<name>  # Create a new chain named f2b-<name> in iptables
-    <iptables> -I INPUT 1 -j f2b-<name>  # Insert the f2b-<name> chain at the top of the INPUT chain to ensure it's evaluated first
-    <iptables> -I f2b-<name> 1 -j <returntype>  # Insert a rule at the top of the f2b-<name> chain to specify the action (e.g., RETURN)
-    cat /etc/fail2ban/persistent.bans | awk '/^fail2ban-<name>/ {print $2}' \  # Read the persistent bans file, extract IPs for the f2b-<name> chain
-    | while read IP; do iptables -I f2b-<name> 1 -s $IP -j <blocktype>; done  # For each IP, insert a rule at the top of the f2b-<name> chain to block the IP
-
+    <iptables> -N f2b-<name>  # Create a new chain named f2b-<name>
+    <iptables> -I INPUT 1 -j f2b-<name>  # Insert f2b-<name> at the top of INPUT chain
+    <iptables> -I f2b-<name> 1 -j <returntype>  # Insert a rule at the top of f2b-<name> (e.g., RETURN)
+    cat /etc/fail2ban/persistent.bans | awk '/^fail2ban-<name>/ {print $2}' \  # Read persistent bans, get IPs for this chain
+    | while read IP; do iptables -I f2b-<name> 1 -s $IP -j <blocktype>; done  # For each IP, insert a block rule at the top of f2b-<name>
 ```
 
-The definitions for the commands in the <> tags are defined in other files like iptables-common.conf.
+(The definitions for commands like `<iptables>`, `<returntype>`, and `<blocktype>` are in other configuration files, such as `iptables-common.conf`.)
 
 ### 4. Example actionban
 
-**Command to ban an ip and add to persistent bans file:**
-This will add a rule to the f2b-sshd chain, which is referenced in the default iptables INPUT chain.
+**Command to ban an IP and add it to a persistent bans file:**
+This adds a rule to the `f2b-<name>` chain.
 
-```bash
+```conf
 actionban =
-    <iptables> -I f2b-<name> 1 -s <ip> -j <blocktype>  # Insert a rule at the top of the f2b-<name> chain to block the IP specified
-    echo "fail2ban-<name> <ip>" >> /etc/fail2ban/persistent.bans  # Append the ban information to the persistent bans file for record-keeping
+    <iptables> -I f2b-<name> 1 -s <ip> -j <blocktype>  # Insert a rule at the top of f2b-<name> to block the IP
+    echo "fail2ban-<name> <ip>" >> /etc/fail2ban/persistent.bans  # Add ban to persistent file
 ```
 
 ### 5. Cleaning Up Old Rules on Fail2Ban Restart
 
-Making sure all Fail2Ban rules are properly removed on restart is crucial to avoid conflicts with stale rules. All rules need to be deleted, then rules flushed, then the rule chain itself can be deleted. If any rules are still present, deleting the chain will fail! The -D command needs to find the rules that were previously added with -A. If the rules look different then they won't be deleted!
+It's very important to make sure all Fail2Ban rules are removed correctly when it restarts. This prevents conflicts with old, outdated rules. All individual rules in a chain must be deleted, then the chain must be flushed (emptied), and only then can the rule chain itself be deleted. If any rules are still in the chain, you won't be able to delete the chain.
+
+The delete command (`-D`) needs to match rules that were previously added (e.g., with `-I`). If the rule definition looks different, the delete command won't find and remove it.
 
 **Commands used in `actionstop` to flush old rules:**
-Notice this -D command matches the above -I command (except for the syntax to insert rule at the first line of the chain which isn't relevant.)
+Notice this `-D` command matches the `-I` command from `actionstart` used to jump to the `f2b-<name>` chain (the line number `1` isn't needed for deletion here as it matches the jump rule itself).
 
-```bash
+```conf
 actionstop =
-    <iptables> -D <chain> -j f2b-<name>  # Delete the rule that jumps to the f2b-<name> chain from the specified <chain>
-    <actionflush>  # Execute the command to flush all rules in the f2b-<name> chain (specific command should be defined elsewhere)
-    <iptables> -X f2b-<name>  # Delete the f2b-<name> chain from iptables
+    <iptables> -D <chain> -j f2b-<name>  # Delete the rule that jumps to f2b-<name> from the main <chain>
+    <actionflush>  # Flush all rules in the f2b-<name> chain
+    <iptables> -X f2b-<name>  # Delete the f2b-<name> chain itself
 ```
 
-You can also manually run rules for troubleshooting. You will need to run the -D command multiple times to delete all rules in a rule chain manually.
+You can also manually run these types of commands for troubleshooting. You might need to run a delete command multiple times if a rule appears more than once, or to delete all individual rules in a chain manually before flushing and deleting the chain.
 
 ```bash
-iptables -D <chain> -p <protocol> -j f2b-<name>  # Delete a specific rule in the <chain> that directs traffic to the f2b-<name> chain for a given <protocol>
-iptables -F f2b-<name>  # Flush all rules in the f2b-<name> chain, effectively removing all specific blocking rules within that chain
-iptables -X f2b-<name>  # Delete the f2b-<name> chain itself after flushing its rules
+iptables -D <chain> -p <protocol> -j f2b-<name>  # Example: Delete a specific jump rule from <chain>
+iptables -F f2b-<name>  # Flush all rules within the f2b-<name> chain
+iptables -X f2b-<name>  # Delete the f2b-<name> chain (only if empty)
 ```
 
-All rules must be deleted before a chain can be deleted (-X). If you see a rule chain can't be deleted, then it's probably because a rule in that chain is still there. This is probably because the -D command can't find a rule to delete (because a rule was added with different syntax), or there are still rules left to delete.
+All rules must be removed before a chain can be deleted (using `-X`). If you find that a rule chain cannot be deleted, it is likely because there are still rules within that chain. This might be because the delete command (`-D`) cannot find a matching rule to delete (perhaps because the rule was added with different details), or there are simply more rules remaining in the chain that need to be deleted one by one.
 
 ### 6. Adjusting Rule Deletion for Non-default Actions
 
-Matching the rule deletion commands to the specific rules added by Fail2Ban, especially when using non-default ports or additional/different flags.
+Make sure your rule deletion commands exactly match the rules added by Fail2Ban, especially if you're using non-standard ports or have added extra flags to your rules.
 
-**Command to delete the f2b-sshd chain from the default INPUT chain:**
-I needed to run this command multiple times because the same f2b-sshd custom chain was defined several times in my INPUT chain due to previous issues.
+**Command to delete the `f2b-sshd` jump rule from the default `INPUT` chain:**
+I had to run this command several times because, due to earlier problems, the same `f2b-sshd` custom chain was incorrectly linked multiple times in my `INPUT` chain.
 
 ```bash
 sudo iptables -D INPUT -p tcp -j f2b-sshd
 ```
 
-**Command to list and delete other rules from INPUT chain:**
+**Command to list and delete other rules from `INPUT` chain by line number:**
 
 ```bash
 sudo iptables -L INPUT --line-numbers
 sudo iptables -D INPUT <line-number-of-rule>
 ```
 
-You can use the same --line-numbers method to directly delete individual rules from any chain.
+You can use the same `--line-numbers` method to directly delete individual rules from any chain.
 
 ## Conclusion
 
-Make sure to check the /var/log/fail2ban.log for any errors on startup or shutdown in adding ban rules, or removing rules on cleanup. If there are any errors then the bans are likely not happening properly. If you see lots of login activity in your /var/log/auth.log then the bans aren't working!
+Check the `/var/log/fail2ban.log` file for any errors when Fail2Ban starts or stops, especially errors related to adding ban rules or removing rules during cleanup. If there are errors, the bans are probably not working correctly. If you see lots of login activity in your `/var/log/auth.log`, then the bans aren't working.
 
 ---

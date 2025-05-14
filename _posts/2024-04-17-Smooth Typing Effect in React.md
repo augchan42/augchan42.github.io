@@ -23,63 +23,62 @@ tags:
 
 (Notes for myself - you can check out the effect at 8bitoracle.ai)
 
-Getting a typing effect working properly is pretty hard. I have a few paragraphs of text and wanted to have a typing effect over it, and allow the user to skip animation. If a user presses a spacebar or clicks on a paragraph, the current paragraph completes and the next one begins typing.
+Getting a typing effect to work properly can be quite challenging. I have a few paragraphs of text and wanted to create a typing effect for it, allowing the user to skip the animation. If a user presses a spacebar or clicks on a paragraph, the current paragraph should complete instantly, and the next one should begin typing.
 
 A few tips:
 
-1. DOM Manipulation is frequently buggy, so you are best off updating the html elements themselves.
+1. Directly changing the page structure with DOM manipulation can often cause bugs. It is usually better to update HTML elements by changing their content or visibility through React's state.
 
-2. It's easier to simulate a typing effect using hidden/visible rather than trying
-   to actually generate characters or copy them from a hidden data element.
+2. It's simpler to create a typing effect by showing and hiding parts of the text, instead of actually typing out characters one by one or copying them from a hidden place.
 
-Here are the key lessons learned from the provided code for implementing a typing effect in React, applied to mulitple paragraphs of text with a way to skip animation at any time:
+Here are the main lessons from the code I used to create a typing effect in React. This effect works for several paragraphs and lets the user skip the animation at any time:
 
 1. State Management:
 
-   - Use the `useState` hook to manage the state of the current paragraph index (`currentParagraphIndex`) and the number of visible characters (`visibleCharacters`).
-   - Update the state variables accordingly to control the typing effect and track the progress.
+   - Use the `useState` hook to manage the state of the current paragraph's index (`currentParagraphIndex`) and the number of characters currently visible (`visibleCharacters`).
+   - Update these state variables as needed to control the typing and keep track of its progress.
 
 2. Parsing Paragraphs:
 
-   - Extract the paragraphs from the `backstory` object based on the selected language using `Object.entries` and `map`.
-   - Create an array of paragraph objects with `id` and `text` properties for easier rendering and tracking.
+   - Get the paragraphs from the `backstory` data. Use the selected language to pick the right text, using JavaScript's `Object.entries` and `map` methods.
+   - Make an array of paragraph items. Each item should have an `id` and `text` to make them easier to show and manage.
 
 3. Typing Effect:
 
    - Use the `useEffect` hook to control the typing effect based on the `visibleCharacters` and `currentParagraphIndex` state variables.
-   - Set a timeout to gradually increase the number of visible characters for the current paragraph.
-   - Move to the next paragraph after a delay when the current paragraph is fully typed.
-   - Clear the timeout when the component unmounts or the dependencies change to avoid memory leaks.
+   - Use a timer (`setTimeout`) to slowly show more characters in the current paragraph.
+   - After the current paragraph is fully typed, wait a moment and then start typing the next one.
+   - To prevent problems (memory leaks), clear the timer if the component is removed or if its dependencies change.
 
 4. Skipping Animation:
 
-   - Implement a `skipTypingAnimation` function to allow the user to skip the typing animation and immediately reveal all characters of the current paragraph.
-   - Use the `useCallback` hook to memoize the function and optimize performance.
+   - Create a `skipTypingAnimation` function. This lets the user skip the typing and see the whole current paragraph at once.
+   - Use the `useCallback` hook to memoize this function (meaning React will reuse the same function instance if its dependencies haven't changed), which can help optimize performance.
 
 5. Event Handlers:
 
-   - Add event handlers for keyboard and touch events to trigger the `skipTypingAnimation` function.
-   - Use `useEffect` hooks to attach and remove the event listeners based on the relevant dependencies.
+   - Set up event handlers so that pressing a key (like spacebar) or touching/clicking the screen runs the `skipTypingAnimation` function.
+   - Use `useEffect` hooks to add these event listeners when needed and remove them when not, based on certain conditions (dependencies).
 
 6. Rendering:
 
-   - Map over the `paragraphs` array to render each paragraph as a separate `<p>` element.
-   - Determine the visible and hidden parts of each paragraph based on the `currentParagraphIndex` and `visibleCharacters` state variables.
-   - Render the visible text, the typing cursor for the current paragraph, and optionally, the hidden text with a 'hidden' class.
-   - Add click and touch event handlers to each paragraph to allow skipping the animation.
+   - Go through the `paragraphs` array and show each paragraph as a separate `<p>` HTML element.
+   - Figure out which parts of each paragraph to show or hide. Use the `currentParagraphIndex` and `visibleCharacters` state values for this.
+   - Show the visible text. For the current paragraph, also show a typing cursor. You can also include the hidden text but with a 'hidden' style so it's not seen until typed.
+   - Make each paragraph clickable or touchable to let users skip the animation for that paragraph.
 
 7. CSS Styling:
 
-   - Apply appropriate CSS classes to style the text content, cursor, and hidden text.
-   - Use CSS animations or transitions to create a blinking effect for the typing cursor.
+   - Use CSS classes to style the text, the cursor, and the hidden parts.
+   - Use CSS animations or transitions to make the typing cursor blink.
 
 8. Performance Optimization:
 
-   - Use `useCallback` and `useMemo` hooks to memoize functions and values that don't need to be recomputed on every render.
-   - Optimize the rendering by only updating the necessary parts of the component based on state changes.
+   - Use `useCallback` (for functions) and `useMemo` (for values) hooks to memoize parts of your component. This means React reuses them if their inputs haven't changed, preventing unnecessary recalculations and improving performance.
+   - Make rendering faster by only updating the parts of the component that change when the state changes.
 
 9. Internationalization:
-   - Utilize the `useTranslation` hook from the `react-i18next` library to handle internationalization.
-   - Extract the appropriate translations from the `backstory` object based on the selected language.
+   - Use the `useTranslation` hook from the `react-i18next` library to support different languages (internationalization).
+   - Get the correct text translations from the `backstory` data, based on the chosen language.
 
-These are the main lessons learned from the provided code. By understanding and applying these concepts, you can create a typing effect component in React that is efficient, interactive, and supports internationalization.
+By using these ideas, you can build a typing effect in React that works well, is interactive, and supports multiple languages.

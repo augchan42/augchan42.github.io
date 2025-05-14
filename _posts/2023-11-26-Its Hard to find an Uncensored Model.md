@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Its Hard to find an Uncensored Model"
+title: "The Challenge of Finding Uncensored AI Models"
 author: "Aug"
 date: 2023-11-26
 header-style: text
 catalog: true
-description: "Exploring the challenges of finding truly uncensored AI models, discussing the influence of OpenAI's data, and referencing methods for fine-tuning base models to remove refusals. Mentions experiences with specific models."
+description: "Exploring the difficulties in finding truly uncensored AI models. I discuss the influence of OpenAI's data and look at methods for fine-tuning base models to remove built-in limitations or refusals, mentioning my experiences with some specific models."
 tags:
   - uncensored-ai
   - ai-model-training
@@ -18,16 +18,14 @@ tags:
   - model-finetuning
 ---
 
-Turns out most models are based on data from OpenAI somehow, and this data has guardrails.
+I've found that many AI models seem to be built using data that **comes** from OpenAI in some way. This data often includes "guardrails" – built-in limitations that **stop** the model from responding to certain types of prompts. This makes finding a truly uncensored model **very difficult**.
 
-Found this post on how to finetune a base model after removing all refusals:
+I **read** an interesting article by Eric Hartford that explains how to fine-tune a base AI model to remove these refusals:
 
-[Based post on making uncensored models](https://erichartford.com/uncensored-models)
+[Uncensored Models by Eric Hartford](https://erichartford.com/uncensored-models) (I'll refer to this as the "Hartford method" below.)
 
-The basic idea is to train from the base model, but the dataset needs to have all refusals/guardrails removed first.
-Then voila, your model is uncensored!
+The main idea behind the Hartford method is to retrain a foundational AI model (a "base model") using a dataset that has had all the "refusal" responses (where the model says it _can't_ answer) removed. The goal is to create a model that will answer **more openly**.
 
-However, from my testing, it was still censored on things I wanted to ask, so I'll need to look into Eric Hartfords
-filtered dataset further to see why.
+However, in my own tests with a model fine-tuned this way, I found it still wouldn't answer some questions I **asked**. I need to look more closely at the filtered dataset Eric Hartford used to understand why this might be happening.
 
-BTW, best uncensored model I've found is [Pivot Evil](https://huggingface.co/TheBloke/PiVoT-0.1-Evil-a-GGUF). This requires no special system prompt and will pretty much answer any question...
+On a related note, the most effective uncensored model I've personally **found** so far is [TheBloke/PiVoT-0.1-Evil-a-GGUF](https://huggingface.co/TheBloke/PiVoT-0.1-Evil-a-GGUF) on Hugging Face. This particular model doesn't require any special instructions (a "system prompt") **to respond**, and it seems willing to answer a very wide range of questions.

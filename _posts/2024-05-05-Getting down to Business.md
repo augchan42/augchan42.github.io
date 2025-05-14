@@ -29,32 +29,32 @@ tags:
 
 ## Overview
 
-With the [website](https://8bitoracle.ai) detailing the app's needs, it's time to set up authentication and beta signups, marking our dive into backend setup.
+Now that the [website](https://8bitoracle.ai) explains what the app needs, it's time to set up how users log in (authentication) and sign up for the beta. This marks the beginning of our backend setup.
 
 ## Authentication Choices
 
 ### Why OAuth2 with Supabase
 
-Chose OAuth2 for its ubiquity. Supabase Auth links directly to PostgreSQL user/profile tables, streamlining user data management.
+I chose OAuth2 because it's widely used. Supabase Auth connects directly to the PostgreSQL database's user and profile tables. This makes managing user data simpler.
 
 ### Supabase Auth-UI
 
-Implemented [Supabase Auth-UI](https://github.com/supabase-community/auth-ui) for its ease in setting up magic links. Note: no updates since February 2024.
+I used [Supabase Auth-UI](https://github.com/supabase-community/auth-ui) because it makes setting up "magic links" (login links sent via email) easy. Note: this library has not been updated since February 2024.
 
 ## Web3Auth: Future Considerations
 
-[Web3Auth](https://web3auth.io) is on hold due to its manual database integration requirement.
+I've decided to wait on using [Web3Auth](https://web3auth.io) for now because it requires manually connecting it to the database.
 
 ## OAuth2 Provider Setup
 
-Setting up Google as the OAuth2 provider was essential, ensuring smooth integration with Supabase Auth for automatic database linkage.
+Setting up Google as an OAuth2 provider was important. This helps it work well with Supabase Auth, which then automatically links to the database.
 
 ## Supabase vs. Firebase
 
-Opted for Supabase over Firebase for its open-source nature and potential for self-hosting.
+I chose Supabase instead of Firebase because Supabase is open-source, and I might be able to host it myself in the future.
 
 ## Beta Signup Live
 
-The beta signup is live at [8-bit oracle beta signup](https://8bitoracle.ai/en/beta). Check it out.
+The beta signup is now available at [8-bit oracle beta signup](https://8bitoracle.ai/en/beta). Feel free to sign up.
 
 Thanks for reading.

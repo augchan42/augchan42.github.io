@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Getting up to speed with Cosmos and Stargaze"
+title: "Deploying a CosmWasm Smart Contract on the Stargaze Testnet"
 author: "Aug"
-date: 2025-03-27 # Assuming a date based on filename, adjust if needed
+date: 2025-03-27
 header-style: text
 catalog: true
 description: "A developer's guide to deploying a CosmWasm smart contract on the Stargaze testnet, covering environment setup, starsd CLI usage, contract uploading, instantiation, and Rust version considerations."
@@ -20,29 +20,29 @@ tags:
 
 ## Introduction
 
-Recently, I was tasked with deploying a smart contract to Stargaze. Here's what I discovered along the way:
+Recently, I needed to deploy a smart contract to Stargaze. Here are some key things I learned:
 
-- Stargaze is a Cosmos IBC Chain
-- I needed to deploy to Stargaze testnet
-- The deployment process has two distinct steps:
-  1. Uploading the contract to the chain
-  2. Instantiating it (factory concept)
-- Even though CosmWasm v2.2.2 is available, I still couldn't get it working with newer Rust versions and had to downgrade to Rust 1.81.0
+- Stargaze is a Cosmos IBC Chain.
+- I needed to deploy to the Stargaze testnet.
+- The deployment process has two separate steps:
+  1. Uploading the contract to the chain.
+  2. Instantiating it (which is like a factory creating an instance).
+- CosmWasm v2.2.2 is available, but I couldn't make it work with newer Rust versions. I had to use an older version, Rust 1.81.0.
 
-The documentation is somewhat scattered between Cosmos and Stargaze resources, requiring back-and-forth reference between them.
+The documentation is spread across different Cosmos and Stargaze resources. This meant I had to switch between them often.
 
 ## Setting Up the Environment
 
-### Getting the Stargaze CLI Working
+### Setting up the Stargaze CLI (`starsd`)
 
-First, I needed to set up the Stargaze CLI (`starsd`):
+First, I needed to set up the Stargaze command-line interface (`starsd`):
 
 ```bash
 # Clone the Stargaze repository
 gh repo clone public-awesome/stargaze
 ```
 
-> Note: Their git clone command didn't work as documented.
+> Note: Their `git clone` command did not work as shown in their documentation.
 
 Next, I needed to configure the CLI to connect to the Stargaze testnet:
 
@@ -53,11 +53,11 @@ starsd config set client chain-id elgafar-1
 # Set the RPC endpoint
 starsd config set client node https://rpc.elgafar-1.stargaze-apis.com:443
 
-# Confirm the configuration
+# Check the configuration
 starsd config view client
 ```
 
-This should output something like this:
+The output should be similar to this:
 
 ```toml
 # This is a TOML config file.
@@ -85,13 +85,13 @@ broadcast-mode = "sync"
 
 ### Setting Up a Wallet
 
-I imported my wallet using a BIP39 mnemonic:
+I imported my wallet using my BIP39 recovery phrase (mnemonic):
 
 ```bash
 # Import your private key via the bip39 mnemonic
 starsd keys add imported-wallet --recover
 
-# Confirm it's been added to your keyring
+# Check it has been added to your keyring
 starsd keys list
 ```
 
@@ -109,13 +109,13 @@ Enter keyring passphrase (attempt 1/3):
 
 You can get testnet STARS from the faucet at: https://testnet.ping.pub/stargaze/faucet
 
-The faucet provides 5 testnet STARS at a time and appears to be limited to one request per day.
+The faucet gives 5 testnet STARS each time. It seems you can only request once per day.
 
 ### Setting Up Rust
 
 Next, I needed the correct Rust version:
 
-> **Important Note**: Due to reference types feature enabled by default in the Rust compiler since version `1.82`, compatibility issues arise. Even though CosmWasm v2.2.2 is available and supposedly supports reference types, I still couldn't get it working properly. I had to downgrade to Rust 1.81.0 to successfully compile and deploy my contracts.
+> **Important Note**: Rust compiler versions 1.82 and newer have a feature called "reference types" turned on by default. This causes compatibility problems. Even though CosmWasm v2.2.2 is available and should support reference types, I could not get it to work correctly. To compile and deploy my contracts successfully, I had to use an older Rust version, 1.81.0.
 
 ```bash
 # Install Rust 1.81.0
@@ -146,15 +146,15 @@ Clone the cw-plus contracts:
 gh repo clone CosmWasm/cw-plus
 ```
 
-I used the cw1_whitelist contract:
+I used the `cw1_whitelist` contract:
 
 ```bash
 cd contracts/cw1-whitelist && cargo wasm
 ```
 
-If any issues, do `cargo clean`/`cargo update`/`cargo wasm` in that order.
+If you encounter any issues, try running `cargo clean`, then `cargo update`, and finally `cargo wasm`.
 
-Before attempting to upload or instantiate a contract, I made sure it passed the compatibility check:
+Before uploading or instantiating a contract, I verified it with the compatibility check:
 
 ```bash
 cosmwasm-check ../../target/wasm32-unknown-unknown/release/cw1_whitelist.wasm
@@ -172,11 +172,11 @@ starsd tx wasm store cw1_whitelist.wasm \
   --gas auto
 ```
 
-Save the transaction hash from this command to look up the code_id later.
+Save the transaction hash from this command's output; you will need it later to find the `code_id`.
 
 ## Getting the Contract Code ID
 
-With transaction hash (can get from `store` command)
+Using the transaction hash (from the `store` command output):
 
 ```bash
 starsd q tx 0A1078B8364950CE7CE6F3992248662D9F1284676B912CEC2A64AA5176D63C64 -o json | jq '.. | select(.key? == "code_id")'
@@ -192,7 +192,7 @@ Output:
 }
 ```
 
-After uploading, can also get `code_id` from contract address with `query`:
+After uploading, you can also get the `code_id` by querying the contract address:
 
 ```bash
 starsd query wasm contract stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m
@@ -216,7 +216,7 @@ contract_info:
 
 ## Instantiating the Contract
 
-The instantiate message depends on your smart contract's initial parameters. For the `cw1_whitelist` contract, I needed to set the admins list.
+The message needed to instantiate your smart contract depends on its specific initial settings. For this `cw1_whitelist` contract, for example, I needed to define the list of administrators.
 
 First, I checked the contract's `msg.rs` file to identify the expected parameters:
 

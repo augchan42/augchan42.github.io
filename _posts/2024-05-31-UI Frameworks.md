@@ -27,40 +27,40 @@ tags:
 
 ## Choosing the Right UI Framework
 
-I think I've settled on [shadcn](https://ui.shadcn.com), but I'm still getting the hang of it.
+I think I've decided to use [shadcn](https://ui.shadcn.com), but I'm still learning how to use it effectively.
 
 ### Evolution of the Project
 
-My project started out using plain Bootstrap, then transitioned to Create-React-App (which is distinct from React), and finally to Next.js App Router.
+My project first used Bootstrap directly. Then, I moved to Create-React-App (which is different from just React), and finally to the Next.js App Router.
 
 ### UI Development Challenges
 
-However, building an app from scratch is a ton of work, especially with all the UI widgets and components required. There's a trend now towards granular component libraries, which are geared towards copying and pasting code directly into your project, instead of npm installing an entire framework.
+However, building an app from the beginning is a lot of work, especially creating all the needed UI elements (widgets and components). There's a new trend of using component libraries that provide small, individual pieces. These are designed for you to copy and paste their code directly into your project, rather than installing a whole framework with `npm install`.
 
 ### Approach to Using Libraries
 
-Initially, I thought this approach was great, and this is how shadcn works. Since I am always concerned about bugs in whatever open source library I use, I usually fork the project, then import stuff from my fork. This gives me full visibility into the code and allows me to fix things as needed (assuming I can do it!).
+At first, I thought this was a great way to do things, and shadcn works like this. Because I'm always worried about bugs in open-source libraries, I usually make my own copy (a "fork") of the project. Then, I use components from my copy. This lets me see all the code and fix problems if they come up (if I know how!).
 
 ### Component Libraries
 
-Component libraries like shadcn are geared towards copy-pasting components directly and don't require you to do an npm install (though shadcn does require npm installing the underlying unstyled radix-ui components).
+Component libraries like shadcn are designed for you to copy and paste components. You don't usually need to `npm install` them (though for shadcn, you do need to `npm install` the basic Radix UI components it's built on).
 
 ### Challenges with This Approach
 
-The issue, of course, is bugs, upgrades, and versioning. Once you do your copy/paste, you are effectively on your own little branch of the code not tied to anything.
+The problem with this, of course, is handling bugs, upgrades, and different versions. Once you copy and paste the code, your version becomes separate and isn't automatically updated with the original library.
 
 ## Implementing Accounts and Logins
 
-On top of this, I'm finally getting around to fully implementing accounts and logins. Right now, I have it working for Beta signups, but I'll be removing that shortly because I will have enough functionality for the MVP.
+In addition to this, I'm finally starting to fully implement user accounts and logins. Currently, it works for Beta signups. However, I'll remove that soon because the app will have enough features for the MVP (Minimum Viable Product – a basic version of the app with core functionality).
 
 ### The MVP Concept
 
-The MVP will be like building a character, except the character is you. You will fill out a personality quiz, the app will determine your representative trigrams and hexagrams, and from there, we will generate a profile.
+The MVP will be like creating a character in a game, but that character represents you. You'll answer a personality quiz. Then, the app will figure out your I-Ching trigrams and hexagrams that represent you, and create a profile based on that.
 
-After filling out the quiz, you will have earned the right to ask the Oracle a question.
+After completing the quiz, you will be able to ask the Oracle a question.
 
 ### Dynamic System Learning
 
-The system will learn about you over time, and as you use the system more, the system's recommendations and advice will be more tailored.
+The system will learn more about you as you use it. Over time, its recommendations and advice will become more personalized to you.
 
 Thank you for reading!

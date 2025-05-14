@@ -22,15 +22,15 @@ tags:
 
 # Integrating with Shadcn: My Experience and Insights
 
-I wanted to make a blog post talking about my experience integrating with shadcn. Here's what I ran into.
+I want to share my experience integrating Shadcn UI components. Here are some things I encountered.
 
 ## Project Preparation
 
-Before diving into the integration, you need to prepare your project by following the instructions provided in the shadcn documentation: [https://ui.shadcn.com/docs/installation/next](https://ui.shadcn.com/docs/installation/next)
+Before starting the integration, prepare your project by following the official Shadcn documentation: [https://ui.shadcn.com/docs/installation/next](https://ui.shadcn.com/docs/installation/next)
 
 ## Opinionated Styling
 
-The shadcn example at [https://ui.shadcn.com/](https://ui.shadcn.com/) is opinionated in that it assumes a dark theme with New York styling. That means your root layout needs to use the theme provider, and with my website colors defaulting to a black background, I needed to use the dark theme for the components to appear properly.
+The Shadcn example at [https://ui.shadcn.com/](https://ui.shadcn.com/) has strong default settings (it's "opinionated"). It assumes you're using a dark theme and their "New York" visual style. This means your main layout file needs to use their theme provider. Since my website has a black background by default, I had to use the dark theme for the Shadcn components to look right.
 
 ```jsx
 <ThemeProvider
@@ -45,15 +45,15 @@ The shadcn example at [https://ui.shadcn.com/](https://ui.shadcn.com/) is opinio
 
 ## Styling Considerations
 
-The default shadcn project uses slate styling with CSS variable replacement ("cssVariables": true in the components.json). I did not follow their font styling. Instead, I had to move all my global styles to my own /styles/mystyles.css file because the /src/app/globals.css file gets overwritten by shadcn.
+The standard Shadcn setup uses a "slate" color style and replaces CSS variables (this is set with `"cssVariables": true` in the `components.json` file). I didn't use their font styling. Instead, I had to move all my main CSS styles to my own file (`/styles/mystyles.css`) because Shadcn overwrites the usual `/src/app/globals.css` file.
 
 ## New York Styling
 
-The example components I'm using are using New York styling. So for example, the toast notification that the profile update is using at [https://ui.shadcn.com/examples/forms](https://ui.shadcn.com/examples/forms) requires adding `NewYorkToaster` from `"@/registry/new-york/ui/toaster"` to my root layout above my footer component, for the toast notification updating the profile using the default profile form example to work.
+The example components I'm using have the "New York" style. For instance, to use the toast notification shown in the profile update example at [https://ui.shadcn.com/examples/forms](https://ui.shadcn.com/examples/forms), I had to add the `NewYorkToaster` component (from `"@/registry/new-york/ui/toaster"`) to my main layout file, just above my footer. This was necessary for the profile update toast notification to work correctly with their example form.
 
 ## Root Layout Example
 
-For reference, here's my root layout that incorporates auth, theme provider, next-intl, and the NY styled toaster notification:
+For reference, here is my main layout file. It includes authentication, the theme provider, internationalization (next-intl), and the New York styled toaster notification:
 
 ```jsx
 import { NextIntlClientProvider, useMessages } from "next-intl";
@@ -108,4 +108,4 @@ export default function LocaleLayout({
 
 ## Conclusion
 
-Overall, the dev experience of shadcn is decent. But you definitely need to know how to navigate the sample project to see how things are actually done to get the components to work. It's not as simple as copy pasting the component code (despite what they say).
+Overall, the developer experience with Shadcn is quite good. However, you definitely need to explore their sample project to understand the actual implementation details to get the components working correctly. It's not always as simple as just copying and pasting the component code, even though their documentation might suggest that.

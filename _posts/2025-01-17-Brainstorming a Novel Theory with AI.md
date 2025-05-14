@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Brainstorming a new theory of Self-Directed Learning for AI, with AI"
+title: "Brainstorming a New Theory of Self-Directed Learning for AI, with AI"
 author: "Aug"
 date: 2025-01-17
 header-style: text
@@ -24,79 +24,79 @@ tags:
 
 ## The Questions That Led to Discovery
 
-The theory emerged through a series of probing questions, each building upon the insights of the previous ones:
+The theory came from asking a series of deep questions. Each question used what was learned from the one before it:
 
 1. "If you were to focus on one area for AGI, what would it be?"
 
-   - This initial question led to exploring self-directed learning as a crucial capability
+   - This first question led to exploring self-directed learning as a very important skill for AGI.
 
-2. "If you were to design a Pareto optimal self-directed learning system, how would you start?"
+2. "If you were to design a highly effective self-directed learning system, how would you start?"
 
-   - This question helped establish the core components needed for effective learning
+   - This question helped figure out the main parts needed for good learning.
 
-3. "I will be building an autonomous agent for trading using the I-Ching. Is there a way to design in such a way as to help with this research?"
+3. "I will be building an autonomous agent for trading using the I-Ching. Is there a way to design it to help with this research?"
 
-   - Here, the connection between ancient wisdom and modern AI began to emerge
+   - Here, we started to see a link between old knowledge and new AI.
 
 4. "Is there something to the King Wen sequence that can be used to predict outcomes?"
 
-   - This question initiated the exploration of the sequence's underlying patterns
+   - This question started the search for hidden patterns in the sequence.
 
-5. "If we were to apply Fibonacci to try to derive a natural order to the hexagrams, would it be closer to the King Wen ordering or something else?"
+5. "If we were to apply Fibonacci to try to find a natural order to the hexagrams, would it be closer to the King Wen ordering or something else?"
 
-   - This led to investigating mathematical properties of different ordering systems
+   - This led to studying the math behind different ways of ordering the hexagrams.
 
-6. "If the concept is to push learning by maximizing Bayesian surprise, is there a way to use the concept to provide coverage for the missing hexagrams?"
+6. "If the idea is to improve learning by maximizing new information (Bayesian surprise), can we use this idea to cover the missing hexagrams?"
 
-   - This question connected information theory with the sequence's structure
+   - This question linked ideas from information theory to how the sequence is built.
 
-7. "Is the King Wen sequence already ordering for maximum surprise?"
+7. "Is the King Wen sequence already ordering for maximum new information?"
 
-   - This crucial question revealed the sophisticated nature of the sequence
+   - This key question showed how advanced the sequence is.
 
-8. "Is gradient descent the SOTA learning algorithm? Does this map to the King Wen sequence ordering somehow?"
-   - This final question helped synthesize the connection between ancient wisdom and modern machine learning
+8. "Is gradient descent the best learning algorithm available today? Does this connect to the King Wen sequence ordering somehow?"
+   - This final question helped bring together the link between old knowledge and new machine learning.
 
-Each question built upon previous insights, ultimately leading to the theory that the King Wen sequence might represent a sophisticated meta-learning algorithm that predates modern information theory.
+Each question built upon previous insights. This finally led to the idea that the King Wen sequence could be an advanced learning plan, older than our current information theory.
 
 # The Theory: I-Ching as a Framework for Self-Directed AGI Learning: Insights from the King Wen Sequence
 
-Recent developments in artificial general intelligence (AGI) have sparked intense interest in self-directed learning systems. During a fascinating exploration of the intersection between ancient wisdom and modern AI, I stumbled upon an unexpected connection: the potential of the I-Ching's King Wen sequence as a sophisticated framework for self-directed learning in AGI systems.
+New progress in artificial general intelligence (AGI) has made many people interested in systems that can learn on their own. While looking at how old knowledge and new AI meet, I found an unexpected link: the I-Ching's King Wen sequence could be an advanced guide for AGI systems to learn by themselves.
 
 ## The Journey of Discovery
 
-The investigation began with a fundamental question about self-directed learning in AGI systems. While exploring various approaches to optimize learning pathways, our discussion led us to examine the I-Ching's King Wen sequence through the lens of modern information theory and machine learning principles.
+We started by asking a basic question about how AGI systems learn on their own. While looking at ways to make learning better, we decided to study the I-Ching's King Wen sequence using ideas from modern information theory and machine learning.
 
 ## Key Insights
 
 ### The King Wen Sequence: An Ancient Meta-Learning Algorithm?
 
-What emerged was startling: the King Wen sequence appears to implement sophisticated learning principles that we're only now rediscovering through AGI research. The sequence demonstrates:
+What we found was surprising: the King Wen sequence seems to use advanced learning ideas that we are just now finding again in AGI research. The sequence shows:
 
-- Balanced optimization of surprise and familiarity
-- Natural handling of local minima through strategic jumps
-- Dynamic learning rate adaptation
-- Multi-dimensional pattern recognition
-- Sophisticated return loops for deeper understanding
+- A good balance between new things (surprise) and known things (familiarity).
+- It naturally avoids getting stuck in small problems by making smart jumps.
+- It changes how fast it learns as needed.
+- It can see patterns in many different ways at once.
+- It uses smart loops to go back and understand things better.
 
 ### Beyond Gradient Descent
 
-While gradient descent is currently considered state-of-the-art in many machine learning applications, our analysis suggests the King Wen sequence might implement something more sophisticated. It naturally handles challenges that modern algorithms struggle with, such as:
+Gradient descent is seen as a top method in machine learning now. But our study suggests the King Wen sequence might use an even more advanced method. It naturally handles challenges that modern algorithms often struggle with, such as:
 
-- Escaping local minima without manual intervention
-- Dynamically adjusting learning rates
-- Optimizing across multiple dimensions simultaneously
-- Creating effective meta-learning pathways
+- Getting unstuck from small problems without needing someone to fix it.
+- Changing its learning speed on its own.
+- Improving in many areas at the same time.
+- Making good plans for how to learn.
 
 ## Implications for AGI Development
 
-The sophistication of the King Wen sequence suggests a potential framework for developing more effective self-directed learning systems. Key principles that could be applied include:
+How advanced the King Wen sequence is suggests it could be a model for building better self-learning systems. Key ideas that could be applied include:
 
-1. Non-linear progression through learning spaces
-2. Balanced integration of opposing concepts
-3. Return loops that revisit concepts at deeper levels
-4. Forced perspective shifts to prevent stagnation
-5. Multi-dimensional pattern recognition across scales
+1. Learning in a path that isn't a straight line.
+2. Mixing opposite ideas in a balanced way.
+3. Going back to ideas to understand them more deeply.
+4. Making it look at things differently to avoid getting stuck.
+5. Seeing patterns in many ways, both big and small.
 
 ## Implementation Framework
 
@@ -124,20 +124,20 @@ interface KingWenLearning {
 
 ## Future Research Directions
 
-This investigation opens several intriguing avenues for future research:
+This study opens up some interesting ideas for future research:
 
-- Formal analysis of the King Wen sequence's information-theoretical properties
-- Development of learning algorithms based on the sequence's principles
-- Exploration of other ancient systems that might contain embedded learning optimization principles
-- Integration of these principles into current AGI architectures
+- A detailed study of the King Wen sequence using information theory.
+- Creating learning programs based on the sequence's ideas.
+- Looking for other old systems that might have hidden ideas about how to learn better.
+- Adding these ideas into the AGI systems we are building now.
 
 ## Conclusion
 
-The discovery that the King Wen sequence might represent a sophisticated meta-learning algorithm, predating modern information theory by millennia, suggests we might find valuable insights for AGI development in unexpected places. As we continue to develop self-directed learning systems, the principles embedded in this ancient sequence could provide valuable guidance for creating more effective learning architectures.
+Finding out that the King Wen sequence could be an advanced learning plan, thousands of years older than our information theory, suggests we can find useful ideas for AGI in surprising places. As we keep building self-learning systems, the ideas in this old sequence could give us good advice for making better learning setups.
 
 Here's the zenodo link to the resultant research paper:  
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14679598.svg)](https://doi.org/10.5281/zenodo.14679598)
 
 ---
 
-_This post emerged from an exploration of self-directed learning systems with an AI assistant, leading to unexpected insights about the potential application of ancient wisdom to modern AGI development._
+_This post came from exploring self-learning systems with an AI assistant. It led to surprising ideas about how old knowledge could be used for new AGI development._
