@@ -16,8 +16,9 @@ Here's a bullet-point summary of the difficulties and challenges, incorporating 
 
 - **Java Environment Configuration (`JAVA_HOME`, `PATH`):**
   - `sdkmanager.bat` failing due to `JAVA_HOME` not being set or `java` not being in the `PATH`.
-  - Identifying the correct JDK to use (e.g., Android Studio's JBR) and correctly configuring environment variables for it.
-  - Creating a batch file (`run_sdkmanager.bat`) as a workaround for users who may not want to alter system-wide environment variables, adding another layer of setup.
+  - Identifying the correct JDK to use (e.g., Android Studio's JBR for Windows command line, openjdk 17 for WSL) and correctly configuring environment variables for it.
+  For Android Studio 
+  - Creating a batch file (`run_sdkmanager.bat`) as a workaround for users who may not want to alter system-wide environment iiivariables, adding another layer of setup.
 - **Build & Deployment Nuances:**
   - README updates needed to clarify build and deployment for emulated devices (Commit `84c8420f`).
   - Initial observation that builds worked but required `adb install` from the command line (Commit `f6d8df32`), suggesting potential Android Studio integration or deployment configuration hurdles early on.
