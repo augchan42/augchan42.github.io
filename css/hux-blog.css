@@ -1864,6 +1864,29 @@ body.portfolio-page .portfolio-sidebar .sidebar-all-posts-link:hover {
     padding-top: 2rem;
   }
 }
+@media screen and (max-width: 767px) {
+  body.portfolio-page .portfolio-layout-container {
+    padding: 1rem 0.75rem;
+  }
+  body.portfolio-page .portfolio-header {
+    padding: 1rem 0.75rem;
+  }
+  body.portfolio-page .portfolio-main {
+    padding: 1rem 0.75rem;
+  }
+  body.portfolio-page .portfolio-section {
+    margin-bottom: 1.5rem;
+  }
+  body.portfolio-page .portfolio-main-content {
+    margin-bottom: 1rem;
+  }
+  body.portfolio-page .portfolio-sidebar {
+    padding-top: 1rem;
+  }
+  body.portfolio-page .portfolio-footer {
+    padding: 1rem 0.75rem;
+  }
+}
 body.portfolio-page .portfolio-footer {
   padding: 2rem;
   border-top: 1px solid #ccc;
