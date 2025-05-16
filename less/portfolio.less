@@ -1,0 +1,185 @@
+// Portfolio Page Styles
+
+// Color Scheme
+@portfolio-bg-color: #f8f4e1;
+@portfolio-text-color: #333333;
+@portfolio-border-color: #ccc;
+@portfolio-link-color: #007bff; // A generic link color, can be adjusted
+@portfolio-link-hover-color: darken(@portfolio-link-color, 15%);
+
+// Typography is now handled by the .sans-serif mixin from the theme
+
+body.portfolio-page {
+    .sans-serif; // Apply theme's font stack and line-height
+    background-color: @portfolio-bg-color;
+    color: @portfolio-text-color;
+    min-height: 100vh;
+}
+
+// Un-nested and more specific selectors for portfolio elements
+body.portfolio-page .portfolio-container {
+    // Potentially add max-width, margin: auto for centering if needed
+}
+
+body.portfolio-page .portfolio-header {
+    padding: 2rem;
+    border-bottom: 1px solid @portfolio-border-color;
+    text-align: left;
+}
+
+body.portfolio-page .portfolio-header .portfolio-title {
+    font-size: 3.0rem;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    margin: 0 0 0.5rem 0;
+}
+
+body.portfolio-page .portfolio-header .portfolio-subtitle {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+body.portfolio-page .portfolio-main {
+    padding: 2rem;
+}
+
+body.portfolio-page .portfolio-section {
+    margin-bottom: 3rem;
+}
+
+body.portfolio-page .portfolio-section .portfolio-section-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    border-bottom: 1px solid @portfolio-border-color;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+body.portfolio-page .about-me .portfolio-text {
+    font-size: 1.5rem;
+}
+
+body.portfolio-page .projects .portfolio-project-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+body.portfolio-page .projects .portfolio-project-list li {
+    margin-bottom: 1.5rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+body.portfolio-page .projects .portfolio-project-name {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+body.portfolio-page .projects .portfolio-project-description {
+    font-size: 1.5rem;
+}
+
+body.portfolio-page .contact .portfolio-text {
+    font-size: 1.5rem;
+}
+
+body.portfolio-page .contact .portfolio-link {
+    color: @portfolio-link-color;
+    text-decoration: underline;
+    &:hover {
+        color: @portfolio-link-hover-color;
+        text-decoration: none;
+    }
+}
+
+// Portfolio Layout with Sidebar
+body.portfolio-page .portfolio-layout-container {
+    display: flex;
+    flex-wrap: wrap; // Allow sidebar to wrap on smaller screens
+    padding: 1rem; // Add some padding around the container
+}
+
+body.portfolio-page .portfolio-main-content {
+    flex: 1; // Takes up available space, good for main content
+    padding-right: 2rem; // Space between main content and sidebar
+    min-width: 70%; // Ensure it takes most space initially
+}
+
+body.portfolio-page .portfolio-sidebar {
+    flex-basis: 280px; // Starting width for the sidebar
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-left: 1rem; // Space from main content or edge
+    border-left: 1px solid @portfolio-border-color; // Visual separator
+
+    .sidebar-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .sidebar-title {
+        font-size: 1.5rem; // Adjust as needed, smaller than main section titles
+        font-weight: 600;
+        margin-top: 0; // Remove top margin if it's the first element
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .sidebar-post-list {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 1.5rem;
+        li {
+            margin-bottom: 0.75rem;
+            a {
+                font-size: 1.1rem; // Slightly smaller than main text
+                text-decoration: none;
+                color: @portfolio-text-color; // Use portfolio text color
+                &:hover {
+                    color: @portfolio-link-color; // Use link color on hover
+                    text-decoration: underline;
+                }
+            }
+            .sidebar-post-date {
+                display: block;
+                font-size: 0.85rem;
+                color: @brand-gray; // Use theme's gray color
+                margin-top: 0.2rem;
+            }
+        }
+    }
+    .sidebar-all-posts-link {
+        font-size: 1.1rem;
+        color: @portfolio-link-color;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Responsive adjustments for the sidebar layout
+@media screen and (max-width: 992px) { // Tablet and below
+    body.portfolio-page .portfolio-main-content {
+        min-width: 100%; // Main content takes full width
+        padding-right: 0; // No right padding when sidebar stacks
+        margin-bottom: 2rem; // Space before stacked sidebar
+    }
+
+    body.portfolio-page .portfolio-sidebar {
+        flex-basis: 100%; // Sidebar takes full width
+        padding-left: 0;
+        border-left: none; // No left border when stacked
+        border-top: 1px solid @portfolio-border-color; // Top border instead
+        padding-top: 2rem;
+    }
+}
+
+body.portfolio-page .portfolio-footer {
+    padding: 2rem;
+    border-top: 1px solid @portfolio-border-color;
+    text-align: center;
+    font-size: 1.125rem;
+} 

@@ -1,8 +1,27 @@
-/*!
- * Hux Blog v1.8.2 (http://huxpro.github.io)
- * Copyright 2024 Hux <huxpro@gmail.com>
- */
-
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bWmT.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf) format('truetype');
+}
 @media (min-width: 1200px) {
   .post-container,
   .sidebar-container {
@@ -661,7 +680,7 @@ body {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.7;
   font-size: 16px;
   color: #404040;
@@ -688,7 +707,7 @@ h6 {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.7;
   line-height: 1.1;
   font-weight: bold;
@@ -988,7 +1007,7 @@ samp {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.7;
 }
 .navbar-custom .navbar-brand {
@@ -1186,7 +1205,7 @@ samp {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.7;
   font-size: 18px;
   line-height: 1.1;
@@ -1214,7 +1233,7 @@ samp {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.7;
   font-size: 17px;
   line-height: 1.4;
@@ -1364,7 +1383,7 @@ footer .copyright a:focus {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.7;
   text-transform: uppercase;
   font-size: 14px;
@@ -1393,7 +1412,7 @@ footer .copyright a:focus {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.7;
   text-transform: uppercase;
   font-size: 13px;
@@ -1580,7 +1599,7 @@ img::-moz-selection {
      *     TypeIsBeautiful,
      *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
      */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.7;
 }
 .mini-post-list .post-preview {
@@ -1700,4 +1719,154 @@ img::-moz-selection {
 }
 .no-scroll {
   overflow-y: hidden;
+}
+body.portfolio-page {
+  /* Hux learn from
+     *     TypeIsBeautiful,
+     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
+     */
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  background-color: #f8f4e1;
+  color: #333333;
+  min-height: 100vh;
+}
+body.portfolio-page .portfolio-header {
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+body.portfolio-page .portfolio-header .portfolio-title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+  margin: 0 0 0.5rem 0;
+}
+body.portfolio-page .portfolio-header .portfolio-subtitle {
+  font-size: 1.5rem;
+  margin: 0;
+}
+body.portfolio-page .portfolio-main {
+  padding: 2rem;
+}
+body.portfolio-page .portfolio-section {
+  margin-bottom: 3rem;
+}
+body.portfolio-page .portfolio-section .portfolio-section-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+body.portfolio-page .about-me .portfolio-text {
+  font-size: 1.5rem;
+}
+body.portfolio-page .projects .portfolio-project-list {
+  list-style: none;
+  padding-left: 0;
+}
+body.portfolio-page .projects .portfolio-project-list li {
+  margin-bottom: 1.5rem;
+}
+body.portfolio-page .projects .portfolio-project-list li:last-child {
+  margin-bottom: 0;
+}
+body.portfolio-page .projects .portfolio-project-name {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+body.portfolio-page .projects .portfolio-project-description {
+  font-size: 1.5rem;
+}
+body.portfolio-page .contact .portfolio-text {
+  font-size: 1.5rem;
+}
+body.portfolio-page .contact .portfolio-link {
+  color: #007bff;
+  text-decoration: underline;
+}
+body.portfolio-page .contact .portfolio-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+body.portfolio-page .portfolio-layout-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+body.portfolio-page .portfolio-main-content {
+  flex: 1;
+  padding-right: 2rem;
+  min-width: 70%;
+}
+body.portfolio-page .portfolio-sidebar {
+  flex-basis: 280px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-left: 1rem;
+  border-left: 1px solid #ccc;
+}
+body.portfolio-page .portfolio-sidebar .sidebar-section {
+  margin-bottom: 1.5rem;
+}
+body.portfolio-page .portfolio-sidebar .sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+body.portfolio-page .portfolio-sidebar .sidebar-post-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+body.portfolio-page .portfolio-sidebar .sidebar-post-list li {
+  margin-bottom: 0.75rem;
+}
+body.portfolio-page .portfolio-sidebar .sidebar-post-list li a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #333333;
+}
+body.portfolio-page .portfolio-sidebar .sidebar-post-list li a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+body.portfolio-page .portfolio-sidebar .sidebar-post-list li .sidebar-post-date {
+  display: block;
+  font-size: 0.85rem;
+  color: #a3a3a3;
+  margin-top: 0.2rem;
+}
+body.portfolio-page .portfolio-sidebar .sidebar-all-posts-link {
+  font-size: 1.1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+body.portfolio-page .portfolio-sidebar .sidebar-all-posts-link:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 992px) {
+  body.portfolio-page .portfolio-main-content {
+    min-width: 100%;
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  body.portfolio-page .portfolio-sidebar {
+    flex-basis: 100%;
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid #ccc;
+    padding-top: 2rem;
+  }
+}
+body.portfolio-page .portfolio-footer {
+  padding: 2rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-size: 1.125rem;
 }

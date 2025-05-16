@@ -1,46 +1,53 @@
 ---
-layout: page
-description: "\"I may not have gone where I intended to go, but I think I have ended up where I needed to be.\""
+layout: portfolio
+title: Augustin Chan - Portfolio
+description: Fullstack Architect (Non Real-Estate).
+nav-item: true
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
-            {% else %}
-                {{ post.content | strip_html | truncate:200 }}
-            {% endif %}
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
-{% endfor %}
+<header class="portfolio-header">
+  <h1 class="portfolio-title">Augustin Chan</h1>
+  <p class="portfolio-subtitle">Fullstack Architect (Non Real-Estate)</p>
+</header>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<main class="portfolio-main">
+  <section class="portfolio-section about-me">
+    <h2 class="portfolio-section-title">About Me</h2>
+    <p class="portfolio-text">
+      I am a seasoned developer with a passion for building immersive web applications and exploring the intersection of ancient wisdom
+      with modern technology. <br>
+      I now build everything AI-assisted (Cursor + Gemini 2.5), so please don't ask me to leetcode :)
+    </p>
+  </section>
+
+  <section class="portfolio-section projects">
+    <h2 class="portfolio-section-title">Projects</h2>
+    <ul class="portfolio-project-list">
+      <li>
+        <h3 class="portfolio-project-name"><a href="https://app.8bitoracle.ai" class="portfolio-link" target="_blank">8-Bit Oracle - Tech Noir I-Ching</a></h3>
+        <p class="portfolio-project-description">8-Bit Oracle: A tech-noir digital counselor. Key tech: Next.js 14, React, TypeScript, Zustand (state), Supabase (auth), Dynamic Labs (ETH/Solana wallets), Anthropic (AI), use-stt (voice input), Radix UI/Tailwind (UI), Recharts (data viz), next-intl (i18n), and PWA support via next-pwa.</p>
+      </li>
+      <li>
+        <h3 class="portfolio-project-name">DKG OriginTrail Integration - Hackathon Winner</h3>
+        <p class="portfolio-project-description">(Consensus HK 2025 Hackathon Win, Feb 2025) integrating OriginTrail DKG with 8-Bit Oracle for on-chain divination persistence via a Telegram bot (bot is an ElizaOS agent). Focused on robust JSON-LD generation, reliability, and observability. <a href="{{ site.baseurl }}/2025/02/20/dkg-origintrail-hackathon/" class="portfolio-link">Read more...</a></p>
+      </li>
+      <li>
+        <h3 class="portfolio-project-name">Bonsol Framework Enhancements</h3>
+        <p class="portfolio-project-description">Contributed key features (Mar 2025) to this Solana verifiable compute framework, including an I Ching dApp sample, RISC0_DEV_MODE for faster iteration, and custom S3 URL support for artifact management. <a href="{{ site.baseurl }}/2025/03/08/bonsol-verifiable-compute-enhancements/" class="portfolio-link">Read more...</a></p>
+      </li>
+      <li>
+        <h3 class="portfolio-project-name">ai16z ElizaOS Agent Project</h3>
+        <p class="portfolio-project-description">Key contributor (top 20, Nov 2024) to this open-source AI project, enhancing embedding strategies, optimizing language models (Claude 3 Haiku), and improving backend stability. <a href="{{ site.baseurl }}/2024/11/15/eliza-ai16z-contribution/" class="portfolio-link">Read more...</a></p>
+      </li>          
+    </ul>
+  </section>
+
+  <section class="portfolio-section contact">
+    <h2 class="portfolio-section-title">Contact</h2>
+    <p class="portfolio-text">Connect with me on <a href="https://www.linkedin.com/in/auchan/" class="portfolio-link">LinkedIn</a> or shoot me an <a href="mailto:aug@digitalrain.studio" class="portfolio-link">email</a>.</p>
+  </section>
+</main>
+
+<footer class="portfolio-footer">
+  &copy; {% assign current_year = 'now' | date: "%Y" %}{{ current_year }} Augustin Chan. All rights reserved.
+</footer>
