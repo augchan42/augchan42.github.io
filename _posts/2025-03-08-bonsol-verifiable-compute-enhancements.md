@@ -17,7 +17,7 @@ tags:
   ]
 ---
 
-The Bonsol framework aims to unlock the next generation of decentralized applications on Solana by making complex, off-chain computations verifiable. Recent contributions, primarily during the first half of March 2025, have significantly advanced this mission, making the platform more robust, developer-friendly, and versatile. This post dives into three pivotal improvements: the creation of an illustrative I Ching sample program, the integration of `RISC0_DEV_MODE` for a streamlined development lifecycle, and the added flexibility of custom S3 URL support for program artifacts.
+The Bonsol framework aims to unlock the next generation of decentralized applications on Solana by making complex, off-chain computations verifiable. Recent contributions, primarily during the first half of March 2025, have significantly advanced this mission, making the platform more robust, developer-friendly, and versatile. This work was highlighted in a [collaboration announcement by Bonsol Labs](https://x.com/bonsol_labs/status/1920858983436292250). This post dives into three pivotal improvements: the creation of an illustrative I Ching sample program, the integration of `RISC0_DEV_MODE` for a streamlined development lifecycle, and the added flexibility of custom S3 URL support for program artifacts.
 
 Further details and the specific code contributions can be explored on GitHub: [Bonsol - I Ching Sample Feature Branch](https://github.com/augchan42/bonsol/commits/feature/iching-sample)
 

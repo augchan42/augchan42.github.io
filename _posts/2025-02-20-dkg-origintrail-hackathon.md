@@ -19,7 +19,7 @@ tags:
 
 In Feb 2025, our project integrating OriginTrail's Decentralized Knowledge Graph (DKG) with a custom divination backend secured a win at the Consensus HK 2025 Hackathon. I led the development and enhancement of this novel system, which enables the persistence of divinations on-chain, accessible and managed via a Telegram bot.
 
-The official announcement of our win can be found on [OriginTrail's Twitter post](https://x.com/origin_trail/status/1892543087479505352). At the time of the event, my Twitter handle was `dao_codepath`; it has since been updated to `hosermage_`.
+The official announcement of our win can be found on [OriginTrail's Twitter post](https://x.com/origin_trail/status/1892543087479505352). The event and winners were also covered by [CoinDesk in their hackathon recap](https://www.coindesk.com/consensus-hong-kong-2025-coverage/2025/02/27/consensus-hackathon-winners-ai-agents-gaming-trading-payments-and-nfts). At the time of the event, my Twitter handle was `dao_codepath`; it has since been updated to `hosermage_`.
 
 The project repository can be found on GitHub: [https://github.com/augchan42/pix-origintrail](https://github.com/augchan42/pix-origintrail)
 
