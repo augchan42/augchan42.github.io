@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Key Contributions to a16z Eliza AI Project (Nov 2024)"
+title: "Key Contributions to ai16z Eliza AI Project (Nov 2024)"
 date: 2024-11-15
-description: "Detailing significant enhancements to the a16z Eliza AI project, focusing on local-first capabilities, model optimization, and backend stability."
+description: "Detailing significant enhancements to the ai16z Eliza AI project, focusing on local-first capabilities, model optimization, and backend stability."
 tags:
   [AI, LLM, Embeddings, Python, Ollama, Claude-3-Haiku, Postgres, Open-Source]
 ---
 
-In November 2024, as a top 20 contributor to the [a16z Eliza project](https://github.com/augchan42/eliza), my work on the a16z Eliza project involved a major update focused on enhancing its capabilities, particularly around local-first functionality and overall performance.
+In November 2024, as a top 20 contributor to the [ai16z Eliza project](https://github.com/augchan42/eliza), my work on the ai16z Eliza project involved a major update focused on enhancing its capabilities, particularly around local-first functionality and overall performance.
 
 The core of this update is captured in commit [`638eac6`](https://github.com/augchan42/eliza/commit/638eac67a83bd3346bb48ae5d5921857f44cf980), which introduced several key improvements:
 
