@@ -1,11 +1,20 @@
+@import "variables.less"; // Import theme variables
+@import "mixins.less";    // Import theme mixins
+
 // Portfolio Page Styles
 
 // Color Scheme
 @portfolio-bg-color: #f8f4e1;
 @portfolio-text-color: #333333;
+@portfolio-header-text-color: @portfolio-text-color; // Define header text color
+@content-bg: @portfolio-bg-color; // Make content sections have the same background as the page
 @portfolio-border-color: #ccc;
 @portfolio-link-color: #007bff; // A generic link color, can be adjusted
 @portfolio-link-hover-color: darken(@portfolio-link-color, 15%);
+
+// Variables that were used in portfolio sections but not defined globally by the theme
+@heading-color: @portfolio-text-color; // For portfolio section headings
+@primary-color: @portfolio-link-color;   // Primary accent for portfolio sections (e.g., title borders)
 
 // Typography is now handled by the .sans-serif mixin from the theme
 
@@ -25,6 +34,8 @@ body.portfolio-page .portfolio-header {
     padding: 2rem;
     border-bottom: 1px solid @portfolio-border-color;
     text-align: left;
+    background-color: darken(@portfolio-bg-color, 5%); // Slightly darker header
+    color: @portfolio-header-text-color; // Use variable
 }
 
 body.portfolio-page .portfolio-header .portfolio-title {
@@ -41,22 +52,49 @@ body.portfolio-page .portfolio-header .portfolio-subtitle {
 
 body.portfolio-page .portfolio-main {
     padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    // padding: 0 1rem; // Default padding - let sections handle their own full padding for now or none if desired
 }
 
 body.portfolio-page .portfolio-section {
     margin-bottom: 3rem;
+    background-color: @content-bg; // This is now @portfolio-bg-color
+    padding: 2rem; // Keep general padding for sections
+    // border-radius: 8px; // Remove box styling
+    // border: 1px solid @portfolio-border-color; // Remove box styling
+    // box-shadow: 0 2px 4px rgba(0,0,0,0.05); // Remove box styling
 }
 
 body.portfolio-page .portfolio-section .portfolio-section-title {
-    font-size: 2.25rem;
-    font-weight: 600;
-    border-bottom: 1px solid @portfolio-border-color;
+    font-size: 2rem; // Slightly larger for main section titles
+    color: @heading-color; // Use variable
+    margin-top: 0;
+    margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
+}
+
+body.portfolio-page .portfolio-section .portfolio-section-subtitle {
+    font-size: 1.6rem; // Adjusted H3 size
+    color: darken(@heading-color, 10%); // Slightly darker than H2
+    margin-top: 0;
     margin-bottom: 1rem;
 }
 
-body.portfolio-page .about-me .portfolio-text {
+// Common font styling for main text content across portfolio pages (index.html sections & offerings page)
+body.portfolio-page .about-me .portfolio-text,
+body.portfolio-page .projects .portfolio-project-description,
+body.portfolio-page .contact .portfolio-text,
+body.page-offerings .portfolio-main .portfolio-section .portfolio-text,
+body.page-offerings .portfolio-main .portfolio-section .portfolio-list li {
     font-size: 1.5rem;
+    line-height: 1.7;
+}
+
+// Specific section styling (selectors remain, but font-size/line-height are now common)
+body.portfolio-page .about-me .portfolio-text {
+    // font-size and line-height are now handled by the common rule above
+    // Add any other specific styles for .about-me .portfolio-text here if needed in the future
 }
 
 body.portfolio-page .projects .portfolio-project-list {
@@ -69,6 +107,8 @@ body.portfolio-page .projects .portfolio-project-list li {
     &:last-child {
         margin-bottom: 0;
     }
+    // Note: If project list items themselves (not just descriptions) needed specific font sizing different from offerings page list items,
+    // this would need adjustment. Currently, offerings list items will get 1.5rem via the common rule.
 }
 
 body.portfolio-page .projects .portfolio-project-name {
@@ -78,11 +118,11 @@ body.portfolio-page .projects .portfolio-project-name {
 }
 
 body.portfolio-page .projects .portfolio-project-description {
-    font-size: 1.5rem;
+    // font-size and line-height are now handled by the common rule above
 }
 
 body.portfolio-page .contact .portfolio-text {
-    font-size: 1.5rem;
+    // font-size and line-height are now handled by the common rule above
 }
 
 body.portfolio-page .contact .portfolio-link {
@@ -193,6 +233,10 @@ body.portfolio-page .portfolio-sidebar {
 
     body.portfolio-page .portfolio-section {
         margin-bottom: 1.5rem; 
+        padding: 1rem 0; // Adjust padding for mobile, remove horizontal section padding
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
     }
 
     body.portfolio-page .portfolio-main-content {
@@ -213,4 +257,51 @@ body.portfolio-page .portfolio-footer {
     border-top: 1px solid @portfolio-border-color;
     text-align: center;
     font-size: 1.125rem;
+}
+
+// Specific font sizes for index.html sections (these should be unaffected and are also 1.5rem)
+body.portfolio-page .about-me .portfolio-text {
+    font-size: 1.5rem;
+    line-height: 1.7; // Ensure line-height is also set
+}
+
+body.portfolio-page .projects .portfolio-project-description {
+    font-size: 1.5rem; 
+    line-height: 1.7; // Ensure line-height is also set
+}
+
+body.portfolio-page .contact .portfolio-text {
+    font-size: 1.5rem; 
+    line-height: 1.7; // Ensure line-height is also set
+}
+
+// REMOVE the now redundant block for page-offerings specific font styling
+/*
+// Font styling specifically for the offerings page
+body.page-offerings .portfolio-main .portfolio-section {
+    .portfolio-text,
+    .portfolio-list li {
+        font-size: 1.5rem; // Make offerings page text also 1.5rem
+        line-height: 1.7;
+    }
+}
+*/
+
+// REMOVE the overly broad font sizing rule at the end (already commented out)
+/*
+.portfolio-main { 
+    .portfolio-section {
+        .portfolio-text,
+        p.portfolio-text {
+            font-size: 1.1rem; 
+            line-height: 1.8;
+        }
+
+        .portfolio-list,
+        ul.portfolio-list {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+    }
 } 
+*/ 

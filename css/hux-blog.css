@@ -1735,6 +1735,8 @@ body.portfolio-page .portfolio-header {
   padding: 2rem;
   border-bottom: 1px solid #ccc;
   text-align: left;
+  background-color: #f3eccc;
+  color: #333333;
 }
 body.portfolio-page .portfolio-header .portfolio-title {
   font-size: 3rem;
@@ -1748,19 +1750,34 @@ body.portfolio-page .portfolio-header .portfolio-subtitle {
 }
 body.portfolio-page .portfolio-main {
   padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
 }
 body.portfolio-page .portfolio-section {
   margin-bottom: 3rem;
+  background-color: #f8f4e1;
+  padding: 2rem;
 }
 body.portfolio-page .portfolio-section .portfolio-section-title {
-  font-size: 2.25rem;
-  font-weight: 600;
-  border-bottom: 1px solid #ccc;
+  font-size: 2rem;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
+}
+body.portfolio-page .portfolio-section .portfolio-section-subtitle {
+  font-size: 1.6rem;
+  color: #1a1a1a;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
-body.portfolio-page .about-me .portfolio-text {
+body.portfolio-page .about-me .portfolio-text,
+body.portfolio-page .projects .portfolio-project-description,
+body.portfolio-page .contact .portfolio-text,
+body.page-offerings .portfolio-main .portfolio-section .portfolio-text,
+body.page-offerings .portfolio-main .portfolio-section .portfolio-list li {
   font-size: 1.5rem;
+  line-height: 1.7;
 }
 body.portfolio-page .projects .portfolio-project-list {
   list-style: none;
@@ -1776,12 +1793,6 @@ body.portfolio-page .projects .portfolio-project-name {
   font-size: 1.875rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
-}
-body.portfolio-page .projects .portfolio-project-description {
-  font-size: 1.5rem;
-}
-body.portfolio-page .contact .portfolio-text {
-  font-size: 1.5rem;
 }
 body.portfolio-page .contact .portfolio-link {
   color: #007bff;
@@ -1876,6 +1887,10 @@ body.portfolio-page .portfolio-sidebar .sidebar-all-posts-link:hover {
   }
   body.portfolio-page .portfolio-section {
     margin-bottom: 1.5rem;
+    padding: 1rem 0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
   }
   body.portfolio-page .portfolio-main-content {
     margin-bottom: 1rem;
@@ -1893,3 +1908,42 @@ body.portfolio-page .portfolio-footer {
   text-align: center;
   font-size: 1.125rem;
 }
+body.portfolio-page .about-me .portfolio-text {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+body.portfolio-page .projects .portfolio-project-description {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+body.portfolio-page .contact .portfolio-text {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+/*
+// Font styling specifically for the offerings page
+body.page-offerings .portfolio-main .portfolio-section {
+    .portfolio-text,
+    .portfolio-list li {
+        font-size: 1.5rem; // Make offerings page text also 1.5rem
+        line-height: 1.7;
+    }
+}
+*/
+/*
+.portfolio-main { 
+    .portfolio-section {
+        .portfolio-text,
+        p.portfolio-text {
+            font-size: 1.1rem; 
+            line-height: 1.8;
+        }
+
+        .portfolio-list,
+        ul.portfolio-list {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+    }
+} 
+*/
