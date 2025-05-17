@@ -5,7 +5,7 @@ author: "Aug"
 date: 2025-05-14
 header-style: text
 catalog: true
-description: "A backend developer's journey through the challenges of implementing FIDO2 passkeys for an Android app using Python, covering assetlinks.json, data serialization, and Base64URL encoding."
+description: "A developer's journey through the challenges of implementing FIDO2 passkeys for an Android app using Python, covering assetlinks.json, data serialization, and Base64URL encoding."
 tags:
   - python
   - fido2
@@ -17,7 +17,7 @@ tags:
   - fastapi
 ---
 
-# Implementing FIDO2 Passkeys for Android: A Backend Developer's Journey
+# Implementing FIDO2 Passkeys for Android: A Developer's Journey
 
 Integrating FIDO2 passkeys into an application can significantly enhance security and user experience. However, the journey, especially on the backend, can present subtle challenges. This post is the first of two detailing my experiences implementing passkey support for an Android (Kotlin) frontend with a Python backend. Here, I'll focus on the backend challenges I faced and how I navigated them.
 
