@@ -192,7 +192,7 @@ self.addEventListener('fetch', event => {
     // Call respondWith() with whatever we get first.
     // Promise.race() resolves with first one settled (even rejected)
     // If the fetch fails (e.g disconnected), wait for the cache.
-    // If there’s nothing in cache, wait for the fetch.
+    // If there's nothing in cache, wait for the fetch.
     // If neither yields a response, return offline pages.
     event.respondWith(
       Promise.race([fetched.catch(_ => cached), cached])
@@ -254,15 +254,26 @@ function revalidateContent(cachedResp, fetchedResp) {
   // revalidate when both promise resolved
   return Promise.all([cachedResp, fetchedResp])
     .then(([cached, fetched]) => {
-      const cachedVer = cached.headers.get('last-modified')
-      const fetchedVer = fetched.headers.get('last-modified')
-      console.log(`"${cachedVer}" vs. "${fetchedVer}"`);
+      // If there's no cached version, or if the fetched version is missing (e.g., network error),
+      // we can't determine if an update was found.
+      if (!cached || !fetched) {
+        console.log('revalidateContent: Cached or fetched response is undefined. Cannot compare.');
+        return;
+      }
+
+      const cachedVer = cached.headers.get('last-modified');
+      const fetchedVer = fetched.headers.get('last-modified');
+      console.log(`Cache check for ${fetched.url}: Cached "${cachedVer}" vs. Fetched "${fetchedVer}"`);
+
+      // Also check if headers themselves are present, as a very basic sanity check
       if (cachedVer !== fetchedVer) {
         sendMessageToClientsAsync({
           'command': 'UPDATE_FOUND',
           'url': fetched.url
-        })
+        });
       }
     })
-    .catch(err => console.log(err))
+    .catch(err => {
+      console.error('Error in revalidateContent:', err); // Log the actual error object
+    });
 }
