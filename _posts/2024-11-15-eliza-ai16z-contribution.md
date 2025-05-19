@@ -7,6 +7,11 @@ tags:
   [AI, LLM, Embeddings, Python, Ollama, Claude-3-Haiku, Postgres, Open-Source]
 ---
 
+**Abstract:**  
+This post details significant enhancements made to the ai16z Eliza AI project in November 2024. The contributions focused on developing local-first capabilities by integrating BGE-Small and Ollama embeddings, optimizing the language model by upgrading to Claude 3 Haiku for better price-performance, and improving backend stability with fixes to Postgres connectivity and transcription error handling.
+
+**Estimated reading time:** _2 minutes_
+
 In November 2024, as a top 20 contributor to the [ai16z Eliza project](https://github.com/augchan42/eliza), my work on the ai16z Eliza project involved a major update focused on enhancing its capabilities, particularly around local-first functionality and overall performance.
 
 The core of this update is captured in commit [`638eac6`](https://github.com/augchan42/eliza/commit/638eac67a83bd3346bb48ae5d5921857f44cf980), which introduced several key improvements:

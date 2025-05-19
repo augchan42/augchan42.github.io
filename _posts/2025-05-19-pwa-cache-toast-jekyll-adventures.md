@@ -9,6 +9,11 @@ catalog: true
 description: "A dive into debugging service worker caching and update notifications for new pages in a Jekyll site, ensuring the 'Content Refresh' toast works as expected."
 ---
 
+**Abstract:**  
+This post details the process of debugging and fixing service worker update notifications for new custom layouts in a Jekyll site using the Hux Blog theme. It covers how to ensure new pages are properly cached, how to handle missing client-side scripts, and how to gracefully fix JavaScript errors in the service worker logic. The article is aimed at developers working with Jekyll, PWAs, or service worker caching strategies.
+
+**Estimated reading time:** _7 minutes_
+
 My Jekyll site, built on the excellent Hux Blog theme, comes with Progressive Web App (PWA) capabilities, including a service worker that handles offline caching and provides a nifty "Content Refresh" toast when new content is deployed. This is great for the blog posts, but when I recently introduced a new portfolio section with custom layouts (`index.html` at the root and an `offerings/index.html` page), I noticed these new pages were serving stale content without the friendly update prompt. Time for a deep dive!
 
 ## The Hux Blog Service Worker Setup

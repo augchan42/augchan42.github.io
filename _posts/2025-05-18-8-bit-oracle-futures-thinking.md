@@ -18,6 +18,11 @@ catalog: true
 description: "A technical exploration of 'Futures Thinking,' a potential experimental feature for 8-Bit Oracle, looking at a Triple Hex Mode and AI-driven scenario mapping."
 ---
 
+**Abstract:**  
+This post explores 'Futures Thinking,' a potential experimental feature for the 8-Bit Oracle. It delves into the design considerations for a 'Triple Hex Mode' to help users map multiple potential future scenarios from a single I-Ching inquiry, including how AI could assist in categorizing these scenarios.
+
+**Estimated reading time:** _5 minutes_
+
 The I-Ching, at its core, is a system for exploring the emergent patterns of change. With 8-Bit Oracle, we're always tinkering with ways to deepen that exploration. Recently, a conversation with my friend Helen sparked an idea for a potential experimental feature, tentatively dubbed **"Futures Thinking."** This post is less of an announcement and more of a public musing—a dive into the design considerations for a mode that might (or might not) see the light of day, aimed at helping users map out multiple potential future scenarios from a single point of inquiry.
 
 ## The Core Concept: Independent Triple Hex Mode

@@ -20,6 +20,11 @@ tags:
   - dependency-management
 ---
 
+**Abstract:**  
+This post shares practical tips and experiences from working with the Haystack LLM framework for building advanced NLP applications. It covers navigating version differences (1.x vs. 2.x beta), the advantages of developing with a forked repository for deeper understanding and contributions, managing Python dependencies using `pyproject.toml`, and best practices for contributing back to the open-source project, including setting up linters and handling release notes.
+
+**Estimated reading time:** _4 minutes_
+
 I've been diving into [Haystack](https://github.com/deepset-ai/haystack) recently, an end-to-end LLM (Large Language Model) framework that lets you build some pretty advanced NLP (Natural Language Processing) applications. As their GitHub page describes it:
 
 > Haystack is an end-to-end LLM framework that enables you to build applications powered by LLMs, Transformer models, vector search and more. Whether you want to perform retrieval-augmented generation (RAG), documentation search, question answering or answer generation, you can use state-of-the-art embedding models and LLMs with Haystack to build end-to-end NLP applications to solve your use case.

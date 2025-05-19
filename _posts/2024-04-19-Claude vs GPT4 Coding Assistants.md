@@ -19,6 +19,11 @@ tags:
   - developer-tools
 ---
 
+**Abstract:**  
+This post offers a developer's brief comparison of using Claude Opus and GPT-4 (via Cursor.sh) as AI coding assistants. It highlights experiences with both models, particularly when working with Next.js (App Router vs. Pages Router) and how they handle recent framework updates, noting differences in understanding context and relevance of suggestions.
+
+**Estimated reading time:** _1 minute_
+
 Some short notes and experiences.
 
 I use the cursor.sh IDE, which includes GPT4, for my project. I also use Claude Opus in a separate browser window.

@@ -18,6 +18,11 @@ tags:
   - frontend-development
 ---
 
+**Abstract:**  
+This post reflects on a developer's journey through UI framework choices, transitioning from Bootstrap to a Next.js and Tailwind CSS stack, and ultimately deciding to integrate Shadcn/ui. It discusses the pros and cons of using component libraries like Shadcn, which are based on Radix UI and involve copying code, versus traditional UI frameworks. The post also briefly touches on the project's MVP plans involving user accounts and a personalized I-Ching profile.
+
+**Estimated reading time:** _2 minutes_
+
 ## Current Tech Stack
 
 - **Framework**: Next.js 14 (app router)

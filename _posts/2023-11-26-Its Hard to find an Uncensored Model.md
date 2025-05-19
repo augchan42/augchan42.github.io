@@ -18,6 +18,11 @@ tags:
   - model-finetuning
 ---
 
+**Abstract:**  
+This post explores the challenges of finding truly uncensored AI models, noting the influence of OpenAI's data and built-in "guardrail" limitations. It discusses methods for fine-tuning base models to remove such refusals, referencing Eric Hartford's approach, and shares the author's experience with some specific models, including one found to be particularly responsive.
+
+**Estimated reading time:** _1 minute_
+
 I've found that many AI models seem to be built using data that **comes** from OpenAI in some way. This data often includes "guardrails" – built-in limitations that **stop** the model from responding to certain types of prompts. This makes finding a truly uncensored model **very difficult**.
 
 I **read** an interesting article by Eric Hartford that explains how to fine-tune a base AI model to remove these refusals:

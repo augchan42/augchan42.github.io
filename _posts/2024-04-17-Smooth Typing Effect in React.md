@@ -21,6 +21,11 @@ tags:
   - frontend-development
 ---
 
+**Abstract:**  
+This post shares a developer's notes and tips for implementing a smooth, multi-paragraph typing animation effect in React, complete with a feature to skip the animation. Key aspects covered include state management using React hooks (`useState`, `useEffect`, `useCallback`), alternatives to direct DOM manipulation, handling user events to skip typing, and managing internationalized text with `react-i18next`.
+
+**Estimated reading time:** _3 minutes_
+
 (Notes for myself - you can check out the effect at 8bitoracle.ai)
 
 Getting a typing effect to work properly can be quite challenging. I have a few paragraphs of text and wanted to create a typing effect for it, allowing the user to skip the animation. If a user presses a spacebar or clicks on a paragraph, the current paragraph should complete instantly, and the next one should begin typing.

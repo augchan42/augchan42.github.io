@@ -21,6 +21,11 @@ tags:
   - voice-biometrics
 ---
 
+**Abstract:**  
+This post explores brainstorming ideas for an AI-powered system to transcribe, understand, and visualize family stories shared during gatherings. Key concepts include narrator detection to distinguish between speakers, mapping complex family relationships described in the narratives, identifying primary sources for stories, and constructing an interactive family history knowledge graph. A more speculative idea of guessing appearances from voice characteristics is also mentioned.
+
+**Estimated reading time:** _2 minutes_
+
 Chinese New Year often means big family get-togethers, and with those gatherings come stories – wonderful, rambling tales that can weave back through several generations. It recently got me thinking: could Artificial Intelligence help us not just capture these precious oral histories, but also understand and visualize them in new ways?
 
 I started brainstorming a few ideas for an AI-powered system to make sense of these family narratives:

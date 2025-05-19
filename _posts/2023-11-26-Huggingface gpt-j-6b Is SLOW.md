@@ -19,6 +19,11 @@ tags:
   - local-llm
 ---
 
+**Abstract:**  
+This post serves as a guide to dramatically improve the inference speed of the GPT-J-6B language model on a local machine. It details the author's experience converting a Hugging Face `float16` model to the GGML format, which reduced response times from minutes to under 20 seconds. The process covers memory requirements for conversion, the steps to convert the model using `convert-h5-to-ggml.py`, building the necessary `gpt-j` executable from the `ggml` repository, and running the optimized model. A note on the newer GGUF format and an unsuccessful attempt to convert GPT-J to GGUF is also included.
+
+**Estimated reading time:** _6 minutes_
+
 If you've ever tried to get a large language model like EleutherAI's GPT-J-6B (from Hugging Face) to generate text on your own computer, you might have faced the same problem I did. This process, called "inference," can be incredibly slow. I was waiting 15 to 30 minutes just for the model to load and produce a response to my prompts! This was on my ThinkPad X1 Carbon (Gen 11) with 64GB of RAM, so my computer was powerful enough. This performance was too slow for any practical use.
 
 ## The GGML Solution: A Massive Speed Boost

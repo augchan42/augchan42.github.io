@@ -16,6 +16,11 @@ tags:
   - testnet
 ---
 
+**Abstract:**  
+This post serves as a developer's guide to deploying a CosmWasm smart contract onto the Stargaze testnet. It covers essential steps including setting up the Stargaze CLI (`starsd`), configuring a wallet, obtaining testnet tokens, and managing Rust versions for compatibility. The guide also walks through uploading the contract, obtaining its code ID, and instantiating it on the testnet.
+
+**Estimated reading time:** _15 minutes_
+
 # Deploying a Smart Contract to Stargaze Testnet
 
 ## Introduction

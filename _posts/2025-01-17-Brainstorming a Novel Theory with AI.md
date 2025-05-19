@@ -20,6 +20,11 @@ tags:
   - zenodo
 ---
 
+**Abstract:**  
+This post explores the journey of using AI to brainstorm a novel theory: leveraging the I-Ching's King Wen sequence as a potential framework for self-directed learning in Artificial General Intelligence (AGI). It details the iterative questioning process that led to the theory, key insights into how the sequence might embody advanced learning principles, and the potential implications for AGI development, linking to a resulting research paper.
+
+**Estimated reading time:** _5 minutes_
+
 # The I-Ching as a Framework for Self-Directed AGI Learning: A Journey Through Questions
 
 ## The Questions That Led to Discovery

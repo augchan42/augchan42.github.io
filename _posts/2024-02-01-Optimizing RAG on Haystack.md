@@ -21,6 +21,11 @@ tags:
   - conversational-ai
 ---
 
+**Abstract:**  
+This post details the author's experience implementing Retrieval Augmented Generation (RAG) and AI Agents using Haystack 1.x. It covers the setup of conversational memory, the creation of custom data pipelines utilizing a FAISS DocumentStore for local knowledge and integrating Google Search for external information. Key challenges discussed include the nuances of incrementally indexing new knowledge from web searches back into the local vector database and managing potentially inconclusive answers.
+
+**Estimated reading time:** _5 minutes_
+
 One of the most powerful ways to make Large Language Models (LLMs) more useful for specific tasks is through **Retrieval Augmented Generation (RAG)**. In simple terms, RAG is any process that feeds relevant, domain-specific information to an LLM right before it generates a response. This lets you enhance an LLM with new knowledge – say, from your company's documents or live web results – without costly and time-consuming model retraining. The main constraint is the LLM's maximum context size, which dictates how much information you can provide at once.
 
 Combine RAG with the concept of an **AI Agent**, and things get even more interesting. In the context of [Haystack](https://github.com/deepset-ai/haystack), an Agent uses an LLM's reasoning capabilities to figure out what steps (or "Tools") are needed to answer a question or complete a task, and then it executes those steps.

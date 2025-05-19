@@ -17,6 +17,11 @@ tags:
   - fastapi
 ---
 
+**Abstract:**  
+This post details a developer's journey through the backend challenges of implementing FIDO2 passkeys for an Android application using a Python backend. It covers critical aspects such as correctly configuring `assetlinks.json` for app-to-website association, handling data serialization for credential options and responses, and the nuances of Base64URL encoding/decoding required by the WebAuthn specification.
+
+**Estimated reading time:** _14 minutes_
+
 # Implementing FIDO2 Passkeys for Android: A Developer's Journey
 
 Integrating FIDO2 passkeys into an application can significantly enhance security and user experience. However, the journey, especially on the backend, can present subtle challenges. This post is the first of two detailing my experiences implementing passkey support for an Android (Kotlin) frontend with a Python backend. Here, I'll focus on the backend challenges I faced and how I navigated them.

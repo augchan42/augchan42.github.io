@@ -24,6 +24,11 @@ tags:
   - debounce
 ---
 
+**Abstract:**  
+This post offers a guide to minimizing re-renders and optimizing performance in React/Next.js applications, particularly those with authentication. It covers practical techniques such as combining state variables, memoizing context values with `useMemo`, tracking significant state changes with `useRef`, debouncing frequent updates, and carefully managing `useEffect` dependencies to prevent unnecessary operations.
+
+**Estimated reading time:** _3 minutes_
+
 ## Current Tech Stack
 
 - **Framework**: Next.js 14 (app router)

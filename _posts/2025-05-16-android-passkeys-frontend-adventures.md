@@ -19,6 +19,11 @@ tags:
   - nia
 ---
 
+**Abstract:**  
+This post details the journey of building the Android frontend for FIDO2 passkey authentication. It covers tackling the `CredentialManager` API, migrating local data storage from Proto DataStore to Preferences DataStore, and the debugging strategies employed, including Logcat and in-app debug displays, all within a Jetpack Compose environment.
+
+**Estimated reading time:** _5 minutes_
+
 # Android Passkeys: Frontend Adventures with CredentialManager and Jetpack Compose
 
 Following up on my [previous post about backend challenges with FIDO2 passkeys](/2025/05/14/Challenges-with-Passkey-Android/), this time I\'m diving into the Android frontend. Building the UI and logic for passkey authentication in our "People App" (a fork of Google\'s "Now In Android" sample) was an interesting journey, especially when wrestling with Jetpack Compose, the `CredentialManager` API, and a necessary data storage overhaul.

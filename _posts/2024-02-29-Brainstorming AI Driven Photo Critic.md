@@ -20,6 +20,11 @@ tags:
   - aesthetic-evaluation
 ---
 
+**Abstract:**  
+This post outlines initial brainstorming for an AI-powered photo critic service. It proposes a multi-stage approach to analyze and critique uploaded photographs, starting with basic metadata extraction, followed by deeper image analysis using Convolutional Neural Networks (CNNs) for scene/object recognition, and richer understanding with CLIP for image captioning and aesthetic evaluation. Finally, a Large Language Model (LLM) would synthesize these findings to generate a constructive critique.
+
+**Estimated reading time:** _4 minutes_
+
 I've been mulling over an interesting idea: what if you could get an AI to act as your personal photo critic? You'd upload a photograph, and an AI system would analyze it, offering constructive feedback and thoughtful critiques. It's a fun concept to explore, and it got me thinking about how one might technically approach building such a service.
 
 Here's a sketch of my initial brainstorming:

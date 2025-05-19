@@ -22,6 +22,11 @@ tags:
   - yin-yang
 ---
 
+**Abstract:**  
+This post analyzes the feasibility of using Chainlink VRF (Verifiable Random Function) for generating randomness in I-Ching divination. It compares this blockchain-based approach to traditional methods, server-side PRNGs/CSPRNGs, external randomness APIs, and client-side randomness. The discussion covers the pros and cons of each, focusing on user perception, cost, complexity, and includes JavaScript examples for generating I-Ching hexagrams with changing lines.
+
+**Estimated reading time:** _5 minutes_
+
 To tell fortunes with the I-Ching, people usually toss coins or use yarrow stalks. This helps them find the yin and yang lines that create a hexagram (a six-line symbol).
 
 I looked into using Chainlink VRF, which is a way to create randomness directly on the blockchain. It's an interesting idea, but I ultimately decided against it for now.

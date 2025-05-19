@@ -20,6 +20,11 @@ tags:
   - troubleshooting
 ---
 
+**Abstract:**  
+This post provides a step-by-step guide for diagnosing and resolving network connectivity issues between a Dockerized Spring Boot application running on AWS EC2 and an RDS Postgres database within the same VPC. It details the use of tools like `nslookup`, `nc`, and `psql` for troubleshooting, and explains how to correctly configure RDS Security Groups and Docker container DNS settings to ensure proper private IP resolution and access.
+
+**Estimated reading time:** _5 minutes_
+
 I recently helped a project implement user logins and data persistence using Spring Boot, with the application deployed in a Docker container on AWS EC2 and the database running as an AWS RDS Postgres instance. One of the most common (and frustrating!) hurdles we faced was getting the EC2 instance and the RDS database to communicate correctly within our Virtual Private Cloud (VPC).
 
 Here's a breakdown of the problem, the tools I used to diagnose it, and the eventual solution.

@@ -20,6 +20,11 @@ tags:
   - java
 ---
 
+**Abstract:**  
+This post shares developer notes on rapidly implementing JWT authentication and data persistence in Spring Boot 3. It covers experiences with Spring Security, the efficiency of JPA annotations for entity management, creating stateless sessions with JWTs, and using BCrypt for password encryption. The author contrasts these modern Spring Boot approaches with older Java EE practices, highlighting the power of annotations and abstractions.
+
+**Estimated reading time:** _3 minutes_
+
 As I've been quickly ramping up on modern Spring Boot for implementing security and data persistence (with a lot of help from AI coding assistants!), I wanted to capture some key concepts and observations. These are largely notes for my own reference to keep track of how I've approached things, especially contrasting with older Java development practices, but perhaps they'll be useful to others on a similar journey.
 
 **The Old World vs. Modern Spring: Annotations and Abstractions**

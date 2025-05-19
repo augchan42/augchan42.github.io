@@ -25,6 +25,11 @@ tags:
   - cultural-heritage
 ---
 
+**Abstract:**  
+This post outlines a project idea to create Fortune-Telling NFTs by blending the ancient wisdom of the I-Ching with modern blockchain technology. It explores the cultural and personal motivations behind the concept, details the envisioned interactive fortune-telling process (from user question to hexagram generation and interpretation), and touches on potential Web3 integrations and future development steps, including leveraging LLMs for interpretation.
+
+**Estimated reading time:** _5 minutes_
+
 My father was deeply involved with fortune-telling and the I-Ching. He dedicated a lot of time to self-study and even dabbled in programming related to it. When I was younger, I never quite grasped his fascination. However, as I've gotten older, I've become more humble about what I truly know and what is perhaps unknowable. Fortune-telling, at its core, often requires an acknowledgment of forces or patterns greater than oneself, which can be a challenging concept for technically-minded people like me. It used to be off-putting, but I've grown to be more open to it.
 
 My curiosity about this whole area intensified after my father passed away. He left behind extensive writings in Chinese (which I can't fully read), numerous partially read books (which I've since given away), and a sense of many things left incomplete. This feeling is a significant motivation for this project idea: I'd like to explore and perhaps "complete" something he would have deeply appreciated. Plus, honestly, I think the concept of a Fortune-Telling NFT would be incredibly cool.

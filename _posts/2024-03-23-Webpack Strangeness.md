@@ -19,6 +19,11 @@ tags:
   - troubleshooting
 ---
 
+**Abstract:**  
+This post covers troubleshooting common Webpack issues encountered during frontend development. It explains how to resolve problems like double script loading, which can occur from conflicting manual script imports and Webpack configuration, and how to fix Flash of Unstyled Content (FOUC) by correctly setting production mode using `cross-env` and properly configuring the `MiniCssExtractPlugin` for CSS handling.
+
+**Estimated reading time:** _2 minutes_
+
 Webpack is a tool that helps manage and bundle the code for websites. Here's a brief summary of what Webpack is:
 
 > Webpack is an open-source JavaScript module bundler. It was initially released on March 10, 2012, by Tobias Koppers. Webpack is designed to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset. It allows developers to bundle their JavaScript applications into a single file or split them into chunks that can be loaded on demand, improving the performance of web applications.

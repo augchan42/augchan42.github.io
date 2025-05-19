@@ -20,6 +20,11 @@ tags:
   - developer-experience
 ---
 
+**Abstract:**  
+This post shares a developer's experience integrating Shadcn UI components into a Next.js project. It covers essential aspects such as initial project preparation, adapting to Shadcn's opinionated styling (including dark theme and "New York" style), managing global CSS to avoid conflicts, and provides an example root layout that incorporates `ThemeProvider` and the Shadcn Toaster component.
+
+**Estimated reading time:** _3 minutes_
+
 # Integrating with Shadcn: My Experience and Insights
 
 I want to share my experience integrating Shadcn UI components. Here are some things I encountered.

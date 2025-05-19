@@ -18,6 +18,11 @@ tags:
   - frontend-development
 ---
 
+**Abstract:**  
+This post provides a quick developer tip for React and Next.js users: if your `useEffect` hook appears to run twice during development, Hot Module Reloading (HMR) in conjunction with React's Strict Mode is likely the cause. It explains why this happens as an intentional development-only behavior to help catch side effects and suggests verifying by testing a production build.
+
+**Estimated reading time:** _2 minutes_
+
 I recently ran into some puzzling behavior while working on animations for my app – specifically, drawing a series of I-Ching style lines. I have an array representing these lines, and I use a loop within a React `useEffect` hook to draw each one.
 
 The problem? When running my Next.js app in development mode (`next dev`), the `useEffect` hook was clearly being triggered twice. Instead of the expected 6 lines, 12 lines would appear on the screen!

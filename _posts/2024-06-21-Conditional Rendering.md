@@ -20,6 +20,11 @@ tags:
   - frontend-development
 ---
 
+**Abstract:**  
+This post provides a guide to conditionally rendering components, such as a footer, within a Next.js 14 application using the App Router. It details a solution for hiding components on specific pages by bridging server and client components through the React Context API and the `usePathname` hook, addressing challenges posed by Next.js's server/client component architecture.
+
+**Estimated reading time:** _4 minutes_
+
 ## Current Tech Stack
 
 - **Framework**: Next.js 14 (app router)

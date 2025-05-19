@@ -20,6 +20,11 @@ tags:
   - beta-signup
 ---
 
+**Abstract:**  
+This post details the initial backend setup for the 8-Bit Oracle project, focusing on authentication and database integration using Next.js, Supabase (with Auth-UI for OAuth2 and Magic Links), and Tailwind CSS. It discusses the rationale behind choosing Supabase over Firebase, the decision to defer Web3Auth integration, and announces the live beta signup.
+
+**Estimated reading time:** _1 minute_
+
 ## Current Tech Stack
 
 - **Framework**: Next.js (app router)

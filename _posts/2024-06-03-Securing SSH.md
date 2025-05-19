@@ -20,6 +20,11 @@ tags:
   - ssh-hardening
 ---
 
+**Abstract:**  
+This post provides a detailed guide to troubleshooting and configuring Fail2Ban with UFW for robust SSH security on Linux servers. It covers common issues like incorrect `iptables` rule order, proper `jail.local` setup for SSH, considerations for persistent bans, and the importance of ensuring correct cleanup of `iptables` rules when Fail2Ban restarts to prevent conflicts and ensure effective blocking.
+
+**Estimated reading time:** _6 minutes_
+
 ## Understanding the Issue
 
 Even though I had Fail2Ban and UFW installed, they were not blocking unauthorized login attempts. I did not understand how `iptables` processes rules in order. I changed the rules to keep bans after a restart, and this caused my problems. (You should not have these problems if you use the standard `sshd` rules provided by Fail2Ban).

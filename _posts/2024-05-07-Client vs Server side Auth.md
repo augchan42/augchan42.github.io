@@ -21,6 +21,11 @@ tags:
   - typescript
 ---
 
+**Abstract:**  
+This post explores the differences between client-side and server-side authentication flows when using Supabase with Next.js 14 (App Router). It provides practical examples covering Google OAuth2 social login, which typically uses a client-side flow with `createBrowserClient`, and Magic Link email authentication, which involves a server-side flow using `createServerClient`. The post also clarifies how Supabase's Auth-UI can integrate both types of login methods.
+
+**Estimated reading time:** _3 minutes_
+
 ## Current Tech Stack
 
 - **Framework**: Next.js 14 (app router)
