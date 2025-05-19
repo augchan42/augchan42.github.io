@@ -8,12 +8,21 @@
 @import "highlight.less";
 @import "search.less";
 
+// Set base HTML font size to browser default (typically 16px)
+// This overrides Bootstrap's html { font-size: 10px; } if css/hux-blog.css is loaded after bootstrap.css
+html {
+  font-size: 100%;
+}
+
 // Global Components
 
 body {
   .sans-serif;
-  font-size: 16px;
+  // font-size: 1.5rem; // Original value
   // Hux mpdify to 16px (Mobile First), and increase to 20px while 768+ width
+  // Assuming html font-size is 16px (due to html { font-size: 100%; }):
+  // For 16px: 1rem
+  font-size: 1rem;
   color: @gray-dark;
   //-webkit-user-select:text; //对于 Blog 还是先不开启这句。
   overflow-x: hidden;
@@ -21,6 +30,11 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  // For 20px on larger screens: 20px / 16px base = 1.25rem
+  @media only screen and (min-width: 768px) {
+    font-size: 1.25rem;
+  }
 }
 
 // -- Typography
@@ -394,9 +408,7 @@ samp {
     }
   }
   @media only screen and (min-width: 768px) {
-    body {
-      font-size: 20px;
-    }
+    // body { font-size: 20px; } // REMOVED - This was overriding the global body font-size for desktop
     background: transparent;
     border-bottom: 1px solid transparent;
     .navbar-brand {
