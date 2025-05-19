@@ -1,63 +1,76 @@
-[Memorymesh Blog](https://memorymesh.ai)
-================================
+# [Augustin Chan's Portfolio & Blog](https://augustinchan.dev)
 
 > The noblest pleasure is the joy of understanding.
 
-![](http://huangxuan.me/img/blog-desktop.jpg)
+![](https://augchan42.github.io/img/blog-desktop.jpg)
 
+This site is built with Jekyll using a modified version of the Hux Blog theme.
 
-[User Manual 👉](_doc/Manual.md)
---------------------------------------------------
+## [User Manual for Original Theme (reference) 👉](_doc/Manual.md)
 
-### Getting Started
+### Prerequisites
 
-1. You will need [Ruby](https://www.ruby-lang.org/en/) and [Bundler](https://bundler.io/) to use [Jekyll](https://jekyllrb.com/). Following [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) to fullfill the enviromental requirement.
+1.  **Ruby & Bundler**: Ensure you have Ruby installed. Then install Bundler: `gem install bundler`.
+2.  **Node.js & npm**: Ensure you have Node.js (which includes npm) installed. This is needed for Grunt (to compile Less).
 
-2. Installed dependencies in the `Gemfile`:
+### Getting Started (Development)
 
-```sh
-$ bundle install 
-```
+1.  **Install Dependencies**:
 
-3. Serve the website (`localhost:4000` by default):
+    - Install Ruby gems: `bundle install`
+    - Install npm packages: `npm install` (This will install Grunt and its plugins)
 
-```sh
-$ bundle exec jekyll serve  # alternatively, npm start
-```
+2.  **Run Development Server**:
 
-### Development (Build From Source)
+    - To compile CSS, watch for changes, and serve the site locally (usually at `http://localhost:4000`):
+      ```sh
+      npm run dev
+      ```
+    - This command does the following:
+      - `npx grunt less`: Compiles Less files to CSS.
+      - `npx grunt watch`: Watches Less files for changes and recompiles them automatically.
+      - `bundle exec jekyll serve`: Starts the Jekyll development server.
 
-To modify the theme, you will need [Grunt](https://gruntjs.com/). There are numbers of tasks you can find in the `Gruntfile.js`, includes minifing JavaScript, compiling `.less` to `.css`, adding banners to keep the Apache 2.0 license intact, watching for changes, etc. 
+3.  **Alternative Start Command**:
+    - If you only want to compile CSS once and serve the site without watching for Less changes:
+      ```sh
+      npm start
+      ```
 
-Yes, they were inherited and are extremely old-fashioned. There is no modularization and transpilation, etc.
+### Building CSS Manually
 
-Critical Jekyll-related code are located in `_include/` and `_layouts/`. Most of them are [Liquid](https://github.com/Shopify/liquid/wiki) templates.
+- If you only need to compile the Less files to CSS without starting the server or watcher:
+  ```sh
+  npm run build:css
+  ```
 
-This theme uses the default code syntax highlighter of jekyll, [Rouge](http://rouge.jneen.net/), which is compatible with Pygments theme so just pick any pygments theme css (e.g. from [here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html) and replace the content of `highlight.less`.
+### Key Customizations & Structure
 
+- **Portfolio Pages**: The main portfolio page (`index.html`) and offerings page (`offerings/index.html`) use the `_layouts/portfolio.html` layout.
+- **Styling**: Custom styles for the portfolio are primarily in `less/portfolio.less`. This is imported into `less/hux-blog.less`, which Grunt compiles into `css/hux-blog.css`.
+- **Blog Posts**: Reside in `_posts/` and use the default theme layouts and styles.
+- **Jekyll Configuration**: `_config.yml` contains site-wide settings.
+- **Theme Assets**: Original theme assets and includes are in `_includes/`, `_layouts/` (for blog part), `js/`, etc.
 
-### Interesting to know more? Checkout the [full user manual](_doc/Manual.md)!
-
-
-Other Resources
----------------
+### Other Resources (from original theme)
 
 Ports
+
 - [**Hexo**](https://github.com/Kaijun/hexo-theme-huxblog) by @kaijun
 - [**React-SSR**](https://github.com/LucasIcarus/huxpro.github.io/tree/ssr) by @LucasIcarus
 
-[Starter/Boilerplate](https://github.com/huxpro/huxblog-boilerplate)
-- Out of date. Helps wanted for updating it on par with the main repo
+[Starter/Boilerplate (likely out of date)](https://github.com/huxpro/huxblog-boilerplate)
 
-Translation
-- [🇨🇳  中文文档（有点过时）](https://github.com/Huxpro/huxpro.github.io/blob/master/_doc/README.zh.md)
+Translation (likely out of date)
 
+- [🇨🇳 中文文档（有点过时）](https://github.com/Huxpro/huxpro.github.io/blob/master/_doc/README.zh.md)
 
-License
--------
+## License
 
 Apache License 2.0.
 Copyright (c) 2015-present Huxpro
+
+Modifications by Augustin Chan.
 
 Hux Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
 Copyright (c) 2013-2016 Blackrock Digital LLC.
