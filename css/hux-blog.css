@@ -869,10 +869,6 @@ samp {
   .post-container h6 {
     font-size: 18px;
   }
-  .post-container p,
-  .post-container li {
-    font-size: 0.9rem;
-  }
 }
 .post-container ul,
 .post-container ol {
