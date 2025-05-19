@@ -676,7 +676,7 @@ pre.highlight {
   font-size: 16px;
 }
 html {
-  font-size: 100%;
+  font-size: 20px;
 }
 body {
   /* Hux learn from
@@ -685,17 +685,12 @@ body {
      */
   font-family: "Roboto", sans-serif;
   line-height: 1.7;
-  font-size: 1rem;
+  font-size: 20px;
   color: #404040;
   overflow-x: hidden;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 1.25rem;
-  }
 }
 p {
   margin: 30px 0;
@@ -873,6 +868,10 @@ samp {
   .post-container h5,
   .post-container h6 {
     font-size: 18px;
+  }
+  .post-container p,
+  .post-container li {
+    font-size: 0.9rem;
   }
 }
 .post-container ul,
