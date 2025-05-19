@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cache Me If You Can: Getting Service Worker Update Toasts to Play Nice with New Jekyll Layouts"
-date: 2025-05-20 10:00:00 +0800
+date: 2025-05-19 10:00:00 +0800
 categories: jekyll PWA javascript debugging
 tags: [jekyll, service-worker, pwa, javascript, webdev, caching]
 header-style: text
