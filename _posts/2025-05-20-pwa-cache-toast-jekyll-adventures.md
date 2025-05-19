@@ -4,6 +4,8 @@ title: "Cache Me If You Can: Getting Service Worker Update Toasts to Play Nice w
 date: 2025-05-20 10:00:00 +0800
 categories: jekyll PWA javascript debugging
 tags: [jekyll, service-worker, pwa, javascript, webdev, caching]
+header-style: text
+catalog: true
 description: "A dive into debugging service worker caching and update notifications for new pages in a Jekyll site, ensuring the 'Content Refresh' toast works as expected."
 ---
 
