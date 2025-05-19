@@ -1776,6 +1776,7 @@ body.portfolio-page .projects .portfolio-project-description,
 body.portfolio-page .contact .portfolio-text,
 body.page-offerings .portfolio-main .portfolio-section .portfolio-text,
 body.page-offerings .portfolio-main .portfolio-section .portfolio-list li {
+  font-size: 1.25rem;
   line-height: 1.7;
 }
 body.portfolio-page .projects .portfolio-project-list {
