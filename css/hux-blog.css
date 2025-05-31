@@ -1948,3 +1948,15 @@ body.page-offerings .portfolio-main .portfolio-section {
     }
 } 
 */
+.portfolio-featured-links {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.portfolio-featured-links a {
+  margin-right: 1.2rem;
+  font-weight: 500;
+}
+.portfolio-featured-links a:last-child {
+  margin-right: 0;
+}
