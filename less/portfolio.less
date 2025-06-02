@@ -9,7 +9,7 @@
 @portfolio-header-text-color: @portfolio-text-color; // Define header text color
 @content-bg: @portfolio-bg-color; // Make content sections have the same background as the page
 @portfolio-border-color: #ccc;
-@portfolio-link-color: #007bff; // A generic link color, can be adjusted
+@portfolio-link-color: #000000; // Changed from #007bff to black
 @portfolio-link-hover-color: darken(@portfolio-link-color, 15%);
 
 // Variables that were used in portfolio sections but not defined globally by the theme
@@ -206,15 +206,10 @@ body.portfolio-page .portfolio-sidebar {
     body.portfolio-page .portfolio-main-content {
         min-width: 100%; // Main content takes full width
         padding-right: 0; // No right padding when sidebar stacks
-        margin-bottom: 2rem; // Space before stacked sidebar
     }
 
     body.portfolio-page .portfolio-sidebar {
-        flex-basis: 100%; // Sidebar takes full width
-        padding-left: 0;
-        border-left: none; // No left border when stacked
-        border-top: 1px solid @portfolio-border-color; // Top border instead
-        padding-top: 2rem;
+        display: none; // Hide sidebar completely on mobile
     }
 }
 
@@ -245,7 +240,7 @@ body.portfolio-page .portfolio-sidebar {
     }
 
     body.portfolio-page .portfolio-sidebar {
-        padding-top: 1rem; 
+        padding-top: 1rem;
     }
 
     body.portfolio-page .portfolio-footer {
@@ -258,6 +253,18 @@ body.portfolio-page .portfolio-footer {
     border-top: 1px solid @portfolio-border-color;
     text-align: center;
     font-size: 1.125rem;
+
+    .blog-link {
+        display: block;
+        margin-top: 1rem;
+        color: @portfolio-link-color;
+        text-decoration: none;
+        
+        &:hover {
+            color: @portfolio-link-hover-color;
+            text-decoration: underline;
+        }
+    }
 }
 
 // Specific font sizes for index.html sections (these should be unaffected and are also 1.5rem)
@@ -305,4 +312,27 @@ body.page-offerings .portfolio-main .portfolio-section {
         }
     }
 } 
-*/ 
+*/
+
+// Featured Links Section
+body.portfolio-page .portfolio-featured-links {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+
+    a {
+        margin-right: 1.2rem;
+        font-weight: 500;
+        color: @portfolio-link-color;
+        text-decoration: none;
+
+        &:hover {
+            color: @portfolio-link-hover-color;
+            text-decoration: underline;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+} 
