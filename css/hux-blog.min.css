@@ -4,7 +4,7 @@
   font-weight: 400;
   font-stretch: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
@@ -12,7 +12,7 @@
   font-weight: 500;
   font-stretch: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bWmT.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bWmT.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
@@ -20,7 +20,7 @@
   font-weight: 700;
   font-stretch: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjammT.ttf) format('truetype');
 }
 @media (min-width: 1200px) {
   .post-container,
@@ -1795,11 +1795,11 @@ body.portfolio-page .projects .portfolio-project-name {
   margin-bottom: 0.25rem;
 }
 body.portfolio-page .contact .portfolio-link {
-  color: #007bff;
+  color: #000000;
   text-decoration: underline;
 }
 body.portfolio-page .contact .portfolio-link:hover {
-  color: #0056b3;
+  color: #000000;
   text-decoration: none;
 }
 body.portfolio-page .portfolio-layout-container {
@@ -1845,7 +1845,7 @@ body.portfolio-page .portfolio-sidebar .sidebar-post-list li a {
   line-height: 1.4;
 }
 body.portfolio-page .portfolio-sidebar .sidebar-post-list li a:hover {
-  color: #007bff;
+  color: #000000;
   text-decoration: underline;
 }
 body.portfolio-page .portfolio-sidebar .sidebar-post-list li .sidebar-post-date {
@@ -1856,7 +1856,7 @@ body.portfolio-page .portfolio-sidebar .sidebar-post-list li .sidebar-post-date 
 }
 body.portfolio-page .portfolio-sidebar .sidebar-all-posts-link {
   font-size: 1.1rem;
-  color: #007bff;
+  color: #000000;
   text-decoration: none;
 }
 body.portfolio-page .portfolio-sidebar .sidebar-all-posts-link:hover {
@@ -1866,14 +1866,9 @@ body.portfolio-page .portfolio-sidebar .sidebar-all-posts-link:hover {
   body.portfolio-page .portfolio-main-content {
     min-width: 100%;
     padding-right: 0;
-    margin-bottom: 2rem;
   }
   body.portfolio-page .portfolio-sidebar {
-    flex-basis: 100%;
-    padding-left: 0;
-    border-left: none;
-    border-top: 1px solid #ccc;
-    padding-top: 2rem;
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1908,6 +1903,16 @@ body.portfolio-page .portfolio-footer {
   border-top: 1px solid #ccc;
   text-align: center;
   font-size: 1.125rem;
+}
+body.portfolio-page .portfolio-footer .blog-link {
+  display: block;
+  margin-top: 1rem;
+  color: #000000;
+  text-decoration: none;
+}
+body.portfolio-page .portfolio-footer .blog-link:hover {
+  color: #000000;
+  text-decoration: underline;
 }
 body.portfolio-page .about-me .portfolio-text {
   font-size: 1.25rem;
@@ -1948,3 +1953,21 @@ body.page-offerings .portfolio-main .portfolio-section {
     }
 } 
 */
+body.portfolio-page .portfolio-featured-links {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+body.portfolio-page .portfolio-featured-links a {
+  margin-right: 1.2rem;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+}
+body.portfolio-page .portfolio-featured-links a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+body.portfolio-page .portfolio-featured-links a:last-child {
+  margin-right: 0;
+}
