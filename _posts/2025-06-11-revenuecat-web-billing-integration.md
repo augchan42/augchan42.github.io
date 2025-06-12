@@ -187,7 +187,7 @@ export const FeatureAccess: React.FC<{ entitlementId: string }> = ({ entitlement
 - **Context:** Centralizes RevenueCat state and avoids prop drilling.
 - The RevenueCat Web SDK is **client-side only**. Do not attempt to use it in server-side code (API routes, getServerSideProps, etc.)—it will not work.
 - You **must** have both a Stripe account (for payment processing) and a RevenueCat account (for product/entitlement management).
-- Do not use the **Public API Key**, you will get errors (rcb_). Use the **Sandbox API Key** (rcb_sb_...) for development/testing.
+- The RevenueCat **Public API Key** (rcb_) is for production, you will get errors using it against the Stripe sandbox environment. Use the **Sandbox API Key** (rcb_sb_...) for development/testing.
 
 ---
 
