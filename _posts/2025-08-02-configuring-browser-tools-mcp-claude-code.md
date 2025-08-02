@@ -98,6 +98,8 @@ The `--` in the command is essential because it tells the shell to treat everyth
 
 The browser-tools MCP server connects to a separate HTTP server (typically running on port 3025) for the actual browser tools functionality. The MCP server acts as a bridge between Claude and this HTTP server, providing a standardized interface for browser automation tasks.
 
+**Important Prerequisite:** Before Claude Code can access browser windows via browser-tools, you need to have the browser's developer tools opened. This is required for the browser tools to establish the necessary connection and permissions to interact with the page.
+
 ### What Happens When Claude Runs the Server
 
 When you register the MCP server with Claude Code, Claude spawns its own instance of the same process. This new instance goes through the exact same discovery process you witnessed when running it directly:
