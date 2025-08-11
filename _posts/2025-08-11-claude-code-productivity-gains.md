@@ -20,11 +20,11 @@ Claude Code has evolved from a 30% to 50% productivity improvement over Cursor's
 
 **Estimated reading time:** _4 minutes_
 
-# Claude Code: From 30% to 50% Better Than Cursor Agent Mode
+# Claude Code: From 30% to 50% Better Than Cursor Agent Auto Mode
 
-I'm very familiar with command line interfaces - I used vi in college, and it's definitely an interface I'm comfortable with. So when I say Claude Code has improved my productivity from an initial 30% better than Cursor's agent mode to what I now estimate is 50% better, I'm coming from a place of established workflow comfort.
+After using Claude Code for almost 2 weeks, I can say Claude Code is 30% ~ 50% better than Cursor's Agent Auto mode.  Keep in mind I used to use 'vi' in college, so lack of a GUI is not a big deal to me.  For those not familiar with a character terminal - it's likely worth your while learning!
 
-But how do I quantify this improvement? It's based on three key factors: the complexity of what I'm working on, how I interact with it to solve problems, and the quality of refactoring it handles.
+But how do I quantify this improvement? It's based on three key factors: the complexity of what I'm working on, how I interact with it to solve problems, and the quality of refactoring it handles.  So, a bit more specific than 'vibes' but definitely not scientific by any means.
 
 ---
 
@@ -32,7 +32,7 @@ But how do I quantify this improvement? It's based on three key factors: the com
 
 These AI coding tools are genuinely double-edged swords. You can build so quickly that it's easy to accumulate code that ends up getting cut out later. I've learned this lesson the hard way through incremental development.
 
-During one project, I ended up with 80+ endpoints - DSP optimization routes for bangers, summarization, timeline generation, scanning timelines... the list went on. It wasn't until I stepped back that I realized these should all be consolidated under a unified optimization endpoint. The rapid prototyping had created architectural sprawl that needed cleanup.
+On my current project, I ended up with 80+ endpoints - DSPY optimization routes for bangers, summarization, timeline generation, scanning timelines... the list went on. It wasn't until I stepped back that I realized these should all be consolidated under a unified optimization endpoint. The rapid prototyping had created architectural sprawl that needed cleanup.
 
 Another example: I initially implemented a workspace concept that required all sources and content to be placed under a specific workspace. But as the project evolved, I realized lots of content was applicable to multiple workspaces. This required a major refactor, and it was relatively painless with Claude Code's assistance.  I went with a tag based concept which was much more flexible and more easily allows for many to many relationships.
 
@@ -48,7 +48,7 @@ But otherwise, I use Claude Code as a helpful assistant - just chatting with it,
 
 ## The Over-Engineering Problem
 
-One recurring issue I've observed is that Claude Code sometimes over-engineers features by adding unnecessary metrics or complexity when a simple LLM call would be more appropriate. For example, instead of using an LLM to reason about a decision, it might implement a complex scoring system with multiple parameters.
+One recurring issue I've observed is that Claude Code sometimes over-engineers features by adding unnecessary metrics or complexity when a simple LLM call would be more appropriate. For example, instead of using an LLM to reason about a decision, it might implement a complex scoring system with multiple parameters and brittle heuristics.
 
 I believe this stems from the coding training data being mostly from before LLMs were widely used for logic and reasoning. The model has learned patterns from traditional software engineering approaches that don't always translate well to the LLM-augmented development paradigm.
 
