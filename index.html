@@ -5,14 +5,94 @@ description: About Augustin Chan.
 nav-item: true
 ---
 
+<style>
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 2px 4px;
+  margin-left: 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+}
+
+.copy-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+.copy-btn:active {
+  transform: scale(0.95);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-copy-btn {
+  margin: 0;
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  color: #495057;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header-copy-btn:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-copy-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.header-copy-btn svg {
+  transition: all 0.2s ease;
+}
+
+.header-copy-btn:hover svg {
+  transform: scale(1.1);
+}
+</style>
+
 <header class="portfolio-header">
-  <h1 class="portfolio-title">Augustin Chan</h1>  
-  <p class="portfolio-subtitle">Fractional CTO / Fullstack Software Architect</p>
-  <div class="portfolio-featured-links" style="margin: 0.5rem 0 0.5rem 0;">
-    <a href="mailto:aug@digitalrain.studio" class="portfolio-link">aug@digitalrain.studio</a><br>
-    <a href="/offerings/" class="portfolio-link">Services</a>
-    <a href="/blog/" class="portfolio-link">Blog</a><br>
-    <a href="https://8bitoracle.ai" class="portfolio-link" target="_blank">8bitoracle.ai</a>
+  <div class="header-top">
+    <div class="header-left">
+      <h1 class="portfolio-title">Augustin Chan</h1>  
+      <p class="portfolio-subtitle">Fractional CTO / Fullstack Software Architect</p>
+      <div class="portfolio-featured-links" style="margin: 0.5rem 0 0.5rem 0;">
+        <a href="mailto:aug@digitalrain.studio" class="portfolio-link">aug@digitalrain.studio</a><br>
+        <a href="/offerings/" class="portfolio-link">Services</a>
+        <a href="/blog/" class="portfolio-link">Blog</a><br>
+        <a href="https://8bitoracle.ai" class="portfolio-link" target="_blank">8bitoracle.ai</a>
+      </div>
+    </div>
+    <button class="copy-btn header-copy-btn" onclick="copyAboutMeBio()" title="Copy my bio and projects">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </svg>
+    </button>
   </div>
 </header>
 
@@ -79,3 +159,96 @@ nav-item: true
   <a href="/blog/" class="portfolio-link">Dev Blog</a></br>
   &copy; {% assign current_year = 'now' | date: "%Y" %}{{ current_year }} Augustin Chan. All rights reserved.  
 </footer>
+
+<script>
+function copyAboutMeBio() {
+  // Get the about-me section content
+  const aboutMeSection = document.querySelector('.about-me');
+  const projectsSection = document.querySelector('.projects');
+  
+  if (!aboutMeSection || !projectsSection) {
+    console.error('Required sections not found');
+    return;
+  }
+  
+  let fullContent = '# Augustin Chan - Portfolio\n\n';
+  
+  // Extract About Me content
+  fullContent += '## About Me\n\n';
+  const aboutParagraphs = aboutMeSection.querySelectorAll('.portfolio-text');
+  
+  aboutParagraphs.forEach((paragraph, index) => {
+    let text = paragraph.textContent || paragraph.innerText;
+    text = text.replace(/\s+/g, ' ').trim();
+    
+    if (text) {
+      fullContent += text + '\n\n';
+    }
+  });
+  
+  // Extract Projects content
+  fullContent += '## Projects\n\n';
+  const projectItems = projectsSection.querySelectorAll('.portfolio-project-list li');
+  
+  projectItems.forEach((project, index) => {
+    const projectName = project.querySelector('.portfolio-project-name');
+    const projectDescription = project.querySelector('.portfolio-project-description');
+    
+    if (projectName && projectDescription) {
+      const name = projectName.textContent || projectName.innerText;
+      const description = projectDescription.textContent || projectDescription.innerText;
+      
+      fullContent += `### ${name.trim()}\n`;
+      fullContent += `${description.trim()}\n\n`;
+    }
+  });
+  
+  // Get the button that was clicked (handle both button and SVG clicks)
+  const btn = event.target.closest('.copy-btn') || event.target;
+  if (!btn) {
+    console.error('Copy button not found');
+    return;
+  }
+  
+  // Store original content
+  const originalHTML = btn.innerHTML;
+  
+  // Copy to clipboard
+  navigator.clipboard.writeText(fullContent).then(function() {
+    // Visual feedback - change to checkmark temporarily
+    btn.innerHTML = `
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20,6 9,17 4,12"></polyline>
+      </svg>
+    `;
+    btn.style.borderColor = '#22c55e';
+    
+    setTimeout(() => {
+      btn.innerHTML = originalHTML;
+      btn.style.borderColor = '';
+    }, 500);
+  }).catch(function(err) {
+    console.error('Failed to copy: ', err);
+    // Fallback for older browsers
+    const textArea = document.createElement('textarea');
+    textArea.value = fullContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    
+    // Visual feedback
+    btn.innerHTML = `
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20,6 9,17 4,12"></polyline>
+      </svg>
+    `;
+    btn.style.borderColor = '#22c55e';
+    
+    setTimeout(() => {
+      btn.innerHTML = originalHTML;
+      btn.style.borderColor = '';
+    }, 500);
+  });
+}
+</script>
