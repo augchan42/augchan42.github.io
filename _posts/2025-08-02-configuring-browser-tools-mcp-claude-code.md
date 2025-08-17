@@ -31,11 +31,11 @@ The browser-tools MCP server from AgentDeskAI is a stdio-based server, which mea
 
 **Important clarification:** There are actually two separate server components in the browser-tools ecosystem:
 
-1. **`@agentdeskai/browser-tools-mcp`** - This is the **MCP Server** that Claude connects to directly. It implements the Model Context Protocol and provides standardized tools for AI clients.
+1. **`@agentdeskai/browser-tools-mcp`** - This is the **MCP Server** that implements the Model Context Protocol and provides standardized tools for AI clients.
 
 2. **`@agentdeskai/browser-tools-server`** - This is the **Node.js middleware server** that acts as a bridge between the MCP server and the Chrome extension. It handles the actual browser tools functionality like gathering logs, taking screenshots, and running audits.
 
-The architecture flows like this: Claude → MCP Server → Node Server → Chrome Extension → Browser
+The complete architecture flows like this: **Claude Code (MCP Client)** → MCP Server → Node Server → Chrome Extension → Browser
 
 ## The Solution: 2 Simple Steps
 
@@ -102,7 +102,7 @@ claude mcp add browser-tools npx -- @agentdeskai/browser-tools-mcp@latest
 
 The browser-tools system uses a two-server design that separates concerns:
 
-- **MCP Server (`browser-tools-mcp`):** Handles the Model Context Protocol communication with Claude via stdin/stdout
+- **MCP Server (`browser-tools-mcp`):** Handles the Model Context Protocol communication with Claude Code (the MCP client) via stdin/stdout
 - **Node.js Server (`browser-tools-server`):** Acts as middleware that communicates with the Chrome extension and provides the actual browser tools functionality
 
 This design has several advantages:
