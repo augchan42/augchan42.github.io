@@ -21,7 +21,7 @@ This post provides a straightforward solution for configuring the browser-tools 
 
 **Estimated reading time:** _3 minutes_
 
-The Model Context Protocol (MCP) has revolutionized how AI assistants like Claude can interact with external tools and services. However, getting MCP servers properly configured can sometimes be tricky, especially when dealing with stdio-based servers like the browser-tools MCP from AgentDeskAI. This post addresses a common issue where the MCP server appears to be failing to connect, when in reality it just needs to be properly registered with Claude.
+Getting MCP servers properly configured can sometimes be tricky, especially when dealing with stdio-based servers like the browser-tools MCP from AgentDeskAI. This post addresses a common issue where the MCP server appears to be failing to connect, when in reality it just needs to be properly registered with Claude.
 
 ## The Problem: MCP Server Connection Failures
 
@@ -29,12 +29,26 @@ When you run `claude mcp list` and see connection failures for your browser-tool
 
 The browser-tools MCP server from AgentDeskAI is a stdio-based server, which means it communicates via stdin/stdout rather than listening on network ports. This type of server requires explicit registration with Claude to work properly.
 
+**Important clarification:** There are actually two separate server components in the browser-tools ecosystem:
+
+1. **`@agentdeskai/browser-tools-mcp`** - This is the **MCP Server** that Claude connects to directly. It implements the Model Context Protocol and provides standardized tools for AI clients.
+
+2. **`@agentdeskai/browser-tools-server`** - This is the **Node.js middleware server** that acts as a bridge between the MCP server and the Chrome extension. It handles the actual browser tools functionality like gathering logs, taking screenshots, and running audits.
+
+The architecture flows like this: Claude → MCP Server → Node Server → Chrome Extension → Browser
+
 ## The Solution: 2 Simple Steps
 
-### Step 1: Verify the MCP Server Works Independently
+### Step 1: Verify the MCP Server and Node Server are Working
 
-First, let's confirm that the MCP server itself is functioning correctly (this assumes you've already installed the browser extension as described in https://browsertools.agentdesk.ai/installation):
+First, let's confirm that both server components are functioning correctly (this assumes you've already installed the browser extension as described in https://browsertools.agentdesk.ai/installation):
 
+**Start the Node.js middleware server:**
+```bash
+npx @agentdeskai/browser-tools-server@1.2.0
+```
+
+**Test the MCP server independently:**
 ```bash
 npx @agentdeskai/browser-tools-mcp@latest
 ```
@@ -59,10 +73,12 @@ Successfully discovered server at 127.0.0.1:3025
 This output shows that the MCP server is:
 
 1. **Performing server discovery** - scanning localhost on ports 3025-3035
-2. **Finding the browser tools server** - successfully connecting to the HTTP server at `127.0.0.1:3025`
+2. **Finding the Node.js middleware server** - successfully connecting to the HTTP server at `127.0.0.1:3025`
 3. **Ready for MCP communication** - waiting for protocol messages via stdin/stdout
 
-The "hang" at the end is expected - the server is waiting for MCP protocol input. You can safely terminate this process with Ctrl+C once you've confirmed it's working.
+The "hang" at the end is expected - the MCP server is waiting for MCP protocol input. You can safely terminate this process with Ctrl+C once you've confirmed it's working.
+
+**Important:** The MCP server needs the Node.js middleware server (`browser-tools-server`) to be running first, as it acts as the bridge between the MCP server and the Chrome extension.
 
 If you see error messages or the server exits immediately, there might be an issue with the installation or dependencies. In that case, ensure you have Node.js installed and try reinstalling the package.
 
@@ -82,21 +98,25 @@ claude mcp add browser-tools npx -- @agentdeskai/browser-tools-mcp@latest
 
 ## Key Technical Points
 
-### Understanding Stdio-Based MCP Servers
+### Understanding the Two-Server Architecture
 
-Unlike HTTP/SSE-based MCP servers that listen on specific ports, stdio-based servers communicate directly through standard input/output streams. This design has several implications:
+The browser-tools system uses a two-server design that separates concerns:
 
-- **No port configuration needed:** The server doesn't bind to any network interface
-- **Direct process communication:** Claude spawns the server process and communicates directly
-- **Simplified deployment:** No need to manage network ports or firewall rules
+- **MCP Server (`browser-tools-mcp`):** Handles the Model Context Protocol communication with Claude via stdin/stdout
+- **Node.js Server (`browser-tools-server`):** Acts as middleware that communicates with the Chrome extension and provides the actual browser tools functionality
+
+This design has several advantages:
+- **Separation of concerns:** The MCP server focuses on protocol handling, while the Node.js server handles browser interactions
+- **Flexibility:** The Node.js server can be used independently by other tools
+- **Reliability:** If the MCP server restarts, the Node.js server continues running
 
 ### The Role of the Double Dash
 
 The `--` in the command is essential because it tells the shell to treat everything after it as arguments to the `npx` command, rather than arguments to the `claude mcp add` command. Without it, the command parsing can fail.
 
-### Dependencies and Architecture
+### How the Servers Work Together
 
-The browser-tools MCP server connects to a separate HTTP server (typically running on port 3025) for the actual browser tools functionality. The MCP server acts as a bridge between Claude and this HTTP server, providing a standardized interface for browser automation tasks.
+The MCP server connects to the Node.js server (typically running on port 3025) for the actual browser tools functionality. The Node.js server acts as a bridge between the MCP server and the Chrome extension, handling tasks like taking screenshots, gathering console logs, and running audits.
 
 **Important Prerequisite:** Before Claude Code can access browser windows via browser-tools, you need to have the browser's developer tools opened. This is required for the browser tools to establish the necessary connection and permissions to interact with the page.
 
@@ -147,9 +167,9 @@ If you encounter permission errors:
 
 ## Conclusion
 
-Configuring MCP servers with Claude Code doesn't have to be complicated. The key insight is understanding that stdio-based servers like the browser-tools MCP require explicit registration with Claude to function properly. By following these two simple steps - verifying the server works independently and then registering it with Claude - you can quickly get your MCP server up and running.
+Configuring MCP servers with Claude Code doesn't have to be complicated. The key insight is understanding that the browser-tools system uses a two-server architecture where both components need to be running for everything to work properly. By following these two simple steps - starting the Node.js middleware server and then registering the MCP server with Claude - you can quickly get your browser tools up and running.
 
-The browser-tools MCP server is now ready to provide browser automation functionality through Claude Code, enabling powerful AI-assisted web interactions and testing scenarios.
+The browser-tools system is now ready to provide browser automation functionality through Claude Code, enabling powerful AI-assisted web interactions and testing scenarios.
 
 ---
 
