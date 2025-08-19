@@ -182,7 +182,7 @@ messages = [
 # With infer=True (semantic chunking):
 facts = [
     "Name is Sarah",
-    "Works as a data scientist at Google", 
+    "Works as a data scientist at Google",
     "Loves hiking",
     "Recently visited Yosemite",
     "Favorite food is sushi"
@@ -197,13 +197,13 @@ chunks = [
 
 ### Why Semantic Chunking Matters
 
-| Aspect | Traditional Chunking | Semantic Chunking |
-|--------|---------------------|-------------------|
-| **Retrieval** | Text similarity | Meaning-based search |
-| **Granularity** | Fixed-size blocks | Semantic concepts |
-| **Deduplication** | Overlapping chunks | LLM merges similar info |
-| **Personalization** | Raw text | User-relevant facts |
-| **Context** | Arbitrary splits | Meaningful relationships |
+| Aspect              | Traditional Chunking | Semantic Chunking        |
+| ------------------- | -------------------- | ------------------------ |
+| **Retrieval**       | Text similarity      | Meaning-based search     |
+| **Granularity**     | Fixed-size blocks    | Semantic concepts        |
+| **Deduplication**   | Overlapping chunks   | LLM merges similar info  |
+| **Personalization** | Raw text             | User-relevant facts      |
+| **Context**         | Arbitrary splits     | Meaningful relationships |
 
 ### The Trade-off Decision
 
@@ -252,12 +252,10 @@ The solution isn't to abandon the intelligent filtering approach, but to make it
 
 The key insight is that `infer=True` provides sophisticated semantic chunking that's much more intelligent than traditional text splitting, but the filtering can be too aggressive. The ideal approach is custom prompts that preserve the semantic chunking benefits while being more permissive about what gets stored.
 
-**Confidence: 95%** - This analysis is based on direct examination of the Mem0 codebase and the specific prompts that control the filtering behavior.
-
 ---
 
 ## References
 
 - [Mem0 Documentation](https://mem0.ai/)
 - [Mem0 GitHub Repository](https://github.com/mem0ai/mem0)
-- [Prompt Engineering Best Practices](https://platform.openai.com/docs/guides/prompt-engineering) 
+- [Prompt Engineering Best Practices](https://platform.openai.com/docs/guides/prompt-engineering)

@@ -74,6 +74,7 @@ lm = dspy.LM(
 ```
 
 The key difference is the `extra_headers` parameter, which allows you to:
+
 - Set your own app name via `X-Title`
 - Provide proper attribution via `HTTP-Referer`
 - Enable additional OpenRouter features
@@ -99,7 +100,7 @@ lm = dspy.LM(
             }
         },
         {
-            "model_name": "openrouter/claude-3-haiku", 
+            "model_name": "openrouter/claude-3-haiku",
             "litellm_params": {
                 "model": "openrouter/claude-3-haiku",
                 "api_key": api_key,
@@ -115,6 +116,7 @@ lm = dspy.LM(
 ```
 
 This configuration gives you:
+
 - **Automatic failover** when the primary model is unavailable
 - **Proper app attribution** in OpenRouter's leaderboards
 - **Custom headers** for tracking and analytics
@@ -126,12 +128,14 @@ This configuration gives you:
 The difference between the standard and proper integration is significant:
 
 **Standard Integration:**
+
 - ✅ Works with DSPy
 - ❌ No failover capability
 - ❌ Shows "LiteLLM" in OpenRouter leaderboards
 - ❌ Limited tracking and analytics
 
 **Proper Integration (with custom headers):**
+
 - ✅ Works with DSPy
 - ✅ Automatic model failover
 - ✅ Your app name in OpenRouter leaderboards
@@ -197,6 +201,7 @@ Each test provides clear feedback about what's happening, which is particularly 
 This integration pattern addresses a real need in the LLM development space. DSPy's declarative approach to LLM programming is compelling, but it needs robust model management to be truly useful in production. OpenRouter's model diversity and failover capabilities fill that gap nicely.
 
 The combination gives you:
+
 - **Declarative programming** with DSPy's modules
 - **Automatic failover** when models are unavailable
 - **Proper attribution** through custom headers
@@ -227,8 +232,6 @@ DSPy's OpenRouter integration is powerful, but the standard approach misses some
 
 The integration patterns are clean, the failover works as expected, and the custom header support ensures proper attribution. It's the kind of practical integration that makes you wonder why more tools don't work this smoothly together.
 
-**Confidence: 95%** - This integration pattern is well-tested and the code samples are production-ready.
-
 ---
 
 ## References
@@ -236,4 +239,4 @@ The integration patterns are clean, the failover works as expected, and the cust
 - [DSPy Documentation](https://dspy-docs.vercel.app/)
 - [OpenRouter API Documentation](https://openrouter.ai/docs)
 - [LiteLLM Documentation](https://docs.litellm.ai/)
-- [Full Sample Code](https://github.com/augchan42/dspy-openrouter-sample) 
+- [Full Sample Code](https://github.com/augchan42/dspy-openrouter-sample)
