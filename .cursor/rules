@@ -1,26 +1,32 @@
 # Cursor Rules
 
 ## General Principles
+
 - KEEP THINGS SIMPLE.
 - Follow DRY Principles, keep components and file sizes small.
 
 ## Development Workflow
+
 - Always check rules .cursor/rules when making changes
 - If we overcome a big hurdle, we should add a rule to account for it and add it as a learning
 - If change is minor, go ahead and apply the change to file instead of asking for confirmation
 
 ## Code Standards
+
 - metadata and schema are protected words, do not use them in code!
 
 ## Communication
+
 - Please provide percent confidence for any solutions given
 
 ## Date Tracking
+
 - Always keep track of today's date as part of .cursor/rules
-- Today's date: 2025-08-11
+- Today's date: 2025-08-19
 - Update this date whenever working on the rules file
 
 ## Blog Post Creation
-- Before creating a blog post for this repo, check the doc _style/style.md
+
+- Before creating a blog post for this repo, check the doc \_style/style.md
 - Run an os command to get the current date
-- Follow the Simon Willison style guide for voice, tone, and structure 
+- Follow the Simon Willison style guide for voice, tone, and structure
