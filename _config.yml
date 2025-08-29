@@ -82,8 +82,8 @@ netease_comment: false
 # gtm_id: "GTM-MCXT2HK5"
 
 # Google Analytics
-# gtag_id: "G-077BT1Q7PJ" -- old memorymesh.ai tag
-gtag_id: "G-DB8F9GLZLD"
+gtag_id: "G-077BT1Q7PJ" -- old memorymesh.ai tag but migrated to augustinchan.dev
+# gtag_id: "G-DB8F9GLZLD"
 ga_track_id: "" # Format: UA-xxxxxx-xx
 ga_domain: 
 
