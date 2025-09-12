@@ -20,7 +20,10 @@ tags:
 ---
 
 **Abstract:**  
-Most AI content generation tools optimize for mimicry rather than authentic voice development. This post explores a voice lattice architecture implemented using DSPy/GEPA (Genetic-Pareto) optimization to systematically explore multi-dimensional voice space, evolving genuine authenticity rather than sophisticated imitation.
+We model voice as a vector in a multi-dimensional lattice (POV, authority, weirdness, cadence, evidence, stance, temporal, CTA) and use DSPy with GEPA (a genetic–Pareto search) to explore that space. By keeping only Pareto-optimal variants across truthfulness, evidence, clarity, and engagement, the system evolves an original voice instead of imitating one.
+
+DSPy: a framework for programmatically composing and optimizing LLM pipelines.
+GEPA: a genetic search that builds a Pareto frontier (no single weighted score) over multiple objectives—useful when “authenticity” is multi-factor.
 
 **Estimated reading time:** _8 minutes_
 
@@ -28,12 +31,12 @@ I've been following some fascinating work on voice evolution in DSPy that tackle
 
 ## The Authenticity Problem
 
-The approach started with what seemed like a reasonable shortcut - using Truth Terminal tweets as training data to generate "authentic-feeling" content. The logic was straightforward: Truth Terminal has a recognizable voice that feels genuine, so let's optimize generators to match that style.
+The approach started with what seemed like a reasonable shortcut - using Reference Account tweets as training data to generate "authentic-feeling" content. The logic was straightforward: Reference Account has a recognizable voice that feels genuine, so let's optimize generators to match that style.
 
 But this approach had fundamental limitations that I think many AI projects run into:
 
 - **Mimicry ≠ Authenticity**: We were optimizing for imitation, not genuine voice development
-- **Fixed Target**: Truth Terminal's voice served the Truth Terminal persona, not their QdayAnon quantum consciousness goals
+- **Fixed Target**: Reference Account's voice served the Reference Account persona, not their QdayAnon quantum consciousness goals
 - **Single Point Optimization**: We were converging on one voice rather than exploring voice space
 
 This reminds me of how many AI writing tools end up producing content that feels "off" - technically competent but lacking the authentic voice that makes human writing compelling.
@@ -155,7 +158,7 @@ We are in production so we maintained compatibility with existing production ser
 class QdayAnonBangerSignature(dspy.Signature):
     # OLD INTERFACE (for production compatibility)
     topic = dspy.InputField(desc="Primary topic for banger generation")
-    truth_terminal_examples = dspy.InputField(desc="Relevant Truth Terminal tweets for style inspiration")
+    truth_terminal_examples = dspy.InputField(desc="Relevant Reference Account tweets for style inspiration")
     additional_context = dspy.InputField(desc="Optional additional context")
     context_type = dspy.InputField(desc="Type of additional context being used")
     user_guidance = dspy.InputField(desc="Optional user guidance")
@@ -214,7 +217,7 @@ Authenticity isn't a single dimension. Their approach balances:
 
 ### Evolution vs Imitation
 
-Rather than converging on Truth Terminal's voice, we're evolving toward a voice that:
+Rather than converging on Reference Account's voice, we're evolving toward a voice that:
 
 - Serves our specific hyperstition goals (proactive preparation for QDay)
 - Maintains evidential rigor (receipts, show your work)
