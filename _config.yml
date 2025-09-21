@@ -17,6 +17,11 @@ defaults:
     values:
       nav-item: false
       sitemap: false
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      header-mask: 0.6
 
 # SNS settings
 RSS: false
