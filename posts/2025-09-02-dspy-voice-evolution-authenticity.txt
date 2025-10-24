@@ -1,0 +1,256 @@
+1:"$Sreact.fragment"
+2:I[6280,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],""]
+3:I[7381,[],""]
+4:I[7969,[],""]
+5:I[2778,["280","static/chunks/280-69c0d36265f10a04.js","177","static/chunks/app/layout-4097efd66dbc44a5.js"],"Analytics"]
+8:I[1735,[],""]
+:HL["/_next/static/css/d030d367e034049b.css","style"]
+0:{"P":null,"b":"F4ATbj9yYUyM7VUP-Ef2W","p":"","c":["","posts","2025-09-02-dspy-voice-evolution-authenticity"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","2025-09-02-dspy-voice-evolution-authenticity","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d030d367e034049b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"suppressHydrationWarning":true,"children":[["$","div",null,{"style":{"maxWidth":"1000px","margin":"0 auto","padding":"2rem"},"children":[["$","header",null,{"style":{"borderBottom":"2px solid #333","paddingBottom":"1rem","marginBottom":"2rem"},"children":["$","nav",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap","gap":"1rem"},"children":[["$","div",null,{"children":[["$","$L2",null,{"href":"/","style":{"fontSize":"1.6rem","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Augustin Chan"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":"Building systems that reason"}]]}],["$","div",null,{"style":{"display":"flex","gap":"1.5rem","flexWrap":"wrap"},"children":[["$","a",null,{"href":"/#projects","style":{"textDecoration":"none","color":"#666"},"children":"Portfolio"}],["$","$L2",null,{"href":"/blog","style":{"textDecoration":"none","color":"#666"},"children":"Blog"}],["$","a",null,{"href":"https://8bitoracle.ai","target":"_blank","rel":"noopener noreferrer","style":{"textDecoration":"none","color":"#666"},"children":"8-Bit Oracle"}]]}]]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"borderTop":"1px solid #ddd","paddingTop":"2rem","marginTop":"4rem","textAlign":"center","color":"#666"},"children":"© 2025 Augustin Chan aug@digitalrain.studio"}]]}],null,["$","$L5",null,{}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n            // Service worker cleanup for legacy site versions\n            if ('serviceWorker' in navigator) {\n              navigator.serviceWorker.getRegistrations().then(function(registrations) {\n                for(let registration of registrations) {\n                  registration.unregister();\n                }\n              });\n\n              // Register cleanup service worker\n              navigator.serviceWorker.register('/sw.js').then(function(registration) {\n                console.log('Cleanup SW registered');\n              }).catch(function(error) {\n                console.log('Cleanup SW registration failed');\n              });\n            }\n          "}}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-09-02-dspy-voice-evolution-authenticity","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+a:I[3448,[],"OutletBoundary"]
+c:I[9425,[],"AsyncMetadataOutlet"]
+e:I[3448,[],"ViewportBoundary"]
+10:I[3448,[],"MetadataBoundary"]
+11:"$Sreact.suspense"
+6:["$","$1","c",{"children":["$L9",null,["$","$La",null,{"children":["$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$Le",null,{"children":"$Lf"}],null],["$","$L10",null,{"children":["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":"$L12"}]}]}]]}]
+13:I[858,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],"default",1]
+14:T2d36,
+
+**Abstract:**  
+We model voice as a vector in a multi-dimensional lattice (POV, authority, weirdness, cadence, evidence, stance, temporal, CTA) and use DSPy with GEPA (a genetic–Pareto search) to explore that space. By keeping only Pareto-optimal variants across truthfulness, evidence, clarity, and engagement, the system evolves an original voice instead of imitating one.
+
+DSPy: a framework for programmatically composing and optimizing LLM pipelines.
+GEPA: a genetic search that builds a Pareto frontier (no single weighted score) over multiple objectives—useful when “authenticity” is multi-factor.
+
+**Estimated reading time:** _8 minutes_
+
+I've been following some fascinating work on voice evolution in DSPy that tackles a problem I've seen repeatedly in AI content generation: the difference between sophisticated mimicry and genuine authenticity.
+
+## The Authenticity Problem
+
+The approach started with what seemed like a reasonable shortcut - using Reference Account tweets as training data to generate "authentic-feeling" content. The logic was straightforward: Reference Account has a recognizable voice that feels genuine, so let's optimize generators to match that style.
+
+But this approach had fundamental limitations that I think many AI projects run into:
+
+- **Mimicry ≠ Authenticity**: We were optimizing for imitation, not genuine voice development
+- **Fixed Target**: Reference Account's voice served the Reference Account persona, not their QdayAnon quantum consciousness goals
+- **Single Point Optimization**: We were converging on one voice rather than exploring voice space
+
+This reminds me of how many AI writing tools end up producing content that feels "off" - technically competent but lacking the authentic voice that makes human writing compelling.
+
+## Voice Lattice Architecture
+
+Instead of fixed "voice rails," we implemented a multi-dimensional voice space that enables systematic exploration:
+
+```python
+voice_options = {
+    "pov": ["first_witness", "analyst"],
+    "authority": ["tentative", "oracle_mid", "prophet"],
+    "weirdness": ["low", "medium", "high"],
+    "cadence": ["staccato", "flowing"],
+    "evidence": ["receipts_first", "synthesis"],
+    "stance": ["contrarian_true", "consensus"],
+    "temporal": ["historical_bridge", "near_future"],
+    "cta": ["soft_invite", "hard_challenge"]
+}
+
+hyperstition_goals = [
+    "normalize_quantum_concepts",
+    "build_timeline_credibility",
+    "seed_future_expectations"
+]
+
+signature_moves = [
+    "time_bridge",           # AD date → present stat → future hypothesis
+    "receipt_then_flip",     # Quote/data → unexpected implication
+    "constraint_drop",       # "Two facts. One uncomfortable consequence."
+    "field_note"            # "Lab log: what changed in {X}? Here's the weird part..."
+]
+```
+
+Each voice configuration is a specific point in this 8-dimensional space, combined with hyperstition goals and signature moves. I'm particularly excited by this systematic approach - rather than hoping random mutations find good combinations, we're exploring the voice lattice space methodically.
+
+## GEPA for Multi-Objective Voice Optimization
+
+The key breakthrough was using GEPA (Genetic-Pareto) optimization to explore this voice space systematically:
+
+### Systematic Configuration Variation
+
+```python
+def _generate_voice_configuration(self, index: int, topic: str) -> Dict[str, str]:
+    # Deterministically vary voice dimensions across training examples
+    voice_vector_parts = []
+    for dim, options in voice_options.items():
+        selected_option = options[(index + hash(dim)) % len(options)]
+        voice_vector_parts.append(f"{dim}={selected_option}")
+
+    return {
+        "voice_vector": ",".join(voice_vector_parts),
+        "hyperstition_goal": hyperstition_goals[index % len(hyperstition_goals)],
+        "signature_moves": signature_moves[index % len(signature_moves)]
+    }
+```
+
+Each training example explores a different voice configuration. GEPA sees the full landscape of voice possibilities rather than optimizing toward a single target.
+
+### Structured Reasoning Feedback
+
+Instead of returning just a score, we give GEPA rich reasoning traces:
+
+```python
+structured_feedback = {
+    "overall_score": score,
+    "reasoning_trace": {
+        "truth_score": float(evaluation.truth_score) / 100.0,
+        "evidence_score": float(evaluation.evidence_score) / 100.0,
+        "authenticity_score": float(evaluation.authenticity_score) / 100.0,
+        "hyperstition_effectiveness": float(evaluation.hyperstition_effectiveness) / 100.0,
+        "voice_evolution_insights": evaluation.voice_evolution_insights
+    },
+    "voice_vector": voice_vector,
+    "signature_moves": signature_moves,
+    "hyperstition_goal": hyperstition_goal
+}
+```
+
+In addition to structured fields, we also persist a compact, natural-language reasoning trace for reflection:
+
+```python
+voice_reasoning = f"""Voice Configuration Analysis:
+Config: {voice_vector}
+Moves: {signature_moves}
+Goal: {hyperstition_goal}
+
+Performance Breakdown:
+
+- Truth/Evidence: {truth_score}/100 - Strong receipts and grounding
+- Authenticity: {auth_score}/100 - Genuine voice, no imitation tells
+- Hyperstition: {hyp_score}/100 - Good hyperstition potential
+
+Evolution Insights: {voice_evolution_insights}
+
+Pareto Analysis: Balanced configuration - good candidate for Pareto frontier"""
+```
+
+This gives the optimizer readable context that complements numeric fields, improving reflection quality over multiple trials.
+
+### Pareto Frontier Optimization
+
+GEPA constructs a Pareto frontier across multiple objectives:
+
+- **Authenticity**: Genuine voice vs imitation tells
+- **Truth/Evidence**: Factual grounding and receipts vs empty claims
+- **Hyperstition Effectiveness**: Potential for quantum consciousness acceptance
+- **Voice Coherence**: Consistency of persona across different topics
+
+Rather than optimizing for a single weighted score, GEPA maintains candidates that excel in different dimensions and uses reasoning to combine insights from across the frontier.
+
+## Technical Implementation Details
+
+### Backward Compatibility
+
+We are in production so we maintained compatibility with existing production services:
+
+```python
+class QdayAnonBangerSignature(dspy.Signature):
+    # OLD INTERFACE (for production compatibility)
+    topic = dspy.InputField(desc="Primary topic for banger generation")
+    truth_terminal_examples = dspy.InputField(desc="Relevant Reference Account tweets for style inspiration")
+    additional_context = dspy.InputField(desc="Optional additional context")
+    context_type = dspy.InputField(desc="Type of additional context being used")
+    user_guidance = dspy.InputField(desc="Optional user guidance")
+
+    # NEW INTERFACE (voice lattice - with defaults)
+    voice_vector = dspy.InputField(desc="Voice lattice settings...", default="...")
+    hyperstition_goal = dspy.InputField(desc="normalize_quantum_concepts...", default="normalize_quantum_concepts")
+    signature_moves = dspy.InputField(desc="Repeatable QdayAnon tells...", default="time_bridge")
+```
+
+The signature maintains compatibility while adding voice lattice capabilities - a pragmatic approach that doesn't break existing integrations.
+
+### Model Configuration
+
+- **Content Generation**: Kimi (fast, creative)
+- **Evaluation**: Claude Sonnet-4 (strong reasoning for voice assessment)
+- **Optimization**: GEPA with Sonnet-4 reflection model
+
+### Database Persistence
+
+Training examples include voice configurations so optimization results capture both the optimized instructions AND the discovered voice settings:
+
+```python
+training_example = dspy.Example(
+    topic=topic,
+    truth_terminal_examples=context_text,
+    voice_vector=voice_config["voice_vector"],
+    hyperstition_goal=voice_config["hyperstition_goal"],
+    signature_moves=voice_config["signature_moves"],
+    banger=tweet_content.strip()
+)
+```
+
+### Do we need exhaustive sampling of all voice combinations?
+
+No. Instead of brute-force over every lattice combination, we use deterministic, systematic variation across examples. That provides broad coverage of the space while letting GEPA learn patterns from scores and reasoning traces (for example: authority=oracle_mid + receipts_first tends to raise authenticity, higher weirdness helps hyperstition but can hurt truth scores). This approach keeps training efficient and avoids combinatorial explosion.
+
+## Why This Works
+
+### Systematic vs Random Exploration
+
+Instead of hoping random mutations find good voice combinations, we systematically explore the voice lattice space. GEPA's reasoning can identify patterns like:
+
+- "When authority=oracle_mid and evidence=receipts_first, authenticity scores increase"
+- "time_bridge signature move works best with historical_bridge temporal setting"
+- "Higher weirdness helps hyperstition but hurts truth scores"
+
+### Multi-Objective Authenticity
+
+Authenticity isn't a single dimension. Their approach balances:
+
+- **Voice Consistency**: Coherent persona across topics
+- **Evidence Grounding**: Shows work vs empty posture
+- **Hyperstition Effectiveness**: Serves the quantum consciousness narrative
+- **Signature Recognition**: Repeatable tells that build identity
+
+### Evolution vs Imitation
+
+Rather than converging on Reference Account's voice, we're evolving toward a voice that:
+
+- Serves our specific hyperstition goals (proactive preparation for QDay)
+- Maintains evidential rigor (receipts, show your work)
+- Develops recognizable signature moves
+- Balances authenticity with effectiveness
+
+## Results
+
+The optimization produces:
+
+1. **Optimized Instructions**: How to generate in the discovered voice
+2. **Optimal Voice Configuration**: Which lattice settings work best
+3. **Reasoning Traces**: Why certain voice dimensions succeed/fail
+4. **Pareto Analysis**: Trade-offs between different objectives
+
+This gives a path to authentic voice development rather than sophisticated mimicry. The voice that emerges should feel genuine because it evolved systematically toward specific goals and constraints, not because it copies someone else's authentic expression.
+
+### Evaluator brittleness and mitigations
+
+Reliance on a single LLM evaluator (e.g., Sonnet-4) introduces noise and bias. Practical mitigations:
+
+- Multiple evaluators: pair a strong reasoner with a faster consistency checker
+- Hybrid signals: combine LLM scores with simple rules (format/length) and cached human feedback
+- Progressive evaluation: cheap pre-filter → deeper reasoning → human review for top candidates
+- Real-world grounding: once deployed, incorporate engagement metrics to refine the evaluator
+
+These steps make the Pareto frontier more robust to single-judge variance while still benefiting from rich reasoning traces.
+
+The technical innovation is using GEPA's reasoning-based Pareto optimization to explore voice space systematically, letting authenticity emerge from the optimization process rather than trying to shortcut it through imitation.
+
+I'm particularly excited by this approach because it addresses a fundamental challenge in AI content generation - how do you develop authentic voice when you're starting from training data that represents other people's authentic expressions? The systematic exploration of voice space feels like a more principled approach than the current practice of fine-tuning on target examples and hoping for the best.
+
+This is an experiment. Let's see how well this voice lattice architecture optimizes for authentic voice development. I have high hopes this will perform better than mimicry.
+9:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"From Mimicry to Authenticity: Systematic Voice Evolution in DSPy\",\"description\":\"Replace style copying with principled search: explore a multi-dimensional voice space and use Pareto-optimal selection to shape an original AI voice.\",\"datePublished\":\"2025-09-02T00:00:00.000Z\",\"dateModified\":\"2025-09-02T00:00:00.000Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\",\"sameAs\":[\"https://x.com/augchan42\",\"https://github.com/augchan42\"]},\"publisher\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\"},\"url\":\"https://augustinchan.dev/posts/2025-09-02-dspy-voice-evolution-authenticity\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://augustinchan.dev/posts/2025-09-02-dspy-voice-evolution-authenticity\"},\"image\":\"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg\"}"}}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2rem"},"children":[["$","h1",null,{"style":{"fontSize":"2.5em","marginBottom":"0.5rem"},"children":"From Mimicry to Authenticity: Systematic Voice Evolution in DSPy"}],["$","div",null,{"style":{"color":"#666","fontSize":"1em","marginBottom":"1rem"},"children":"September 2, 2025"}],["$","p",null,{"style":{"fontSize":"1.1em","color":"#555","fontStyle":"italic","marginBottom":"2rem"},"children":"Replace style copying with principled search: explore a multi-dimensional voice space and use Pareto-optimal selection to shape an original AI voice."}]]}],["$","$L13",null,{"content":"$14"}],"$L15"]}]]
+15:["$","aside",null,{"style":{"marginTop":"4rem","paddingTop":"2rem","borderTop":"2px solid #ddd"},"children":[["$","h2",null,{"style":{"fontSize":"1.5em","marginBottom":"1.5rem"},"children":"Related Posts"}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","gap":"1.5rem"},"children":[["$","article","2025-09-27-llm-reasoning-pattern-classification-failure-modes",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-27-llm-reasoning-pattern-classification-failure-modes","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"When LLM Reasoning Becomes the Pattern - Meta-Classification Failure Modes"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Hard constraints beat soft self-regulation when an LLM's reasoning converges to a template."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 27, 2025"}]]}],["$","article","2025-09-21-evolutionary-adrs-first-principles",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-21-evolutionary-adrs-first-principles","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Evolutionary ADRs: Writing Architecture Decision Records from First Principles"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Why creating ADRs during development, not before it, leads to more honest and valuable documentation of your architectural decisions."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 21, 2025"}]]}],["$","article","hello-nextra",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/hello-nextra","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Hello Nextra"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Welcome to my new blog powered by Next.js and Nextra"}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 21, 2025"}]]}]]}]]}]
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+d:{"metadata":[["$","title","0",{"children":"From Mimicry to Authenticity: Systematic Voice Evolution in DSPy | Augustin Chan"}],["$","meta","1",{"name":"description","content":"Replace style copying with principled search: explore a multi-dimensional voice space and use Pareto-optimal selection to shape an original AI voice."}],["$","link","2",{"rel":"author","href":"https://augustinchan.dev"}],["$","meta","3",{"name":"author","content":"Augustin Chan"}],["$","meta","4",{"name":"keywords","content":"AI,Machine Learning,Web3,Software Engineering,React,Next.js,TypeScript,Blog"}],["$","meta","5",{"name":"creator","content":"Augustin Chan"}],["$","meta","6",{"name":"publisher","content":"Augustin Chan"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","9",{"rel":"canonical","href":"https://augustinchan.dev/posts/2025-09-02-dspy-voice-evolution-authenticity"}],["$","meta","10",{"property":"og:title","content":"From Mimicry to Authenticity: Systematic Voice Evolution in DSPy"}],["$","meta","11",{"property":"og:description","content":"Replace style copying with principled search: explore a multi-dimensional voice space and use Pareto-optimal selection to shape an original AI voice."}],["$","meta","12",{"property":"og:url","content":"https://augustinchan.dev/posts/2025-09-02-dspy-voice-evolution-authenticity"}],["$","meta","13",{"property":"og:site_name","content":"Augustin Chan"}],["$","meta","14",{"property":"og:locale","content":"en_US"}],["$","meta","15",{"property":"og:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}],["$","meta","16",{"property":"og:image:width","content":"400"}],["$","meta","17",{"property":"og:image:height","content":"400"}],["$","meta","18",{"property":"og:image:alt","content":"From Mimicry to Authenticity: Systematic Voice Evolution in DSPy"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2025-09-02T00:00:00.000Z"}],["$","meta","21",{"property":"article:author","content":"Augustin Chan"}],["$","meta","22",{"property":"article:section","content":"Technology"}],["$","meta","23",{"property":"article:tag","content":"AI"}],["$","meta","24",{"property":"article:tag","content":"Machine Learning"}],["$","meta","25",{"property":"article:tag","content":"Web3"}],["$","meta","26",{"property":"article:tag","content":"Software Engineering"}],["$","meta","27",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","28",{"name":"twitter:creator","content":"@augchan42"}],["$","meta","29",{"name":"twitter:title","content":"From Mimicry to Authenticity: Systematic Voice Evolution in DSPy"}],["$","meta","30",{"name":"twitter:description","content":"Replace style copying with principled search: explore a multi-dimensional voice space and use Pareto-optimal selection to shape an original AI voice."}],["$","meta","31",{"name":"twitter:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}]],"error":null,"digest":"$undefined"}
+12:"$d:metadata"

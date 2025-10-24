@@ -1,0 +1,182 @@
+1:"$Sreact.fragment"
+2:I[6280,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],""]
+3:I[7381,[],""]
+4:I[7969,[],""]
+5:I[2778,["280","static/chunks/280-69c0d36265f10a04.js","177","static/chunks/app/layout-4097efd66dbc44a5.js"],"Analytics"]
+8:I[1735,[],""]
+:HL["/_next/static/css/d030d367e034049b.css","style"]
+0:{"P":null,"b":"F4ATbj9yYUyM7VUP-Ef2W","p":"","c":["","posts","2025-08-02-configuring-browser-tools-mcp-claude-code"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","2025-08-02-configuring-browser-tools-mcp-claude-code","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d030d367e034049b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"suppressHydrationWarning":true,"children":[["$","div",null,{"style":{"maxWidth":"1000px","margin":"0 auto","padding":"2rem"},"children":[["$","header",null,{"style":{"borderBottom":"2px solid #333","paddingBottom":"1rem","marginBottom":"2rem"},"children":["$","nav",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap","gap":"1rem"},"children":[["$","div",null,{"children":[["$","$L2",null,{"href":"/","style":{"fontSize":"1.6rem","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Augustin Chan"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":"Building systems that reason"}]]}],["$","div",null,{"style":{"display":"flex","gap":"1.5rem","flexWrap":"wrap"},"children":[["$","a",null,{"href":"/#projects","style":{"textDecoration":"none","color":"#666"},"children":"Portfolio"}],["$","$L2",null,{"href":"/blog","style":{"textDecoration":"none","color":"#666"},"children":"Blog"}],["$","a",null,{"href":"https://8bitoracle.ai","target":"_blank","rel":"noopener noreferrer","style":{"textDecoration":"none","color":"#666"},"children":"8-Bit Oracle"}]]}]]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"borderTop":"1px solid #ddd","paddingTop":"2rem","marginTop":"4rem","textAlign":"center","color":"#666"},"children":"© 2025 Augustin Chan aug@digitalrain.studio"}]]}],null,["$","$L5",null,{}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n            // Service worker cleanup for legacy site versions\n            if ('serviceWorker' in navigator) {\n              navigator.serviceWorker.getRegistrations().then(function(registrations) {\n                for(let registration of registrations) {\n                  registration.unregister();\n                }\n              });\n\n              // Register cleanup service worker\n              navigator.serviceWorker.register('/sw.js').then(function(registration) {\n                console.log('Cleanup SW registered');\n              }).catch(function(error) {\n                console.log('Cleanup SW registration failed');\n              });\n            }\n          "}}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-08-02-configuring-browser-tools-mcp-claude-code","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+a:I[3448,[],"OutletBoundary"]
+c:I[9425,[],"AsyncMetadataOutlet"]
+e:I[3448,[],"ViewportBoundary"]
+10:I[3448,[],"MetadataBoundary"]
+11:"$Sreact.suspense"
+6:["$","$1","c",{"children":["$L9",null,["$","$La",null,{"children":["$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$Le",null,{"children":"$Lf"}],null],["$","$L10",null,{"children":["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":"$L12"}]}]}]]}]
+13:I[858,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],"default",1]
+14:T2483,
+
+**Abstract:**  
+This post provides a straightforward solution for configuring the browser-tools MCP server with Claude Code. When your MCP server fails to connect with `claude mcp list`, the issue is typically that Claude doesn't know how to find or start the server. This guide walks through the simple 2-step process to get everything working properly.
+
+**Estimated reading time:** _3 minutes_
+
+Getting MCP servers properly configured can sometimes be tricky, especially when dealing with stdio-based servers like the browser-tools MCP from AgentDeskAI. This post addresses a common issue where the MCP server appears to be failing to connect, when in reality it just needs to be properly registered with Claude.
+
+## The Problem: MCP Server Connection Failures
+
+When you run `claude mcp list` and see connection failures for your browser-tools MCP server, it's easy to assume there's a complex networking or configuration issue. However, the root cause is often much simpler: **Claude doesn't know how to find or start the MCP server**.
+
+The browser-tools MCP server from AgentDeskAI is a stdio-based server, which means it communicates via stdin/stdout rather than listening on network ports. This type of server requires explicit registration with Claude to work properly.
+
+**Important clarification:** There are actually two separate server components in the browser-tools ecosystem:
+
+1. **`@agentdeskai/browser-tools-mcp`** - This is the **MCP Server** that implements the Model Context Protocol and provides standardized tools for AI clients.
+
+2. **`@agentdeskai/browser-tools-server`** - This is the **Node.js middleware server** that acts as a bridge between the MCP server and the Chrome extension. It handles the actual browser tools functionality like gathering logs, taking screenshots, and running audits.
+
+The complete architecture flows like this: **Claude Code (MCP Client)** → MCP Server → Node Server → Chrome Extension → Browser
+
+## The Solution: 2 Simple Steps
+
+### Step 1: Verify the MCP Server and Node Server are Working
+
+First, let's confirm that both server components are functioning correctly (this assumes you've already installed the browser extension as described in https://browsertools.agentdesk.ai/installation):
+
+**Start the Node.js middleware server:**
+```bash
+npx @agentdeskai/browser-tools-server@1.2.0
+```
+
+**Test the MCP server independently:**
+```bash
+npx @agentdeskai/browser-tools-mcp@latest
+```
+
+**Expected behavior:** The server should output discovery messages and then appear to "hang" - this is actually normal behavior. The server is waiting for MCP protocol communication via stdin/stdout.
+
+**Example output:**
+
+```
+(node:241865) ExperimentalWarning: CommonJS module /home/hosermage/.nvm/versions/node/v23.3.0/lib/node_modules/npm/node_modules/debug/src/node.js is loading ES Module /home/hosermage/.nvm/versions/node/v23.3.0/lib/node_modules/npm/node_modules/supports-color/index.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Attempting initial server discovery on startup...
+Starting server discovery process
+Will try hosts: 127.0.0.1, 127.0.0.1, localhost
+Will try ports: 3025, 3026, 3027, 3028, 3029, 3030, 3031, 3032, 3033, 3034, 3035
+Checking 127.0.0.1:3025...
+Successfully found server at 127.0.0.1:3025
+Successfully discovered server at 127.0.0.1:3025
+```
+
+This output shows that the MCP server is:
+
+1. **Performing server discovery** - scanning localhost on ports 3025-3035
+2. **Finding the Node.js middleware server** - successfully connecting to the HTTP server at `127.0.0.1:3025`
+3. **Ready for MCP communication** - waiting for protocol messages via stdin/stdout
+
+The "hang" at the end is expected - the MCP server is waiting for MCP protocol input. You can safely terminate this process with Ctrl+C once you've confirmed it's working.
+
+**Important:** The MCP server needs the Node.js middleware server (`browser-tools-server`) to be running first, as it acts as the bridge between the MCP server and the Chrome extension.
+
+If you see error messages or the server exits immediately, there might be an issue with the installation or dependencies. In that case, ensure you have Node.js installed and try reinstalling the package.
+
+### Step 2: Add the MCP Server to Claude
+
+The key step is registering the MCP server with Claude so it knows how to start and communicate with it:
+
+```bash
+claude mcp add browser-tools npx -- @agentdeskai/browser-tools-mcp@latest
+```
+
+**Important details:**
+
+- **Server name:** `browser-tools` (you can choose any name you prefer)
+- **Command:** `npx -- @agentdeskai/browser-tools-mcp@latest`
+- **Double dash (`--`):** This is crucial - it properly separates the npx arguments from the claude mcp arguments
+
+## Key Technical Points
+
+### Understanding the Two-Server Architecture
+
+The browser-tools system uses a two-server design that separates concerns:
+
+- **MCP Server (`browser-tools-mcp`):** Handles the Model Context Protocol communication with Claude Code (the MCP client) via stdin/stdout
+- **Node.js Server (`browser-tools-server`):** Acts as middleware that communicates with the Chrome extension and provides the actual browser tools functionality
+
+This design has several advantages:
+- **Separation of concerns:** The MCP server focuses on protocol handling, while the Node.js server handles browser interactions
+- **Flexibility:** The Node.js server can be used independently by other tools
+- **Reliability:** If the MCP server restarts, the Node.js server continues running
+
+### The Role of the Double Dash
+
+The `--` in the command is essential because it tells the shell to treat everything after it as arguments to the `npx` command, rather than arguments to the `claude mcp add` command. Without it, the command parsing can fail.
+
+### How the Servers Work Together
+
+The MCP server connects to the Node.js server (typically running on port 3025) for the actual browser tools functionality. The Node.js server acts as a bridge between the MCP server and the Chrome extension, handling tasks like taking screenshots, gathering console logs, and running audits.
+
+**Important Prerequisite:** Before Claude Code can access browser windows via browser-tools, you need to have the browser's developer tools opened. This is required for the browser tools to establish the necessary connection and permissions to interact with the page.
+
+### What Happens When Claude Runs the Server
+
+When you register the MCP server with Claude Code, Claude spawns its own instance of the same process. This new instance goes through the exact same discovery process you witnessed when running it directly:
+
+1. **Same discovery messages** - Claude's instance will show the same server discovery output
+2. **Same connection to browser tools** - It will find and connect to the same HTTP server at `127.0.0.1:3025`
+3. **Active MCP communication** - Unlike the direct command line version that "hangs" waiting for input, Claude actively communicates with the server using the MCP protocol
+
+The key difference is that when you run it directly from the command line, it's just sitting there waiting for MCP protocol input (which is why it appears to "hang"). When Claude runs it, Claude actively communicates with it using the MCP protocol for browser automation tasks.
+
+## Verification
+
+After completing both steps, verify the configuration:
+
+```bash
+claude mcp list
+```
+
+You should now see output similar to:
+
+```
+browser-tools: npx @agentdeskai/browser-tools-mcp@latest - ✓ Connected
+```
+
+The checkmark indicates that Claude can successfully start and communicate with the MCP server.
+
+## Troubleshooting Common Issues
+
+### Server Still Shows as Disconnected
+
+If the server still appears disconnected after following the steps:
+
+1. **Check the command syntax:** Ensure the double dash is present and the package name is correct
+2. **Verify Node.js installation:** The server requires Node.js to run
+3. **Check for conflicting processes:** Ensure no other instances of the server are running
+4. **Review Claude logs:** Look for any error messages in Claude's output
+
+### Permission Issues
+
+If you encounter permission errors:
+
+1. **Check file permissions:** Ensure the npx command can execute
+2. **Try global installation:** As an alternative, you can install the package globally and reference it directly
+3. **Verify PATH:** Ensure npx is in your system PATH
+
+## Conclusion
+
+Configuring MCP servers with Claude Code doesn't have to be complicated. The key insight is understanding that the browser-tools system uses a two-server architecture where both components need to be running for everything to work properly. By following these two simple steps - starting the Node.js middleware server and then registering the MCP server with Claude - you can quickly get your browser tools up and running.
+
+The browser-tools system is now ready to provide browser automation functionality through Claude Code, enabling powerful AI-assisted web interactions and testing scenarios.
+
+---
+
+_This configuration approach applies to other stdio-based MCP servers as well. The same principles of verification and registration can be used for any MCP server that communicates via stdin/stdout rather than network protocols._
+9:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Getting Browser Tools MCP Server Working with Claude Code: A Simple 2-Step Solution\",\"description\":\"Quick guide to configure browser-tools-mcp AgentDeskAI with Claude Code - solving connection issues and getting your MCP server properly integrated.\",\"datePublished\":\"2025-08-02T00:00:00.000Z\",\"dateModified\":\"2025-08-02T00:00:00.000Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\",\"sameAs\":[\"https://x.com/augchan42\",\"https://github.com/augchan42\"]},\"publisher\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\"},\"url\":\"https://augustinchan.dev/posts/2025-08-02-configuring-browser-tools-mcp-claude-code\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://augustinchan.dev/posts/2025-08-02-configuring-browser-tools-mcp-claude-code\"},\"image\":\"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg\"}"}}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2rem"},"children":[["$","h1",null,{"style":{"fontSize":"2.5em","marginBottom":"0.5rem"},"children":"Getting Browser Tools MCP Server Working with Claude Code: A Simple 2-Step Solution"}],["$","div",null,{"style":{"color":"#666","fontSize":"1em","marginBottom":"1rem"},"children":"August 2, 2025"}],["$","p",null,{"style":{"fontSize":"1.1em","color":"#555","fontStyle":"italic","marginBottom":"2rem"},"children":"Quick guide to configure browser-tools-mcp AgentDeskAI with Claude Code - solving connection issues and getting your MCP server properly integrated."}]]}],["$","$L13",null,{"content":"$14"}],"$L15"]}]]
+15:["$","aside",null,{"style":{"marginTop":"4rem","paddingTop":"2rem","borderTop":"2px solid #ddd"},"children":[["$","h2",null,{"style":{"fontSize":"1.5em","marginBottom":"1.5rem"},"children":"Related Posts"}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","gap":"1.5rem"},"children":[["$","article","2025-09-27-llm-reasoning-pattern-classification-failure-modes",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-27-llm-reasoning-pattern-classification-failure-modes","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"When LLM Reasoning Becomes the Pattern - Meta-Classification Failure Modes"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Hard constraints beat soft self-regulation when an LLM's reasoning converges to a template."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 27, 2025"}]]}],["$","article","2025-09-21-evolutionary-adrs-first-principles",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-21-evolutionary-adrs-first-principles","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Evolutionary ADRs: Writing Architecture Decision Records from First Principles"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Why creating ADRs during development, not before it, leads to more honest and valuable documentation of your architectural decisions."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 21, 2025"}]]}],["$","article","hello-nextra",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/hello-nextra","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Hello Nextra"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Welcome to my new blog powered by Next.js and Nextra"}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 21, 2025"}]]}]]}]]}]
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+d:{"metadata":[["$","title","0",{"children":"Getting Browser Tools MCP Server Working with Claude Code: A Simple 2-Step Solution | Augustin Chan"}],["$","meta","1",{"name":"description","content":"Quick guide to configure browser-tools-mcp AgentDeskAI with Claude Code - solving connection issues and getting your MCP server properly integrated."}],["$","link","2",{"rel":"author","href":"https://augustinchan.dev"}],["$","meta","3",{"name":"author","content":"Augustin Chan"}],["$","meta","4",{"name":"keywords","content":"AI,Machine Learning,Web3,Software Engineering,React,Next.js,TypeScript,Blog"}],["$","meta","5",{"name":"creator","content":"Augustin Chan"}],["$","meta","6",{"name":"publisher","content":"Augustin Chan"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","9",{"rel":"canonical","href":"https://augustinchan.dev/posts/2025-08-02-configuring-browser-tools-mcp-claude-code"}],["$","meta","10",{"property":"og:title","content":"Getting Browser Tools MCP Server Working with Claude Code: A Simple 2-Step Solution"}],["$","meta","11",{"property":"og:description","content":"Quick guide to configure browser-tools-mcp AgentDeskAI with Claude Code - solving connection issues and getting your MCP server properly integrated."}],["$","meta","12",{"property":"og:url","content":"https://augustinchan.dev/posts/2025-08-02-configuring-browser-tools-mcp-claude-code"}],["$","meta","13",{"property":"og:site_name","content":"Augustin Chan"}],["$","meta","14",{"property":"og:locale","content":"en_US"}],["$","meta","15",{"property":"og:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}],["$","meta","16",{"property":"og:image:width","content":"400"}],["$","meta","17",{"property":"og:image:height","content":"400"}],["$","meta","18",{"property":"og:image:alt","content":"Getting Browser Tools MCP Server Working with Claude Code: A Simple 2-Step Solution"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2025-08-02T00:00:00.000Z"}],["$","meta","21",{"property":"article:author","content":"Augustin Chan"}],["$","meta","22",{"property":"article:section","content":"Technology"}],["$","meta","23",{"property":"article:tag","content":"AI"}],["$","meta","24",{"property":"article:tag","content":"Machine Learning"}],["$","meta","25",{"property":"article:tag","content":"Web3"}],["$","meta","26",{"property":"article:tag","content":"Software Engineering"}],["$","meta","27",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","28",{"name":"twitter:creator","content":"@augchan42"}],["$","meta","29",{"name":"twitter:title","content":"Getting Browser Tools MCP Server Working with Claude Code: A Simple 2-Step Solution"}],["$","meta","30",{"name":"twitter:description","content":"Quick guide to configure browser-tools-mcp AgentDeskAI with Claude Code - solving connection issues and getting your MCP server properly integrated."}],["$","meta","31",{"name":"twitter:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}]],"error":null,"digest":"$undefined"}
+12:"$d:metadata"
