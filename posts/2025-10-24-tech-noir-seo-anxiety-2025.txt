@@ -1,0 +1,214 @@
+1:"$Sreact.fragment"
+2:I[6280,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],""]
+3:I[7381,[],""]
+4:I[7969,[],""]
+5:I[2778,["280","static/chunks/280-69c0d36265f10a04.js","177","static/chunks/app/layout-4097efd66dbc44a5.js"],"Analytics"]
+8:I[1735,[],""]
+:HL["/_next/static/css/d030d367e034049b.css","style"]
+0:{"P":null,"b":"TAjbcrbsaYEgIYKB8cjaF","p":"","c":["","posts","2025-10-24-tech-noir-seo-anxiety-2025"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","2025-10-24-tech-noir-seo-anxiety-2025","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d030d367e034049b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"suppressHydrationWarning":true,"children":[["$","div",null,{"style":{"maxWidth":"1000px","margin":"0 auto","padding":"2rem"},"children":[["$","header",null,{"style":{"borderBottom":"2px solid #333","paddingBottom":"1rem","marginBottom":"2rem"},"children":["$","nav",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap","gap":"1rem"},"children":[["$","div",null,{"children":[["$","$L2",null,{"href":"/","style":{"fontSize":"1.6rem","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Augustin Chan"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":"Building systems that reason"}]]}],["$","div",null,{"style":{"display":"flex","gap":"1.5rem","flexWrap":"wrap"},"children":[["$","$L2",null,{"href":"/","style":{"textDecoration":"none","color":"#666"},"children":"Home"}],["$","$L2",null,{"href":"/about","style":{"textDecoration":"none","color":"#666"},"children":"About"}],["$","$L2",null,{"href":"/blog","style":{"textDecoration":"none","color":"#666"},"children":"Blog"}],["$","a",null,{"href":"https://8bitoracle.ai","target":"_blank","rel":"noopener noreferrer","style":{"textDecoration":"none","color":"#666"},"children":"8-Bit Oracle"}]]}]]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"borderTop":"1px solid #ddd","paddingTop":"2rem","marginTop":"4rem","textAlign":"center","color":"#666"},"children":"© 2025 Augustin Chan aug@digitalrain.studio"}]]}],null,["$","$L5",null,{}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n            // Service worker cleanup for legacy site versions\n            if ('serviceWorker' in navigator) {\n              navigator.serviceWorker.getRegistrations().then(function(registrations) {\n                for(let registration of registrations) {\n                  registration.unregister();\n                }\n              });\n\n              // Register cleanup service worker\n              navigator.serviceWorker.register('/sw.js').then(function(registration) {\n                console.log('Cleanup SW registered');\n              }).catch(function(error) {\n                console.log('Cleanup SW registration failed');\n              });\n            }\n          "}}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-10-24-tech-noir-seo-anxiety-2025","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+a:I[3448,[],"OutletBoundary"]
+c:I[9425,[],"AsyncMetadataOutlet"]
+e:I[3448,[],"ViewportBoundary"]
+10:I[3448,[],"MetadataBoundary"]
+11:"$Sreact.suspense"
+6:["$","$1","c",{"children":["$L9",null,["$","$La",null,{"children":["$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$Le",null,{"children":"$Lf"}],null],["$","$L10",null,{"children":["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":"$L12"}]}]}]]}]
+13:I[858,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],"default",1]
+14:T325f,
+> "I can only put my best foot forward, create content that appeals to me, and hope there's some market for it."
+>
+> — Everything that follows is just elaboration on this simple truth
+
+## I. The Part Where I Explain What I Did (And Why I'm Probably Screwed)¹
+
+So here's what happened: I took a perfectly serviceable I Ching divination app—one that featured the traditional Richard Wilhelm commentary that approximately nobody under 60 has ever read all the way through²—and replaced it with **tech noir cultural anchors**. Hexagram 51 (Thunder/震) no longer quotes Wilhelm's somewhat impenetrable prose about "shock brings success" but instead displays the *Unknown Pleasures* album cover and talks about Joy Division.³
+
+The aesthetic is phosphor green (#2EBD2E) meets amber (#FFA500) meets the kind of deep blacks you only get on a CRT monitor that's been on too long. There are scanlines. There is film grain. It looks like it was designed by someone who watched *Blade Runner* too many times in their formative years and never quite recovered.⁴
+
+And the question that keeps me up at night⁵ is: **Is this SEO suicide or genius?**
+
+---
+
+¹ This is, of course, a false binary. It could be both simultaneously, or neither, or something else entirely that I haven't considered because I'm too busy worrying about whether footnotes help or hurt my "time on page" metrics.
+
+² I have zero data to support this claim. It's based purely on vibes and the fact that I've never met anyone who's read Wilhelm cover-to-cover except for one guy at a meditation retreat who also claimed to have achieved enlightenment by staring at a potato (not a true story).
+
+³ The irony of using a band named after the Hitler Youth program to illustrate ancient Chinese wisdom is not lost on me. The irony of *that* irony being potentially good for SEO because it creates "semantic richness" is also not lost on me. We live in interesting times.
+
+⁴ Narrator: He had, in fact, watched *Blade Runner* too many times.
+
+⁵ It doesn't, actually. But "keeps me up at night" is the kind of hyperbolic phrase that signals emotional authenticity to both humans and LLMs, which is itself a form of optimization, which is itself anxiety-inducing. See how this works?
+
+## II. The Part Where I Discover I'm Probably Not Screwed (But Maybe I Am?)
+
+Here's what I learned from actually researching instead of just panicking:⁶
+
+### The "Google Only Indexes Top 10" Thing Is Bullshit
+
+In September 2025, Google disabled the `&num=100` parameter that let you see 100 search results on one page. SEO tools freaked out because they could no longer scrape 100 positions in one request. **This is a display change, not an indexing change.**⁷
+
+Google is still indexing everything. They're just making it harder for SEO tools to track it. Which, if you think about it, is kind of beautiful in its own way—like Google saying "maybe stop obsessing over rank position 47 and just make good stuff?"
+
+### Long-Tail Keywords Are Actually *More* Important Now
+
+Voice search is expected to hit 50% of all searches by 2025.⁸ Google's AI Overviews answer broad queries ("what is the I Ching?") directly in the SERP, which means the only traffic left for actual websites is from highly specific searches like:
+
+- "Joy Division I Ching hexagram"
+- "Thunder hexagram Unknown Pleasures meaning"
+- "I Ching tech noir aesthetic Hong Kong"
+- "易經 廣東話 茶餐廳" (I Ching Cantonese tea restaurant)⁹
+
+These are **exactly the kinds of searches my tech noir + Cantonese slang strategy targets**. By accident. Or by instinct. Or by some combination of both that I'm now retroactively calling "strategy."
+
+### GEO Is Real And You Should Be Terrified (Or Not)
+
+Generative Engine Optimization is the new thing everyone's panicking about. ChatGPT has 400 million weekly users. Semrush predicts LLM traffic will overtake traditional search by end of 2027. Y Combinator data suggests traditional search volume will drop 50% by 2028.
+
+The conventional wisdom is: optimize for AI-generated summaries, make your content "crawlable and indexable," use "semantic richness," build "AI-perceived authority."
+
+But here's the thing nobody wants to say out loud: **cultural authenticity is semantic richness**.¹⁰
+
+---
+
+⁶ Imagine that. Research. Revolutionary concept.
+
+⁷ The SEO community's response was approximately the same as if Google had announced they were shutting down search entirely. This tells you everything you need to know about SEO anxiety.
+
+⁸ This is the actual date we're living in. Time is weird.
+
+⁹ The fact that I'm optimizing for searches in three different languages (English, Mandarin, Cantonese) is either sophisticated international SEO or complete chaos. Possibly both.
+
+¹⁰ This sounds like marketing bullshit but stay with me.
+
+## III. The Part Where I Try To Convince You (And Myself) This Actually Makes Sense
+
+### Cultural Anchoring Is Natural Language Optimization
+
+When I replaced Wilhelm's "The shock terrifies for a hundred miles" with "Joy Division's *Unknown Pleasures* captures this frequency—pulsar signals from a dying star, translated into sound," I wasn't thinking about SEO. I was thinking: "How do I make ancient Chinese cosmology feel relevant to someone scrolling through TikTok?"
+
+But here's what happened:
+
+1. **Unique terminology**: "Joy Division I Ching" is a search term that literally didn't exist before I created it¹¹
+2. **Cultural keywords naturally embedded**: pulsar, dying star, post-punk, Manchester, 1979, Ian Curtis—all related terms that provide context
+3. **Long-tail opportunities**: Every cultural reference is a potential search path
+4. **Shareability**: "You have to see this I Ching app that uses Joy Division to explain hexagrams" is something people actually say to each other
+
+This is what the GEO guides mean by "semantic richness" and "natural language." They just don't usually phrase it as "replace academic commentary with post-punk album references."
+
+### The Cantonese Slang Database Is Query Fan-Out Gold
+
+Google introduced "query fan-out" in 2025—their AI breaks complex questions into sub-questions and searches in parallel. My Cantonese translation system does exactly this:
+
+```
+User query: "What does Thunder hexagram mean?"
+↓
+My system:
+1. Extracts keywords: "thunder, hexagram, meaning"
+2. Searches slang database for cultural equivalents
+3. Finds: 茶餐廳 vernacular, street-level phrases, local context
+4. Translates with cultural anchoring
+```
+
+Niche queries that Google might not have good answers for (like "I Ching in Hong Kong Cantonese slang") can now find their way into broader AI-generated responses. **Because I'm creating the source material.**¹²
+
+### The 2025 SEO Sweet Spot: Authentic Weirdness
+
+Here's what actually ranks in 2025:
+
+- ❌ Keyword density of 3% (this gets you penalized)
+- ❌ Generic "authoritative" content (AI Overviews handle this)
+- ❌ Trying to rank for "I Ching meaning" (good luck competing with Wikipedia)
+- ✅ **Memorable, unique, culturally-grounded content that answers specific questions nobody else is answering**
+
+My average keyword density is probably 0.3%.¹³ I'm not trying to rank for "I Ching." I'm trying to be the **only** result for "tech noir I Ching Joy Division hexagram interpretation."
+
+And in 2025, when AI summarizes search results, guess what gets cited? The weird, specific, culturally-rich content that can't be easily summarized or replaced. The content that has actual personality.¹⁴
+
+---
+
+¹¹ I checked. Google Scholar returns zero results for this exact phrase before October 2025. I have literally created a new corner of the semantic web. This is either significant or meaningless.
+
+¹² This is the part where I realize I'm not optimizing *for* AI search, I'm optimizing *to be* the training data for AI search. Which is either 4D chess or just making stuff I think is cool. Again: possibly both.
+
+¹³ I have not actually measured this. But it's probably low because I'm writing naturally instead of forcing "I Ching" into every sentence like some kind of deranged keyword bot.
+
+¹⁴ Or gets ignored entirely because nobody searches for this stuff and I'm just shouting into the void. That's also a possibility.
+
+## IV. The Part Where I Confront The Anxiety Directly
+
+### Am I Too Late?
+
+It's October 2025. ChatGPT has 400 million users. AI Overviews dominate SERPs. Traditional search is predicted to drop 50% by 2028.
+
+**Am I late to the party?**
+
+Maybe. Probably. But here's the thing: the party might be moving to a new venue anyway.¹⁵
+
+If search is really becoming AI-mediated, then the question isn't "how do I rank in Google?" but "how do I become the kind of source material that AI systems want to cite?"
+
+And the answer to that is: **be weird in a coherent way**. Be specific. Be cultural. Be the person who replaced Wilhelm with Joy Division and can explain *why* that makes sense.
+
+### The Generative Engine Anxiety
+
+Will AIs "prefilter everything"? Yes, probably. But they need source material. And the more unique and culturally-grounded your source material is, the harder it is to replicate or summarize away.
+
+You can't compress "tech noir I Ching with Hong Kong Cantonese tea restaurant slang" into a generic AI summary. You have to actually link to it. You have to say "according to this weird app that uses Joy Division to explain hexagrams..."
+
+**That's the moat.** Not SEO tricks. Not keyword density. **Cultural specificity that can't be abstracted away.**
+
+### The Real Strategy (If You Can Call It That)
+
+Here's what I'm actually doing:
+
+1. **Make something weird and specific** (tech noir I Ching + Cantonese slang)
+2. **Ground it in cultural references people actually care about** (Joy Division, 茶餐廳, pulsar signals)
+3. **Write naturally** about why these connections matter
+4. **Let the long-tail keyword opportunities emerge organically** instead of forcing them
+5. **Hope that when AI systems try to answer "what's a culturally relevant I Ching interpretation?"** they cite my weird project instead of Wikipedia
+
+Is this a "reverse index SEO strategy"? I don't know. It's more like: **content-first, let-the-algorithms-figure-it-out, please-don't-let-this-be-a-complete-waste-of-time strategy.**
+
+But in 2025, with AI eating search and everyone panicking about GEO and keyword strategies dying... maybe the actual winning move is just to make something genuine and weird and trust that specificity is its own kind of optimization.¹⁶
+
+---
+
+¹⁵ This metaphor is already strained. The "party" is search traffic. The "new venue" is... LLM-mediated information discovery? I'm not entirely sure this makes sense but I'm committed to it now.
+
+¹⁶ Or maybe I'm rationalizing. Maybe in three years someone will read this post and think "oh honey, you had no idea what was coming." But at least I'll have tried something other than keyword-stuffed generic content. That has to count for something. Right?
+
+## V. The Part Where I Stop Procrastinating And Actually Publish This
+
+The anxiety about SEO in 2025 is real. The fear of being too late is real. The concern that AI will prefilter everything and small weird projects will get lost is **extremely real**.
+
+But here's what I keep coming back to: Wilhelm's commentary has been around since 1950. It's authoritative. It's comprehensive. It's in every I Ching translation.
+
+**And absolutely nobody reads it anymore.**¹⁷
+
+You know what people do read? Weird shit that connects things they didn't expect to be connected. Joy Division and Thunder hexagrams. Cantonese tea restaurant slang and ancient Chinese cosmology. Tech noir aesthetics and divination.
+
+If that's not SEO, fine. If it doesn't survive the AI apocalypse, fine. At least it's interesting. At least it's **trying to answer questions that generic authoritative content can't**.
+
+And in 2025, when everything is optimized and nothing has personality, maybe that's actually the strategy.
+
+Make weird stuff. Write naturally. Trust cultural specificity. Let the algorithms catch up.¹⁸
+
+---
+
+**Footnotes to the footnotes:**
+
+¹⁷ Still no data for this claim. Still going with vibes.
+
+¹⁸ This is either wisdom or cope. Time will tell. But I'm hitting publish anyway because the alternative is spending another three hours agonizing over whether "semantic richness" is adequately explained in section III, and life is too short for that kind of meta-anxiety.
+
+---
+
+*This post was written by a human who is genuinely unsure whether the future of search is going to make any of this matter, but who is also kind of okay with that uncertainty because at least the process was interesting. Also there are footnotes. That has to count for something.*
+
+*For more on the tech noir I Ching project: [8bitoracle.ai](https://8bitoracle.ai)*
+*For more anxious blogging about technology: you're already here*
+9:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Tech Noir, Joy Division, and the Crushing Anxiety of Optimizing for Search Engines That Might Not Exist in Three Years\",\"description\":\"On replacing Wilhelm with Unknown Pleasures, cultural anchoring vs keyword stuffing, and whether we're all just shouting into the void while ChatGPT eats our lunch. Also: footnotes.\",\"datePublished\":\"2025-10-24T00:00:00.000Z\",\"dateModified\":\"2025-10-24T00:00:00.000Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\",\"sameAs\":[\"https://x.com/augchan42\",\"https://github.com/augchan42\"]},\"publisher\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\"},\"url\":\"https://augustinchan.dev/posts/2025-10-24-tech-noir-seo-anxiety-2025\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://augustinchan.dev/posts/2025-10-24-tech-noir-seo-anxiety-2025\"},\"image\":\"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg\"}"}}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2rem"},"children":[["$","h1",null,{"style":{"fontSize":"2.5em","marginBottom":"0.5rem"},"children":"Tech Noir, Joy Division, and the Crushing Anxiety of Optimizing for Search Engines That Might Not Exist in Three Years"}],["$","div",null,{"style":{"color":"#666","fontSize":"1em","marginBottom":"1rem"},"children":"October 24, 2025"}],["$","p",null,{"style":{"fontSize":"1.1em","color":"#555","fontStyle":"italic","marginBottom":"2rem"},"children":"On replacing Wilhelm with Unknown Pleasures, cultural anchoring vs keyword stuffing, and whether we're all just shouting into the void while ChatGPT eats our lunch. Also: footnotes."}]]}],["$","$L13",null,{"content":"$14"}],"$L15"]}]]
+15:["$","aside",null,{"style":{"marginTop":"4rem","paddingTop":"2rem","borderTop":"2px solid #ddd"},"children":[["$","h2",null,{"style":{"fontSize":"1.5em","marginBottom":"1.5rem"},"children":"Related Posts"}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","gap":"1.5rem"},"children":[["$","article","2025-09-27-llm-reasoning-pattern-classification-failure-modes",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-27-llm-reasoning-pattern-classification-failure-modes","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"When LLM Reasoning Becomes the Pattern - Meta-Classification Failure Modes"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Hard constraints beat soft self-regulation when an LLM's reasoning converges to a template."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 27, 2025"}]]}],["$","article","2025-09-21-evolutionary-adrs-first-principles",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-21-evolutionary-adrs-first-principles","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Evolutionary ADRs: Writing Architecture Decision Records from First Principles"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Why creating ADRs during development, not before it, leads to more honest and valuable documentation of your architectural decisions."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 21, 2025"}]]}],["$","article","2025-09-14-trusting-instincts-ai-architecture",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-14-trusting-instincts-ai-architecture","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Trusting Your Instincts: When AI Suggests Complex Solutions"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"A debugging session reveals why your gut feeling about 'two sets of items' was right - and how to guide AI toward simpler, better solutions."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 14, 2025"}]]}]]}]]}]
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+d:{"metadata":[["$","title","0",{"children":"Tech Noir, Joy Division, and the Crushing Anxiety of Optimizing for Search Engines That Might Not Exist in Three Years | Augustin Chan"}],["$","meta","1",{"name":"description","content":"On replacing Wilhelm with Unknown Pleasures, cultural anchoring vs keyword stuffing, and whether we're all just shouting into the void while ChatGPT eats our lunch. Also: footnotes."}],["$","link","2",{"rel":"author","href":"https://augustinchan.dev"}],["$","meta","3",{"name":"author","content":"Augustin Chan"}],["$","meta","4",{"name":"keywords","content":"AI,Machine Learning,Web3,Software Engineering,React,Next.js,TypeScript,Blog"}],["$","meta","5",{"name":"creator","content":"Augustin Chan"}],["$","meta","6",{"name":"publisher","content":"Augustin Chan"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","9",{"rel":"canonical","href":"https://augustinchan.dev/posts/2025-10-24-tech-noir-seo-anxiety-2025"}],["$","meta","10",{"property":"og:title","content":"Tech Noir, Joy Division, and the Crushing Anxiety of Optimizing for Search Engines That Might Not Exist in Three Years"}],["$","meta","11",{"property":"og:description","content":"On replacing Wilhelm with Unknown Pleasures, cultural anchoring vs keyword stuffing, and whether we're all just shouting into the void while ChatGPT eats our lunch. Also: footnotes."}],["$","meta","12",{"property":"og:url","content":"https://augustinchan.dev/posts/2025-10-24-tech-noir-seo-anxiety-2025"}],["$","meta","13",{"property":"og:site_name","content":"Augustin Chan"}],["$","meta","14",{"property":"og:locale","content":"en_US"}],["$","meta","15",{"property":"og:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}],["$","meta","16",{"property":"og:image:width","content":"400"}],["$","meta","17",{"property":"og:image:height","content":"400"}],["$","meta","18",{"property":"og:image:alt","content":"Tech Noir, Joy Division, and the Crushing Anxiety of Optimizing for Search Engines That Might Not Exist in Three Years"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2025-10-24T00:00:00.000Z"}],["$","meta","21",{"property":"article:author","content":"Augustin Chan"}],["$","meta","22",{"property":"article:section","content":"Technology"}],["$","meta","23",{"property":"article:tag","content":"AI"}],["$","meta","24",{"property":"article:tag","content":"Machine Learning"}],["$","meta","25",{"property":"article:tag","content":"Web3"}],["$","meta","26",{"property":"article:tag","content":"Software Engineering"}],["$","meta","27",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","28",{"name":"twitter:creator","content":"@augchan42"}],["$","meta","29",{"name":"twitter:title","content":"Tech Noir, Joy Division, and the Crushing Anxiety of Optimizing for Search Engines That Might Not Exist in Three Years"}],["$","meta","30",{"name":"twitter:description","content":"On replacing Wilhelm with Unknown Pleasures, cultural anchoring vs keyword stuffing, and whether we're all just shouting into the void while ChatGPT eats our lunch. Also: footnotes."}],["$","meta","31",{"name":"twitter:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}]],"error":null,"digest":"$undefined"}
+12:"$d:metadata"

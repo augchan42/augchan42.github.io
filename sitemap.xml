@@ -2,15 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://augustinchan.dev</loc>
-<lastmod>2025-10-24T02:09:44.902Z</lastmod>
+<lastmod>2025-10-24T02:33:04.359Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 <url>
 <loc>https://augustinchan.dev/blog</loc>
-<lastmod>2025-10-24T02:09:44.902Z</lastmod>
+<lastmod>2025-10-24T02:33:04.359Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
+</url>
+<url>
+<loc>https://augustinchan.dev/posts/2025-10-24-tech-noir-seo-anxiety-2025</loc>
+<lastmod>2025-10-24T00:00:00.000Z</lastmod>
+<changefreq>never</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://augustinchan.dev/posts/2025-09-27-llm-reasoning-pattern-classification-failure-modes</loc>
