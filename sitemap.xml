@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://augustinchan.dev</loc>
-<lastmod>2025-10-24T02:05:56.056Z</lastmod>
+<lastmod>2025-10-24T02:09:44.902Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>1</priority>
 </url>
 <url>
 <loc>https://augustinchan.dev/blog</loc>
-<lastmod>2025-10-24T02:05:56.056Z</lastmod>
+<lastmod>2025-10-24T02:09:44.902Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -20,12 +20,6 @@
 </url>
 <url>
 <loc>https://augustinchan.dev/posts/2025-09-21-evolutionary-adrs-first-principles</loc>
-<lastmod>2025-09-21T00:00:00.000Z</lastmod>
-<changefreq>never</changefreq>
-<priority>0.6</priority>
-</url>
-<url>
-<loc>https://augustinchan.dev/posts/hello-nextra</loc>
 <lastmod>2025-09-21T00:00:00.000Z</lastmod>
 <changefreq>never</changefreq>
 <priority>0.6</priority>
