@@ -1,0 +1,148 @@
+1:"$Sreact.fragment"
+2:I[6280,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],""]
+3:I[7381,[],""]
+4:I[7969,[],""]
+5:I[2778,["280","static/chunks/280-69c0d36265f10a04.js","177","static/chunks/app/layout-4097efd66dbc44a5.js"],"Analytics"]
+8:I[1735,[],""]
+:HL["/_next/static/css/d030d367e034049b.css","style"]
+0:{"P":null,"b":"v6NzYDou7HE28WoKT5MkC","p":"","c":["","posts","2025-09-21-evolutionary-adrs-first-principles"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","2025-09-21-evolutionary-adrs-first-principles","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d030d367e034049b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"suppressHydrationWarning":true,"children":[["$","div",null,{"style":{"maxWidth":"1000px","margin":"0 auto","padding":"2rem"},"children":[["$","header",null,{"style":{"borderBottom":"2px solid #333","paddingBottom":"1rem","marginBottom":"2rem"},"children":["$","nav",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap","gap":"1rem"},"children":[["$","div",null,{"children":[["$","$L2",null,{"href":"/","style":{"fontSize":"1.6rem","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Augustin Chan"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":"Building systems that reason"}]]}],["$","div",null,{"style":{"display":"flex","gap":"1.5rem","flexWrap":"wrap"},"children":[["$","a",null,{"href":"/#projects","style":{"textDecoration":"none","color":"#666"},"children":"Portfolio"}],["$","$L2",null,{"href":"/blog","style":{"textDecoration":"none","color":"#666"},"children":"Blog"}],["$","a",null,{"href":"https://8bitoracle.ai","target":"_blank","rel":"noopener noreferrer","style":{"textDecoration":"none","color":"#666"},"children":"8-Bit Oracle"}]]}]]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"borderTop":"1px solid #ddd","paddingTop":"2rem","marginTop":"4rem","textAlign":"center","color":"#666"},"children":"© 2025 Augustin Chan aug@digitalrain.studio"}]]}],null,["$","$L5",null,{}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n            // Service worker cleanup for legacy site versions\n            if ('serviceWorker' in navigator) {\n              navigator.serviceWorker.getRegistrations().then(function(registrations) {\n                for(let registration of registrations) {\n                  registration.unregister();\n                }\n              });\n\n              // Register cleanup service worker\n              navigator.serviceWorker.register('/sw.js').then(function(registration) {\n                console.log('Cleanup SW registered');\n              }).catch(function(error) {\n                console.log('Cleanup SW registration failed');\n              });\n            }\n          "}}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-09-21-evolutionary-adrs-first-principles","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+a:I[3448,[],"OutletBoundary"]
+c:I[9425,[],"AsyncMetadataOutlet"]
+e:I[3448,[],"ViewportBoundary"]
+10:I[3448,[],"MetadataBoundary"]
+11:"$Sreact.suspense"
+6:["$","$1","c",{"children":["$L9",null,["$","$La",null,{"children":["$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$Le",null,{"children":"$Lf"}],null],["$","$L10",null,{"children":["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":"$L12"}]}]}]]}]
+13:I[858,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],"default",1]
+14:T1844,
+
+**Abstract:**  
+Traditional guidance on ADRs is often applied as if big decisions must be captured upfront. Reality is messier. This post argues for an evolutionary approach—writing ADRs during development as you discover what actually works, documenting the real decision-making process, including dead ends and pivots.
+
+**Estimated reading time:** _5 minutes_
+
+Architecture Decision Records (ADRs) have become a standard practice for documenting important architectural choices in software projects. The conventional wisdom suggests writing ADRs early—make your big decisions upfront, document them, and let everything flow from there. But what if this approach fundamentally misunderstands how software development actually works?
+
+## The Problem with Upfront ADRs
+
+Traditional ADR guidance encourages you to identify major architectural decisions early and document them before implementation begins. This sounds logical, but it assumes a level of foresight that rarely exists in practice, especially when:
+
+- **Building in unfamiliar domains** — working with technologies or problem spaces you haven't fully mastered  
+- **Exploring new patterns** — modern architectural approaches evolve quickly  
+- **Facing emergent complexity** — requirements and constraints only become clear through implementation  
+
+The result? ADRs that capture hypothetical decisions based on incomplete understanding, rather than the real reasoning that shaped your final architecture.
+
+## A Real Example: The Workspace Pivot
+
+I once designed a system around "workspaces per user." It looked neat: isolated environments, clean permissions, simple to explain.  
+
+**The initial thinking:**  
+- Clear separation of concerns  
+- Easy-to-understand user model  
+- Straightforward permissions  
+
+**The reality:**  
+- Workflows became convoluted  
+- Many-to-many relationships appeared naturally  
+- "Workspaces" felt arbitrary and restrictive  
+- Users really needed **provenance with flexible tags in JSONB columns**  
+
+The final design abandoned rigid workspaces in favor of a tagging system that could represent any structure, while tracking who created or modified what.
+
+## Why AI Makes Evolutionary ADRs Even More Relevant
+
+AI-assisted development has shifted the cost curve of being wrong. In the past, a flawed model or boundary might cost weeks to unwind, so ADRs were written upfront to avoid waste.  
+
+Now, with AI helping scaffold prototypes and surface edge cases rapidly, you hit decision points faster and discover wrong turns sooner. Throwaway experiments are cheaper, both technically and emotionally, so pivots happen earlier and more often.  
+
+This accelerates the rhythm of architectural learning. Instead of a handful of big decisions at project kickoff, you face dozens of micro-decisions as the system evolves. Evolutionary ADRs capture this real process—not risk avoidance through prediction, but knowledge preservation through documenting lessons learned.
+
+## Evolutionary ADRs: A Better Approach
+
+Instead of predicting decisions, I now write ADRs **during development**—after exploring a path and discovering its limitations. This has several advantages:
+
+### 1. Honest Documentation
+You capture actual decisions based on experience, not theory. The ADR explains not just what you chose, but what you tried first and why it failed.
+
+### 2. Context for Future Developers
+Future team members (including your future self) get the full story: "We tried A, hit these problems, and here's why B solved them better."
+
+### 3. Learning Capture
+Each ADR becomes a mini case study in your domain, preserving hard-won insights that would otherwise vanish.
+
+### 4. Less Analysis Paralysis
+You can start building without the pressure to make perfect calls upfront. The ADR arrives once you've learned enough to decide confidently.
+
+## The Evolutionary ADR Template
+
+```markdown
+# ADR-XXX: [Decision Title]
+
+## Status
+Accepted
+
+## Context
+Problem we were solving.
+
+## Initial Approach
+What we tried first and why it seemed reasonable.
+
+## Problems Discovered
+Issues encountered during implementation:
+- Problem 1 (with example)
+- Problem 2 (with example)
+
+## Decision
+What we chose instead and why.
+
+## Implementation Details
+Key technical aspects of the new approach.
+
+## Consequences
+- Positive outcomes
+- Trade-offs accepted
+- Areas to monitor
+
+## Lessons Learned
+Insights about the domain/technology/problem space.
+```
+
+## When to Write Evolutionary ADRs
+
+Not every code change needs one, but write an ADR when:
+
+* You pivot from an initial approach
+* You solve a non-obvious problem
+* You make a meaningful trade-off
+* You learn something surprising
+
+## The Value of Honest Failure Documentation
+
+One of the most valuable aspects of evolutionary ADRs is documenting **why certain approaches didn't work** in your context. That's often more useful than a theoretical analysis.
+
+For example: "Workspaces per user seemed logical but created artificial boundaries that didn't match user workflows." That's gold for anyone revisiting the problem later.
+
+## Balancing Planning and Discovery
+
+This doesn't mean abandoning all upfront architectural thought. Some decisions truly need to be made early (e.g. technology stack, major infrastructure). The key is recognizing which decisions are expensive to change and which can safely evolve.
+
+**Make early:** Decisions that are costly to reverse later
+**Defer:** Decisions where implementation will teach you more
+
+## Conclusion
+
+Software development is fundamentally a learning process. Your architecture evolves as your understanding deepens, and your ADRs should reflect that.
+
+By writing ADRs during development, you create documentation that helps future developers see not only what was decided, but how and why it emerged from the messy reality of building software.
+
+The goal isn't perfect foresight—it's capturing the reasoning process, including the valuable lessons from wrong turns. In an AI-accelerated world where wrong paths are cheaper to explore, this kind of honest, evolutionary documentation is more valuable than ever.
+
+---
+
+*Have you tried evolutionary approaches to documenting architectural decisions? I'd love to hear your experiences.* 9:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Evolutionary ADRs: Writing Architecture Decision Records from First Principles\",\"description\":\"Why creating ADRs during development, not before it, leads to more honest and valuable documentation of your architectural decisions.\",\"datePublished\":\"2025-09-21T00:00:00.000Z\",\"dateModified\":\"2025-09-21T00:00:00.000Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\",\"sameAs\":[\"https://x.com/augchan42\",\"https://github.com/augchan42\"]},\"publisher\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\"},\"url\":\"https://augustinchan.dev/posts/2025-09-21-evolutionary-adrs-first-principles\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://augustinchan.dev/posts/2025-09-21-evolutionary-adrs-first-principles\"},\"image\":\"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg\"}"}}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2rem"},"children":[["$","h1",null,{"style":{"fontSize":"2.5em","marginBottom":"0.5rem"},"children":"Evolutionary ADRs: Writing Architecture Decision Records from First Principles"}],["$","div",null,{"style":{"color":"#666","fontSize":"1em","marginBottom":"1rem"},"children":"September 21, 2025"}],["$","p",null,{"style":{"fontSize":"1.1em","color":"#555","fontStyle":"italic","marginBottom":"2rem"},"children":"Why creating ADRs during development, not before it, leads to more honest and valuable documentation of your architectural decisions."}]]}],["$","$L13",null,{"content":"$14"}],"$L15"]}]]
+15:["$","aside",null,{"style":{"marginTop":"4rem","paddingTop":"2rem","borderTop":"2px solid #ddd"},"children":[["$","h2",null,{"style":{"fontSize":"1.5em","marginBottom":"1.5rem"},"children":"Related Posts"}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","gap":"1.5rem"},"children":[["$","article","2025-09-27-llm-reasoning-pattern-classification-failure-modes",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-27-llm-reasoning-pattern-classification-failure-modes","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"When LLM Reasoning Becomes the Pattern - Meta-Classification Failure Modes"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Hard constraints beat soft self-regulation when an LLM's reasoning converges to a template."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 27, 2025"}]]}],["$","article","hello-nextra",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/hello-nextra","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Hello Nextra"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Welcome to my new blog powered by Next.js and Nextra"}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 21, 2025"}]]}],["$","article","2025-09-14-trusting-instincts-ai-architecture",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-14-trusting-instincts-ai-architecture","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Trusting Your Instincts: When AI Suggests Complex Solutions"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"A debugging session reveals why your gut feeling about 'two sets of items' was right - and how to guide AI toward simpler, better solutions."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 14, 2025"}]]}]]}]]}]
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+d:{"metadata":[["$","title","0",{"children":"Evolutionary ADRs: Writing Architecture Decision Records from First Principles | Augustin Chan"}],["$","meta","1",{"name":"description","content":"Why creating ADRs during development, not before it, leads to more honest and valuable documentation of your architectural decisions."}],["$","link","2",{"rel":"author","href":"https://augustinchan.dev"}],["$","meta","3",{"name":"author","content":"Augustin Chan"}],["$","meta","4",{"name":"keywords","content":"AI,Machine Learning,Web3,Software Engineering,React,Next.js,TypeScript,Blog"}],["$","meta","5",{"name":"creator","content":"Augustin Chan"}],["$","meta","6",{"name":"publisher","content":"Augustin Chan"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","9",{"rel":"canonical","href":"https://augustinchan.dev/posts/2025-09-21-evolutionary-adrs-first-principles"}],["$","meta","10",{"property":"og:title","content":"Evolutionary ADRs: Writing Architecture Decision Records from First Principles"}],["$","meta","11",{"property":"og:description","content":"Why creating ADRs during development, not before it, leads to more honest and valuable documentation of your architectural decisions."}],["$","meta","12",{"property":"og:url","content":"https://augustinchan.dev/posts/2025-09-21-evolutionary-adrs-first-principles"}],["$","meta","13",{"property":"og:site_name","content":"Augustin Chan"}],["$","meta","14",{"property":"og:locale","content":"en_US"}],["$","meta","15",{"property":"og:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}],["$","meta","16",{"property":"og:image:width","content":"400"}],["$","meta","17",{"property":"og:image:height","content":"400"}],["$","meta","18",{"property":"og:image:alt","content":"Evolutionary ADRs: Writing Architecture Decision Records from First Principles"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2025-09-21T00:00:00.000Z"}],["$","meta","21",{"property":"article:author","content":"Augustin Chan"}],["$","meta","22",{"property":"article:section","content":"Technology"}],["$","meta","23",{"property":"article:tag","content":"AI"}],["$","meta","24",{"property":"article:tag","content":"Machine Learning"}],["$","meta","25",{"property":"article:tag","content":"Web3"}],["$","meta","26",{"property":"article:tag","content":"Software Engineering"}],["$","meta","27",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","28",{"name":"twitter:creator","content":"@augchan42"}],["$","meta","29",{"name":"twitter:title","content":"Evolutionary ADRs: Writing Architecture Decision Records from First Principles"}],["$","meta","30",{"name":"twitter:description","content":"Why creating ADRs during development, not before it, leads to more honest and valuable documentation of your architectural decisions."}],["$","meta","31",{"name":"twitter:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}]],"error":null,"digest":"$undefined"}
+12:"$d:metadata"

@@ -1,0 +1,194 @@
+1:"$Sreact.fragment"
+2:I[6280,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],""]
+3:I[7381,[],""]
+4:I[7969,[],""]
+5:I[2778,["280","static/chunks/280-69c0d36265f10a04.js","177","static/chunks/app/layout-4097efd66dbc44a5.js"],"Analytics"]
+8:I[1735,[],""]
+:HL["/_next/static/css/d030d367e034049b.css","style"]
+0:{"P":null,"b":"v6NzYDou7HE28WoKT5MkC","p":"","c":["","posts","2025-08-19-locale-migration-strategy-decision"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","2025-08-19-locale-migration-strategy-decision","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d030d367e034049b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"suppressHydrationWarning":true,"children":[["$","div",null,{"style":{"maxWidth":"1000px","margin":"0 auto","padding":"2rem"},"children":[["$","header",null,{"style":{"borderBottom":"2px solid #333","paddingBottom":"1rem","marginBottom":"2rem"},"children":["$","nav",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap","gap":"1rem"},"children":[["$","div",null,{"children":[["$","$L2",null,{"href":"/","style":{"fontSize":"1.6rem","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Augustin Chan"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":"Building systems that reason"}]]}],["$","div",null,{"style":{"display":"flex","gap":"1.5rem","flexWrap":"wrap"},"children":[["$","a",null,{"href":"/#projects","style":{"textDecoration":"none","color":"#666"},"children":"Portfolio"}],["$","$L2",null,{"href":"/blog","style":{"textDecoration":"none","color":"#666"},"children":"Blog"}],["$","a",null,{"href":"https://8bitoracle.ai","target":"_blank","rel":"noopener noreferrer","style":{"textDecoration":"none","color":"#666"},"children":"8-Bit Oracle"}]]}]]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"borderTop":"1px solid #ddd","paddingTop":"2rem","marginTop":"4rem","textAlign":"center","color":"#666"},"children":"© 2025 Augustin Chan aug@digitalrain.studio"}]]}],null,["$","$L5",null,{}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n            // Service worker cleanup for legacy site versions\n            if ('serviceWorker' in navigator) {\n              navigator.serviceWorker.getRegistrations().then(function(registrations) {\n                for(let registration of registrations) {\n                  registration.unregister();\n                }\n              });\n\n              // Register cleanup service worker\n              navigator.serviceWorker.register('/sw.js').then(function(registration) {\n                console.log('Cleanup SW registered');\n              }).catch(function(error) {\n                console.log('Cleanup SW registration failed');\n              });\n            }\n          "}}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-08-19-locale-migration-strategy-decision","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+a:I[3448,[],"OutletBoundary"]
+c:I[9425,[],"AsyncMetadataOutlet"]
+e:I[3448,[],"ViewportBoundary"]
+10:I[3448,[],"MetadataBoundary"]
+11:"$Sreact.suspense"
+6:["$","$1","c",{"children":["$L9",null,["$","$La",null,{"children":["$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$Le",null,{"children":"$Lf"}],null],["$","$L10",null,{"children":["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":"$L12"}]}]}]]}]
+13:I[858,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],"default",1]
+14:T1d16,
+
+**Abstract:**  
+When adding new language support to a production system, the choice between migration and additive strategies can make the difference between a smooth rollout and a potential disaster. Here's how we avoided a risky database migration by choosing to extend rather than replace our existing Traditional Chinese implementation.
+
+**Estimated reading time:** _6 minutes_
+
+# Locale Migration Strategy: When Adding Beats Replacing
+
+I recently faced a classic engineering dilemma: how to add Simplified Chinese support to a system that already had Traditional Chinese implemented as `zh`. The obvious approach was to migrate everything to proper locale codes (`zh-TW` for Traditional, `zh-CN` for Simplified), but that would have required a database migration across 8 tables with production data.
+
+Instead, we chose an additive strategy that kept the existing `zh` implementation intact while adding `zh-CN` as a new locale. This decision saved us from potential data loss, service disruption, and the complexity of rolling back a migration gone wrong.
+
+---
+
+## The Initial Approach: Full Migration Strategy
+
+We started down the migration path with what seemed like the "correct" approach:
+
+1. **Update locale configuration** from `["en", "zh", "th"]` to `["en", "zh-TW", "th"]`
+2. **Rename all prompt files** from `*_zh.ts` to `*_zh-TW.ts`
+3. **Update variable names** throughout the codebase from `zh` to `zhTW`
+4. **Modify pathnames** to use `zh-TW` keys
+5. **Update TypeScript interfaces** and switch statements
+
+The migration script would have touched 8 database tables:
+
+- `ai_provider_requests` (AI interaction logs)
+- `classroom_sessions` (user sessions)
+- `divination_sessions` (core app functionality)
+- `group_divination_chat_messages` (collaboration data)
+- `group_divination_readings` (shared results)
+- `group_divination_requests` (group activities)
+- `group_divination_topics` (content management)
+- `scenario_responses` (user interactions)
+
+**This was the moment we realized the scope of what we were attempting.**
+
+---
+
+## When Reality Hit: The Testing Error
+
+During testing, a user encountered this error:
+
+```
+[GET TOPIC BY SLUG] Action called for slug: simulation-hypothesis-reality, locale: zh-TW
+No active topic found for slug: simulation-hypothesis-reality, locale: zh-TW
+```
+
+The root cause was obvious: the database still contained `zh` records, but our code was now looking for `zh-TW` records. This mismatch would have required either:
+
+1. **Immediate database migration** (risky in production)
+2. **Rollback of all changes** (wasting development time)
+3. **Hybrid approach** (complex and error-prone)
+
+---
+
+## The Technical Complexity We Avoided
+
+### AI Provider Logging Impact
+
+Our `aiProviderService.ts` logs every AI request with locale information. The `logAIProviderRequest()` function stores locale in the database, meaning any migration would affect:
+
+- **Historical analytics data** - potentially breaking trend analysis
+- **User session continuity** - existing users might lose their history
+- **AI interaction logs** - critical for debugging and optimization
+
+### Database Migration Scope
+
+Eight tables across multiple domains meant:
+
+- **Complex rollback procedures** if anything went wrong
+- **Extended downtime** during migration
+- **Data validation requirements** across all affected systems
+- **Testing complexity** that scales exponentially with table count
+
+### Production Safety Concerns
+
+1. **Data integrity risk** - losing historical analytics data
+2. **Rollback complexity** - difficult to revert if issues arise
+3. **Service disruption** - potential downtime during migration
+4. **Testing requirements** - extensive validation needed across all features
+
+---
+
+## The Decision: Additive Strategy
+
+We chose to extend rather than replace:
+
+- **Keep:** `zh` as Traditional Chinese (unchanged, existing users continue working)
+- **Add:** `zh-CN` as Simplified Chinese (new functionality)
+- **Benefit:** Zero downtime, no data migration, backward compatibility
+
+The final configuration became:
+
+```typescript
+export const locales = ["en", "zh", "zh-CN", "th"] as const;
+```
+
+Where:
+
+- `zh` = Traditional Chinese (existing users, Hong Kong market)
+- `zh-CN` = Simplified Chinese (mainland China market)
+- `en` = English
+- `th` = Thai
+
+---
+
+## Why This Approach Was Superior
+
+### Production Safety
+
+- **Zero downtime** - no database migration required
+- **No data loss risk** - existing user sessions remain valid
+- **Immediate rollback** - if issues arise, we can simply disable `zh-CN`
+
+### User Experience
+
+- **Backward compatibility** - existing users continue using `zh`
+- **Gradual adoption** - new users can choose `zh-CN` without affecting others
+- **Market segmentation** - different locales serve different user segments
+
+### Development Velocity
+
+- **Faster implementation** - no migration planning or testing required
+- **Lower risk** - can deploy incrementally and test thoroughly
+- **Easier maintenance** - two separate implementations are clearer than migration logic
+
+---
+
+## Lessons Learned
+
+### Technical Architecture
+
+- **Locale changes require careful database migration planning** - e.g., retrieving locale specific data, or when AI logging is involved
+- **AI logging makes locale consistency critical** - every request gets stored with locale information
+- **TypeScript strict typing helps catch locale mismatches early** - but doesn't prevent runtime database issues
+
+### Product Strategy
+
+- **Additive > Migration** - when possible, extend rather than replace existing functionality
+- **User impact assessment** - consider existing user base before making breaking changes
+- **Market segmentation** - different locales often serve different user segments with different needs
+
+### Implementation Principles
+
+- **Risk assessment** - database scope changes require careful evaluation of production impact
+- **Rollback planning** - always have a reversion strategy that doesn't require complex migrations
+- **Testing strategy** - comprehensive validation across all affected systems is essential
+
+---
+
+## The Implementation Status
+
+- ✅ **Decision made:** Additive strategy chosen
+- ✅ **All migration changes reverted** via git (clean slate)
+- 🔄 **Currently implementing:** `zh-CN` addition
+- ⏳ **Pending:** Complete `zh-CN` implementation and testing
+
+---
+
+## Key Takeaways
+
+1. **Migration strategies look correct but carry hidden risks** - especially when involving production databases
+2. **AI logging systems make locale changes more complex** - every request gets stored with locale information
+3. **Additive approaches often beat replacement strategies** - extend functionality rather than breaking existing
+4. **Production safety should trump "correctness"** - a working system is better than a theoretically perfect but risky one
+5. **Database migrations across multiple tables require extensive planning** - the complexity scales exponentially
+6. **User experience continuity matters** - existing users shouldn't lose functionality during updates
+7. **Market segmentation can justify multiple implementations** - different locales serve different user needs
+
+The decision to use an additive strategy saved us from a potentially disastrous database migration while maintaining all existing functionality. Sometimes the "less correct" approach is the right one for production systems where stability and user experience matter more than theoretical purity.
+9:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Locale Migration Strategy: When Adding Beats Replacing\",\"description\":\"A technical deep-dive into how we avoided a risky database migration by choosing an additive strategy for adding Simplified Chinese support to our Traditional Chinese implementation.\",\"datePublished\":\"2025-08-19T00:00:00.000Z\",\"dateModified\":\"2025-08-19T00:00:00.000Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\",\"sameAs\":[\"https://x.com/augchan42\",\"https://github.com/augchan42\"]},\"publisher\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\"},\"url\":\"https://augustinchan.dev/posts/2025-08-19-locale-migration-strategy-decision\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://augustinchan.dev/posts/2025-08-19-locale-migration-strategy-decision\"},\"image\":\"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg\"}"}}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2rem"},"children":[["$","h1",null,{"style":{"fontSize":"2.5em","marginBottom":"0.5rem"},"children":"Locale Migration Strategy: When Adding Beats Replacing"}],["$","div",null,{"style":{"color":"#666","fontSize":"1em","marginBottom":"1rem"},"children":"August 19, 2025"}],["$","p",null,{"style":{"fontSize":"1.1em","color":"#555","fontStyle":"italic","marginBottom":"2rem"},"children":"A technical deep-dive into how we avoided a risky database migration by choosing an additive strategy for adding Simplified Chinese support to our Traditional Chinese implementation."}]]}],["$","$L13",null,{"content":"$14"}],"$L15"]}]]
+15:["$","aside",null,{"style":{"marginTop":"4rem","paddingTop":"2rem","borderTop":"2px solid #ddd"},"children":[["$","h2",null,{"style":{"fontSize":"1.5em","marginBottom":"1.5rem"},"children":"Related Posts"}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","gap":"1.5rem"},"children":[["$","article","2025-09-27-llm-reasoning-pattern-classification-failure-modes",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-27-llm-reasoning-pattern-classification-failure-modes","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"When LLM Reasoning Becomes the Pattern - Meta-Classification Failure Modes"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Hard constraints beat soft self-regulation when an LLM's reasoning converges to a template."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 27, 2025"}]]}],["$","article","2025-09-21-evolutionary-adrs-first-principles",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-21-evolutionary-adrs-first-principles","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Evolutionary ADRs: Writing Architecture Decision Records from First Principles"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Why creating ADRs during development, not before it, leads to more honest and valuable documentation of your architectural decisions."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 21, 2025"}]]}],["$","article","hello-nextra",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/hello-nextra","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Hello Nextra"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Welcome to my new blog powered by Next.js and Nextra"}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 21, 2025"}]]}]]}]]}]
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+d:{"metadata":[["$","title","0",{"children":"Locale Migration Strategy: When Adding Beats Replacing | Augustin Chan"}],["$","meta","1",{"name":"description","content":"A technical deep-dive into how we avoided a risky database migration by choosing an additive strategy for adding Simplified Chinese support to our Traditional Chinese implementation."}],["$","link","2",{"rel":"author","href":"https://augustinchan.dev"}],["$","meta","3",{"name":"author","content":"Augustin Chan"}],["$","meta","4",{"name":"keywords","content":"AI,Machine Learning,Web3,Software Engineering,React,Next.js,TypeScript,Blog"}],["$","meta","5",{"name":"creator","content":"Augustin Chan"}],["$","meta","6",{"name":"publisher","content":"Augustin Chan"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","9",{"rel":"canonical","href":"https://augustinchan.dev/posts/2025-08-19-locale-migration-strategy-decision"}],["$","meta","10",{"property":"og:title","content":"Locale Migration Strategy: When Adding Beats Replacing"}],["$","meta","11",{"property":"og:description","content":"A technical deep-dive into how we avoided a risky database migration by choosing an additive strategy for adding Simplified Chinese support to our Traditional Chinese implementation."}],["$","meta","12",{"property":"og:url","content":"https://augustinchan.dev/posts/2025-08-19-locale-migration-strategy-decision"}],["$","meta","13",{"property":"og:site_name","content":"Augustin Chan"}],["$","meta","14",{"property":"og:locale","content":"en_US"}],["$","meta","15",{"property":"og:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}],["$","meta","16",{"property":"og:image:width","content":"400"}],["$","meta","17",{"property":"og:image:height","content":"400"}],["$","meta","18",{"property":"og:image:alt","content":"Locale Migration Strategy: When Adding Beats Replacing"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2025-08-19T00:00:00.000Z"}],["$","meta","21",{"property":"article:author","content":"Augustin Chan"}],["$","meta","22",{"property":"article:section","content":"Technology"}],["$","meta","23",{"property":"article:tag","content":"AI"}],["$","meta","24",{"property":"article:tag","content":"Machine Learning"}],["$","meta","25",{"property":"article:tag","content":"Web3"}],["$","meta","26",{"property":"article:tag","content":"Software Engineering"}],["$","meta","27",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","28",{"name":"twitter:creator","content":"@augchan42"}],["$","meta","29",{"name":"twitter:title","content":"Locale Migration Strategy: When Adding Beats Replacing"}],["$","meta","30",{"name":"twitter:description","content":"A technical deep-dive into how we avoided a risky database migration by choosing an additive strategy for adding Simplified Chinese support to our Traditional Chinese implementation."}],["$","meta","31",{"name":"twitter:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}]],"error":null,"digest":"$undefined"}
+12:"$d:metadata"

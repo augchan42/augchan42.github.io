@@ -1,0 +1,245 @@
+1:"$Sreact.fragment"
+2:I[6280,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],""]
+3:I[7381,[],""]
+4:I[7969,[],""]
+5:I[2778,["280","static/chunks/280-69c0d36265f10a04.js","177","static/chunks/app/layout-4097efd66dbc44a5.js"],"Analytics"]
+8:I[1735,[],""]
+:HL["/_next/static/css/d030d367e034049b.css","style"]
+0:{"P":null,"b":"v6NzYDou7HE28WoKT5MkC","p":"","c":["","posts","2025-07-08-dspy-openrouter-integration"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","2025-07-08-dspy-openrouter-integration","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d030d367e034049b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"suppressHydrationWarning":true,"children":[["$","div",null,{"style":{"maxWidth":"1000px","margin":"0 auto","padding":"2rem"},"children":[["$","header",null,{"style":{"borderBottom":"2px solid #333","paddingBottom":"1rem","marginBottom":"2rem"},"children":["$","nav",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap","gap":"1rem"},"children":[["$","div",null,{"children":[["$","$L2",null,{"href":"/","style":{"fontSize":"1.6rem","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Augustin Chan"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":"Building systems that reason"}]]}],["$","div",null,{"style":{"display":"flex","gap":"1.5rem","flexWrap":"wrap"},"children":[["$","a",null,{"href":"/#projects","style":{"textDecoration":"none","color":"#666"},"children":"Portfolio"}],["$","$L2",null,{"href":"/blog","style":{"textDecoration":"none","color":"#666"},"children":"Blog"}],["$","a",null,{"href":"https://8bitoracle.ai","target":"_blank","rel":"noopener noreferrer","style":{"textDecoration":"none","color":"#666"},"children":"8-Bit Oracle"}]]}]]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"borderTop":"1px solid #ddd","paddingTop":"2rem","marginTop":"4rem","textAlign":"center","color":"#666"},"children":"© 2025 Augustin Chan aug@digitalrain.studio"}]]}],null,["$","$L5",null,{}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n            // Service worker cleanup for legacy site versions\n            if ('serviceWorker' in navigator) {\n              navigator.serviceWorker.getRegistrations().then(function(registrations) {\n                for(let registration of registrations) {\n                  registration.unregister();\n                }\n              });\n\n              // Register cleanup service worker\n              navigator.serviceWorker.register('/sw.js').then(function(registration) {\n                console.log('Cleanup SW registered');\n              }).catch(function(error) {\n                console.log('Cleanup SW registration failed');\n              });\n            }\n          "}}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-07-08-dspy-openrouter-integration","d"],["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__","$L6",{},null,false]},null,false]},null,false]},null,false],"$L7",false]],"m":"$undefined","G":["$8",[]],"s":false,"S":true}
+a:I[3448,[],"OutletBoundary"]
+c:I[9425,[],"AsyncMetadataOutlet"]
+e:I[3448,[],"ViewportBoundary"]
+10:I[3448,[],"MetadataBoundary"]
+11:"$Sreact.suspense"
+6:["$","$1","c",{"children":["$L9",null,["$","$La",null,{"children":["$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}]
+7:["$","$1","h",{"children":[null,[["$","$Le",null,{"children":"$Lf"}],null],["$","$L10",null,{"children":["$","div",null,{"hidden":true,"children":["$","$11",null,{"fallback":null,"children":"$L12"}]}]}]]}]
+13:I[858,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],"default",1]
+14:T1e12,
+
+**Abstract:**  
+The standard DSPy OpenRouter integration has a critical limitation: it doesn't support model failover and always shows "LiteLLM" as the app name in OpenRouter's leaderboards. Here's how to fix it with custom headers to get automatic failover and proper app attribution.
+
+**Estimated reading time:** _5 minutes_
+
+# DSPy + OpenRouter: Why the Standard Integration Falls Short (And How to Fix It)
+
+I've been exploring DSPy's integration capabilities lately, and discovered something important about the OpenRouter integration that isn't immediately obvious from the documentation. The standard approach has some significant limitations that can impact both reliability and attribution.
+
+The [full sample is open sourced here](https://github.com/augchan42/dspy-openrouter-sample), but let me walk through why the standard integration isn't sufficient and how to fix it.
+
+---
+
+## The Standard Integration (And Its Problems)
+
+Here's how you'd typically integrate DSPy with OpenRouter:
+
+```python
+import dspy
+
+lm = dspy.LM(
+    model="openrouter/deepseek/deepseek-chat-v3-0324",
+    api_base="https://openrouter.ai/api/v1",
+    api_key=api_key,
+)
+```
+
+This works, but it has two critical limitations:
+
+1. **No Model Failover**: If the specified model is unavailable, your request fails
+2. **Wrong App Attribution**: OpenRouter's leaderboards will show "LiteLLM" as the app name instead of your own application
+
+The second point is particularly important for developers who want proper attribution in OpenRouter's analytics and leaderboards.
+
+---
+
+## The Proper Integration (With Custom Headers)
+
+To get both failover capabilities and proper app attribution, you need to use custom headers. Here's the correct approach:
+
+```python
+import dspy
+
+lm = dspy.LM(
+    model="openrouter/gpt-4o-mini",
+    api_key=api_key,
+    api_base="https://openrouter.ai/api/v1",
+    extra_headers={
+        "HTTP-Referer": "https://8bitoracle.ai",
+        "X-Title": "8-Bit Oracle"
+    }
+)
+```
+
+The key difference is the `extra_headers` parameter, which allows you to:
+
+- Set your own app name via `X-Title`
+- Provide proper attribution via `HTTP-Referer`
+- Enable additional OpenRouter features
+
+---
+
+## Adding Model Failover
+
+The real power comes when you combine custom headers with model arrays for automatic failover:
+
+```python
+lm = dspy.LM(
+    model="openrouter/gpt-4o-mini",  # Primary model
+    api_key=api_key,
+    api_base="https://openrouter.ai/api/v1",
+    model_list=[
+        {
+            "model_name": "openrouter/gpt-4o-mini",
+            "litellm_params": {
+                "model": "openrouter/gpt-4o-mini",
+                "api_key": api_key,
+                "api_base": "https://openrouter.ai/api/v1"
+            }
+        },
+        {
+            "model_name": "openrouter/claude-3-haiku",
+            "litellm_params": {
+                "model": "openrouter/claude-3-haiku",
+                "api_key": api_key,
+                "api_base": "https://openrouter.ai/api/v1"
+            }
+        }
+    ],
+    extra_headers={
+        "HTTP-Referer": "https://8bitoracle.ai",
+        "X-Title": "8-Bit Oracle"
+    }
+)
+```
+
+This configuration gives you:
+
+- **Automatic failover** when the primary model is unavailable
+- **Proper app attribution** in OpenRouter's leaderboards
+- **Custom headers** for tracking and analytics
+
+---
+
+## Why This Matters
+
+The difference between the standard and proper integration is significant:
+
+**Standard Integration:**
+
+- ✅ Works with DSPy
+- ❌ No failover capability
+- ❌ Shows "LiteLLM" in OpenRouter leaderboards
+- ❌ Limited tracking and analytics
+
+**Proper Integration (with custom headers):**
+
+- ✅ Works with DSPy
+- ✅ Automatic model failover
+- ✅ Your app name in OpenRouter leaderboards
+- ✅ Proper attribution and tracking
+- ✅ Access to additional OpenRouter features
+
+---
+
+## Working with DSPy Modules
+
+The integration shines when you start using DSPy's declarative modules with the proper configuration:
+
+```python
+# Configure DSPy with proper OpenRouter integration
+lm = dspy.LM(
+    model="openrouter/gpt-4o-mini",
+    api_key=api_key,
+    api_base="https://openrouter.ai/api/v1",
+    extra_headers={
+        "HTTP-Referer": "https://8bitoracle.ai",
+        "X-Title": "8-Bit Oracle"
+    }
+)
+dspy.configure(lm=lm)
+
+# Create and use a DSPy module with failover
+qa = dspy.ChainOfThought('question -> answer')
+response = qa(question="What is DSPy? Please give a brief explanation.")
+```
+
+Now your DSPy modules automatically benefit from model failover and proper attribution.
+
+---
+
+## Key Integration Points
+
+A few things worth highlighting about this setup:
+
+**Custom Headers Support**: The `extra_headers` parameter properly propagates through the entire call chain, which is essential for OpenRouter's attribution requirements.
+
+**Model Array Failover**: The `model_list` parameter follows LiteLLM's expected format, providing automatic failover without any additional code.
+
+**App Attribution**: Your `X-Title` header ensures your app name appears correctly in OpenRouter's leaderboards and analytics.
+
+**DSPy Compatibility**: Full compatibility with DSPy's configuration system and module ecosystem.
+
+---
+
+## Practical Considerations
+
+The sample includes three test scenarios that demonstrate the key capabilities:
+
+1. **Basic Headers Test**: Verifies that custom headers are properly sent with API calls
+2. **Model Arrays Test**: Confirms that failover works as expected when the primary model fails
+3. **DSPy Modules Test**: Shows that the integration works seamlessly with DSPy's declarative modules
+
+Each test provides clear feedback about what's happening, which is particularly useful when debugging API interactions or verifying that your headers are being received correctly.
+
+---
+
+## Why This Matters
+
+This integration pattern addresses a real need in the LLM development space. DSPy's declarative approach to LLM programming is compelling, but it needs robust model management to be truly useful in production. OpenRouter's model diversity and failover capabilities fill that gap nicely.
+
+The combination gives you:
+
+- **Declarative programming** with DSPy's modules
+- **Automatic failover** when models are unavailable
+- **Proper attribution** through custom headers
+- **Model diversity** without vendor lock-in
+- **Your own app name** in OpenRouter's leaderboards
+
+It's a clean solution that doesn't require wrapper classes or complex orchestration logic.
+
+---
+
+## The Sample Code
+
+The [full working sample](https://github.com/augchan42/dspy-openrouter-sample) includes:
+
+- Complete test script with three integration scenarios
+- Environment variable management with fallback loading
+- Clear error handling and feedback
+- Practical examples of each integration pattern
+- Contrast between standard and proper integration approaches
+
+The code is production-ready and demonstrates all the key integration points without unnecessary complexity.
+
+---
+
+## Wrapping Up
+
+DSPy's OpenRouter integration is powerful, but the standard approach misses some key capabilities. By using custom headers and model arrays, you can unlock automatic failover and proper app attribution that aren't available with the basic integration.
+
+The integration patterns are clean, the failover works as expected, and the custom header support ensures proper attribution. It's the kind of practical integration that makes you wonder why more tools don't work this smoothly together.
+
+---
+
+## References
+
+- [DSPy Documentation](https://dspy-docs.vercel.app/)
+- [OpenRouter API Documentation](https://openrouter.ai/docs)
+- [LiteLLM Documentation](https://docs.litellm.ai/)
+- [Full Sample Code](https://github.com/augchan42/dspy-openrouter-sample)
+9:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"DSPy + OpenRouter: Why the Standard Integration Falls Short (And How to Fix It)\",\"description\":\"The standard DSPy OpenRouter integration lacks failover and proper app attribution. Here's how to fix it with custom headers to get automatic model failover and your own app name on OpenRouter leaderboards.\",\"datePublished\":\"2025-07-08T00:00:00.000Z\",\"dateModified\":\"2025-07-08T00:00:00.000Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\",\"sameAs\":[\"https://x.com/augchan42\",\"https://github.com/augchan42\"]},\"publisher\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\"},\"url\":\"https://augustinchan.dev/posts/2025-07-08-dspy-openrouter-integration\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://augustinchan.dev/posts/2025-07-08-dspy-openrouter-integration\"},\"image\":\"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg\"}"}}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2rem"},"children":[["$","h1",null,{"style":{"fontSize":"2.5em","marginBottom":"0.5rem"},"children":"DSPy + OpenRouter: Why the Standard Integration Falls Short (And How to Fix It)"}],["$","div",null,{"style":{"color":"#666","fontSize":"1em","marginBottom":"1rem"},"children":"July 8, 2025"}],["$","p",null,{"style":{"fontSize":"1.1em","color":"#555","fontStyle":"italic","marginBottom":"2rem"},"children":"The standard DSPy OpenRouter integration lacks failover and proper app attribution. Here's how to fix it with custom headers to get automatic model failover and your own app name on OpenRouter leaderboards."}]]}],["$","$L13",null,{"content":"$14"}],"$L15"]}]]
+15:["$","aside",null,{"style":{"marginTop":"4rem","paddingTop":"2rem","borderTop":"2px solid #ddd"},"children":[["$","h2",null,{"style":{"fontSize":"1.5em","marginBottom":"1.5rem"},"children":"Related Posts"}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","gap":"1.5rem"},"children":[["$","article","2025-09-27-llm-reasoning-pattern-classification-failure-modes",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-27-llm-reasoning-pattern-classification-failure-modes","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"When LLM Reasoning Becomes the Pattern - Meta-Classification Failure Modes"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Hard constraints beat soft self-regulation when an LLM's reasoning converges to a template."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 27, 2025"}]]}],["$","article","2025-09-21-evolutionary-adrs-first-principles",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-21-evolutionary-adrs-first-principles","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Evolutionary ADRs: Writing Architecture Decision Records from First Principles"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Why creating ADRs during development, not before it, leads to more honest and valuable documentation of your architectural decisions."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 21, 2025"}]]}],["$","article","hello-nextra",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/hello-nextra","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Hello Nextra"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Welcome to my new blog powered by Next.js and Nextra"}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 21, 2025"}]]}]]}]]}]
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+d:{"metadata":[["$","title","0",{"children":"DSPy + OpenRouter: Why the Standard Integration Falls Short (And How to Fix It) | Augustin Chan"}],["$","meta","1",{"name":"description","content":"The standard DSPy OpenRouter integration lacks failover and proper app attribution. Here's how to fix it with custom headers to get automatic model failover and your own app name on OpenRouter leaderboards."}],["$","link","2",{"rel":"author","href":"https://augustinchan.dev"}],["$","meta","3",{"name":"author","content":"Augustin Chan"}],["$","meta","4",{"name":"keywords","content":"AI,Machine Learning,Web3,Software Engineering,React,Next.js,TypeScript,Blog"}],["$","meta","5",{"name":"creator","content":"Augustin Chan"}],["$","meta","6",{"name":"publisher","content":"Augustin Chan"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","9",{"rel":"canonical","href":"https://augustinchan.dev/posts/2025-07-08-dspy-openrouter-integration"}],["$","meta","10",{"property":"og:title","content":"DSPy + OpenRouter: Why the Standard Integration Falls Short (And How to Fix It)"}],["$","meta","11",{"property":"og:description","content":"The standard DSPy OpenRouter integration lacks failover and proper app attribution. Here's how to fix it with custom headers to get automatic model failover and your own app name on OpenRouter leaderboards."}],["$","meta","12",{"property":"og:url","content":"https://augustinchan.dev/posts/2025-07-08-dspy-openrouter-integration"}],["$","meta","13",{"property":"og:site_name","content":"Augustin Chan"}],["$","meta","14",{"property":"og:locale","content":"en_US"}],["$","meta","15",{"property":"og:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}],["$","meta","16",{"property":"og:image:width","content":"400"}],["$","meta","17",{"property":"og:image:height","content":"400"}],["$","meta","18",{"property":"og:image:alt","content":"DSPy + OpenRouter: Why the Standard Integration Falls Short (And How to Fix It)"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2025-07-08T00:00:00.000Z"}],["$","meta","21",{"property":"article:author","content":"Augustin Chan"}],["$","meta","22",{"property":"article:section","content":"Technology"}],["$","meta","23",{"property":"article:tag","content":"AI"}],["$","meta","24",{"property":"article:tag","content":"Machine Learning"}],["$","meta","25",{"property":"article:tag","content":"Web3"}],["$","meta","26",{"property":"article:tag","content":"Software Engineering"}],["$","meta","27",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","28",{"name":"twitter:creator","content":"@augchan42"}],["$","meta","29",{"name":"twitter:title","content":"DSPy + OpenRouter: Why the Standard Integration Falls Short (And How to Fix It)"}],["$","meta","30",{"name":"twitter:description","content":"The standard DSPy OpenRouter integration lacks failover and proper app attribution. Here's how to fix it with custom headers to get automatic model failover and your own app name on OpenRouter leaderboards."}],["$","meta","31",{"name":"twitter:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}]],"error":null,"digest":"$undefined"}
+12:"$d:metadata"
