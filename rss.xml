@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Augustin Chan</title>
+    <link>https://augustinchan.dev</link>
+    <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Oct 2025 08:45:43 GMT</lastBuildDate>
+    <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
+    <generator>Next.js</generator>
+    <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
+    <managingEditor>aug@digitalrain.studio (Augustin Chan)</managingEditor>
+    <copyright>Copyright 2025 Augustin Chan</copyright>
+    <image>
+      <url>https://augustinchan.dev/img/Xrn0Id68_400x400.jpg</url>
+      <title>Augustin Chan</title>
+      <link>https://augustinchan.dev</link>
+    </image>
+    <item>
+      <title><![CDATA[Tech Noir, Joy Division, and the Crushing Anxiety of Optimizing for Search Engines That Might Not Exist in Three Years]]></title>
+      <link>https://augustinchan.dev/posts/2025-10-24-tech-noir-seo-anxiety-2025</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-10-24-tech-noir-seo-anxiety-2025</guid>
+      <pubDate>Fri, 24 Oct 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[On replacing Wilhelm with Unknown Pleasures, cultural anchoring vs keyword stuffing, and whether we're all just shouting into the void while ChatGPT eats our lunch. Also: footnotes.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[geo]]></category>
+      <category><![CDATA[tech-noir]]></category>
+      <category><![CDATA[i-ching]]></category>
+      <category><![CDATA[meta-commentary]]></category>
+      <category><![CDATA[anxiety]]></category>
+      <category><![CDATA[cultural-anchoring]]></category>
+      <category><![CDATA[ai-search]]></category>
+      <category><![CDATA[dfw-style]]></category>
+    </item>
+    <item>
+      <title><![CDATA[When LLM Reasoning Becomes the Pattern - Meta-Classification Failure Modes]]></title>
+      <link>https://augustinchan.dev/posts/2025-09-27-llm-reasoning-pattern-classification-failure-modes</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-09-27-llm-reasoning-pattern-classification-failure-modes</guid>
+      <pubDate>Sat, 27 Sep 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Hard constraints beat soft self-regulation when an LLM's reasoning converges to a template.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[llm]]></category>
+      <category><![CDATA[ai]]></category>
+      <category><![CDATA[pattern-recognition]]></category>
+      <category><![CDATA[reasoning]]></category>
+      <category><![CDATA[constraints]]></category>
+      <category><![CDATA[twitter]]></category>
+      <category><![CDATA[content-generation]]></category>
+      <category><![CDATA[failure-modes]]></category>
+      <category><![CDATA[meta-patterns]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Evolutionary ADRs: Writing Architecture Decision Records from First Principles]]></title>
+      <link>https://augustinchan.dev/posts/2025-09-21-evolutionary-adrs-first-principles</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-09-21-evolutionary-adrs-first-principles</guid>
+      <pubDate>Sun, 21 Sep 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Why creating ADRs during development, not before it, leads to more honest and valuable documentation of your architectural decisions.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[Architecture]]></category>
+      <category><![CDATA[ADR]]></category>
+      <category><![CDATA[Software-Design]]></category>
+      <category><![CDATA[Documentation]]></category>
+      <category><![CDATA[Development-Process]]></category>
+      <category><![CDATA[First-Principles]]></category>
+      <category><![CDATA[Technical-Writing]]></category>
+      <category><![CDATA[Software-Engineering]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Trusting Your Instincts: When AI Suggests Complex Solutions]]></title>
+      <link>https://augustinchan.dev/posts/2025-09-14-trusting-instincts-ai-architecture</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-09-14-trusting-instincts-ai-architecture</guid>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[A debugging session reveals why your gut feeling about 'two sets of items' was right - and how to guide AI toward simpler, better solutions.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[ai-assistance]]></category>
+      <category><![CDATA[react]]></category>
+      <category><![CDATA[state-management]]></category>
+      <category><![CDATA[debugging]]></category>
+      <category><![CDATA[architecture]]></category>
+      <category><![CDATA[single-source-of-truth]]></category>
+      <category><![CDATA[ai-guidance]]></category>
+      <category><![CDATA[software-engineering]]></category>
+    </item>
+    <item>
+      <title><![CDATA[From Mimicry to Authenticity: Systematic Voice Evolution in DSPy]]></title>
+      <link>https://augustinchan.dev/posts/2025-09-02-dspy-voice-evolution-authenticity</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-09-02-dspy-voice-evolution-authenticity</guid>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Replace style copying with principled search: explore a multi-dimensional voice space and use Pareto-optimal selection to shape an original AI voice.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[dspy]]></category>
+      <category><![CDATA[ai]]></category>
+      <category><![CDATA[voice-evolution]]></category>
+      <category><![CDATA[gepa-optimization]]></category>
+      <category><![CDATA[authenticity]]></category>
+      <category><![CDATA[mimicry]]></category>
+      <category><![CDATA[pareto-optimization]]></category>
+      <category><![CDATA[voice-lattice]]></category>
+      <category><![CDATA[ai-content-generation]]></category>
+      <category><![CDATA[technical-deep-dive]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Locale Migration Strategy: When Adding Beats Replacing]]></title>
+      <link>https://augustinchan.dev/posts/2025-08-19-locale-migration-strategy-decision</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-08-19-locale-migration-strategy-decision</guid>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[A technical deep-dive into how we avoided a risky database migration by choosing an additive strategy for adding Simplified Chinese support to our Traditional Chinese implementation.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[internationalization]]></category>
+      <category><![CDATA[database-migration]]></category>
+      <category><![CDATA[risk-management]]></category>
+      <category><![CDATA[production-deployment]]></category>
+      <category><![CDATA[locale-strategy]]></category>
+      <category><![CDATA[technical-decision-making]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Claude Code: From 30% to 50% Better Than Cursor Agent Mode]]></title>
+      <link>https://augustinchan.dev/posts/2025-08-11-claude-code-productivity-gains</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-08-11-claude-code-productivity-gains</guid>
+      <pubDate>Mon, 11 Aug 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[My experience with Claude Code's productivity gains, the double-edged sword of rapid development, and lessons learned from over-engineering features.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[claude-code]]></category>
+      <category><![CDATA[ai-coding]]></category>
+      <category><![CDATA[productivity]]></category>
+      <category><![CDATA[development-workflow]]></category>
+      <category><![CDATA[refactoring]]></category>
+      <category><![CDATA[llm-tools]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Mem0's Aggressive `infer=True` Behavior: When LLM Filtering Goes Too Far]]></title>
+      <link>https://augustinchan.dev/posts/2025-08-03-mem0-aggressive-infer-behavior</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-08-03-mem0-aggressive-infer-behavior</guid>
+      <pubDate>Sun, 03 Aug 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Exploring why Mem0's default LLM prompts are overly restrictive, causing the `infer=True` mode to filter out too much content. Includes root cause analysis and practical solutions for less aggressive memory management.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[mem0]]></category>
+      <category><![CDATA[llm]]></category>
+      <category><![CDATA[memory-management]]></category>
+      <category><![CDATA[ai]]></category>
+      <category><![CDATA[python]]></category>
+      <category><![CDATA[prompt-engineering]]></category>
+      <category><![CDATA[fact-extraction]]></category>
+      <category><![CDATA[similarity-detection]]></category>
+      <category><![CDATA[developer-experience]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Getting Browser Tools MCP Server Working with Claude Code: A Simple 2-Step Solution]]></title>
+      <link>https://augustinchan.dev/posts/2025-08-02-configuring-browser-tools-mcp-claude-code</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-08-02-configuring-browser-tools-mcp-claude-code</guid>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Quick guide to configure browser-tools-mcp AgentDeskAI with Claude Code - solving connection issues and getting your MCP server properly integrated.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[Claude]]></category>
+      <category><![CDATA[MCP]]></category>
+      <category><![CDATA[Browser-Tools]]></category>
+      <category><![CDATA[AgentDeskAI]]></category>
+      <category><![CDATA[Development-Tools]]></category>
+      <category><![CDATA[AI-Assisted-Coding]]></category>
+      <category><![CDATA[Configuration]]></category>
+      <category><![CDATA[Troubleshooting]]></category>
+    </item>
+    <item>
+      <title><![CDATA[DSPy + OpenRouter: Why the Standard Integration Falls Short (And How to Fix It)]]></title>
+      <link>https://augustinchan.dev/posts/2025-07-08-dspy-openrouter-integration</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-07-08-dspy-openrouter-integration</guid>
+      <pubDate>Tue, 08 Jul 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[The standard DSPy OpenRouter integration lacks failover and proper app attribution. Here's how to fix it with custom headers to get automatic model failover and your own app name on OpenRouter leaderboards.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[dspy]]></category>
+      <category><![CDATA[openrouter]]></category>
+      <category><![CDATA[llm]]></category>
+      <category><![CDATA[ai]]></category>
+      <category><![CDATA[python]]></category>
+      <category><![CDATA[model-failover]]></category>
+      <category><![CDATA[litellm]]></category>
+      <category><![CDATA[api-integration]]></category>
+      <category><![CDATA[developer-experience]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Integrating RevenueCat Web Billing in React/Next.js: A Practical Guide]]></title>
+      <link>https://augustinchan.dev/posts/2025-06-11-revenuecat-web-billing-integration</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-06-11-revenuecat-web-billing-integration</guid>
+      <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[A step-by-step guide to integrating RevenueCat Web Billing in a plain React/Next.js app. Covers account setup, SDK usage, code samples, and key gotchas for a smooth subscription experience.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[revenuecat]]></category>
+      <category><![CDATA[stripe]]></category>
+      <category><![CDATA[react]]></category>
+      <category><![CDATA[nextjs]]></category>
+      <category><![CDATA[web-billing]]></category>
+      <category><![CDATA[subscriptions]]></category>
+      <category><![CDATA[payments]]></category>
+      <category><![CDATA[frontend]]></category>
+      <category><![CDATA[developer-experience]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Cache Me If You Can: Getting Service Worker Update Toasts to Play Nice with New Jekyll Layouts]]></title>
+      <link>https://augustinchan.dev/posts/2025-05-19-pwa-cache-toast-jekyll-adventures</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-05-19-pwa-cache-toast-jekyll-adventures</guid>
+      <pubDate>Mon, 19 May 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[A dive into debugging service worker caching and update notifications for new pages in a Jekyll site, ensuring the 'Content Refresh' toast works as expected.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[jekyll]]></category>
+      <category><![CDATA[service-worker]]></category>
+      <category><![CDATA[pwa]]></category>
+      <category><![CDATA[javascript]]></category>
+      <category><![CDATA[webdev]]></category>
+      <category><![CDATA[caching]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Exploring 'Futures Thinking': A Design Dive for 8-Bit Oracle]]></title>
+      <link>https://augustinchan.dev/posts/2025-05-18-8-bit-oracle-futures-thinking</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-05-18-8-bit-oracle-futures-thinking</guid>
+      <pubDate>Sun, 18 May 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[A technical exploration of 'Futures Thinking,' a potential experimental feature for 8-Bit Oracle, looking at a Triple Hex Mode and AI-driven scenario mapping.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[8-Bit Oracle]]></category>
+      <category><![CDATA[I-Ching]]></category>
+      <category><![CDATA[AI]]></category>
+      <category><![CDATA[Futures Thinking]]></category>
+      <category><![CDATA[Divination]]></category>
+      <category><![CDATA[Experimental Feature]]></category>
+      <category><![CDATA[Development Log]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Android Passkeys: Frontend Adventures with CredentialManager and Jetpack Compose]]></title>
+      <link>https://augustinchan.dev/posts/2025-05-16-android-passkeys-frontend-adventures</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-05-16-android-passkeys-frontend-adventures</guid>
+      <pubDate>Fri, 16 May 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Building the Android frontend for FIDO2 passkeys: tackling CredentialManager, migrating DataStore, and the joys of debugging in Jetpack Compose.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[android]]></category>
+      <category><![CDATA[kotlin]]></category>
+      <category><![CDATA[jetpack compose]]></category>
+      <category><![CDATA[passkeys]]></category>
+      <category><![CDATA[fido2]]></category>
+      <category><![CDATA[webauthn]]></category>
+      <category><![CDATA[datastore]]></category>
+      <category><![CDATA[credentialmanager]]></category>
+      <category><![CDATA[frontend]]></category>
+      <category><![CDATA[nia]]></category>
+    </item>
+    <item>
+      <title><![CDATA[FIDO2 Passkeys for Android: Backend Challenges in Python]]></title>
+      <link>https://augustinchan.dev/posts/2025-05-14-Challenges-with-Passkey-Android</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-05-14-Challenges-with-Passkey-Android</guid>
+      <pubDate>Wed, 14 May 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[A developer's journey through the challenges of implementing FIDO2 passkeys for an Android app using Python, covering assetlinks.json, data serialization, and Base64URL encoding.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[python]]></category>
+      <category><![CDATA[fido2]]></category>
+      <category><![CDATA[passkeys]]></category>
+      <category><![CDATA[webauthn]]></category>
+      <category><![CDATA[backend]]></category>
+      <category><![CDATA[android]]></category>
+      <category><![CDATA[security]]></category>
+      <category><![CDATA[fastapi]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Deploying a CosmWasm Smart Contract on the Stargaze Testnet]]></title>
+      <link>https://augustinchan.dev/posts/2025-03-27-Getting up to speed with Cosmos and Stargaze</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-03-27-Getting up to speed with Cosmos and Stargaze</guid>
+      <pubDate>Thu, 27 Mar 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[A developer's guide to deploying a CosmWasm smart contract on the Stargaze testnet, covering environment setup, starsd CLI usage, contract uploading, instantiation, and Rust version considerations.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[rust]]></category>
+      <category><![CDATA[cosmwasm]]></category>
+      <category><![CDATA[smart contracts]]></category>
+      <category><![CDATA[starsd]]></category>
+      <category><![CDATA[cosmos]]></category>
+      <category><![CDATA[stargaze]]></category>
+      <category><![CDATA[testnet]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Revolutionizing Verifiable Compute on Solana: Key Bonsol Enhancements]]></title>
+      <link>https://augustinchan.dev/posts/2025-03-08-bonsol-verifiable-compute-enhancements</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-03-08-bonsol-verifiable-compute-enhancements</guid>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Deep dive into recent Bonsol framework improvements: a new I Ching sample dApp, RISC0_DEV_MODE integration for faster development, and custom S3 URL support for artifact flexibility.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[Bonsol]]></category>
+      <category><![CDATA[Solana]]></category>
+      <category><![CDATA[RISC0]]></category>
+      <category><![CDATA[ZK]]></category>
+      <category><![CDATA[Verifiable-Compute]]></category>
+      <category><![CDATA[Rust]]></category>
+      <category><![CDATA[Blockchain]]></category>
+      <category><![CDATA[Developer-Tools]]></category>
+      <category><![CDATA[S3]]></category>
+    </item>
+    <item>
+      <title><![CDATA[DKG OriginTrail Integration - Consensus HK 2025 Hackathon Win]]></title>
+      <link>https://augustinchan.dev/posts/2025-02-20-dkg-origintrail-hackathon</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-02-20-dkg-origintrail-hackathon</guid>
+      <pubDate>Thu, 20 Feb 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Integrated OriginTrail DKG with Eliza AI and a custom divination backend, enabling on-chain persistence of divinations via a Telegram bot.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[DKG]]></category>
+      <category><![CDATA[OriginTrail]]></category>
+      <category><![CDATA[AI]]></category>
+      <category><![CDATA[Blockchain]]></category>
+      <category><![CDATA[Hackathon]]></category>
+      <category><![CDATA[Telegram]]></category>
+      <category><![CDATA[JSON-LD]]></category>
+      <category><![CDATA[SPARQL]]></category>
+      <category><![CDATA[NodeJS]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Brainstorming a New Theory of Self-Directed Learning for AI, with AI]]></title>
+      <link>https://augustinchan.dev/posts/2025-01-17-Brainstorming a Novel Theory with AI</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-01-17-Brainstorming a Novel Theory with AI</guid>
+      <pubDate>Fri, 17 Jan 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[An exploration of using the I-Ching's King Wen sequence as a potential framework for self-directed learning in AGI. Details the thought process, key insights, and implications for AI development, including a link to a research paper.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[king-wen-sequence]]></category>
+      <category><![CDATA[i-ching]]></category>
+      <category><![CDATA[self-directed-learning]]></category>
+      <category><![CDATA[memory]]></category>
+      <category><![CDATA[agi]]></category>
+      <category><![CDATA[artificial-general-intelligence]]></category>
+      <category><![CDATA[meta-learning]]></category>
+      <category><![CDATA[information-theory]]></category>
+      <category><![CDATA[ancient-wisdom]]></category>
+      <category><![CDATA[ai-research]]></category>
+      <category><![CDATA[zenodo]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Key Contributions to ai16z Eliza AI Project (Nov 2024)]]></title>
+      <link>https://augustinchan.dev/posts/2024-11-15-eliza-ai16z-contribution</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-11-15-eliza-ai16z-contribution</guid>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[Detailing significant enhancements to the ai16z Eliza AI project, focusing on local-first capabilities, model optimization, and backend stability.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[AI]]></category>
+      <category><![CDATA[LLM]]></category>
+      <category><![CDATA[Embeddings]]></category>
+      <category><![CDATA[Python]]></category>
+      <category><![CDATA[Ollama]]></category>
+      <category><![CDATA[Claude-3-Haiku]]></category>
+      <category><![CDATA[Postgres]]></category>
+      <category><![CDATA[Open-Source]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Zustand: A Weapon for Efficient User State Management in React]]></title>
+      <link>https://augustinchan.dev/posts/2024-09-01-Zustand-State-Management</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-09-01-Zustand-State-Management</guid>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An overview of Zustand as an efficient state management library for React, highlighting its benefits over traditional methods (refs, Context API) for managing user state, simplifying code, and minimizing re-renders.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[zustand]]></category>
+      <category><![CDATA[react]]></category>
+      <category><![CDATA[state-management]]></category>
+      <category><![CDATA[react-state-management]]></category>
+      <category><![CDATA[global-state]]></category>
+      <category><![CDATA[react-hooks]]></category>
+      <category><![CDATA[performance-optimization]]></category>
+      <category><![CDATA[re-renders]]></category>
+      <category><![CDATA[typescript]]></category>
+      <category><![CDATA[frontend-development]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Optimizing React Authentication: Minimizing Re-renders and Improving Performance]]></title>
+      <link>https://augustinchan.dev/posts/2024-08-30-Minimizing Re-renders</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-08-30-Minimizing Re-renders</guid>
+      <pubDate>Fri, 30 Aug 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[A guide to minimizing re-renders and optimizing performance in React/Next.js applications with authentication. Covers combining state, memoizing context with useMemo, tracking state changes with useRef, debouncing, and optimizing useEffect dependencies.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[react]]></category>
+      <category><![CDATA[nextjs]]></category>
+      <category><![CDATA[react-performance]]></category>
+      <category><![CDATA[nextjs-optimization]]></category>
+      <category><![CDATA[re-renders]]></category>
+      <category><![CDATA[state-management]]></category>
+      <category><![CDATA[react-hooks]]></category>
+      <category><![CDATA[usestate]]></category>
+      <category><![CDATA[usememo]]></category>
+      <category><![CDATA[useref]]></category>
+      <category><![CDATA[useeffect]]></category>
+      <category><![CDATA[context-api]]></category>
+      <category><![CDATA[authentication]]></category>
+      <category><![CDATA[supabase]]></category>
+      <category><![CDATA[debounce]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Conditional Rendering in Next.js: Hiding Footer on Specific Pages]]></title>
+      <link>https://augustinchan.dev/posts/2024-06-21-Conditional Rendering</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-06-21-Conditional Rendering</guid>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[A guide to conditionally rendering components, like a footer, in a Next.js 14 (App Router) application by bridging server and client components using React Context API and usePathname.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[nextjs]]></category>
+      <category><![CDATA[react]]></category>
+      <category><![CDATA[nextjs-app-router]]></category>
+      <category><![CDATA[server-components]]></category>
+      <category><![CDATA[client-components]]></category>
+      <category><![CDATA[conditional-rendering]]></category>
+      <category><![CDATA[react-context]]></category>
+      <category><![CDATA[usepathname]]></category>
+      <category><![CDATA[react-hooks]]></category>
+      <category><![CDATA[layout-management]]></category>
+      <category><![CDATA[frontend-development]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Integrating with Shadcn: Tips and Insights for Seamless UI Component Integration]]></title>
+      <link>https://augustinchan.dev/posts/2024-06-08-Integrating Shadcn</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-06-08-Integrating Shadcn</guid>
+      <pubDate>Sat, 08 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[A developer's experience integrating Shadcn UI components into a Next.js project. Covers project preparation, handling opinionated styling (dark theme, New York style), managing global CSS, and an example root layout incorporating ThemeProvider and Toaster.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[shadcn-ui]]></category>
+      <category><![CDATA[ui-components]]></category>
+      <category><![CDATA[react]]></category>
+      <category><![CDATA[nextjs]]></category>
+      <category><![CDATA[tailwindcss]]></category>
+      <category><![CDATA[radix-ui]]></category>
+      <category><![CDATA[frontend-development]]></category>
+      <category><![CDATA[component-libraries]]></category>
+      <category><![CDATA[theme-provider]]></category>
+      <category><![CDATA[css-styling]]></category>
+      <category><![CDATA[developer-experience]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Securing SSH: A Detailed Look at Fail2Ban Configuration and Rule Management]]></title>
+      <link>https://augustinchan.dev/posts/2024-06-03-Securing SSH</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-06-03-Securing SSH</guid>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[A detailed guide to troubleshooting and configuring Fail2Ban with UFW for robust SSH security. Covers iptables rule order, jail.local setup, persistent bans, and ensuring proper cleanup of rules on service restart.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[security]]></category>
+      <category><![CDATA[fail2ban]]></category>
+      <category><![CDATA[ufw]]></category>
+      <category><![CDATA[ssh]]></category>
+      <category><![CDATA[iptables]]></category>
+      <category><![CDATA[linux-security]]></category>
+      <category><![CDATA[server-security]]></category>
+      <category><![CDATA[firewall]]></category>
+      <category><![CDATA[intrusion-detection]]></category>
+      <category><![CDATA[log-monitoring]]></category>
+      <category><![CDATA[ssh-hardening]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Navigating UI Framework Transitions: From Bootstrap to Shadcn]]></title>
+      <link>https://augustinchan.dev/posts/2024-05-31-UI Frameworks</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-05-31-UI Frameworks</guid>
+      <pubDate>Fri, 31 May 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[A developer's journey through UI framework choices, from Bootstrap to Next.js with Shadcn/ui. Discusses the pros and cons of component libraries like Shadcn (built on Radix UI and Tailwind CSS) versus traditional UI frameworks, and touches on project MVP plans.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[ui-frameworks]]></category>
+      <category><![CDATA[component-libraries]]></category>
+      <category><![CDATA[shadcn-ui]]></category>
+      <category><![CDATA[tailwindcss]]></category>
+      <category><![CDATA[radix-ui]]></category>
+      <category><![CDATA[nextjs]]></category>
+      <category><![CDATA[react]]></category>
+      <category><![CDATA[bootstrap]]></category>
+      <category><![CDATA[frontend-development]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Navigating Client vs Server-Side Authentication in Web Development]]></title>
+      <link>https://augustinchan.dev/posts/2024-05-07-Client vs Server side Auth</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-05-07-Client vs Server side Auth</guid>
+      <pubDate>Tue, 07 May 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[Explores client-side vs. server-side authentication using Supabase with Next.js 14 (App Router). Covers Google OAuth2 (client-side flow with createBrowserClient) and Magic Link (server-side flow with createServerClient), and clarifies Supabase Auth-UI usage.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[supabase]]></category>
+      <category><![CDATA[nextjs]]></category>
+      <category><![CDATA[authentication]]></category>
+      <category><![CDATA[client-side-auth]]></category>
+      <category><![CDATA[server-side-auth]]></category>
+      <category><![CDATA[oauth2]]></category>
+      <category><![CDATA[magic-link]]></category>
+      <category><![CDATA[supabase-ssr]]></category>
+      <category><![CDATA[supabase-auth-ui]]></category>
+      <category><![CDATA[auth-helpers]]></category>
+      <category><![CDATA[javascript]]></category>
+      <category><![CDATA[typescript]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Implementing Auth and Database for 8-Bit Oracle]]></title>
+      <link>https://augustinchan.dev/posts/2024-05-05-Getting down to Business</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-05-05-Getting down to Business</guid>
+      <pubDate>Sun, 05 May 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[Details on setting up authentication and database for the 8-Bit Oracle project using Next.js, Supabase (with Auth-UI for OAuth2), and Tailwind CSS. Discusses choices like Supabase over Firebase and future consideration of Web3Auth.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[supabase]]></category>
+      <category><![CDATA[authentication]]></category>
+      <category><![CDATA[oauth2]]></category>
+      <category><![CDATA[web3auth]]></category>
+      <category><![CDATA[supabase-auth-ui]]></category>
+      <category><![CDATA[nextjs]]></category>
+      <category><![CDATA[postgresql]]></category>
+      <category><![CDATA[tailwindcss]]></category>
+      <category><![CDATA[backend-development]]></category>
+      <category><![CDATA[project-update]]></category>
+      <category><![CDATA[beta-signup]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Claude vs GPT4 for Coding]]></title>
+      <link>https://augustinchan.dev/posts/2024-04-19-Claude vs GPT4 Coding Assistants</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-04-19-Claude vs GPT4 Coding Assistants</guid>
+      <pubDate>Fri, 19 Apr 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[A developer's comparison of using Claude Opus and GPT-4 (via Cursor.sh) as AI coding assistants, particularly when working with Next.js App Router vs. Pages Router and handling framework updates.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[ai-coding-assistants]]></category>
+      <category><![CDATA[claude]]></category>
+      <category><![CDATA[gpt-4]]></category>
+      <category><![CDATA[ai-pair-programming]]></category>
+      <category><![CDATA[nextjs]]></category>
+      <category><![CDATA[react]]></category>
+      <category><![CDATA[cursor-sh]]></category>
+      <category><![CDATA[llm]]></category>
+      <category><![CDATA[code-generation]]></category>
+      <category><![CDATA[developer-tools]]></category>
+    </item>
+    <item>
+      <title><![CDATA[How to Create an Interactive Typing Effect in React with Skip Animation Feature]]></title>
+      <link>https://augustinchan.dev/posts/2024-04-17-Smooth Typing Effect in React</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-04-17-Smooth Typing Effect in React</guid>
+      <pubDate>Wed, 17 Apr 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[A developer's notes and tips on implementing a smooth, multi-paragraph typing effect in React with a skip animation feature. Covers state management, DOM manipulation alternatives, event handling, and internationalization with react-i18next.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[react]]></category>
+      <category><![CDATA[typing-effect]]></category>
+      <category><![CDATA[animation]]></category>
+      <category><![CDATA[react-hooks]]></category>
+      <category><![CDATA[useeffect]]></category>
+      <category><![CDATA[usestate]]></category>
+      <category><![CDATA[usecallback]]></category>
+      <category><![CDATA[dom-manipulation]]></category>
+      <category><![CDATA[event-handling]]></category>
+      <category><![CDATA[internationalization]]></category>
+      <category><![CDATA[react-i18next]]></category>
+      <category><![CDATA[frontend-development]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Exploring Divination Techniques: Chainlink VRF vs. Traditional Randomness Methods]]></title>
+      <link>https://augustinchan.dev/posts/2024-04-15-Using Chainlink VRF for Divination</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-04-15-Using Chainlink VRF for Divination</guid>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[An analysis of using Chainlink VRF for I-Ching divination, comparing it to traditional methods and other randomness generation techniques like PRNGs and client-side randomness. Discusses pros, cons, and includes JavaScript examples for hexagram generation with changing lines.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[chainlink-vrf]]></category>
+      <category><![CDATA[i-ching]]></category>
+      <category><![CDATA[divination]]></category>
+      <category><![CDATA[randomness]]></category>
+      <category><![CDATA[blockchain]]></category>
+      <category><![CDATA[smart-contracts]]></category>
+      <category><![CDATA[cryptography]]></category>
+      <category><![CDATA[javascript]]></category>
+      <category><![CDATA[prng]]></category>
+      <category><![CDATA[csprng]]></category>
+      <category><![CDATA[hexagrams]]></category>
+      <category><![CDATA[spiritual-technology]]></category>
+      <category><![CDATA[yin-yang]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Solving Webpack Issues: Eliminating Double Script Loading and FOUC]]></title>
+      <link>https://augustinchan.dev/posts/2024-03-23-Webpack Strangeness</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-03-23-Webpack Strangeness</guid>
+      <pubDate>Sat, 23 Mar 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[Troubleshooting common Webpack issues, including double script loading due to manual and Webpack config imports, and resolving Flash of Unstyled Content (FOUC) by correctly setting production mode with cross-env and configuring MiniCssExtractPlugin.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[webpack]]></category>
+      <category><![CDATA[javascript-bundling]]></category>
+      <category><![CDATA[fouc]]></category>
+      <category><![CDATA[frontend-optimization]]></category>
+      <category><![CDATA[webpack-configuration]]></category>
+      <category><![CDATA[css-loading]]></category>
+      <category><![CDATA[production-build]]></category>
+      <category><![CDATA[cross-env]]></category>
+      <category><![CDATA[mini-css-extract-plugin]]></category>
+      <category><![CDATA[troubleshooting]]></category>
+    </item>
+    <item>
+      <title><![CDATA[React's useEffect Firing Twice in Dev? The HMR Culprit and a Simple Check]]></title>
+      <link>https://augustinchan.dev/posts/2024-03-09-React State Updates and JS Timing Functions</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-03-09-React State Updates and JS Timing Functions</guid>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[A quick developer tip: If your React useEffect hook seems to run twice in Next.js development mode, Hot Module Reloading (HMR) might be the reason. Here's why and how to verify.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[react]]></category>
+      <category><![CDATA[useeffect]]></category>
+      <category><![CDATA[nextjs]]></category>
+      <category><![CDATA[hmr]]></category>
+      <category><![CDATA[hot-module-reloading]]></category>
+      <category><![CDATA[debugging]]></category>
+      <category><![CDATA[react-development]]></category>
+      <category><![CDATA[javascript]]></category>
+      <category><![CDATA[frontend-development]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Fortune-Telling NFTs: Weaving I-Ching Wisdom with Blockchain Technology]]></title>
+      <link>https://augustinchan.dev/posts/2024-03-04-Fortune Telling NFTs</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-03-04-Fortune Telling NFTs</guid>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[A project idea to create Fortune-Telling NFTs by integrating the ancient wisdom of the I-Ching (Yin/Yang, Trigrams, Hexagrams) with modern blockchain technology. I explore the cultural and personal motivations, the envisioned fortune-telling process, and potential Web3 integrations.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[nft]]></category>
+      <category><![CDATA[blockchain]]></category>
+      <category><![CDATA[i-ching]]></category>
+      <category><![CDATA[taoism]]></category>
+      <category><![CDATA[yin-yang]]></category>
+      <category><![CDATA[hexagrams]]></category>
+      <category><![CDATA[trigrams]]></category>
+      <category><![CDATA[generative-ai]]></category>
+      <category><![CDATA[solana]]></category>
+      <category><![CDATA[ethereum]]></category>
+      <category><![CDATA[digital-divination]]></category>
+      <category><![CDATA[web3]]></category>
+      <category><![CDATA[fortune-telling]]></category>
+      <category><![CDATA[chinese-culture]]></category>
+      <category><![CDATA[spirituality]]></category>
+      <category><![CDATA[cultural-heritage]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Brainstorming an AI-Powered Photo Critic Service]]></title>
+      <link>https://augustinchan.dev/posts/2024-02-29-Brainstorming AI Driven Photo Critic</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-29-Brainstorming AI Driven Photo Critic</guid>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[My initial thoughts on designing an AI service that can analyze and critique uploaded photos. I explore a multi-stage approach using CNNs, CLIP, and LLMs for metadata extraction, image understanding, and generating constructive feedback.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[ai]]></category>
+      <category><![CDATA[photo-critic]]></category>
+      <category><![CDATA[multi-modal]]></category>
+      <category><![CDATA[computer-vision]]></category>
+      <category><![CDATA[image-analysis]]></category>
+      <category><![CDATA[cnn]]></category>
+      <category><![CDATA[clip]]></category>
+      <category><![CDATA[llm]]></category>
+      <category><![CDATA[retrieval-augmented-generation]]></category>
+      <category><![CDATA[image-captioning]]></category>
+      <category><![CDATA[aesthetic-evaluation]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Cracking AWS Network Issues: EC2 Docker to RDS Postgres Connectivity]]></title>
+      <link>https://augustinchan.dev/posts/2024-02-28-Diagnosing AWS EC2 to RDS Network Issues</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-28-Diagnosing AWS EC2 to RDS Network Issues</guid>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[A step-by-step guide to diagnosing and fixing network connection problems between a Dockerized Spring Boot app on AWS EC2 and an RDS Postgres database. Learn to use nslookup, nc, psql for troubleshooting, and how to configure Docker DNS for private AWS VPC name resolution.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[aws]]></category>
+      <category><![CDATA[ec2]]></category>
+      <category><![CDATA[rds]]></category>
+      <category><![CDATA[postgres]]></category>
+      <category><![CDATA[networking]]></category>
+      <category><![CDATA[docker]]></category>
+      <category><![CDATA[spring-boot]]></category>
+      <category><![CDATA[dns]]></category>
+      <category><![CDATA[aws-vpc]]></category>
+      <category><![CDATA[security-groups]]></category>
+      <category><![CDATA[troubleshooting]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Rapid Spring Boot: Notes on JWT Authentication and JPA Data Persistence]]></title>
+      <link>https://augustinchan.dev/posts/2024-02-28-Spring Auth and Persistence</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-28-Spring Auth and Persistence</guid>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[My developer notes on quickly getting to grips with JWT authentication and data persistence in Spring Boot 3. I cover my experiences with Spring Security, the power of JPA annotations for entity management, stateless sessions with JWT, and BCrypt password encryption, contrasting it with older Java EE approaches.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[spring-boot]]></category>
+      <category><![CDATA[spring-security]]></category>
+      <category><![CDATA[spring-data-jpa]]></category>
+      <category><![CDATA[jwt]]></category>
+      <category><![CDATA[bcrypt]]></category>
+      <category><![CDATA[java-persistence-api]]></category>
+      <category><![CDATA[jpa]]></category>
+      <category><![CDATA[authentication]]></category>
+      <category><![CDATA[authorization]]></category>
+      <category><![CDATA[api-security]]></category>
+      <category><![CDATA[java]]></category>
+    </item>
+    <item>
+      <title><![CDATA[AI for Family Stories: Transcribing, Mapping, and Visualizing Our Histories]]></title>
+      <link>https://augustinchan.dev/posts/2024-02-13-Brainstorming Transcription</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-13-Brainstorming Transcription</guid>
+      <pubDate>Tue, 13 Feb 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[Some brainstorming on using AI to transcribe family stories shared at gatherings. I'm thinking about detecting narrators, mapping complex family relationships, and even visualizing our family history as an interactive graph.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[ai-transcription]]></category>
+      <category><![CDATA[family-storytelling]]></category>
+      <category><![CDATA[genealogy]]></category>
+      <category><![CDATA[narrator-detection]]></category>
+      <category><![CDATA[relationship-mapping]]></category>
+      <category><![CDATA[voice-recognition]]></category>
+      <category><![CDATA[family-history]]></category>
+      <category><![CDATA[knowledge-graph]]></category>
+      <category><![CDATA[cultural-heritage]]></category>
+      <category><![CDATA[audio-to-text]]></category>
+      <category><![CDATA[ai-storytelling]]></category>
+      <category><![CDATA[voice-biometrics]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Building a Smarter AI Agent with Haystack 1.x: My Journey with RAG and Custom Pipelines]]></title>
+      <link>https://augustinchan.dev/posts/2024-02-01-Optimizing RAG on Haystack</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-01-Optimizing RAG on Haystack</guid>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[My experience implementing Retrieval Augmented Generation (RAG) and AI Agents with Haystack 1.x. I cover conversational memory, creating custom data pipelines using FAISS DocumentStore, integrating Google Search, and the challenges of incrementally indexing new knowledge.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[retrieval-augmented-generation]]></category>
+      <category><![CDATA[rag]]></category>
+      <category><![CDATA[haystack-framework]]></category>
+      <category><![CDATA[ai-agents]]></category>
+      <category><![CDATA[faiss]]></category>
+      <category><![CDATA[vector-database]]></category>
+      <category><![CDATA[google-search-integration]]></category>
+      <category><![CDATA[llm]]></category>
+      <category><![CDATA[nlp]]></category>
+      <category><![CDATA[custom-pipelines]]></category>
+      <category><![CDATA[data-indexing]]></category>
+      <category><![CDATA[conversational-ai]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Exploring Haystack: Building Advanced NLP Applications with LLMs and Vector Search]]></title>
+      <link>https://augustinchan.dev/posts/2024-01-21-Playing with Haystack</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-01-21-Playing with Haystack</guid>
+      <pubDate>Sun, 21 Jan 2024 00:00:00 GMT</pubDate>
+      <description><![CDATA[My practical tips and experiences from working with the Haystack LLM framework. I cover version differences (1.x vs. 2.x beta), the benefits of developing with a forked repository, managing Python dependencies for projects like this, and how to contribute back to open-source.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[haystack-framework]]></category>
+      <category><![CDATA[llm]]></category>
+      <category><![CDATA[nlp]]></category>
+      <category><![CDATA[vector-search]]></category>
+      <category><![CDATA[retrieval-augmented-generation]]></category>
+      <category><![CDATA[python-development]]></category>
+      <category><![CDATA[open-source]]></category>
+      <category><![CDATA[git]]></category>
+      <category><![CDATA[chatbot-development]]></category>
+      <category><![CDATA[document-search]]></category>
+      <category><![CDATA[dependency-management]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Speed Up GPT-J-6B: From Minutes to Seconds with GGML Conversion]]></title>
+      <link>https://augustinchan.dev/posts/2023-11-26-Huggingface gpt-j-6b Is SLOW</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2023-11-26-Huggingface gpt-j-6b Is SLOW</guid>
+      <pubDate>Sun, 26 Nov 2023 00:00:00 GMT</pubDate>
+      <description><![CDATA[A guide on dramatically improving GPT-J-6B inference speed. I'll show you how I converted a Hugging Face model from its standard format to GGML, slashing wait times from minutes to seconds on my own machine. Covers the conversion process, memory needs, and running the optimized model.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[gpt-j]]></category>
+      <category><![CDATA[llm]]></category>
+      <category><![CDATA[inference-speed]]></category>
+      <category><![CDATA[huggingface]]></category>
+      <category><![CDATA[ggml]]></category>
+      <category><![CDATA[gguf]]></category>
+      <category><![CDATA[model-conversion]]></category>
+      <category><![CDATA[performance-optimization]]></category>
+      <category><![CDATA[python]]></category>
+      <category><![CDATA[local-llm]]></category>
+    </item>
+    <item>
+      <title><![CDATA[The Challenge of Finding Uncensored AI Models]]></title>
+      <link>https://augustinchan.dev/posts/2023-11-26-Its Hard to find an Uncensored Model</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2023-11-26-Its Hard to find an Uncensored Model</guid>
+      <pubDate>Sun, 26 Nov 2023 00:00:00 GMT</pubDate>
+      <description><![CDATA[Exploring the difficulties in finding truly uncensored AI models. I discuss the influence of OpenAI's data and look at methods for fine-tuning base models to remove built-in limitations or refusals, mentioning my experiences with some specific models.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[uncensored-ai]]></category>
+      <category><![CDATA[ai-model-training]]></category>
+      <category><![CDATA[huggingface-models]]></category>
+      <category><![CDATA[openai]]></category>
+      <category><![CDATA[gguf]]></category>
+      <category><![CDATA[ai-ethics]]></category>
+      <category><![CDATA[data-censorship]]></category>
+      <category><![CDATA[llm]]></category>
+      <category><![CDATA[model-finetuning]]></category>
+    </item>
+    <item>
+      <title><![CDATA[AI Model Formats Explained: Demystifying Llama.cpp, GGUF, GGML, and Transformers]]></title>
+      <link>https://augustinchan.dev/posts/2023-11-26-Spectacular Reddit Post on Huggingface</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2023-11-26-Spectacular Reddit Post on Huggingface</guid>
+      <pubDate>Sun, 26 Nov 2023 00:00:00 GMT</pubDate>
+      <description><![CDATA[A breakdown of a helpful Reddit discussion on AI model formats like GGUF, GGML, and tools such as Llama.cpp and Hugging Face Transformers. I add my own notes on GGML quantization and summarize the key takeaways for navigating this complex landscape.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[ai-model-formats]]></category>
+      <category><![CDATA[llama-cpp]]></category>
+      <category><![CDATA[gguf]]></category>
+      <category><![CDATA[ggml]]></category>
+      <category><![CDATA[huggingface-transformers]]></category>
+      <category><![CDATA[model-quantization]]></category>
+      <category><![CDATA[safetensors]]></category>
+      <category><![CDATA[gptq]]></category>
+      <category><![CDATA[llm]]></category>
+      <category><![CDATA[ai-tools]]></category>
+      <category><![CDATA[local-llama]]></category>
+      <category><![CDATA[reddit-discussion]]></category>
+    </item>
+  </channel>
+</rss>
