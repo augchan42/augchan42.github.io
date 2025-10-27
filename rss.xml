@@ -7,7 +7,7 @@
     <link>https://augustinchan.dev</link>
     <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Oct 2025 08:47:14 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 27 Oct 2025 17:06:42 GMT</lastBuildDate>
     <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Next.js</generator>
     <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
@@ -246,8 +246,8 @@
     </item>
     <item>
       <title><![CDATA[FIDO2 Passkeys for Android: Backend Challenges in Python]]></title>
-      <link>https://augustinchan.dev/posts/2025-05-14-Challenges-with-Passkey-Android</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-05-14-Challenges-with-Passkey-Android</guid>
+      <link>https://augustinchan.dev/posts/2025-05-14-challenges-with-passkey-android</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-05-14-challenges-with-passkey-android</guid>
       <pubDate>Wed, 14 May 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[A developer's journey through the challenges of implementing FIDO2 passkeys for an Android app using Python, covering assetlinks.json, data serialization, and Base64URL encoding.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -262,8 +262,8 @@
     </item>
     <item>
       <title><![CDATA[Deploying a CosmWasm Smart Contract on the Stargaze Testnet]]></title>
-      <link>https://augustinchan.dev/posts/2025-03-27-Getting up to speed with Cosmos and Stargaze</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-03-27-Getting up to speed with Cosmos and Stargaze</guid>
+      <link>https://augustinchan.dev/posts/2025-03-27-getting-up-to-speed-with-cosmos-and-stargaze</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-03-27-getting-up-to-speed-with-cosmos-and-stargaze</guid>
       <pubDate>Thu, 27 Mar 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[A developer's guide to deploying a CosmWasm smart contract on the Stargaze testnet, covering environment setup, starsd CLI usage, contract uploading, instantiation, and Rust version considerations.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -311,8 +311,8 @@
     </item>
     <item>
       <title><![CDATA[Brainstorming a New Theory of Self-Directed Learning for AI, with AI]]></title>
-      <link>https://augustinchan.dev/posts/2025-01-17-Brainstorming a Novel Theory with AI</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-01-17-Brainstorming a Novel Theory with AI</guid>
+      <link>https://augustinchan.dev/posts/2025-01-17-brainstorming-a-novel-theory-with-ai</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-01-17-brainstorming-a-novel-theory-with-ai</guid>
       <pubDate>Fri, 17 Jan 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[An exploration of using the I-Ching's King Wen sequence as a potential framework for self-directed learning in AGI. Details the thought process, key insights, and implications for AI development, including a link to a research paper.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -346,8 +346,8 @@
     </item>
     <item>
       <title><![CDATA[Zustand: A Weapon for Efficient User State Management in React]]></title>
-      <link>https://augustinchan.dev/posts/2024-09-01-Zustand-State-Management</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-09-01-Zustand-State-Management</guid>
+      <link>https://augustinchan.dev/posts/2024-09-01-zustand-state-management</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-09-01-zustand-state-management</guid>
       <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[An overview of Zustand as an efficient state management library for React, highlighting its benefits over traditional methods (refs, Context API) for managing user state, simplifying code, and minimizing re-renders.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -364,8 +364,8 @@
     </item>
     <item>
       <title><![CDATA[Optimizing React Authentication: Minimizing Re-renders and Improving Performance]]></title>
-      <link>https://augustinchan.dev/posts/2024-08-30-Minimizing Re-renders</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-08-30-Minimizing Re-renders</guid>
+      <link>https://augustinchan.dev/posts/2024-08-30-minimizing-re-renders</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-08-30-minimizing-re-renders</guid>
       <pubDate>Fri, 30 Aug 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[A guide to minimizing re-renders and optimizing performance in React/Next.js applications with authentication. Covers combining state, memoizing context with useMemo, tracking state changes with useRef, debouncing, and optimizing useEffect dependencies.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -387,8 +387,8 @@
     </item>
     <item>
       <title><![CDATA[Conditional Rendering in Next.js: Hiding Footer on Specific Pages]]></title>
-      <link>https://augustinchan.dev/posts/2024-06-21-Conditional Rendering</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-06-21-Conditional Rendering</guid>
+      <link>https://augustinchan.dev/posts/2024-06-21-conditional-rendering</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-06-21-conditional-rendering</guid>
       <pubDate>Fri, 21 Jun 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[A guide to conditionally rendering components, like a footer, in a Next.js 14 (App Router) application by bridging server and client components using React Context API and usePathname.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -406,8 +406,8 @@
     </item>
     <item>
       <title><![CDATA[Integrating with Shadcn: Tips and Insights for Seamless UI Component Integration]]></title>
-      <link>https://augustinchan.dev/posts/2024-06-08-Integrating Shadcn</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-06-08-Integrating Shadcn</guid>
+      <link>https://augustinchan.dev/posts/2024-06-08-integrating-shadcn</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-06-08-integrating-shadcn</guid>
       <pubDate>Sat, 08 Jun 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[A developer's experience integrating Shadcn UI components into a Next.js project. Covers project preparation, handling opinionated styling (dark theme, New York style), managing global CSS, and an example root layout incorporating ThemeProvider and Toaster.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -425,8 +425,8 @@
     </item>
     <item>
       <title><![CDATA[Securing SSH: A Detailed Look at Fail2Ban Configuration and Rule Management]]></title>
-      <link>https://augustinchan.dev/posts/2024-06-03-Securing SSH</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-06-03-Securing SSH</guid>
+      <link>https://augustinchan.dev/posts/2024-06-03-securing-ssh</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-06-03-securing-ssh</guid>
       <pubDate>Mon, 03 Jun 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[A detailed guide to troubleshooting and configuring Fail2Ban with UFW for robust SSH security. Covers iptables rule order, jail.local setup, persistent bans, and ensuring proper cleanup of rules on service restart.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -444,8 +444,8 @@
     </item>
     <item>
       <title><![CDATA[Navigating UI Framework Transitions: From Bootstrap to Shadcn]]></title>
-      <link>https://augustinchan.dev/posts/2024-05-31-UI Frameworks</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-05-31-UI Frameworks</guid>
+      <link>https://augustinchan.dev/posts/2024-05-31-ui-frameworks</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-05-31-ui-frameworks</guid>
       <pubDate>Fri, 31 May 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[A developer's journey through UI framework choices, from Bootstrap to Next.js with Shadcn/ui. Discusses the pros and cons of component libraries like Shadcn (built on Radix UI and Tailwind CSS) versus traditional UI frameworks, and touches on project MVP plans.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -461,8 +461,8 @@
     </item>
     <item>
       <title><![CDATA[Navigating Client vs Server-Side Authentication in Web Development]]></title>
-      <link>https://augustinchan.dev/posts/2024-05-07-Client vs Server side Auth</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-05-07-Client vs Server side Auth</guid>
+      <link>https://augustinchan.dev/posts/2024-05-07-client-vs-server-side-auth</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-05-07-client-vs-server-side-auth</guid>
       <pubDate>Tue, 07 May 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[Explores client-side vs. server-side authentication using Supabase with Next.js 14 (App Router). Covers Google OAuth2 (client-side flow with createBrowserClient) and Magic Link (server-side flow with createServerClient), and clarifies Supabase Auth-UI usage.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -481,8 +481,8 @@
     </item>
     <item>
       <title><![CDATA[Implementing Auth and Database for 8-Bit Oracle]]></title>
-      <link>https://augustinchan.dev/posts/2024-05-05-Getting down to Business</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-05-05-Getting down to Business</guid>
+      <link>https://augustinchan.dev/posts/2024-05-05-getting-down-to-business</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-05-05-getting-down-to-business</guid>
       <pubDate>Sun, 05 May 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[Details on setting up authentication and database for the 8-Bit Oracle project using Next.js, Supabase (with Auth-UI for OAuth2), and Tailwind CSS. Discusses choices like Supabase over Firebase and future consideration of Web3Auth.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -500,8 +500,8 @@
     </item>
     <item>
       <title><![CDATA[Claude vs GPT4 for Coding]]></title>
-      <link>https://augustinchan.dev/posts/2024-04-19-Claude vs GPT4 Coding Assistants</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-04-19-Claude vs GPT4 Coding Assistants</guid>
+      <link>https://augustinchan.dev/posts/2024-04-19-claude-vs-gpt4-coding-assistants</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-04-19-claude-vs-gpt4-coding-assistants</guid>
       <pubDate>Fri, 19 Apr 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[A developer's comparison of using Claude Opus and GPT-4 (via Cursor.sh) as AI coding assistants, particularly when working with Next.js App Router vs. Pages Router and handling framework updates.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -518,8 +518,8 @@
     </item>
     <item>
       <title><![CDATA[How to Create an Interactive Typing Effect in React with Skip Animation Feature]]></title>
-      <link>https://augustinchan.dev/posts/2024-04-17-Smooth Typing Effect in React</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-04-17-Smooth Typing Effect in React</guid>
+      <link>https://augustinchan.dev/posts/2024-04-17-smooth-typing-effect-in-react</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-04-17-smooth-typing-effect-in-react</guid>
       <pubDate>Wed, 17 Apr 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[A developer's notes and tips on implementing a smooth, multi-paragraph typing effect in React with a skip animation feature. Covers state management, DOM manipulation alternatives, event handling, and internationalization with react-i18next.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -538,8 +538,8 @@
     </item>
     <item>
       <title><![CDATA[Exploring Divination Techniques: Chainlink VRF vs. Traditional Randomness Methods]]></title>
-      <link>https://augustinchan.dev/posts/2024-04-15-Using Chainlink VRF for Divination</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-04-15-Using Chainlink VRF for Divination</guid>
+      <link>https://augustinchan.dev/posts/2024-04-15-using-chainlink-vrf-for-divination</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-04-15-using-chainlink-vrf-for-divination</guid>
       <pubDate>Mon, 15 Apr 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[An analysis of using Chainlink VRF for I-Ching divination, comparing it to traditional methods and other randomness generation techniques like PRNGs and client-side randomness. Discusses pros, cons, and includes JavaScript examples for hexagram generation with changing lines.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -559,8 +559,8 @@
     </item>
     <item>
       <title><![CDATA[Solving Webpack Issues: Eliminating Double Script Loading and FOUC]]></title>
-      <link>https://augustinchan.dev/posts/2024-03-23-Webpack Strangeness</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-03-23-Webpack Strangeness</guid>
+      <link>https://augustinchan.dev/posts/2024-03-23-webpack-strangeness</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-03-23-webpack-strangeness</guid>
       <pubDate>Sat, 23 Mar 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[Troubleshooting common Webpack issues, including double script loading due to manual and Webpack config imports, and resolving Flash of Unstyled Content (FOUC) by correctly setting production mode with cross-env and configuring MiniCssExtractPlugin.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -577,8 +577,8 @@
     </item>
     <item>
       <title><![CDATA[React's useEffect Firing Twice in Dev? The HMR Culprit and a Simple Check]]></title>
-      <link>https://augustinchan.dev/posts/2024-03-09-React State Updates and JS Timing Functions</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-03-09-React State Updates and JS Timing Functions</guid>
+      <link>https://augustinchan.dev/posts/2024-03-09-react-state-updates-and-js-timing-functions</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-03-09-react-state-updates-and-js-timing-functions</guid>
       <pubDate>Sat, 09 Mar 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[A quick developer tip: If your React useEffect hook seems to run twice in Next.js development mode, Hot Module Reloading (HMR) might be the reason. Here's why and how to verify.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -594,8 +594,8 @@
     </item>
     <item>
       <title><![CDATA[Fortune-Telling NFTs: Weaving I-Ching Wisdom with Blockchain Technology]]></title>
-      <link>https://augustinchan.dev/posts/2024-03-04-Fortune Telling NFTs</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-03-04-Fortune Telling NFTs</guid>
+      <link>https://augustinchan.dev/posts/2024-03-04-fortune-telling-nfts</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-03-04-fortune-telling-nfts</guid>
       <pubDate>Mon, 04 Mar 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[A project idea to create Fortune-Telling NFTs by integrating the ancient wisdom of the I-Ching (Yin/Yang, Trigrams, Hexagrams) with modern blockchain technology. I explore the cultural and personal motivations, the envisioned fortune-telling process, and potential Web3 integrations.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -618,8 +618,8 @@
     </item>
     <item>
       <title><![CDATA[Brainstorming an AI-Powered Photo Critic Service]]></title>
-      <link>https://augustinchan.dev/posts/2024-02-29-Brainstorming AI Driven Photo Critic</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-29-Brainstorming AI Driven Photo Critic</guid>
+      <link>https://augustinchan.dev/posts/2024-02-29-brainstorming-ai-driven-photo-critic</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-29-brainstorming-ai-driven-photo-critic</guid>
       <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[My initial thoughts on designing an AI service that can analyze and critique uploaded photos. I explore a multi-stage approach using CNNs, CLIP, and LLMs for metadata extraction, image understanding, and generating constructive feedback.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -637,8 +637,8 @@
     </item>
     <item>
       <title><![CDATA[Cracking AWS Network Issues: EC2 Docker to RDS Postgres Connectivity]]></title>
-      <link>https://augustinchan.dev/posts/2024-02-28-Diagnosing AWS EC2 to RDS Network Issues</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-28-Diagnosing AWS EC2 to RDS Network Issues</guid>
+      <link>https://augustinchan.dev/posts/2024-02-28-diagnosing-aws-ec2-to-rds-network-issues</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-28-diagnosing-aws-ec2-to-rds-network-issues</guid>
       <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[A step-by-step guide to diagnosing and fixing network connection problems between a Dockerized Spring Boot app on AWS EC2 and an RDS Postgres database. Learn to use nslookup, nc, psql for troubleshooting, and how to configure Docker DNS for private AWS VPC name resolution.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -656,8 +656,8 @@
     </item>
     <item>
       <title><![CDATA[Rapid Spring Boot: Notes on JWT Authentication and JPA Data Persistence]]></title>
-      <link>https://augustinchan.dev/posts/2024-02-28-Spring Auth and Persistence</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-28-Spring Auth and Persistence</guid>
+      <link>https://augustinchan.dev/posts/2024-02-28-spring-auth-and-persistence</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-28-spring-auth-and-persistence</guid>
       <pubDate>Wed, 28 Feb 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[My developer notes on quickly getting to grips with JWT authentication and data persistence in Spring Boot 3. I cover my experiences with Spring Security, the power of JPA annotations for entity management, stateless sessions with JWT, and BCrypt password encryption, contrasting it with older Java EE approaches.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -675,8 +675,8 @@
     </item>
     <item>
       <title><![CDATA[AI for Family Stories: Transcribing, Mapping, and Visualizing Our Histories]]></title>
-      <link>https://augustinchan.dev/posts/2024-02-13-Brainstorming Transcription</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-13-Brainstorming Transcription</guid>
+      <link>https://augustinchan.dev/posts/2024-02-13-brainstorming-transcription</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-13-brainstorming-transcription</guid>
       <pubDate>Tue, 13 Feb 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[Some brainstorming on using AI to transcribe family stories shared at gatherings. I'm thinking about detecting narrators, mapping complex family relationships, and even visualizing our family history as an interactive graph.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -695,8 +695,8 @@
     </item>
     <item>
       <title><![CDATA[Building a Smarter AI Agent with Haystack 1.x: My Journey with RAG and Custom Pipelines]]></title>
-      <link>https://augustinchan.dev/posts/2024-02-01-Optimizing RAG on Haystack</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-01-Optimizing RAG on Haystack</guid>
+      <link>https://augustinchan.dev/posts/2024-02-01-optimizing-rag-on-haystack</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-02-01-optimizing-rag-on-haystack</guid>
       <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[My experience implementing Retrieval Augmented Generation (RAG) and AI Agents with Haystack 1.x. I cover conversational memory, creating custom data pipelines using FAISS DocumentStore, integrating Google Search, and the challenges of incrementally indexing new knowledge.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -715,8 +715,8 @@
     </item>
     <item>
       <title><![CDATA[Exploring Haystack: Building Advanced NLP Applications with LLMs and Vector Search]]></title>
-      <link>https://augustinchan.dev/posts/2024-01-21-Playing with Haystack</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-01-21-Playing with Haystack</guid>
+      <link>https://augustinchan.dev/posts/2024-01-21-playing-with-haystack</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2024-01-21-playing-with-haystack</guid>
       <pubDate>Sun, 21 Jan 2024 00:00:00 GMT</pubDate>
       <description><![CDATA[My practical tips and experiences from working with the Haystack LLM framework. I cover version differences (1.x vs. 2.x beta), the benefits of developing with a forked repository, managing Python dependencies for projects like this, and how to contribute back to open-source.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -734,8 +734,8 @@
     </item>
     <item>
       <title><![CDATA[Speed Up GPT-J-6B: From Minutes to Seconds with GGML Conversion]]></title>
-      <link>https://augustinchan.dev/posts/2023-11-26-Huggingface gpt-j-6b Is SLOW</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2023-11-26-Huggingface gpt-j-6b Is SLOW</guid>
+      <link>https://augustinchan.dev/posts/2023-11-26-huggingface-gpt-j-6b-is-slow</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2023-11-26-huggingface-gpt-j-6b-is-slow</guid>
       <pubDate>Sun, 26 Nov 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[A guide on dramatically improving GPT-J-6B inference speed. I'll show you how I converted a Hugging Face model from its standard format to GGML, slashing wait times from minutes to seconds on my own machine. Covers the conversion process, memory needs, and running the optimized model.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -752,8 +752,8 @@
     </item>
     <item>
       <title><![CDATA[The Challenge of Finding Uncensored AI Models]]></title>
-      <link>https://augustinchan.dev/posts/2023-11-26-Its Hard to find an Uncensored Model</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2023-11-26-Its Hard to find an Uncensored Model</guid>
+      <link>https://augustinchan.dev/posts/2023-11-26-its-hard-to-find-an-uncensored-model</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2023-11-26-its-hard-to-find-an-uncensored-model</guid>
       <pubDate>Sun, 26 Nov 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[Exploring the difficulties in finding truly uncensored AI models. I discuss the influence of OpenAI's data and look at methods for fine-tuning base models to remove built-in limitations or refusals, mentioning my experiences with some specific models.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>
@@ -769,8 +769,8 @@
     </item>
     <item>
       <title><![CDATA[AI Model Formats Explained: Demystifying Llama.cpp, GGUF, GGML, and Transformers]]></title>
-      <link>https://augustinchan.dev/posts/2023-11-26-Spectacular Reddit Post on Huggingface</link>
-      <guid isPermaLink="true">https://augustinchan.dev/posts/2023-11-26-Spectacular Reddit Post on Huggingface</guid>
+      <link>https://augustinchan.dev/posts/2023-11-26-spectacular-reddit-post-on-huggingface</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2023-11-26-spectacular-reddit-post-on-huggingface</guid>
       <pubDate>Sun, 26 Nov 2023 00:00:00 GMT</pubDate>
       <description><![CDATA[A breakdown of a helpful Reddit discussion on AI model formats like GGUF, GGML, and tools such as Llama.cpp and Hugging Face Transformers. I add my own notes on GGML quantization and summarize the key takeaways for navigating this complex landscape.]]></description>
       <author>aug@digitalrain.studio (Augustin Chan)</author>

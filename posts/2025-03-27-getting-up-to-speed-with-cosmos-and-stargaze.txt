@@ -1,0 +1,382 @@
+1:"$Sreact.fragment"
+2:I[6280,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],""]
+3:I[7381,[],""]
+4:I[7969,[],""]
+5:I[2778,["280","static/chunks/280-69c0d36265f10a04.js","177","static/chunks/app/layout-4097efd66dbc44a5.js"],"Analytics"]
+9:I[1735,[],""]
+:HL["/_next/static/css/030f407e58226dfd.css","style"]
+0:{"P":null,"b":"W1DxnpCsX8_YAi1OQF0X6","p":"","c":["","posts","2025-03-27-getting-up-to-speed-with-cosmos-and-stargaze"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","2025-03-27-getting-up-to-speed-with-cosmos-and-stargaze","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/030f407e58226dfd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"suppressHydrationWarning":true,"children":[["$","div",null,{"style":{"maxWidth":"1000px","margin":"0 auto","padding":"1rem"},"children":[["$","header",null,{"style":{"borderBottom":"2px solid #333","paddingBottom":"1rem","marginBottom":"2rem"},"children":["$","nav",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap","gap":"1rem"},"children":[["$","div",null,{"children":[["$","$L2",null,{"href":"/","style":{"fontSize":"1.4rem","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Augustin Chan"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":"Building systems that reason"}]]}],["$","div",null,{"style":{"display":"flex","gap":"1.5rem","flexWrap":"wrap"},"children":[["$","$L2",null,{"href":"/","style":{"textDecoration":"none","color":"#666"},"children":"Home"}],["$","$L2",null,{"href":"/about","style":{"textDecoration":"none","color":"#666"},"children":"About"}],["$","$L2",null,{"href":"/blog","style":{"textDecoration":"none","color":"#666"},"children":"Blog"}],["$","a",null,{"href":"https://8bitoracle.ai","target":"_blank","rel":"noopener noreferrer","style":{"textDecoration":"none","color":"#666"},"children":"8-Bit Oracle"}]]}]]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"borderTop":"1px solid #ddd","paddingTop":"2rem","marginTop":"4rem","textAlign":"center","color":"#666"},"children":[["$","div",null,{"children":"© 2025 Augustin Chan aug@digitalrain.studio"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":["$","a",null,{"href":"/rss.xml","style":{"color":"#666","textDecoration":"none"},"children":"RSS Feed"}]}]]}]]}],null,["$","$L5",null,{}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n            // Service worker cleanup for legacy site versions\n            if ('serviceWorker' in navigator) {\n              navigator.serviceWorker.getRegistrations().then(function(registrations) {\n                for(let registration of registrations) {\n                  registration.unregister();\n                }\n              });\n\n              // Register cleanup service worker\n              navigator.serviceWorker.register('/sw.js').then(function(registration) {\n                console.log('Cleanup SW registered');\n              }).catch(function(error) {\n                console.log('Cleanup SW registration failed');\n              });\n            }\n          "}}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-03-27-getting-up-to-speed-with-cosmos-and-stargaze","d"],"$L6",{"children":["__PAGE__","$L7",{},null,false]},null,false]},null,false]},null,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"s":false,"S":true}
+b:I[3448,[],"OutletBoundary"]
+d:I[9425,[],"AsyncMetadataOutlet"]
+f:I[3448,[],"ViewportBoundary"]
+11:I[3448,[],"MetadataBoundary"]
+12:"$Sreact.suspense"
+6:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+7:["$","$1","c",{"children":["$La",null,["$","$Lb",null,{"children":["$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}]
+8:["$","$1","h",{"children":[null,[["$","$Lf",null,{"children":"$L10"}],null],["$","$L11",null,{"children":["$","div",null,{"hidden":true,"children":["$","$12",null,{"fallback":null,"children":"$L13"}]}]}]]}]
+15:I[858,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],"default",1]
+14:T429,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Deploying a CosmWasm Smart Contract on the Stargaze Testnet","description":"A developer's guide to deploying a CosmWasm smart contract on the Stargaze testnet, covering environment setup, starsd CLI usage, contract uploading, instantiation, and Rust version considerations.","datePublished":"2025-03-27T00:00:00.000Z","dateModified":"2025-03-27T00:00:00.000Z","author":{"@type":"Person","name":"Augustin Chan","url":"https://augustinchan.dev","sameAs":["https://x.com/augchan42","https://github.com/augchan42"]},"publisher":{"@type":"Person","name":"Augustin Chan","url":"https://augustinchan.dev"},"url":"https://augustinchan.dev/posts/2025-03-27-getting-up-to-speed-with-cosmos-and-stargaze","mainEntityOfPage":{"@type":"WebPage","@id":"https://augustinchan.dev/posts/2025-03-27-getting-up-to-speed-with-cosmos-and-stargaze"},"image":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg","keywords":["rust","cosmwasm","smart contracts","starsd","cosmos","stargaze","testnet"],"timeRequired":"PT6M"}16:T2903,
+
+**Abstract:**  
+This post serves as a developer's guide to deploying a CosmWasm smart contract onto the Stargaze testnet. It covers essential steps including setting up the Stargaze CLI (`starsd`), configuring a wallet, obtaining testnet tokens, and managing Rust versions for compatibility. The guide also walks through uploading the contract, obtaining its code ID, and instantiating it on the testnet.
+
+**Estimated reading time:** _15 minutes_
+
+# Deploying a Smart Contract to Stargaze Testnet
+
+## Introduction
+
+Recently, I needed to deploy a smart contract to Stargaze. Here are some key things I learned:
+
+- Stargaze is a Cosmos IBC Chain.
+- I needed to deploy to the Stargaze testnet.
+- The deployment process has two separate steps:
+  1. Uploading the contract to the chain.
+  2. Instantiating it (which is like a factory creating an instance).
+- CosmWasm v2.2.2 is available, but I couldn't make it work with newer Rust versions. I had to use an older version, Rust 1.81.0.
+
+The documentation is spread across different Cosmos and Stargaze resources. This meant I had to switch between them often.
+
+## Setting Up the Environment
+
+### Setting up the Stargaze CLI (`starsd`)
+
+First, I needed to set up the Stargaze command-line interface (`starsd`):
+
+```bash
+# Clone the Stargaze repository
+gh repo clone public-awesome/stargaze
+```
+
+> Note: Their `git clone` command did not work as shown in their documentation.
+
+Next, I needed to configure the CLI to connect to the Stargaze testnet:
+
+```bash
+# Set the testnet chain ID
+starsd config set client chain-id elgafar-1
+
+# Set the RPC endpoint
+starsd config set client node https://rpc.elgafar-1.stargaze-apis.com:443
+
+# Check the configuration
+starsd config view client
+```
+
+The output should be similar to this:
+
+```toml
+# This is a TOML config file.
+# For more information, see https://github.com/toml-lang/toml
+
+###############################################################################
+###                           Client Configuration                            ###
+###############################################################################
+
+# The network chain ID
+chain-id = "elgafar-1"
+
+# The keyring's backend, where the keys are stored (os|file|kwallet|pass|test|memory)
+keyring-backend = "os"
+
+# CLI output format (text|json)
+output = "text"
+
+# <host>:<port> to CometBFT RPC interface for this chain
+node = "https://rpc.elgafar-1.stargaze-apis.com:443"
+
+# Transaction broadcasting mode (sync|async)
+broadcast-mode = "sync"
+```
+
+### Setting Up a Wallet
+
+I imported my wallet using my BIP39 recovery phrase (mnemonic):
+
+```bash
+# Import your private key via the bip39 mnemonic
+starsd keys add imported-wallet --recover
+
+# Check it has been added to your keyring
+starsd keys list
+```
+
+Example output:
+
+```text
+Enter keyring passphrase (attempt 1/3):
+- address: stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c
+  name: imported-wallet
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"An9Ykmdeu9Kn/PGGnoe+d/vnpCX1LDqygPdMgAgzS979"}'
+  type: local
+```
+
+### Getting Testnet Starz
+
+You can get testnet STARS from the faucet at: https://testnet.ping.pub/stargaze/faucet
+
+The faucet gives 5 testnet STARS each time. It seems you can only request once per day.
+
+### Setting Up Rust
+
+Next, I needed the correct Rust version:
+
+> **Important Note**: Rust compiler versions 1.82 and newer have a feature called "reference types" turned on by default. This causes compatibility problems. Even though CosmWasm v2.2.2 is available and should support reference types, I could not get it to work correctly. To compile and deploy my contracts successfully, I had to use an older Rust version, 1.81.0.
+
+```bash
+# Install Rust 1.81.0
+rustup install 1.81.0
+
+# Set it as the default
+rustup default 1.81.0
+
+# Add the wasm target for this specific version
+rustup target add wasm32-unknown-unknown --toolchain 1.81.0
+```
+
+### Verifying the Installation
+
+```bash
+# Check current Rust version
+rustc --version  # Should show 1.81.0
+
+# Check available targets
+rustup target list --installed  # Should include wasm32-unknown-unknown
+```
+
+## Contract Verification
+
+Clone the cw-plus contracts:
+
+```bash
+gh repo clone CosmWasm/cw-plus
+```
+
+I used the `cw1_whitelist` contract:
+
+```bash
+cd contracts/cw1-whitelist && cargo wasm
+```
+
+If you encounter any issues, try running `cargo clean`, then `cargo update`, and finally `cargo wasm`.
+
+Before uploading or instantiating a contract, I verified it with the compatibility check:
+
+```bash
+cosmwasm-check ../../target/wasm32-unknown-unknown/release/cw1_whitelist.wasm
+```
+
+## Uploading the Contract
+
+The `store` command uploads the compiled WASM contract:
+
+```bash
+starsd tx wasm store cw1_whitelist.wasm \
+  --from stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c \
+  --gas-prices 0.025ustars \
+  --gas-adjustment 1.7 \
+  --gas auto
+```
+
+Save the transaction hash from this command's output; you will need it later to find the `code_id`.
+
+## Getting the Contract Code ID
+
+Using the transaction hash (from the `store` command output):
+
+```bash
+starsd q tx 0A1078B8364950CE7CE6F3992248662D9F1284676B912CEC2A64AA5176D63C64 -o json | jq '.. | select(.key? == "code_id")'
+```
+
+Output:
+
+```bash
+{
+  "key": "code_id",
+  "value": "5196",
+  "index": true
+}
+```
+
+After uploading, you can also get the `code_id` by querying the contract address:
+
+```bash
+starsd query wasm contract stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m
+```
+
+Output:
+
+```yaml
+address: stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m
+contract_info:
+  admin: stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c
+  code_id: "5196"
+  created:
+    block_height: "15822799"
+    tx_index: "0"
+  creator: stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c
+  extension: null
+  ibc_port_id: ""
+  label: StargazeContract
+```
+
+## Instantiating the Contract
+
+The message needed to instantiate your smart contract depends on its specific initial settings. For this `cw1_whitelist` contract, for example, I needed to define the list of administrators.
+
+First, I checked the contract's `msg.rs` file to identify the expected parameters:
+
+```rust
+pub struct InstantiateMsg {
+    pub admins: Vec<String>,
+    pub mutable: bool,
+}
+```
+
+Then I prepared the instantiation message:
+
+```bash
+INSTANTIATE_MSG='{"admins": ["stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c"], "mutable": true}'
+```
+
+And instantiated the contract:
+
+```bash
+starsd tx wasm instantiate 5196 "$INSTANTIATE_MSG" \
+  --label "StargazeContract" \
+  --admin stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c \
+  --from imported-wallet \
+  --amount "1000000ustars" \
+  --gas-prices 0.025ustars \
+  --gas-adjustment 1.7 \
+  --gas auto
+```
+
+## Verifying Contract Deployment
+
+### Checking Contract Info
+
+```bash
+starsd query wasm contract stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m
+```
+
+### Querying Contract State (Admins List)
+
+```bash
+starsd query wasm contract-state smart stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m '{"admin_list":{}}'
+```
+
+Output:
+
+```yaml
+address: stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m
+contract_info:
+  admin: stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c
+  code_id: "5196"
+  created:
+    block_height: "15822799"
+    tx_index: "0"
+  creator: stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c
+  extension: null
+  ibc_port_id: ""
+  label: StargazeContract
+data:
+  admins:
+    - stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c
+  mutable: true
+```
+
+# Executing a function in the Smart Contract
+
+This will withdraw 0.5 STAR to the to_address (in this case the admin account)
+
+```bash
+starsd tx wasm execute stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m \
+'{"execute": {"msgs": [{
+    "bank": {
+        "send": {
+            "to_address": "stars1t50gf5zarvpjh4h27epxydz5ewq5klw5mrtr8c",
+            "amount": [{"denom": "ustars", "amount": "500000"}]
+        }
+    }
+}]}}' \
+--from imported-wallet \
+--gas-prices 0.025ustars \
+--gas-adjustment 1.7 \
+--gas auto
+```
+
+## Confirm the updated balance
+
+```bash
+starsd query bank balances stars1cq7f2fkv5glhc94r62utemftx6y87cxudl0zvkcr3va9tj8n3mss9xlg3m
+balances:
+- amount: "500000"
+  denom: ustars
+pagination:
+  total: "1"
+```
+
+## Tips for Analyzing a Standard CosmWasm Contract
+
+When analyzing a standard CosmWasm contract, I typically look at the files in this order:
+
+1. **msg.rs** - First, because it defines the contract's interface:
+
+   - Contains the `InstantiateMsg`, `ExecuteMsg`, and `QueryMsg` structs
+   - Shows what actions the contract can perform
+   - Gives you a high-level overview of the contract's capabilities
+
+2. **state.rs** - Second, because it defines the contract's data model:
+
+   - Contains the contract's storage schema
+   - Shows what data structures are being stored
+   - Defines key-value store configurations
+
+3. **contract.rs** - Third, as it contains the main business logic:
+
+   - Has the core instantiate/execute/query entry points
+   - Contains the actual implementation of contract functions
+   - Shows how the contract processes messages and manages state
+
+4. **error.rs** - Fourth, to understand error handling:
+
+   - Defines custom error types
+   - Shows what can go wrong
+   - Helps understand validation and error cases
+
+5. **lib.rs** - Fifth, as it's the entry point but usually just re-exports:
+
+   - Shows module organization
+   - Contains crate-level attributes and configurations
+   - Links all the components together
+
+6. **integration_tests.rs** - Last, to understand how it all works together:
+
+   - Contains end-to-end tests
+   - Shows real-world usage examples
+   - Demonstrates expected behaviors
+
+7. **bin/schema.rs** (in bin directory) - Reference as needed:
+   - Generates JSON schema for messages
+   - Useful for client integration
+
+This order helps build understanding from the interface level down to implementation details. The message definitions (`msg.rs`) and state management (`state.rs`) give you the big picture before diving into the implementation details in `contract.rs`.
+
+# Macro expansion
+
+The tip https://cosmwasm.cosmos.network/tutorial/setup-environment is slightly wrong.
+
+In vscode/cursor, you need to install the rust-analyzer extension.
+Then bring up the ctrl-shift-P menu to select the 'rust analyzer: Expand macro recursively' option.
+
+## Useful Links
+
+- [CosmWasm Environment Setup](https://cosmwasm.cosmos.network/tutorial/setup-environment)
+- [Stargaze Smart Contracts Documentation](https://docs.stargaze.zone/developers/cosmwasm-smart-contracts/testnet)
+a:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$14"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://augustinchan.dev\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://augustinchan.dev/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Deploying a CosmWasm Smart Contract on the Stargaze Testnet\",\"item\":\"https://augustinchan.dev/posts/2025-03-27-getting-up-to-speed-with-cosmos-and-stargaze\"}]}"}}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2rem"},"children":[["$","h1",null,{"style":{"fontSize":"2em","marginBottom":"0.5rem"},"children":"Deploying a CosmWasm Smart Contract on the Stargaze Testnet"}],["$","div",null,{"style":{"color":"#666","fontSize":"1em","marginBottom":"1rem"},"children":["March 27, 2025",[" • ",6," min read"]]}],["$","p",null,{"style":{"fontSize":"1.1em","color":"#555","fontStyle":"italic","marginBottom":"2rem"},"children":"A developer's guide to deploying a CosmWasm smart contract on the Stargaze testnet, covering environment setup, starsd CLI usage, contract uploading, instantiation, and Rust version considerations."}]]}],["$","$L15",null,{"content":"$16"}],"$L17"]}]]
+17:["$","aside",null,{"style":{"marginTop":"4rem","paddingTop":"2rem","borderTop":"2px solid #ddd"},"children":[["$","h2",null,{"style":{"fontSize":"1.5em","marginBottom":"1.5rem"},"children":"Related Posts"}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","gap":"1.5rem"},"children":[["$","article","2025-10-24-tech-noir-seo-anxiety-2025",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-10-24-tech-noir-seo-anxiety-2025","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Tech Noir, Joy Division, and the Crushing Anxiety of Optimizing for Search Engines That Might Not Exist in Three Years"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"On replacing Wilhelm with Unknown Pleasures, cultural anchoring vs keyword stuffing, and whether we're all just shouting into the void while ChatGPT eats our lunch. Also: footnotes."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"October 24, 2025"}]]}],["$","article","2025-09-27-llm-reasoning-pattern-classification-failure-modes",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-27-llm-reasoning-pattern-classification-failure-modes","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"When LLM Reasoning Becomes the Pattern - Meta-Classification Failure Modes"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Hard constraints beat soft self-regulation when an LLM's reasoning converges to a template."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 27, 2025"}]]}],["$","article","2025-09-21-evolutionary-adrs-first-principles",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-21-evolutionary-adrs-first-principles","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Evolutionary ADRs: Writing Architecture Decision Records from First Principles"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Why creating ADRs during development, not before it, leads to more honest and valuable documentation of your architectural decisions."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 21, 2025"}]]}]]}]]}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+c:null
+e:{"metadata":[["$","title","0",{"children":"Deploying a CosmWasm Smart Contract on the Stargaze Testnet | Augustin Chan"}],["$","meta","1",{"name":"description","content":"A developer's guide to deploying a CosmWasm smart contract on the Stargaze testnet, covering environment setup, starsd CLI usage, contract uploading, instantiation, and Rust version considerations."}],["$","link","2",{"rel":"author","href":"https://augustinchan.dev"}],["$","meta","3",{"name":"author","content":"Augustin Chan"}],["$","meta","4",{"name":"keywords","content":"AI,Machine Learning,Web3,Software Engineering,React,Next.js,TypeScript,Blog"}],["$","meta","5",{"name":"creator","content":"Augustin Chan"}],["$","meta","6",{"name":"publisher","content":"Augustin Chan"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","9",{"rel":"canonical","href":"https://augustinchan.dev/posts/2025-03-27-getting-up-to-speed-with-cosmos-and-stargaze"}],["$","meta","10",{"property":"og:title","content":"Deploying a CosmWasm Smart Contract on the Stargaze Testnet"}],["$","meta","11",{"property":"og:description","content":"A developer's guide to deploying a CosmWasm smart contract on the Stargaze testnet, covering environment setup, starsd CLI usage, contract uploading, instantiation, and Rust version considerations."}],["$","meta","12",{"property":"og:url","content":"https://augustinchan.dev/posts/2025-03-27-getting-up-to-speed-with-cosmos-and-stargaze"}],["$","meta","13",{"property":"og:site_name","content":"Augustin Chan"}],["$","meta","14",{"property":"og:locale","content":"en_US"}],["$","meta","15",{"property":"og:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}],["$","meta","16",{"property":"og:image:width","content":"400"}],["$","meta","17",{"property":"og:image:height","content":"400"}],["$","meta","18",{"property":"og:image:alt","content":"Deploying a CosmWasm Smart Contract on the Stargaze Testnet"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2025-03-27T00:00:00.000Z"}],["$","meta","21",{"property":"article:author","content":"Augustin Chan"}],["$","meta","22",{"property":"article:section","content":"Technology"}],["$","meta","23",{"property":"article:tag","content":"AI"}],["$","meta","24",{"property":"article:tag","content":"Machine Learning"}],["$","meta","25",{"property":"article:tag","content":"Web3"}],["$","meta","26",{"property":"article:tag","content":"Software Engineering"}],["$","meta","27",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","28",{"name":"twitter:creator","content":"@augchan42"}],["$","meta","29",{"name":"twitter:title","content":"Deploying a CosmWasm Smart Contract on the Stargaze Testnet"}],["$","meta","30",{"name":"twitter:description","content":"A developer's guide to deploying a CosmWasm smart contract on the Stargaze testnet, covering environment setup, starsd CLI usage, contract uploading, instantiation, and Rust version considerations."}],["$","meta","31",{"name":"twitter:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}]],"error":null,"digest":"$undefined"}
+13:"$e:metadata"
