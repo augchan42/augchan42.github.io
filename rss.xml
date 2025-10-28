@@ -7,7 +7,7 @@
     <link>https://augustinchan.dev</link>
     <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Oct 2025 01:55:49 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 28 Oct 2025 07:53:31 GMT</lastBuildDate>
     <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Next.js</generator>
     <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
@@ -33,6 +33,22 @@
       <category><![CDATA[dfw-style]]></category>
       <category><![CDATA[binary]]></category>
       <category><![CDATA[algorithms]]></category>
+    </item>
+    <item>
+      <title><![CDATA[Memory Systems and the Graph That Wasn't: On Not Using Neo4j]]></title>
+      <link>https://augustinchan.dev/posts/2025-10-28-memory-systems-and-the-graph-that-wasnt</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-10-28-memory-systems-and-the-graph-that-wasnt</guid>
+      <pubDate>Tue, 28 Oct 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[What we actually ship in 8-Bit Oracle today: JSONB conversations, hexagram context, and Postgres views — plus why we didn't adopt Neo4j, MemMachine, or mem0 (yet).]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[architecture]]></category>
+      <category><![CDATA[ai]]></category>
+      <category><![CDATA[memory-systems]]></category>
+      <category><![CDATA[postgres]]></category>
+      <category><![CDATA[8-bit-oracle]]></category>
+      <category><![CDATA[dfw-style]]></category>
+      <category><![CDATA[engineering]]></category>
+      <category><![CDATA[databases]]></category>
     </item>
     <item>
       <title><![CDATA[Tech Noir, Joy Division, and the Crushing Anxiety of Optimizing for Search Engines That Might Not Exist in Three Years]]></title>
