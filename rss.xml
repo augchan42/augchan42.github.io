@@ -7,7 +7,7 @@
     <link>https://augustinchan.dev</link>
     <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Oct 2025 17:48:56 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 28 Oct 2025 01:55:49 GMT</lastBuildDate>
     <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Next.js</generator>
     <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
@@ -18,6 +18,22 @@
       <title>Augustin Chan</title>
       <link>https://augustinchan.dev</link>
     </image>
+    <item>
+      <title><![CDATA[The Daily Hexagram: A Journey from Complexity to Elegance]]></title>
+      <link>https://augustinchan.dev/posts/2025-10-28-binary-calendar-hexagram-simplicity</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-10-28-binary-calendar-hexagram-simplicity</guid>
+      <pubDate>Tue, 28 Oct 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[How we learned to stop worrying and love the binary calendar. On deleting databases, removing cron jobs, and discovering that the oracle was encoded in the date all along.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[architecture]]></category>
+      <category><![CDATA[simplicity]]></category>
+      <category><![CDATA[i-ching]]></category>
+      <category><![CDATA[8-bit-oracle]]></category>
+      <category><![CDATA[engineering]]></category>
+      <category><![CDATA[dfw-style]]></category>
+      <category><![CDATA[binary]]></category>
+      <category><![CDATA[algorithms]]></category>
+    </item>
     <item>
       <title><![CDATA[Tech Noir, Joy Division, and the Crushing Anxiety of Optimizing for Search Engines That Might Not Exist in Three Years]]></title>
       <link>https://augustinchan.dev/posts/2025-10-24-tech-noir-seo-anxiety-2025</link>
