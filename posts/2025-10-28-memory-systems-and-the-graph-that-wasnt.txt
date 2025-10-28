@@ -5,7 +5,7 @@
 5:I[2778,["280","static/chunks/280-69c0d36265f10a04.js","177","static/chunks/app/layout-4097efd66dbc44a5.js"],"Analytics"]
 9:I[1735,[],""]
 :HL["/_next/static/css/030f407e58226dfd.css","style"]
-0:{"P":null,"b":"e3aKRFh1XTnVKo_Qtdy7Q","p":"","c":["","posts","2025-10-28-memory-systems-and-the-graph-that-wasnt"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","2025-10-28-memory-systems-and-the-graph-that-wasnt","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/030f407e58226dfd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"suppressHydrationWarning":true,"children":[["$","div",null,{"style":{"maxWidth":"1000px","margin":"0 auto","padding":"1rem"},"children":[["$","header",null,{"style":{"borderBottom":"2px solid #333","paddingBottom":"1rem","marginBottom":"2rem"},"children":["$","nav",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap","gap":"1rem"},"children":[["$","div",null,{"children":[["$","$L2",null,{"href":"/","style":{"fontSize":"1.4rem","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Augustin Chan"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":"Building systems that reason"}]]}],["$","div",null,{"style":{"display":"flex","gap":"1.5rem","flexWrap":"wrap"},"children":[["$","$L2",null,{"href":"/","style":{"textDecoration":"none","color":"#666"},"children":"Home"}],["$","$L2",null,{"href":"/about","style":{"textDecoration":"none","color":"#666"},"children":"About"}],["$","$L2",null,{"href":"/blog","style":{"textDecoration":"none","color":"#666"},"children":"Blog"}],["$","a",null,{"href":"https://8bitoracle.ai","target":"_blank","rel":"noopener noreferrer","style":{"textDecoration":"none","color":"#666"},"children":"8-Bit Oracle"}]]}]]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"borderTop":"1px solid #ddd","paddingTop":"2rem","marginTop":"4rem","textAlign":"center","color":"#666"},"children":[["$","div",null,{"children":"© 2025 Augustin Chan aug@digitalrain.studio"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":["$","a",null,{"href":"/rss.xml","style":{"color":"#666","textDecoration":"none"},"children":"RSS Feed"}]}]]}]]}],null,["$","$L5",null,{}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n            // Service worker cleanup for legacy site versions\n            if ('serviceWorker' in navigator) {\n              navigator.serviceWorker.getRegistrations().then(function(registrations) {\n                for(let registration of registrations) {\n                  registration.unregister();\n                }\n              });\n\n              // Register cleanup service worker\n              navigator.serviceWorker.register('/sw.js').then(function(registration) {\n                console.log('Cleanup SW registered');\n              }).catch(function(error) {\n                console.log('Cleanup SW registration failed');\n              });\n            }\n          "}}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-10-28-memory-systems-and-the-graph-that-wasnt","d"],"$L6",{"children":["__PAGE__","$L7",{},null,false]},null,false]},null,false]},null,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"s":false,"S":true}
+0:{"P":null,"b":"yccqbrJQvIubDoJqSIAeq","p":"","c":["","posts","2025-10-28-memory-systems-and-the-graph-that-wasnt"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","2025-10-28-memory-systems-and-the-graph-that-wasnt","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/030f407e58226dfd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"suppressHydrationWarning":true,"children":[["$","div",null,{"style":{"maxWidth":"1000px","margin":"0 auto","padding":"1rem"},"children":[["$","header",null,{"style":{"borderBottom":"2px solid #333","paddingBottom":"1rem","marginBottom":"2rem"},"children":["$","nav",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap","gap":"1rem"},"children":[["$","div",null,{"children":[["$","$L2",null,{"href":"/","style":{"fontSize":"1.4rem","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Augustin Chan"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":"Building systems that reason"}]]}],["$","div",null,{"style":{"display":"flex","gap":"1.5rem","flexWrap":"wrap"},"children":[["$","$L2",null,{"href":"/","style":{"textDecoration":"none","color":"#666"},"children":"Home"}],["$","$L2",null,{"href":"/about","style":{"textDecoration":"none","color":"#666"},"children":"About"}],["$","$L2",null,{"href":"/blog","style":{"textDecoration":"none","color":"#666"},"children":"Blog"}],["$","a",null,{"href":"https://8bitoracle.ai","target":"_blank","rel":"noopener noreferrer","style":{"textDecoration":"none","color":"#666"},"children":"8-Bit Oracle"}]]}]]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"borderTop":"1px solid #ddd","paddingTop":"2rem","marginTop":"4rem","textAlign":"center","color":"#666"},"children":[["$","div",null,{"children":"© 2025 Augustin Chan aug@digitalrain.studio"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":["$","a",null,{"href":"/rss.xml","style":{"color":"#666","textDecoration":"none"},"children":"RSS Feed"}]}]]}]]}],null,["$","$L5",null,{}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n            // Service worker cleanup for legacy site versions\n            if ('serviceWorker' in navigator) {\n              navigator.serviceWorker.getRegistrations().then(function(registrations) {\n                for(let registration of registrations) {\n                  registration.unregister();\n                }\n              });\n\n              // Register cleanup service worker\n              navigator.serviceWorker.register('/sw.js').then(function(registration) {\n                console.log('Cleanup SW registered');\n              }).catch(function(error) {\n                console.log('Cleanup SW registration failed');\n              });\n            }\n          "}}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-10-28-memory-systems-and-the-graph-that-wasnt","d"],"$L6",{"children":["__PAGE__","$L7",{},null,false]},null,false]},null,false]},null,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"s":false,"S":true}
 b:I[3448,[],"OutletBoundary"]
 d:I[9425,[],"AsyncMetadataOutlet"]
 f:I[3448,[],"ViewportBoundary"]
@@ -15,26 +15,26 @@ f:I[3448,[],"ViewportBoundary"]
 7:["$","$1","c",{"children":["$La",null,["$","$Lb",null,{"children":["$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}]
 8:["$","$1","h",{"children":[null,[["$","$Lf",null,{"children":"$L10"}],null],["$","$L11",null,{"children":["$","div",null,{"hidden":true,"children":["$","$12",null,{"fallback":null,"children":"$L13"}]}]}]]}]
 15:I[858,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-2c25259ab009e2fd.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],"default",1]
-14:T41b,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Memory Systems and the Graph That Wasn't: On Not Using Neo4j","description":"What we actually ship in 8-Bit Oracle today: JSONB conversations, hexagram context, and Postgres views — plus why we didn't adopt Neo4j, MemMachine, or mem0 (yet).","datePublished":"2025-10-28T00:00:00.000Z","dateModified":"2025-10-28T00:00:00.000Z","author":{"@type":"Person","name":"Augustin Chan","url":"https://augustinchan.dev","sameAs":["https://x.com/augchan42","https://github.com/augchan42"]},"publisher":{"@type":"Person","name":"Augustin Chan","url":"https://augustinchan.dev"},"url":"https://augustinchan.dev/posts/2025-10-28-memory-systems-and-the-graph-that-wasnt","mainEntityOfPage":{"@type":"WebPage","@id":"https://augustinchan.dev/posts/2025-10-28-memory-systems-and-the-graph-that-wasnt"},"image":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg","keywords":["architecture","ai","memory-systems","postgres","8-bit-oracle","dfw-style","engineering","databases"],"timeRequired":"PT22M"}16:Ta056,
+14:T41a,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Memory Systems and the Graph That Wasn't: On Not Using Neo4j","description":"What we actually ship in 8-Bit Oracle today: JSONB conversations, hexagram context, and Postgres views — plus why we didn't adopt Neo4j, MemMachine, or mem0 (yet).","datePublished":"2025-10-28T00:00:00.000Z","dateModified":"2025-10-28T00:00:00.000Z","author":{"@type":"Person","name":"Augustin Chan","url":"https://augustinchan.dev","sameAs":["https://x.com/augchan42","https://github.com/augchan42"]},"publisher":{"@type":"Person","name":"Augustin Chan","url":"https://augustinchan.dev"},"url":"https://augustinchan.dev/posts/2025-10-28-memory-systems-and-the-graph-that-wasnt","mainEntityOfPage":{"@type":"WebPage","@id":"https://augustinchan.dev/posts/2025-10-28-memory-systems-and-the-graph-that-wasnt"},"image":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg","keywords":["architecture","ai","memory-systems","postgres","8-bit-oracle","dfw-style","engineering","databases"],"timeRequired":"PT9M"}16:T3d88,
 *Or: How We Learned That Relationships Can Just Be Rows with JSONB*
 
 ## The Memory Problem
 
-"Memory" sounds singular. In practice it spans: working context (what are we talking about right now), episodic history (what did we talk about before), and durable facts (what have I learned about you). These are different problems with different storage needs.
+"Memory" sounds singular. In practice it spans three distinct problems: working context (what are we talking about right now), episodic history (what did we talk about before), and durable facts (what have I learned about you).
 
-You start simple: the 8-Bit Oracle should remember what users ask about. When someone consults the I-Ching about their career transition on Monday, then comes back Friday with a follow-up question, the oracle shouldn't start from scratch[^1].
+The 8-Bit Oracle should remember what users ask about. When someone consults the I-Ching about their career transition on Monday, then returns Friday with a follow-up question, the oracle shouldn't start from scratch[^1].
 
-The straightforward approach: store full conversations as JSONB, one row per divination session. This works. This is what 8-Bit Oracle ships today.
+The straightforward approach: store full conversations as JSONB, one row per divination session. This works. This is what we ship today.
 
-But then you read about "memory systems" and discover an entire field dedicated to how AI agents should remember things. You find MemMachine (graph-based temporal relationships) and mem0 (LLM-powered fact extraction). Both are open source. Both solve memory elegantly. Both suggest we might be missing something.
+But then you read about "memory systems"—MemMachine (graph-based temporal relationships) and mem0 (LLM-powered fact extraction). Both solve memory elegantly. Both suggest we might be missing something.
 
-So we analyzed them thoroughly—chunking strategies, deduplication logic, storage architectures—and arrived at a realization: we need their *ideas*, not their *implementations*. Not yet, anyway.
+So we analyzed them thoroughly. After understanding their chunking strategies, deduplication logic, and storage architectures, we arrived at a realization: we need their *ideas*, not their *implementations*. Not yet, anyway.
 
 This is the story of what we actually ship, what we considered adding, and why we're shipping boring Postgres instead of exciting graph databases.
 
-## What 8-Bit Oracle Actually Ships Today
+> **[Full technical deep dive →](/posts/2025-10-28-memory-systems-appendix)** (MemMachine vs mem0 comparison, PostgreSQL graph alternatives, implementation patterns)
 
-Before we explore what we could build, let's be precise about what we have.
+## What 8-Bit Oracle Actually Ships
 
 **Single Source: Supabase Postgres**
 
@@ -43,575 +43,115 @@ No Neo4j. No separate vector database. No external memory service. Just Postgres
 **The Core Table: `divination_sessions`**
 
 ```typescript
-// From src/lib/database.types.ts
 interface DivinationSession {
   id: string;
-  anonymous_user_id: string;
   user_id: string | null;
+  anonymous_user_id: string;
   session_id: string;
-  sequence_number: number;
 
-  // The full conversation (JSONB)
+  // Full conversation (JSONB)
   message_history: Array<{
     role: 'user' | 'assistant';
     content: string;
-    timestamp: string;
   }>;
 
   // Hexagram context (JSONB)
   hexagram_data: {
-    currentHexagram: {
-      number: number;
-      upperTrigram: { english: string };
-      lowerTrigram: { english: string };
-    };
-    transformedHexagram?: {
-      number: number;
-    };
-  } | null;
+    currentHexagram: { number: number; /* ... */ };
+    transformedHexagram?: { number: number };
+  };
 
-  // Metadata
-  title: string;                        // Generated from question
-  summary: string | null;               // Column exists, currently unused
-  neutralized_question_text: string | null;
+  title: string;                  // Generated from question
+  summary: string | null;         // Column exists, currently unused
 
   // LLM accounting
   ai_provider: string | null;
   ai_model: string | null;
   input_tokens: number | null;
   output_tokens: number | null;
-  finish_reason: string | null;
 
-  // Settings
   locale: string;
-  counselor: string | null;
-  divination_mode: string | null;
-
-  timestamp: string | null;
-  is_active: boolean | null;
-}
-```
-
-The SQL schema confirms the shape:
-
-```sql
-CREATE TABLE divination_sessions (
-    id uuid PRIMARY KEY,
-    anonymous_user_id text NOT NULL,
-    user_id uuid REFERENCES auth.users(id),
-    session_id uuid NOT NULL,
-    sequence_number integer NOT NULL,
-
-    message_history jsonb NOT NULL,      -- Full conversation
-    hexagram_data jsonb,                 -- Structured I-Ching context
-
-    title varchar(255) NOT NULL,
-    summary text,                        -- Exists but unused
-    neutralized_question_text text,
-
-    ai_provider text,
-    ai_model text,
-    input_tokens integer,
-    output_tokens integer,
-    finish_reason text,
-
-    locale varchar(15) DEFAULT 'en',
-    counselor text DEFAULT 'MORPHEUS',
-    divination_mode text,
-
-    timestamp timestamptz DEFAULT now(),
-    is_active boolean DEFAULT true
-);
-```
-
-**The Conversation View**
-
-We expose a `conversation_history` view that aggregates messages per session:
-
-```sql
-CREATE VIEW conversation_history AS
-SELECT
-  s.id AS session_id,
-  s.session_type,
-  s.anonymous_user_id,
-  s.user_id,
-  json_agg(
-    json_build_object(
-      'id', m.id,
-      'role', m.role,
-      'content', m.content,
-      'name', m.name,
-      'function_call', m.function_call
-    ) ORDER BY m.sequence_number
-  ) AS message_history
-FROM sessions s
-JOIN messages m ON s.id = m.session_id
-GROUP BY s.id;
-```
-
-**The Profile Table**
-
-User profiles track identity and preferences, but no divination-specific memory:
-
-```typescript
-interface Profile {
-  id: string;
-  username: string | null;
-  full_name: string | null;
-  avatar_url: string | null;
-  bio: string | null;
-  website: string | null;
-
-  // Anonymous user tracking
-  active_anonymous_id: string | null;
-  anonymous_user_ids: string[] | null;   // Links to divination_sessions
-
-  // Preferences
-  theme_preference: string | null;
-  notification_preferences: Json | null;
-  privacy_settings: Json | null;
-
-  is_admin: boolean | null;
-  updated_at: string | null;
-}
-```
-
-Notice what's *not* here:
-- ❌ No `divination_profile` JSON with consolidated facts
-- ❌ No `extracted_facts` per session
-- ❌ No `related_sessions` array
-- ❌ No cross-session similarity graph
-- ❌ No fact extraction or LLM consolidation
-
-**What We Store vs. What We Could Store**
-
-| Data Type            | Currently Stored                    | Could Add (MemMachine/mem0 inspired) |
-|----------------------|-------------------------------------|--------------------------------------|
-| Full conversation    | ✅ `message_history` JSONB           | (already have)                       |
-| Hexagram context     | ✅ `hexagram_data` JSONB             | (already have)                       |
-| Session summary      | ⚠️ `summary` column exists, unused  | Populate with LLM summary            |
-| Extracted facts      | ❌ Not stored                       | `extracted_facts` JSONB column       |
-| Related sessions     | ❌ Not computed                     | `related_sessions` JSONB array       |
-| User profile facts   | ❌ Not consolidated                 | `divination_profile` in profiles     |
-| Vector embeddings    | ⚠️ pgvector exists (for Cantonese slang) | Use for session semantic search   |
-
-This is boring technology. This is what we're running in production. This works[^2].
-
-## The MemMachine Architecture
-
-MemMachine is what happens when you take memory seriously as a graph problem. The core insight: memories aren't isolated facts, they're *nodes in a temporal graph* connected by relationships.
-
-Here's what MemMachine gives you:
-
-**Storage: Neo4j + PostgreSQL**
-- Neo4j stores episodic memories as graph nodes
-- Episodes connect via temporal edges (this happened before that)
-- PostgreSQL stores user profiles (consolidated facts)
-- Vector embeddings live in Neo4j's vector index[^3]
-
-**Memory Types:**
-1. Episodic Memory - Short-term (working memory) and long-term (historical conversations)
-2. Declarative Memory - Searchable derivatives of episodes (chunks, summaries)
-3. Profile Memory - User facts consolidated across sessions using LLM
-
-**Chunking Strategies:**
-- Sentence chunking: NLTK sentence tokenizer, each sentence becomes searchable
-- Concatenation: Join related episodes with separator
-- Identity: Keep episodes intact without splitting
-
-**Deduplication:**
-- UUID-based episode dedup (simple, deterministic)
-- Set-based node dedup (automatic via Python sets)
-- LLM-powered profile consolidation (semantic merging)
-
-The configuration looks like this:
-
-```yaml
-long_term_memory:
-  derivative_deriver: sentence
-  max_episodes: 100
-
-profile_memory:
-  storage: postgresql
-  consolidation_frequency: 5_sessions
-```
-
-This is elegant. This is well-designed. This is what a proper memory system looks like when you have a PhD in cognitive architecture and know what you're doing[^4].
-
-## The mem0 Philosophy
-
-mem0 takes a different approach. Instead of storing full conversation chunks, it extracts and stores *salient facts*.
-
-**Core Insight: Facts > Full Text**
-
-Where MemMachine says "store the conversation as searchable derivatives," mem0 says "extract only what matters and throw away the rest."
-
-```python
-from mem0 import MemoryClient
-
-memory = MemoryClient(apiKey=API_KEY)
-
-# This conversation:
-messages = [
-  {"role": "user", "content": "I'm transitioning from law to tech"},
-  {"role": "assistant", "content": "Big career change. What prompted this?"},
-  {"role": "user", "content": "Burnout. Need more creative work."}
-]
-
-# Becomes this stored memory:
-# "User is transitioning from law to tech due to burnout, seeking creative work"
-```
-
-**Memory Types:**
-- User memory - Facts about individual users across all sessions
-- Session memory - Facts about a specific conversation
-- Agent memory - Facts the agent should remember about itself
-- Multi-level hierarchy - Facts can be session-scoped or user-scoped
-
-**Deduplication: LLM-First**
-
-When you add new memories, mem0 doesn't just append. It asks the LLM: "Given existing memories and new information, should I add, update, or delete?"
-
-```python
-# Existing: "User prefers practical advice"
-# New conversation suggests user wants philosophical depth
-# LLM consolidates: "User prefers practical advice but appreciates philosophical context"
-```
-
-The result is 10% higher accuracy than RAG, 92% lower latency (1.44s vs 17s), and massive token savings because you're not stuffing full conversation history into every prompt[^5].
-
-## The Comparison
-
-Let me lay out what each system offers:
-
-| Feature           | MemMachine                     | mem0                              |
-|-------------------|--------------------------------|-----------------------------------|
-| Storage           | Neo4j + PostgreSQL             | Vector + Graph + Key-Value        |
-| Chunking          | Configurable (sent/concat/id)  | LLM fact extraction               |
-| Deduplication     | UUID + Sets + LLM (profiles)   | LLM consolidation (everything)    |
-| Retrieval         | Graph-based temporal proximity | Vector search + consolidated facts|
-| Infrastructure    | Neo4j required                 | Flexible (Qdrant, Chroma, etc.)   |
-| Philosophy        | Store derivatives, traverse graph | Extract facts, forget details   |
-
-MemMachine is for when you need full conversation preservation with graph-based temporal relationships. You want to ask: "How did the user's thinking evolve from session A through B to C?" You want deterministic deduplication and complete audit trails.
-
-mem0 is for when you need performance and intelligence. You want the LLM to decide what's important. You want fast retrieval and low token costs. You don't care about preserving every message, only the salient information.
-
-Both are excellent. Both solve real problems. Both would work.
-
-So here's the question: which one should 8-Bit Oracle use?
-
-## The Hidden Third Option
-
-Let's look at what 8-Bit Oracle actually stores right now:
-
-```typescript
-// From database.types.ts
-interface DivinationSession {
-  id: string;
-  user_id: string;
-  anonymous_user_ids: string[];
-
-  // The full conversation
-  message_history: Array<{
-    role: 'user' | 'assistant';
-    content: string;
-    timestamp: string;
-  }>;
-
-  // The divination context
-  hexagram_data: {
-    currentHexagram: {
-      number: number;
-      upperTrigram: { english: string };
-      lowerTrigram: { english: string };
-    };
-    transformedHexagram?: {
-      number: number;
-    };
-  };
-
-  // Extracted metadata
-  neutralized_question_text: string;
-  summary: string;
-  locale: string;
-
-  // AI metadata
-  ai_provider: string;
-  ai_model: string;
-  input_tokens: number;
-  output_tokens: number;
-
   timestamp: string;
 }
 ```
 
-This is already a hybrid memory system. We store:
-- Full message history (MemMachine-style preservation)
-- Extracted question (mem0-style fact extraction)
-- Summary (mem0-style consolidation)
-- Hexagram context (domain-specific structured data)
-- Anonymous user tracking (cross-session identity)
+**What We Store vs. What We Could Store**
 
-The only thing we're missing is:
-1. **Cross-session fact extraction** - "This user tends to ask about career decisions"
-2. **Session relationships** - "This reading is similar to their reading from last week"
-3. **Profile consolidation** - "Automatically build user profile from history"
+| Data Type            | Currently Stored                         | Could Add                           |
+|----------------------|------------------------------------------|-------------------------------------|
+| Full conversation    | ✅ `message_history` JSONB                | (already have)                      |
+| Hexagram context     | ✅ `hexagram_data` JSONB                  | (already have)                      |
+| Session summary      | ⚠️ `summary` column exists, unused       | Populate with LLM                   |
+| Extracted facts      | ❌ Not stored                            | `extracted_facts` JSONB             |
+| Related sessions     | ❌ Not computed                          | `related_sessions` array            |
+| User profile facts   | ❌ Not consolidated                      | `divination_profile` in profiles    |
+| Vector embeddings    | ⚠️ pgvector (for Cantonese slang only)   | Use for semantic session search     |
 
-And here's the realization: **we can add all three without Neo4j or mem0**.
+This is boring technology. This is what we're running in production. This works[^2].
 
-## The JSONB Solution
+## What MemMachine and mem0 Taught Us
 
-Let's state the actual requirements:
+We spent time analyzing both systems. Here's what we learned:
 
-**Requirement 1: Find similar past readings**
+**From MemMachine (Graph-Based Memory):**
 
-Not: Build a graph database with temporal edges.
-Not: Deploy Neo4j and maintain graph infrastructure.
+- **Core insight**: Memories are nodes in a temporal graph connected by relationships
+- **Storage**: Neo4j for episodes + PostgreSQL for profiles
+- **Chunking**: Configurable (sentence/concatenation/identity)
+- **Deduplication**: UUID-based (deterministic) + LLM-powered profile consolidation
+- **Strength**: Graph-based context expansion, temporal relationship traversal
 
-Just: Given a new divination session, find related past sessions.
+**From mem0 (Fact-Extraction Memory):**
 
-The graph database solution:
-```cypher
-// Neo4j query
-MATCH (s1:Session {id: $sessionId})
-MATCH (s2:Session {userId: s1.userId})
-WHERE s2.timestamp < s1.timestamp
-  AND (
-    s1.hexagram = s2.hexagram OR
-    s1.theme = s2.theme OR
-    s1.timestamp - s2.timestamp < 7_days
-  )
-CREATE (s1)-[:RELATED_TO {similarity: $score}]->(s2)
-```
+- **Core insight**: Store salient facts, not full text chunks
+- **Storage**: Vector + Graph + Key-Value stores (flexible)
+- **Extraction**: LLM extracts facts from conversations
+- **Deduplication**: LLM decides whether to add/update/delete memories
+- **Strength**: 92% lower latency (1.44s vs 17s), lower token costs
 
-The JSONB solution:
-```typescript
-// After saving new session, find related sessions
-const similarSessions = await supabase
-  .from('divination_sessions')
-  .select('id, title, hexagram_data, timestamp, extracted_facts')
-  .eq('user_id', userId)
-  .neq('id', newSessionId)
-  .order('timestamp', { ascending: false })
-  .limit(10);
+**The Key Philosophical Difference:**
 
-// Calculate similarity (pure TypeScript)
-const relatedSessions = similarSessions
-  .map(session => ({
-    session_id: session.id,
-    relationship: determineRelationship(newSession, session),
-    similarity: calculateSimilarity(newSession, session),
-  }))
-  .filter(r => r.similarity > 0.5)
-  .sort((a, b) => b.similarity - a.similarity)
-  .slice(0, 5);
+- MemMachine: Store derivatives (chunked episodes) with graph relationships
+- mem0: Extract facts, discard the rest
 
-// Store denormalized in the new session
-await supabase
-  .from('divination_sessions')
-  .update({ related_sessions: relatedSessions })
-  .eq('id', newSessionId);
-```
+Both are excellent. Both solve real problems. Both would work.
 
-The similarity calculation doesn't need graph traversal:
+> **[See full comparison table and code examples →](/posts/2025-10-28-memory-systems-appendix)**
 
-```typescript
-function calculateSimilarity(s1: Session, s2: Session): number {
-  let score = 0;
+## Why We Didn't Ship MemMachine or mem0
 
-  // Same hexagram = high similarity
-  if (s1.hexagram_data.currentHexagram.number ===
-      s2.hexagram_data.currentHexagram.number) {
-    score += 0.5;
-  }
+**Scope fit**: Our immediate need is storing complete conversations and hexagram context per reading. JSONB fits perfectly. We don't need multi-hop graph traversal when users just want "show me my past readings about career."
 
-  // Shared trigrams = medium similarity
-  const trigrams1 = [s1.upperTrigram, s1.lowerTrigram];
-  const trigrams2 = [s2.upperTrigram, s2.lowerTrigram];
-  const shared = trigrams1.filter(t => trigrams2.includes(t)).length;
-  score += shared * 0.15;
+**Operational simplicity**: One database (Supabase Postgres), one mental model (JSONB + GIN indexes), one set of backups. Adding Neo4j means another service to deploy, monitor, and maintain. Adding mem0 means managing consolidation loops and fact extraction pipelines.
 
-  // Same theme = medium similarity
-  if (s1.extracted_facts?.primary_concern ===
-      s2.extracted_facts?.primary_concern) {
-    score += 0.2;
-  }
+**Cost/benefit**: Graph traversal and LLM consolidation add complexity. What do users actually get? We haven't validated the user benefit yet, so we're not adding the infrastructure[^3].
 
-  // Temporal proximity (within 7 days) = small boost
-  const daysDiff = Math.abs(
-    new Date(s1.timestamp).getTime() -
-    new Date(s2.timestamp).getTime()
-  ) / (1000 * 60 * 60 * 24);
-  if (daysDiff < 7) {
-    score += 0.15 * (1 - daysDiff / 7);
-  }
-
-  return Math.min(score, 1.0);
-}
-```
-
-No graph database. No Neo4j hosting ($65/month for Aura). No learning Cypher. Just Postgres with GIN indexes and TypeScript similarity scoring[^6].
-
-**Requirement 2: Extract facts from sessions**
-
-The mem0 approach: Send full conversation to LLM, extract salient facts, store in separate memory store.
-
-The JSONB approach: Send full conversation to LLM, extract salient facts, store in same table.
-
-```typescript
-// After saving divination session
-const facts = await extractFacts({
-  question: lastUserMessage.content,
-  interpretation: lastAssistantMessage.content,
-  hexagram: hexagramData.currentHexagram.number,
-  locale: locale,
-});
-
-interface ExtractedFacts {
-  primary_concern: string;      // "Career transition"
-  emotional_state: string;      // "Anxious but hopeful"
-  key_themes: string[];         // ["timing", "patience"]
-  hexagram_themes: string[];    // ["waiting", "nourishment"]
-}
-
-// Store alongside message_history
-await supabase
-  .from('divination_sessions')
-  .update({
-    extracted_facts: facts,
-    question_theme: facts.primary_concern
-  })
-  .eq('id', sessionId);
-```
-
-Schema change required:
-```sql
-ALTER TABLE divination_sessions
-ADD COLUMN extracted_facts JSONB,
-ADD COLUMN question_theme TEXT;
-
-CREATE INDEX idx_question_theme
-  ON divination_sessions(question_theme);
-
-CREATE INDEX idx_extracted_facts_gin
-  ON divination_sessions USING GIN (extracted_facts);
-```
-
-That's it. No separate vector database. No fact store. Just one more JSONB column[^7].
-
-**Requirement 3: Build user profiles across sessions**
-
-The MemMachine approach: Consolidate profile facts in separate PostgreSQL table, use LLM to merge semantically.
-
-The JSONB approach: Consolidate profile facts in existing `profiles` table, use LLM to merge semantically.
-
-```typescript
-// Add to existing profiles table
-interface UserProfile {
-  user_id: string;
-
-  // NEW: Divination profile built from history
-  divination_profile: {
-    life_stage?: string;           // "Early career professional"
-    recurring_themes?: string[];   // ["career", "relationships"]
-    hexagram_affinity?: Array<{
-      number: number;
-      count: number;
-    }>;
-    last_consolidated?: string;    // ISO date
-  };
-}
-
-// Background job runs after every 5 sessions
-async function consolidateUserProfile(userId: string) {
-  const recentSessions = await supabase
-    .from('divination_sessions')
-    .select('extracted_facts, hexagram_data')
-    .eq('user_id', userId)
-    .order('timestamp', { ascending: false })
-    .limit(5);
-
-  const existingProfile = await supabase
-    .from('profiles')
-    .select('divination_profile')
-    .eq('user_id', userId)
-    .single();
-
-  // Use LLM to consolidate
-  const consolidated = await llm.consolidate({
-    existingProfile: existingProfile.divination_profile,
-    newSessions: recentSessions.map(s => s.extracted_facts),
-  });
-
-  await supabase
-    .from('profiles')
-    .update({
-      divination_profile: consolidated,
-    })
-    .eq('user_id', userId);
-}
-```
-
-This is MemMachine's profile consolidation logic, but using Supabase tables you already have instead of a separate PostgreSQL instance[^8].
-
-## What We're Actually Stealing
-
-Let's be precise about what ideas we're taking from each system:
-
-**From mem0:**
-
-1. **Fact extraction** - Don't just store full conversations, extract salient points
-2. **Selective loading** - Load facts first, full history only on demand
-3. **Multi-level context** - Session facts + user profile + similar readings
-
-**From MemMachine:**
-
-1. **Profile consolidation** - LLM-powered semantic merging across sessions
-2. **Temporal relationships** - Track session similarity, not just chronology
-3. **Derivative storage** - Store both raw (message_history) and processed (extracted_facts)
-
-**What we're NOT taking:**
-
-1. ❌ Neo4j graph database
-2. ❌ Vector search for memory retrieval (we have pgvector for Cantonese slang, but not for session search)
-3. ❌ Separate memory service (hosted MemMachine or mem0)
-4. ❌ Graph traversal queries
-5. ❌ Complex deduplication logic
-
-Why? Because we don't actually need them for the memory use cases we're solving.
+**The boring technology principle**: When in doubt, ship the simplest thing that works. We can always add sophistication later when the use case emerges. We can't easily *remove* complexity once we've built dependencies on it[^4].
 
 ## The Graph Question
 
 Here's the thing about graph databases: they're fantastic for graph problems. But not everything that has "relationships" is a graph problem.
 
-A graph problem is when you need to:
-- Find shortest path between nodes
-- Detect communities/clusters
-- Calculate PageRank or centrality
-- Traverse multiple hops efficiently (5+ levels deep)
-- Pattern match on relationship types
+**A graph problem is when you need:**
+- Shortest path between nodes
+- Multi-hop traversal (5+ levels deep)
+- Pattern matching on relationship types
+- PageRank or community detection
 
-An array-of-relationships problem is when you need to:
+**An array-of-relationships problem is when you need:**
 - Find top 5 most similar sessions
 - Check if two sessions share a hexagram
-- Look up related sessions for context
 - Filter by temporal proximity
 
 8-Bit Oracle has the second problem, not the first.
 
-Let's look at actual queries we'd run:
-
-**Query: "Show similar past readings"**
+**Example: "Show similar past readings"**
 
 Graph database (Neo4j):
 ```cypher
-MATCH (s1:Session {id: $id})
-MATCH (s1)-[r:RELATED_TO]->(s2:Session)
+MATCH (s1:Session {id: $id})-[r:RELATED_TO]->(s2:Session)
 WHERE r.similarity > 0.5
-RETURN s2
-ORDER BY r.similarity DESC
-LIMIT 5
+RETURN s2 ORDER BY r.similarity DESC LIMIT 5
 ```
 
 JSONB:
@@ -624,158 +164,30 @@ const session = await supabase
 
 const similar = session.related_sessions
   .filter(r => r.similarity > 0.5)
-  .sort((a, b) => b.similarity - a.similarity)
   .slice(0, 5);
 ```
 
-Performance: JSONB is faster (no network hop, GIN indexed). Complexity: JSONB is simpler (no Cypher, no graph traversal). Maintenance: JSONB is easier (no Neo4j instance to manage).
+Performance: JSONB is faster (no network hop, GIN indexed).
+Complexity: JSONB is simpler (no Cypher, no graph traversal).
+Maintenance: JSONB is easier (no Neo4j instance to manage).
 
-**Query: "How did my thinking evolve from session A to session C?"**
+The similarity calculation doesn't need Neo4j—just TypeScript:
 
-This is actual graph traversal. You want the path: A → B → C, following relationship edges.
-
-Neo4j:
-```cypher
-MATCH path = shortestPath(
-  (a:Session {id: $startId})-[:RELATED_TO*]->(c:Session {id: $endId})
-)
-RETURN path
-```
-
-JSONB:
 ```typescript
-// Recursive search through related_sessions arrays
-function findPath(start: string, end: string, visited = new Set()): Session[] {
-  if (start === end) return [start];
-  if (visited.has(start)) return null;
+function calculateSimilarity(s1: Session, s2: Session): number {
+  let score = 0;
+  if (s1.hexagram === s2.hexagram) score += 0.5;
+  if (s1.question_theme === s2.question_theme) score += 0.2;
 
-  visited.add(start);
-  const current = await getSession(start);
+  // Temporal proximity boost
+  const daysDiff = Math.abs(s1.timestamp - s2.timestamp) / (24*60*60*1000);
+  if (daysDiff < 7) score += 0.15 * (1 - daysDiff/7);
 
-  for (const related of current.related_sessions) {
-    const path = findPath(related.session_id, end, visited);
-    if (path) return [start, ...path];
-  }
-
-  return null;
+  return Math.min(score, 1.0);
 }
 ```
 
-Here, Neo4j wins on elegance and performance. But here's the question: **do users actually want this?**
-
-If a user has sessions A, B, and C about career transitions, do they care about the *path* from A to C? Or do they just want to see "you asked about this before"?
-
-The path query is intellectually interesting. The similarity query is practically useful. And you can implement the similarity query without a graph database[^9].
-
-## PostgreSQL as Graph Lite
-
-If you do decide you need graph-like queries, PostgreSQL has options:
-
-**Option 1: Recursive CTEs**
-
-```sql
-WITH RECURSIVE session_path AS (
-  -- Base case
-  SELECT id, related_sessions, 0 as depth, ARRAY[id] as path
-  FROM divination_sessions
-  WHERE id = $start_id
-
-  UNION ALL
-
-  -- Recursive case
-  SELECT
-    ds.id,
-    ds.related_sessions,
-    sp.depth + 1,
-    sp.path || ds.id
-  FROM divination_sessions ds
-  JOIN session_path sp ON ds.id = ANY(
-    SELECT (jsonb_array_elements(sp.related_sessions)->>'session_id')::uuid
-  )
-  WHERE ds.id != ALL(sp.path)
-    AND sp.depth < 5
-)
-SELECT * FROM session_path WHERE id = $end_id;
-```
-
-This gives you graph traversal without Neo4j. It's standard SQL. It works in Supabase. It's fast enough for small graphs (which user session graphs always are)[^10].
-
-**Option 2: ltree Extension**
-
-PostgreSQL's `ltree` extension is designed for hierarchical data:
-
-```sql
-CREATE EXTENSION ltree;
-
-ALTER TABLE divination_sessions
-ADD COLUMN session_path ltree;
-
--- Path format: user_id.year.theme.hex_number
--- Example: user123.2024.career.hex03
-UPDATE divination_sessions
-SET session_path = text2ltree(
-  user_id || '.' ||
-  EXTRACT(YEAR FROM timestamp)::text || '.' ||
-  question_theme || '.' ||
-  'hex' || LPAD(hexagram_number::text, 2, '0')
-);
-
--- Find all sessions in career journey
-SELECT * FROM divination_sessions
-WHERE session_path <@ 'user123.2024.career'::ltree
-ORDER BY session_path;
-```
-
-This is elegant for "journey" visualization. It's built into Postgres. It's GiST-indexed for performance.
-
-**Option 3: Just Use Arrays**
-
-```sql
--- Add simple relationship table if JSONB feels wrong
-CREATE TABLE session_links (
-  from_session UUID REFERENCES divination_sessions(id),
-  to_session UUID REFERENCES divination_sessions(id),
-  relationship_type TEXT,
-  similarity_score FLOAT,
-  PRIMARY KEY (from_session, to_session)
-);
-
-CREATE INDEX idx_links_from ON session_links(from_session, similarity_score DESC);
-CREATE INDEX idx_links_to ON session_links(to_session, similarity_score DESC);
-
--- Query similar sessions
-SELECT ds.*, sl.similarity_score
-FROM divination_sessions ds
-JOIN session_links sl ON sl.to_session = ds.id
-WHERE sl.from_session = $sessionId
-  AND sl.similarity_score > 0.5
-ORDER BY sl.similarity_score DESC
-LIMIT 5;
-```
-
-This is the classic adjacency list pattern. It's been solving graph-like problems in relational databases since the 1970s. It still works[^11].
-
-## What We Deliberately Don't Have (Yet)
-
-Let's be explicit about what we're *not* shipping:
-
-- ❌ **Neo4j or any graph database** - No temporal relationship edges, no graph traversal
-- ❌ **Vector-based memory retrieval** - We have pgvector (used for Cantonese slang matching in HK commentary generation), but not for session/conversation retrieval
-- ❌ **mem0-style fact store** - No extracted facts, no LLM consolidation loops
-- ❌ **Cross-session similarity** - No `related_sessions` column, no similarity graph
-- ❌ **Profile consolidation** - No `divination_profile` in the profiles table
-
-The `summary` column exists but is currently unused—not populated on insert, not read in UI or server code[^3].
-
-## Why We Didn't Ship MemMachine or mem0
-
-**Scope fit**: Our immediate need is storing complete conversations and hexagram context per reading. JSONB fits perfectly. We don't need multi-hop graph traversal when users just want "show me my past readings about career."
-
-**Operational simplicity**: One database (Supabase Postgres), one mental model (JSONB + GIN indexes), one set of backups. Adding Neo4j means another service to deploy, monitor, version, and maintain. Adding mem0 means managing consolidation loops and fact extraction pipelines.
-
-**Cost/benefit**: Graph traversal and LLM consolidation add complexity. What do users actually get? Faster follow-up responses? Better related reading suggestions? We haven't validated the user benefit yet, so we're not adding the infrastructure.
-
-**The boring technology principle**: When in doubt, ship the simplest thing that works. We can always add sophistication later if the use case emerges. We can't easily *remove* complexity once we've built dependencies on it[^4].
+> **[PostgreSQL graph alternatives (recursive CTEs, ltree, adjacency lists) →](/posts/2025-10-28-memory-systems-appendix)**
 
 ## If/When We Add "Memory++"
 
@@ -783,14 +195,13 @@ We kept the ideas on our roadmap. If we do add enhanced memory, here's how we'd 
 
 **Option 1: Fact Extraction per Session**
 
-Add `extracted_facts JSONB` beside `message_history`:
+Add `extracted_facts` JSONB beside `message_history`:
 
 ```sql
 ALTER TABLE divination_sessions
 ADD COLUMN extracted_facts JSONB,
 ADD COLUMN question_theme TEXT;
 
-CREATE INDEX idx_question_theme ON divination_sessions(question_theme);
 CREATE INDEX idx_facts_gin ON divination_sessions USING GIN (extracted_facts);
 ```
 
@@ -811,29 +222,13 @@ await supabase.from('divination_sessions')
 
 This enables fast filtering ("show readings about career") without full-text search on `message_history`.
 
-**Option 2: Shallow Related Links**
+**Option 2: Related Sessions Graph**
 
-Add a simple adjacency list for "similar past readings":
-
-```sql
-CREATE TABLE session_links (
-  from_session UUID REFERENCES divination_sessions(id) ON DELETE CASCADE,
-  to_session UUID REFERENCES divination_sessions(id) ON DELETE CASCADE,
-  relationship_type TEXT,  -- 'same_hexagram', 'theme_related', 'temporal'
-  similarity_score FLOAT,
-  PRIMARY KEY (from_session, to_session)
-);
-
-CREATE INDEX idx_links_from ON session_links(from_session, similarity_score DESC);
-```
-
-Or denormalize into JSONB (fewer joins):
+Denormalize into JSONB (simpler than separate table):
 
 ```sql
 ALTER TABLE divination_sessions
 ADD COLUMN related_sessions JSONB DEFAULT '[]'::jsonb;
-
-CREATE INDEX idx_related_gin ON divination_sessions USING GIN (related_sessions);
 ```
 
 ```typescript
@@ -853,40 +248,19 @@ await supabase.from('divination_sessions')
   .eq('id', newSessionId);
 ```
 
-Similarity calculation doesn't need Neo4j—just TypeScript:
+**Option 3: User Profile Consolidation**
 
-```typescript
-function calculateSimilarity(s1: Session, s2: Session): number {
-  let score = 0;
-  if (s1.hexagram === s2.hexagram) score += 0.5;
-  if (s1.question_theme === s2.question_theme) score += 0.2;
-  // Temporal proximity boost
-  const daysDiff = Math.abs(s1.timestamp - s2.timestamp) / (24*60*60*1000);
-  if (daysDiff < 7) score += 0.15 * (1 - daysDiff/7);
-  return Math.min(score, 1.0);
-}
-```
-
-**Option 3: Periodic Profile Summary**
-
-Add a compact JSON summary per user in the existing `profiles` table:
+Add compact summary to existing `profiles` table:
 
 ```sql
-ALTER TABLE profiles
-ADD COLUMN divination_profile JSONB;
-
-CREATE INDEX idx_div_profile_gin ON profiles USING GIN (divination_profile);
+ALTER TABLE profiles ADD COLUMN divination_profile JSONB;
 ```
 
 ```typescript
 interface DivinationProfile {
   life_stage?: string;           // "Early career professional"
   recurring_themes?: string[];   // ["career", "relationships"]
-  hexagram_affinity?: Array<{
-    number: number;
-    count: number;
-  }>;
-  last_consolidated?: string;
+  hexagram_affinity?: Array<{ number: number; count: number }>;
 }
 
 // Background job: consolidate after every 5 sessions
@@ -903,96 +277,29 @@ async function consolidateProfile(userId: string) {
 
 Each step stays inside Supabase, leverages GIN indexes, and avoids introducing graph infrastructure until we truly need graph problems solved.
 
-## The Philosophy
-
-This is the same lesson as the binary calendar: **infrastructure is a smell**.
-
-When you find yourself adding databases (Neo4j), you should ask: "Am I solving a graph problem, or do I just have relationships?"
-
-When you find yourself adding services (separate memory layer), you should ask: "Am I solving a distributed systems problem, or do I just have data?"
-
-Most of the time, the answer is: you just have data. And Postgres is very good at data.
-
-MemMachine's insight about temporal graphs is correct. mem0's insight about fact extraction is correct. But the implementation choice—Neo4j, separate vector stores—is solving problems we don't have.
-
-We have:
-- Small graphs (user session histories, not social networks)
-- Simple traversal (1-2 hops, not PageRank)
-- Structured data (hexagrams, themes, timestamps)
-- Existing Postgres infrastructure (Supabase)
-
-For this, JSONB + GIN indexes + TypeScript logic is sufficient. It's not just "good enough." It's actually better:
-
-**Better Performance:**
-- No network hop to Neo4j
-- GIN indexes are fast
-- Denormalized related_sessions = O(1) lookup
-
-**Better Complexity:**
-- One database instead of two
-- SQL instead of SQL + Cypher
-- One mental model instead of two
-
-**Better Operations:**
-- Supabase Postgres (already deployed)
-- No Neo4j or separate vector db instance to maintain
-- Backups are just Postgres backups
-
-The graph database version would be more "real engineering." More components, more complexity, more résumé bullet points. But the JSONB version is more *real*—it acknowledges what we actually need rather than what we think we should need[^12].
+> **[Full implementation examples and migration strategies →](/posts/2025-10-28-memory-systems-appendix)**
 
 ## What We Learned
 
-**Lesson 1: Relationships ≠ Graphs**
+**Steal ideas, not implementations.** MemMachine's profile consolidation is brilliant. mem0's fact extraction is brilliant. Neo4j and separate vector stores are not essential to those ideas. AI tooling lets you extract what you need rather than integrating entire frameworks.
 
-Just because data has relationships doesn't mean you need a graph database. Most relationship queries are shallow (1-2 hops). Postgres handles these fine.
+**Relationships ≠ Graphs.** Just because data has relationships doesn't mean you need a graph database. Most relationship queries are shallow (1-2 hops). Postgres handles these fine.
 
-**Lesson 2: Steal Ideas, Not Implementations**
+**JSONB is a superpower.** Postgres JSONB with GIN indexes gives you schema flexibility (like NoSQL), query power (like SQL), and indexing performance (like specialized stores). It's not "almost as good as a graph database"—it's better for most use cases.
 
-MemMachine's profile consolidation is brilliant. mem0's fact extraction is brilliant. Neo4j and separate vector stores are not essential to those ideas.  AI Tooling lets you more easily extract what you need, rather than integrating entire frameworks.
-
-**Lesson 3: Denormalization Is Underrated**
-
-Storing `related_sessions` as a JSONB array in each session is denormalization. It duplicates data. It violates normal forms. It's also fast, simple, and exactly what we need.
-
-**Lesson 4: JSONB Is a Superpower**
-
-Postgres JSONB with GIN indexes gives you:
-- Schema flexibility (like NoSQL)
-- Query power (like SQL)
-- Indexing performance (like specialized stores)
-
-It's not "almost as good as a real graph database." It's better for most use cases.
-
-## The Test
-
-Here's how you know you've made the right choice: can you explain it without invoking architecture diagrams?
-
-The Neo4j version requires explaining:
-- Graph nodes and edges
-- Cypher query language
-- Vector indexes in graph context
-- When to use graph vs relational
-- How temporal relationships work in graph databases
-
-The JSONB version is:
-- Each session stores an array of related sessions
-- Find similar sessions by comparing hexagrams and themes
-- Store the top 5 in the array
-- Query the array when you need related sessions
-
-One requires a whiteboard. The other fits in a sentence[^13].
+**Infrastructure is a smell.** When you find yourself adding databases (Neo4j) or services (mem0), ask: "Am I solving a graph problem, or do I just have relationships?" Most of the time, you just have data. And Postgres is very good at data[^5].
 
 ## The Principle
 
-Steal ideas, not implementations. Keep the storage model boring, the queries legible, and the infrastructure minimal.
-
-MemMachine taught us: profile consolidation matters, temporal relationships have value, deduplication should be semantic not just structural.
-
-mem0 taught us: fact extraction reduces token costs, selective loading beats full-context dumping, LLM-powered consolidation works.
+Keep the storage model boring, the queries legible, and the infrastructure minimal.
 
 What we're shipping: Postgres with JSONB, full conversations, hexagram context, zero external dependencies.
 
 What we're not shipping (yet): fact extraction, cross-session links, profile consolidation, graph traversal.
+
+When the day comes that we need multi-hop graph traversal ("show me how my thinking evolved from reading A through B to C"), we'll add it. When we need semantic search across all past readings, we'll add pgvector for that use case. When we need LLM-consolidated user profiles, we'll add the background job.
+
+Until then, the oracle remembers through JSONB rows, typed columns, and very fast Postgres queries.
 
 ## Conclusion
 
@@ -1004,13 +311,26 @@ The current system is boring: one Postgres database, JSONB for conversations, JS
 
 This isn't "good enough for now." This is correct for the problem we're solving. Users want the oracle to remember their conversations. We remember them—in `message_history` JSONB, queryable by `session_id`, scoped by `user_id` or `anonymous_user_id`.
 
-When the day comes that we need multi-hop graph traversal ("show me how my thinking evolved from reading A through B to C"), we'll add it. When we need semantic search across all past readings, we'll add pgvector. When we need LLM-consolidated user profiles, we'll add the background job.
-
-Until then, the oracle remembers through JSONB rows, typed columns, and very fast Postgres queries[^5].
-
 Sometimes the journey from "we should use a memory system" to "we already have one" requires researching graph databases, analyzing chunking strategies, comparing deduplication logic, and understanding what MemMachine and mem0 actually do. You have to understand *why* Neo4j exists before you can confidently decide you don't need it.
 
 The memory layer was there all along. We just had to stop trying so hard to add sophistication and start shipping the simple thing.
+
+---
+
+**Technical Specifications (Current Production State)**
+
+- **Database**: Supabase Postgres
+- **Primary table**: `divination_sessions`
+- **Conversation storage**: `message_history` JSONB
+- **Context storage**: `hexagram_data` JSONB, `title`, `summary` (unused)
+- **Identity**: `anonymous_user_id`, optional `user_id`, `session_id`
+- **LLM accounting**: `ai_provider`, `ai_model`, tokens, `finish_reason`
+- **External services for memory**: None
+- **Graph database**: None
+- **Vector database**: pgvector enabled (Cantonese slang matching, not memory retrieval)
+- **Infrastructure cost**: $0 additional (existing Supabase)
+
+The oracle remembers. The oracle uses JSONB. The oracle ships boring technology.
 
 ---
 
@@ -1020,49 +340,13 @@ The memory layer was there all along. We just had to stop trying so hard to add 
 
 [^2]: "Boring technology" per Dan McKinley's "Choose Boring Technology" (2015): use new tech for competitive advantage, use boring tech for everything else. Postgres is 30 years old. JSONB is 10 years old. They're boring. They work. This is exactly where you want boring.
 
-[^3]: The `summary` column was created with optimistic foresight but never wired into the persistence or display logic. It exists in the schema snapshot and generated types, unused. This is fine. Empty columns cost almost nothing in Postgres. If we need it later, it's there. If we don't, it's ignored.
+[^3]: The `summary` column was created with optimistic foresight but never wired into the persistence or display logic. It exists in the schema, unused. This is fine. Empty columns cost almost nothing in Postgres. If we need it later, it's there. If we don't, it's ignored.
 
 [^4]: "Complexity is easy to add, hard to remove" is a corollary of Lehman's Laws of Software Evolution. Every dependency you add—Neo4j, mem0, vector stores—creates inertia. Teams build on it, monitoring depends on it, backups expect it. Removing it later means migration risk and coordination cost. Better to add complexity when you have validated user demand, not speculative architectural elegance.
 
 [^5]: JSONB performance at scale: Postgres JSONB with GIN indexes handles millions of rows efficiently. Our `message_history` arrays are small (typically 2-10 messages per session). GIN index lookups are O(log n) on keys, O(1) on row retrieval. For our data shape (thousands of users, tens of sessions each), this is sub-10ms query time. We're nowhere near needing distributed systems or specialized document stores.
-
-[^6]: GIN (Generalized Inverted Index) is Postgres's index type for JSONB, arrays, and full-text search. It's based on inverted indexes (like Lucene/Elasticsearch) but integrated into Postgres. For JSONB queries with containment operators (`@>`, `?`, etc.), GIN indexes are extremely fast—often faster than dedicated document stores because there's no network hop.
-
-[^7]: The field of memory systems for AI agents spans "memory-augmented neural networks" and "episodic memory for agents." Both research communities independently discovered that AI systems need three types of memory: working (current context), episodic (past events), and semantic (learned facts). Humans figured this out in cognitive psychology in the 1960s. AI is catching up. MemMachine and mem0 represent two different implementations of these principles.
-
-[^8]: MemMachine comes from academic research on cognitive architectures for AI agents. The design shows: theoretically grounded, well-abstracted, handles edge cases you wouldn't think of. This is a compliment. It's also why it might be overkill for a production app that just needs to remember user conversations without multi-hop graph traversal.
-
-[^9]: Mem0's benchmarks: 10% higher accuracy (67% vs 61%) compared to RAG baseline, and 92% lower latency (1.44s vs 17s) compared to full-context approach. The latency improvement comes from storing facts instead of full conversations—smaller retrieval, smaller prompts, faster inference. The accuracy comes from LLM-powered consolidation that removes contradictions and duplicates. These are real benefits, if you need them.
-
-[^10]: Recursive CTEs in Postgres have depth limits (default 100) and performance degrades with depth. But user session graphs are shallow. Most users have dozens of sessions, not thousands. Most relationships are 1-2 hops, not 10. For this scale, recursive CTEs are perfectly adequate. You don't need Neo4j until you're doing multi-hop traversal on millions of nodes with complex relationship types.
-
-[^11]: The adjacency list pattern (relationships in a separate table with from/to foreign keys) dates to the 1970s. It's in every database textbook. It's "boring technology" in the best sense—well-understood, widely supported, obviously correct. Modern graph databases offer query expressiveness and traversal optimizations. But for simple relationship queries (top N similar sessions), the old pattern still works fine.
-
-[^12]: Rich Hickey's "Simple Made Easy" distinction applies: graph databases are *easy* to reach for because they're marketed as "the solution for connected data." Postgres + JSONB is *simple* because it doesn't add dependencies, doesn't require new mental models, solves the actual problem without extra machinery. Easy is what you think of first. Simple is what you wish you'd thought of first.
-
-[^13]: The "can you explain it without a whiteboard" test is surprisingly reliable. If the architecture requires diagrams to understand, it's probably too complex for the problem. If you can explain it in one sentence ("we store full conversations as JSONB in Postgres"), it's probably about right. This isn't always true—sometimes complex problems require complex solutions—but it's true more often than we admit.
-
----
-
-**Technical Specifications (Current Production State)**
-
-- **Database**: Supabase Postgres
-- **Primary table**: `divination_sessions`
-- **Conversation storage**: `message_history` JSONB (ordered by `sequence_number`)
-- **Context storage**: `hexagram_data` JSONB, plus `title` (schema has `summary`, currently unused)
-- **Identity**: `anonymous_user_id`, optional `user_id`, `session_id`
-- **LLM accounting**: `ai_provider`, `ai_model`, `input_tokens`, `output_tokens`, `finish_reason`
-- **Views**: `conversation_history` for aggregated messages
-- **External services for memory**: None
-- **Graph database**: None
-- **Vector database**: pgvector enabled (used for Cantonese slang matching, not memory retrieval)
-- **Fact extraction**: Not implemented
-- **Profile consolidation**: Not implemented
-- **Infrastructure cost**: $0 additional (existing Supabase)
-
-The oracle remembers. The oracle uses JSONB. The oracle ships boring technology.
-a:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$14"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://augustinchan.dev\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://augustinchan.dev/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Memory Systems and the Graph That Wasn't: On Not Using Neo4j\",\"item\":\"https://augustinchan.dev/posts/2025-10-28-memory-systems-and-the-graph-that-wasnt\"}]}"}}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2rem"},"children":[["$","h1",null,{"style":{"fontSize":"2em","marginBottom":"0.5rem"},"children":"Memory Systems and the Graph That Wasn't: On Not Using Neo4j"}],["$","div",null,{"style":{"color":"#666","fontSize":"1em","marginBottom":"1rem"},"children":["October 28, 2025",[" • ",22," min read"]]}],["$","p",null,{"style":{"fontSize":"1.1em","color":"#555","fontStyle":"italic","marginBottom":"2rem"},"children":"What we actually ship in 8-Bit Oracle today: JSONB conversations, hexagram context, and Postgres views — plus why we didn't adopt Neo4j, MemMachine, or mem0 (yet)."}]]}],["$","$L15",null,{"content":"$16"}],"$L17"]}]]
-17:["$","aside",null,{"style":{"marginTop":"4rem","paddingTop":"2rem","borderTop":"2px solid #ddd"},"children":[["$","h2",null,{"style":{"fontSize":"1.5em","marginBottom":"1.5rem"},"children":"Related Posts"}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","gap":"1.5rem"},"children":[["$","article","2025-10-28-binary-calendar-hexagram-simplicity",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-10-28-binary-calendar-hexagram-simplicity","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"The Daily Hexagram: A Journey from Complexity to Elegance"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"How we learned to stop worrying and love the binary calendar. On deleting databases, removing cron jobs, and discovering that the oracle was encoded in the date all along."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"October 28, 2025"}]]}],["$","article","2025-10-24-tech-noir-seo-anxiety-2025",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-10-24-tech-noir-seo-anxiety-2025","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Tech Noir, Joy Division, and the Crushing Anxiety of Optimizing for Search Engines That Might Not Exist in Three Years"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"On replacing Wilhelm with Unknown Pleasures, cultural anchoring vs keyword stuffing, and whether we're all just shouting into the void while ChatGPT eats our lunch. Also: footnotes."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"October 24, 2025"}]]}],["$","article","2025-09-27-llm-reasoning-pattern-classification-failure-modes",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-09-27-llm-reasoning-pattern-classification-failure-modes","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"When LLM Reasoning Becomes the Pattern - Meta-Classification Failure Modes"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Hard constraints beat soft self-regulation when an LLM's reasoning converges to a template."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"September 27, 2025"}]]}]]}]]}]
+a:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$14"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://augustinchan.dev\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://augustinchan.dev/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Memory Systems and the Graph That Wasn't: On Not Using Neo4j\",\"item\":\"https://augustinchan.dev/posts/2025-10-28-memory-systems-and-the-graph-that-wasnt\"}]}"}}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2rem"},"children":[["$","h1",null,{"style":{"fontSize":"2em","marginBottom":"0.5rem"},"children":"Memory Systems and the Graph That Wasn't: On Not Using Neo4j"}],["$","div",null,{"style":{"color":"#666","fontSize":"1em","marginBottom":"1rem"},"children":["October 28, 2025",[" • ",9," min read"]]}],["$","p",null,{"style":{"fontSize":"1.1em","color":"#555","fontStyle":"italic","marginBottom":"2rem"},"children":"What we actually ship in 8-Bit Oracle today: JSONB conversations, hexagram context, and Postgres views — plus why we didn't adopt Neo4j, MemMachine, or mem0 (yet)."}]]}],["$","$L15",null,{"content":"$16"}],"$L17"]}]]
+17:["$","aside",null,{"style":{"marginTop":"4rem","paddingTop":"2rem","borderTop":"2px solid #ddd"},"children":[["$","h2",null,{"style":{"fontSize":"1.5em","marginBottom":"1.5rem"},"children":"Related Posts"}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","gap":"1.5rem"},"children":[["$","article","2025-10-28-binary-calendar-hexagram-simplicity",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-10-28-binary-calendar-hexagram-simplicity","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"The Daily Hexagram: A Journey from Complexity to Elegance"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"How we learned to stop worrying and love the binary calendar. On deleting databases, removing cron jobs, and discovering that the oracle was encoded in the date all along."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"October 28, 2025"}]]}],["$","article","2025-10-28-memory-systems-appendix",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-10-28-memory-systems-appendix","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Memory Systems Deep Dive: Technical Appendix"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"Complete technical comparison of MemMachine vs mem0, PostgreSQL graph alternatives (recursive CTEs, ltree, adjacency lists), and detailed implementation strategies for AI agent memory systems."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"October 28, 2025"}]]}],["$","article","2025-10-24-tech-noir-seo-anxiety-2025",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-10-24-tech-noir-seo-anxiety-2025","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Tech Noir, Joy Division, and the Crushing Anxiety of Optimizing for Search Engines That Might Not Exist in Three Years"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"On replacing Wilhelm with Unknown Pleasures, cultural anchoring vs keyword stuffing, and whether we're all just shouting into the void while ChatGPT eats our lunch. Also: footnotes."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"October 24, 2025"}]]}]]}]]}]
 10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 c:null
 e:{"metadata":[["$","title","0",{"children":"Memory Systems and the Graph That Wasn't: On Not Using Neo4j | Augustin Chan"}],["$","meta","1",{"name":"description","content":"What we actually ship in 8-Bit Oracle today: JSONB conversations, hexagram context, and Postgres views — plus why we didn't adopt Neo4j, MemMachine, or mem0 (yet)."}],["$","link","2",{"rel":"author","href":"https://augustinchan.dev"}],["$","meta","3",{"name":"author","content":"Augustin Chan"}],["$","meta","4",{"name":"keywords","content":"AI,Machine Learning,Web3,Software Engineering,React,Next.js,TypeScript,Blog"}],["$","meta","5",{"name":"creator","content":"Augustin Chan"}],["$","meta","6",{"name":"publisher","content":"Augustin Chan"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","9",{"rel":"canonical","href":"https://augustinchan.dev/posts/2025-10-28-memory-systems-and-the-graph-that-wasnt"}],["$","meta","10",{"property":"og:title","content":"Memory Systems and the Graph That Wasn't: On Not Using Neo4j"}],["$","meta","11",{"property":"og:description","content":"What we actually ship in 8-Bit Oracle today: JSONB conversations, hexagram context, and Postgres views — plus why we didn't adopt Neo4j, MemMachine, or mem0 (yet)."}],["$","meta","12",{"property":"og:url","content":"https://augustinchan.dev/posts/2025-10-28-memory-systems-and-the-graph-that-wasnt"}],["$","meta","13",{"property":"og:site_name","content":"Augustin Chan"}],["$","meta","14",{"property":"og:locale","content":"en_US"}],["$","meta","15",{"property":"og:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}],["$","meta","16",{"property":"og:image:width","content":"400"}],["$","meta","17",{"property":"og:image:height","content":"400"}],["$","meta","18",{"property":"og:image:alt","content":"Memory Systems and the Graph That Wasn't: On Not Using Neo4j"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2025-10-28T00:00:00.000Z"}],["$","meta","21",{"property":"article:author","content":"Augustin Chan"}],["$","meta","22",{"property":"article:section","content":"Technology"}],["$","meta","23",{"property":"article:tag","content":"AI"}],["$","meta","24",{"property":"article:tag","content":"Machine Learning"}],["$","meta","25",{"property":"article:tag","content":"Web3"}],["$","meta","26",{"property":"article:tag","content":"Software Engineering"}],["$","meta","27",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","28",{"name":"twitter:creator","content":"@augchan42"}],["$","meta","29",{"name":"twitter:title","content":"Memory Systems and the Graph That Wasn't: On Not Using Neo4j"}],["$","meta","30",{"name":"twitter:description","content":"What we actually ship in 8-Bit Oracle today: JSONB conversations, hexagram context, and Postgres views — plus why we didn't adopt Neo4j, MemMachine, or mem0 (yet)."}],["$","meta","31",{"name":"twitter:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}]],"error":null,"digest":"$undefined"}
