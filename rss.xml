@@ -7,7 +7,7 @@
     <link>https://augustinchan.dev</link>
     <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Oct 2025 10:27:27 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 07 Nov 2025 13:18:32 GMT</lastBuildDate>
     <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Next.js</generator>
     <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
@@ -18,6 +18,25 @@
       <title>Augustin Chan</title>
       <link>https://augustinchan.dev</link>
     </image>
+    <item>
+      <title><![CDATA[When the Official Way Fails: REST API, Anti-Bot AI, and Why I Spent 5 Hours Building a Bridge Nobody Should Need]]></title>
+      <link>https://augustinchan.dev/posts/2025-11-07-wordpress-rest-api-siteground-security-ssh-wpcli</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-11-07-wordpress-rest-api-siteground-security-ssh-wpcli</guid>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[A technical post-mortem on why WordPress's REST API is theoretically elegant but practically unusable for CI/CD, how SiteGround's security theater blocks legitimate automation, and why SSH + WP-CLI is the uncomfortable truth about 'modern' CMS workflows.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[wordpress]]></category>
+      <category><![CDATA[devops]]></category>
+      <category><![CDATA[ci-cd]]></category>
+      <category><![CDATA[automation]]></category>
+      <category><![CDATA[rest-api]]></category>
+      <category><![CDATA[ssh]]></category>
+      <category><![CDATA[wpcli]]></category>
+      <category><![CDATA[siteground]]></category>
+      <category><![CDATA[cms]]></category>
+      <category><![CDATA[ai-agents]]></category>
+      <category><![CDATA[dfw-style]]></category>
+    </item>
     <item>
       <title><![CDATA[The Daily Hexagram: A Journey from Complexity to Simplicity]]></title>
       <link>https://augustinchan.dev/posts/2025-10-28-binary-calendar-hexagram-simplicity</link>
