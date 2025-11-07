@@ -7,7 +7,7 @@
     <link>https://augustinchan.dev</link>
     <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Nov 2025 13:26:22 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 07 Nov 2025 13:38:46 GMT</lastBuildDate>
     <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Next.js</generator>
     <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
@@ -19,7 +19,7 @@
       <link>https://augustinchan.dev</link>
     </image>
     <item>
-      <title><![CDATA[When the Official Way Fails: REST API, Anti-Bot AI, and Why I Spent 5 Hours Building a Bridge Nobody Should Need]]></title>
+      <title><![CDATA[LLMs Love Markdown. CMSs Love Databases. I Built a WordPress Bridge Nobody Should Need.]]></title>
       <link>https://augustinchan.dev/posts/2025-11-07-wordpress-rest-api-siteground-security-ssh-wpcli</link>
       <guid isPermaLink="true">https://augustinchan.dev/posts/2025-11-07-wordpress-rest-api-siteground-security-ssh-wpcli</guid>
       <pubDate>Fri, 07 Nov 2025 00:00:00 GMT</pubDate>
@@ -35,6 +35,7 @@
       <category><![CDATA[siteground]]></category>
       <category><![CDATA[cms]]></category>
       <category><![CDATA[ai-agents]]></category>
+      <category><![CDATA[markdown]]></category>
       <category><![CDATA[dfw-style]]></category>
     </item>
     <item>
