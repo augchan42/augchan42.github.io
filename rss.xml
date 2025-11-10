@@ -7,7 +7,7 @@
     <link>https://augustinchan.dev</link>
     <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Nov 2025 09:48:13 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 10 Nov 2025 09:49:50 GMT</lastBuildDate>
     <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Next.js</generator>
     <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
@@ -19,7 +19,7 @@
       <link>https://augustinchan.dev</link>
     </image>
     <item>
-      <title><![CDATA[On Going Legit (Or: How I Learned to Stop Scraping and Love the Rate Limit)]]></title>
+      <title><![CDATA[On Going Legit on Twitter/X (Or: How I Learned to Stop Scraping and Love the Rate Limit)]]></title>
       <link>https://augustinchan.dev/posts/2025-11-10-twitter-api-hell</link>
       <guid isPermaLink="true">https://augustinchan.dev/posts/2025-11-10-twitter-api-hell</guid>
       <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
@@ -29,6 +29,8 @@
       <category><![CDATA[twitter]]></category>
       <category><![CDATA[debugging]]></category>
       <category><![CDATA[technical-debt]]></category>
+      <category><![CDATA[scraping]]></category>
+      <category><![CDATA[graphql]]></category>
     </item>
     <item>
       <title><![CDATA[LLMs Love Markdown. CMSs Love Databases. I Built a WordPress Bridge Nobody Should Need.]]></title>
