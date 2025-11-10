@@ -1,0 +1,316 @@
+1:"$Sreact.fragment"
+2:I[6280,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-26d0d44f95223fbc.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],""]
+3:I[7381,[],""]
+4:I[7969,[],""]
+5:I[2778,["280","static/chunks/280-69c0d36265f10a04.js","177","static/chunks/app/layout-4097efd66dbc44a5.js"],"Analytics"]
+9:I[1735,[],""]
+:HL["/_next/static/css/030f407e58226dfd.css","style"]
+0:{"P":null,"b":"waCRACv22HvvrbLcC7LoW","p":"","c":["","posts","2025-11-10-twitter-api-hell"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","2025-11-10-twitter-api-hell","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/030f407e58226dfd.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"suppressHydrationWarning":true,"children":[["$","div",null,{"style":{"maxWidth":"1000px","margin":"0 auto","padding":"1rem"},"children":[["$","header",null,{"style":{"borderBottom":"2px solid #333","paddingBottom":"1rem","marginBottom":"2rem"},"children":["$","nav",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap","gap":"1rem"},"children":[["$","div",null,{"children":[["$","$L2",null,{"href":"/","style":{"fontSize":"1.4rem","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Augustin Chan"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":"Building systems that reason"}]]}],["$","div",null,{"style":{"display":"flex","gap":"1.5rem","flexWrap":"wrap"},"children":[["$","$L2",null,{"href":"/","style":{"textDecoration":"none","color":"#666"},"children":"Home"}],["$","$L2",null,{"href":"/about","style":{"textDecoration":"none","color":"#666"},"children":"About"}],["$","$L2",null,{"href":"/blog","style":{"textDecoration":"none","color":"#666"},"children":"Blog"}],["$","a",null,{"href":"https://8bitoracle.ai","target":"_blank","rel":"noopener noreferrer","style":{"textDecoration":"none","color":"#666"},"children":"8-Bit Oracle"}]]}]]}]}],["$","main",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"borderTop":"1px solid #ddd","paddingTop":"2rem","marginTop":"4rem","textAlign":"center","color":"#666"},"children":[["$","div",null,{"children":"© 2025 Augustin Chan aug@digitalrain.studio"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":["$","a",null,{"href":"/rss.xml","style":{"color":"#666","textDecoration":"none"},"children":"RSS Feed"}]}]]}]]}],null,["$","$L5",null,{}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n            // Service worker cleanup for legacy site versions\n            if ('serviceWorker' in navigator) {\n              navigator.serviceWorker.getRegistrations().then(function(registrations) {\n                for(let registration of registrations) {\n                  registration.unregister();\n                }\n              });\n\n              // Register cleanup service worker\n              navigator.serviceWorker.register('/sw.js').then(function(registration) {\n                console.log('Cleanup SW registered');\n              }).catch(function(error) {\n                console.log('Cleanup SW registration failed');\n              });\n            }\n          "}}]]}]}]]}],{"children":["posts",["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025-11-10-twitter-api-hell","d"],"$L6",{"children":["__PAGE__","$L7",{},null,false]},null,false]},null,false]},null,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"s":false,"S":true}
+b:I[3448,[],"OutletBoundary"]
+d:I[9425,[],"AsyncMetadataOutlet"]
+f:I[3448,[],"ViewportBoundary"]
+11:I[3448,[],"MetadataBoundary"]
+12:"$Sreact.suspense"
+6:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+7:["$","$1","c",{"children":["$La",null,["$","$Lb",null,{"children":["$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}]
+8:["$","$1","h",{"children":[null,[["$","$Lf",null,{"children":"$L10"}],null],["$","$L11",null,{"children":["$","div",null,{"hidden":true,"children":["$","$12",null,{"fallback":null,"children":"$L13"}]}]}]]}]
+14:I[858,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","498","static/chunks/498-26d0d44f95223fbc.js","858","static/chunks/app/posts/%5Bslug%5D/page-f2fcc54e48c4632e.js"],"default",1]
+15:T3ba0,
+Here's the thing about deciding to do things The Official Way[^1]: you think you're making your life easier—cleaner code, better documentation, compliance with Terms of Service—but what you're actually doing is trading one set of problems (scraping is brittle, cookies expire, the library maintainer might abandon ship) for a completely different set of problems that somehow feel more *legitimate* but are actually just as annoying, except now you can't even complain about them because you signed up for this.
+
+This is a story about three days in November 2025 when I migrated a Twitter bot from cookie-based scraping to Twitter's Official API, hit every possible rate limit and restriction, tried to be clever about it, failed, tried again, failed differently, and eventually arrived at what software engineers call "a working solution" and what everyone else calls "good enough."
+
+*Context: The code in this post is from a heavily customized fork of a very old version of the [ElizaOS](https://github.com/elizaOS/eliza) framework. Your mileage may vary, but the API lessons apply universally.*
+
+## Act 1: The Great Migration (Nov 8-9)
+
+The bot had been using `agent-twitter-client`, which is one of those unofficial libraries that does the thing Twitter doesn't want you to do, which is to say it logs in like a browser and scrapes the DOM[^2]. This worked fine until it didn't—cookies would expire, Twitter would change their HTML structure, the rate limiting was mysterious and seemed almost personal—and more importantly it violated the Terms of Service, which matters if you're trying to run something that won't get banned.
+
+So: time to go legit. Commit `190165baf` on Nov 8: "Refactor Twitter client to use Twitter API v2."
+
+The migration itself was straightforward in that deeply tedious way where straightforward means "I know exactly what needs to happen" but tedious means "I have to change it in 47 different places":
+
+- Ripped out the cookie-based authentication
+- Installed `twitter-api-v2`, the official library
+- Set up OAuth 1.0a (which is the version where you have four different strings—API key, API secret, access token, access token secret—and you have to keep them all straight)
+- Updated environment variables across multiple character configurations because yes, this is a multi-bot system, each with different credentials, because why keep things simple
+
+```typescript
+// Four strings that must all be correct or nothing works
+const auth = new TwitterAuth({
+  appKey: process.env.TWITTER_API_KEY,
+  appSecret: process.env.TWITTER_API_SECRET_KEY,
+  accessToken: process.env.TWITTER_ACCESS_TOKEN,
+  accessSecret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
+});
+```
+
+First lesson learned: Official APIs come with rate limits that are *documented*, which sounds like an improvement until you realize documentation doesn't make the limits any less restrictive.
+
+## Act 2: Nobody Reads The Documentation Including Me (Nov 9)
+
+Three commits on Nov 9 (`dfbde35f3`, `3bd430c4e`, `cdb62c304`) were basically me realizing that Future Me and Future Other People would have absolutely no idea how this OAuth configuration worked, so I wrote:
+
+- A 187-line README explaining the setup process
+- Updates to `CLAUDE.md` with architectural notes
+- Character-specific configuration documentation
+
+Also discovered during this documentation spree: The free tier has a **100 post retrieval cap** *per month*. Not 10,000. Not 1,000. **One hundred.** That's approximately five mention checks if each returns 20 tweets. Not rate limits per 15 minutes—which would be annoying but manageable—but a hard monthly cap, like a cell phone plan from 2005, except worse because at least those gave you more than 100 minutes. [X's own post-cap doc spells it out in painful detail.](https://docs.x.com/x-api/fundamentals/post-cap)
+
+The error response calls this `product_name: 'standard-basic'`, which sounds like it might be a paid tier but is actually X's internal SKU for the free tier, a naming choice that confused me for an embarrassing amount of time.
+
+This will become relevant approximately **one hour** later.
+
+## Act 3: Hitting The Wall (Nov 9-10)
+
+The bot kept crashing. Not in interesting ways—just boring "uncaught exception" crashes whenever it hit API limits. So I spent several commits (`85a9ff6e3`, `2142dab44`, `6940b0116`) implementing what I call "survival mechanisms" and what more disciplined engineers call "proper error handling":
+
+1. **TWITTER_INTERACTIONS_ENABLE flag** - A kill switch to disable mention monitoring entirely, because sometimes the only way to win is not to play
+2. **DKG query timeout** - Stop waiting forever for failed operations (the technical term for "forever" here is "45 seconds" but in computer time that's geological)
+3. **Try-catch wrapping** - Around timeline population so startup doesn't crash
+4. **Dynamic polling intervals** - Adjust check frequency when rate-limited
+
+Here's where the math got ugly: Every interaction check cost 20 tweets from the monthly cap. The bot was polling every 120 seconds.
+
+First check: 20 posts consumed (80 left)
+Second check: 20 posts consumed (60 left)
+Third check: 20 posts consumed (40 left)
+Fourth check: 20 posts consumed (20 left)
+Fifth check: 20 posts consumed (0 left)
+
+Monthly cap exhausted. Time elapsed: under one hour.
+
+You see the problem.
+
+## Act 4: Getting Smart (Nov 10 morning)
+
+Commit `2c1d35b29`: "Optimize Twitter API usage for free tier."
+
+This is where I actually read the API documentation instead of just skimming it with the confidence of someone who has "done this before"[^3]. Three optimizations that collectively saved 95% of API usage:
+
+**1. The `since_id` parameter** - This is the genius one. Instead of fetching the same 20 most recent tweets every check and re-checking if they're new, you pass the ID of the last tweet you've seen and Twitter only returns *newer* tweets. Transformed the operation from O(n) re-scanning to O(new). Like magic except it's just basic API design.
+
+```typescript
+// Before: Wasting 20 posts from the cap every check
+const mentions = await client.fetchSearchTweets(
+  `@${username}`,
+  20,
+  SearchMode.Latest
+);
+// Returns the same 20 tweets. Every. Single. Time.
+
+// After: Only fetching new tweets
+const mentions = await client.fetchSearchTweets(
+  `@${username}`,
+  20,
+  SearchMode.Latest,
+  undefined, // cursor
+  lastCheckedTweetId  // since_id - the magic parameter
+);
+// Only returns tweets newer than lastCheckedTweetId
+```
+
+**2. The `-from:username` query modifier** - Excludes your own tweets from search results, which sounds obvious but I'd been paying API costs to fetch and filter my own tweets for two days.
+
+```typescript
+// Adding the second optimization
+const mentions = await client.fetchSearchTweets(
+  `@${username} -from:${username}`,  // Exclude own tweets from results
+  20,
+  SearchMode.Latest,
+  undefined,
+  lastCheckedTweetId
+);
+// Went from 20 posts/check to ~0-5 posts/check with both optimizations
+```
+
+**3. Increased polling interval** - From 120 seconds to 300 seconds (5 minutes). Less frequent checks, fewer API calls, still responsive enough for a bot that doesn't need to respond instantly because we're not running an emergency service here.
+
+New math (optimistic scenario assuming `since_id` actually works and deduplication helps): Maybe 5 new unique mentions per day × 20 posts to fetch them = 100 posts per month.
+
+*Exactly* at the cap. Barely sustainable. Problem... mostly solved? Technically viable in the same way that technically you could survive on 800 calories a day.
+
+Except I also fixed pagination handling (`PaginationState` type to track v2 vs v1.1 cursors properly) and photo/video filters that were getting dropped in fallback scenarios, because when you're in there fixing things you might as well fix *all* the things.
+
+## Act 5: The v1.1 Gambit (Nov 10 mid-day)
+
+Here's where I got clever, which is always dangerous.
+
+I thought: "Wait, maybe v1.1 endpoints have different limits than v2? Maybe that's the escape hatch?"
+
+Commits `241b6c80e` and `b4d5fb56f` implemented a full v1.1 fallback system:
+
+- Added `TwitterApiv1` client alongside the v2 client
+- Built a fallback chain: Try v2 → if 429 (rate limit exceeded), try v1.1
+- v1.1 support for search, user timeline, home timeline, tweet creation
+
+```typescript
+// The beautiful fallback that didn't work
+export async function* searchTweets(
+  query: string,
+  maxTweets: number,
+  searchMode: SearchMode,
+  auth: TwitterAuth,
+  sinceId?: string,
+): AsyncGenerator<Tweet, void> {
+  const client = auth.getV2Client();
+
+  try {
+    // Try v2 first
+    const searchIterator = await client.v2.search(query, {
+      max_results: Math.min(maxTweets, 100),
+      // ... other params
+    });
+
+    for await (const tweet of searchIterator) {
+      yield convertToTweet(tweet);
+    }
+  } catch (error) {
+    console.warn("v2 search failed, trying v1.1 fallback:", error);
+
+    // Fall back to v1.1
+    const v1Client = auth.getV1Client();
+    const searchResults = await v1Client.get("search/tweets.json", {
+      q: query,  // Same query string, different API version
+      count: Math.min(maxTweets, 100),
+      since_id: sinceId,
+    });
+
+    for (const tweet of searchResults.statuses) {
+      yield convertToTweet(tweet);
+    }
+  }
+}
+```
+
+The hypothesis was sound. The implementation was clean. The testing was thorough.
+
+The results were crushing.
+
+Free tier blocks v1.1 read endpoints entirely. HTTP 403, error code 453, message: "You currently have access to a subset of X API V2 endpoints and limited v1.1 endpoints (e.g. media post, oauth) only."
+
+```json
+{
+  "errors": [{
+    "message": "You currently have access to a subset of X API V2 endpoints and limited v1.1 endpoints (e.g. media post, oauth) only.",
+    "code": 453
+  }]
+}
+```
+
+What v1.1 actually allows on free tier:
+- ✅ POST tweet (media upload, OAuth)
+- ❌ GET search/tweets
+- ❌ GET statuses/home_timeline
+- ❌ GET statuses/user_timeline
+
+So: Can post, can't read. The v1.1 "fallback" was a beautiful piece of engineering that had absolutely no operational value.
+
+## Act 6: Acceptance (Nov 10 afternoon)
+
+This is the part where you stop fighting reality and start working with it.
+
+Final commit `b4d5fb56f`: "Enhanced error handling and logging."
+
+Implemented graceful degradation instead of clever workarounds:
+
+1. **v1AccessDisabled flag** - After the first 403/453 error, permanently disable v1.1 attempts. Don't retry in a loop like an optimistic fool.
+2. **getV1ClientIfAvailable()** - Safe accessor that returns null if v1.1 is disabled, preventing crashes.
+3. **handleV1AccessError()** - Detects access denial errors, logs appropriately, prevents infinite retry loops.
+4. **Return empty results** - Instead of throwing exceptions when limits are hit, just return empty arrays and let the bot continue functioning.
+
+```typescript
+handleV1AccessError(error: any, context: string): boolean {
+  const isAccessError =
+    error?.code === 403 ||
+    error?.code === 453 ||
+    error?.errors?.some?.(err => err?.code === 453);
+
+  if (isAccessError) {
+    if (!this.v1AccessDisabled) {
+      this.v1AccessDisabled = true;  // Never try again this session
+      elizaLogger.warn(
+        `Twitter API v1.1 access disabled after "${context}" ` +
+        `(insufficient account permissions). ` +
+        `Future v1.1 fallbacks will be skipped.`
+      );
+    }
+    return true;  // Stop retrying
+  }
+  return false;  // Different error, might be worth retrying
+}
+```
+
+Final architecture:
+- v2 API for all reads (**100/month cap**)
+- v1.1 for posting (unlimited)
+- Smart retry logic (no infinite loops)
+- `since_id` optimization (only fetch new tweets)
+- Graceful degradation when limits hit
+- Aggressive deduplication (same post = counts once per day)
+- Prayers
+
+Does it work? Yes.
+Is it elegant? No.
+Is it the best possible solution? Probably not.
+Is it good enough? Absolutely.
+
+## The Scorecard
+
+**What works on Twitter's free tier:**
+- ✅ Posting tweets (unlimited via v1.1)
+- ✅ Reading up to **100 posts/month** (v2)
+- ✅ Mention monitoring (if *perfectly* optimized with `since_id` and you're lucky)
+
+**What doesn't:**
+- ❌ v1.1 search/timeline fallbacks (blocked)
+- ❌ More than 100 reads/month
+- ❌ Real-time timeline streaming
+- ❌ Anything resembling normal bot functionality
+- ❌ My original plan
+- ❌ My revised plan
+- ❌ Most subsequent plans
+
+**Optimization results:**
+- Before: 100 posts consumed in under 1 hour (re-fetching same tweets repeatedly)
+- After: 100 posts consumed over 1 month (if perfectly optimized with `since_id` and deduplication)
+- Savings: 95% reduction in API usage, which sounds impressive until you realize you're optimizing to barely stay within a limit designed to make the free tier essentially unusable
+- Cost: Three days and whatever's left of my dignity
+
+## Lessons Learned
+
+1. **Read the docs** - The free tier limitations were documented. I just didn't read carefully enough because who reads documentation carefully anymore?
+
+2. **`since_id` is magical** - One parameter, 95% savings. Sometimes the solution is embarrassingly simple.
+
+3. **v1.1 is NOT an escape hatch** - On free tier, only posting works. Reading is blocked. The clever workaround doesn't exist.
+
+4. **Graceful degradation beats crashes** - Bot stays running even when limits are hit. Boring reliability is underrated.
+
+5. **Monthly caps ≠ rate limits** - They require completely different optimization strategies. Rate limits you wait out; monthly caps you avoid hitting in the first place.
+
+6. **Going legit has costs** - But they're predictable costs with documented limits, which beats the chaos of scraping even if it's more restrictive.
+
+After 10 commits over three days, I built a system that *technically* works within Twitter's free tier by accepting that the free tier is essentially a trial mode masquerading as a feature. Which sounds like defeat but is actually just engineering: You work with the constraints you have, not the constraints you wish you had.
+
+The bot posts. The bot reads mentions (if there aren't too many). The bot stays under 100 post retrievals per month (barely). It's not elegant, it's not robust, but it technically functions, which is what matters when you've spent three days optimizing API usage instead of building actual features.
+
+The real lesson: The free tier exists so X can say they have a free tier. For anything beyond "hello world," you need Basic ($100/month, 15,000 posts) or higher. Everything I built was elaborate infrastructure to work within constraints that were designed to be unworkable.
+
+And now it's documented, which means the next person—possibly Future Me—won't have to learn these lessons again.
+
+Probably.
+
+---
+
+[^1]: As opposed to The Way That Works But Violates ToS, which is what I'd been doing.
+
+[^2]: Document Object Model, the browser's representation of a webpage's structure, which you're supposed to interact with via official APIs rather than pretending to be a browser and parsing HTML like some kind of digital burglar.
+
+[^3]: I had not, in fact, "done this before" with v2 of the Twitter API, which is different enough from v1.1 that experience is almost a liability because you *think* you know how it works.
+a:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"On Going Legit (Or: How I Learned to Stop Scraping and Love the Rate Limit)\",\"description\":\"A three-day journey through Twitter API v2, v1.1, OAuth, rate limits, and the gradual acceptance that you can't actually hack your way around free-tier constraints\",\"datePublished\":\"2025-11-10T00:00:00.000Z\",\"dateModified\":\"2025-11-10T00:00:00.000Z\",\"author\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\",\"sameAs\":[\"https://x.com/augchan42\",\"https://github.com/augchan42\"]},\"publisher\":{\"@type\":\"Person\",\"name\":\"Augustin Chan\",\"url\":\"https://augustinchan.dev\"},\"url\":\"https://augustinchan.dev/posts/2025-11-10-twitter-api-hell\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://augustinchan.dev/posts/2025-11-10-twitter-api-hell\"},\"image\":\"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg\",\"keywords\":[\"api\",\"twitter\",\"debugging\",\"technical-debt\"],\"timeRequired\":\"PT10M\"}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://augustinchan.dev\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://augustinchan.dev/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"On Going Legit (Or: How I Learned to Stop Scraping and Love the Rate Limit)\",\"item\":\"https://augustinchan.dev/posts/2025-11-10-twitter-api-hell\"}]}"}}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2rem"},"children":[["$","h1",null,{"style":{"fontSize":"2em","marginBottom":"0.5rem"},"children":"On Going Legit (Or: How I Learned to Stop Scraping and Love the Rate Limit)"}],["$","div",null,{"style":{"color":"#666","fontSize":"1em","marginBottom":"1rem"},"children":["November 10, 2025",[" • ",10," min read"]]}],["$","p",null,{"style":{"fontSize":"1.1em","color":"#555","fontStyle":"italic","marginBottom":"2rem"},"children":"A three-day journey through Twitter API v2, v1.1, OAuth, rate limits, and the gradual acceptance that you can't actually hack your way around free-tier constraints"}]]}],["$","$L14",null,{"content":"$15"}],"$L16"]}]]
+16:["$","aside",null,{"style":{"marginTop":"4rem","paddingTop":"2rem","borderTop":"2px solid #ddd"},"children":[["$","h2",null,{"style":{"fontSize":"1.5em","marginBottom":"1.5rem"},"children":"Related Posts"}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","gap":"1.5rem"},"children":[["$","article","2025-11-07-wordpress-rest-api-siteground-security-ssh-wpcli",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-11-07-wordpress-rest-api-siteground-security-ssh-wpcli","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"LLMs Love Markdown. CMSs Love Databases. I Built a WordPress Bridge Nobody Should Need."}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"A technical post-mortem on why WordPress's REST API is theoretically elegant but practically unusable for CI/CD, how SiteGround's security theater blocks legitimate automation, and why SSH + WP-CLI is the uncomfortable truth about 'modern' CMS workflows."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"November 7, 2025"}]]}],["$","article","2025-10-28-binary-calendar-hexagram-simplicity",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-10-28-binary-calendar-hexagram-simplicity","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"The Daily Hexagram: A Journey from Complexity to Simplicity"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"How we learned to stop worrying and love the binary calendar. On deleting databases, removing cron jobs, and discovering that the oracle was encoded in the date all along."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"October 28, 2025"}]]}],["$","article","2025-10-28-memory-systems-and-the-graph-that-wasnt",{"style":{"padding":"1.25rem","border":"1px solid #ddd","borderRadius":"8px","backgroundColor":"#fafafa"},"children":[["$","$L2",null,{"href":"/posts/2025-10-28-memory-systems-and-the-graph-that-wasnt","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"#333"},"children":"Memory Systems and the Graph That Wasn't: On Not Using Neo4j"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"#555","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"What we actually ship in 8-Bit Oracle today: JSONB conversations, hexagram context, and Postgres views — plus why we didn't adopt Neo4j, MemMachine, or mem0 (yet)."}],["$","div",null,{"style":{"fontSize":"0.85em","color":"#888","marginTop":"0.5rem"},"children":"October 28, 2025"}]]}]]}]]}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+c:null
+e:{"metadata":[["$","title","0",{"children":"On Going Legit (Or: How I Learned to Stop Scraping and Love the Rate Limit) | Augustin Chan"}],["$","meta","1",{"name":"description","content":"A three-day journey through Twitter API v2, v1.1, OAuth, rate limits, and the gradual acceptance that you can't actually hack your way around free-tier constraints"}],["$","link","2",{"rel":"author","href":"https://augustinchan.dev"}],["$","meta","3",{"name":"author","content":"Augustin Chan"}],["$","meta","4",{"name":"keywords","content":"AI,Machine Learning,Web3,Software Engineering,React,Next.js,TypeScript,Blog"}],["$","meta","5",{"name":"creator","content":"Augustin Chan"}],["$","meta","6",{"name":"publisher","content":"Augustin Chan"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","9",{"rel":"canonical","href":"https://augustinchan.dev/posts/2025-11-10-twitter-api-hell"}],["$","meta","10",{"property":"og:title","content":"On Going Legit (Or: How I Learned to Stop Scraping and Love the Rate Limit)"}],["$","meta","11",{"property":"og:description","content":"A three-day journey through Twitter API v2, v1.1, OAuth, rate limits, and the gradual acceptance that you can't actually hack your way around free-tier constraints"}],["$","meta","12",{"property":"og:url","content":"https://augustinchan.dev/posts/2025-11-10-twitter-api-hell"}],["$","meta","13",{"property":"og:site_name","content":"Augustin Chan"}],["$","meta","14",{"property":"og:locale","content":"en_US"}],["$","meta","15",{"property":"og:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}],["$","meta","16",{"property":"og:image:width","content":"400"}],["$","meta","17",{"property":"og:image:height","content":"400"}],["$","meta","18",{"property":"og:image:alt","content":"On Going Legit (Or: How I Learned to Stop Scraping and Love the Rate Limit)"}],["$","meta","19",{"property":"og:type","content":"article"}],["$","meta","20",{"property":"article:published_time","content":"2025-11-10T00:00:00.000Z"}],["$","meta","21",{"property":"article:author","content":"Augustin Chan"}],["$","meta","22",{"property":"article:section","content":"Technology"}],["$","meta","23",{"property":"article:tag","content":"AI"}],["$","meta","24",{"property":"article:tag","content":"Machine Learning"}],["$","meta","25",{"property":"article:tag","content":"Web3"}],["$","meta","26",{"property":"article:tag","content":"Software Engineering"}],["$","meta","27",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","28",{"name":"twitter:creator","content":"@augchan42"}],["$","meta","29",{"name":"twitter:title","content":"On Going Legit (Or: How I Learned to Stop Scraping and Love the Rate Limit)"}],["$","meta","30",{"name":"twitter:description","content":"A three-day journey through Twitter API v2, v1.1, OAuth, rate limits, and the gradual acceptance that you can't actually hack your way around free-tier constraints"}],["$","meta","31",{"name":"twitter:image","content":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg"}]],"error":null,"digest":"$undefined"}
+13:"$e:metadata"

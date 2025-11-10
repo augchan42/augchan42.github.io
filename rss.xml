@@ -7,7 +7,7 @@
     <link>https://augustinchan.dev</link>
     <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Nov 2025 13:41:40 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 10 Nov 2025 09:26:33 GMT</lastBuildDate>
     <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Next.js</generator>
     <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
@@ -18,6 +18,18 @@
       <title>Augustin Chan</title>
       <link>https://augustinchan.dev</link>
     </image>
+    <item>
+      <title><![CDATA[On Going Legit (Or: How I Learned to Stop Scraping and Love the Rate Limit)]]></title>
+      <link>https://augustinchan.dev/posts/2025-11-10-twitter-api-hell</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-11-10-twitter-api-hell</guid>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[A three-day journey through Twitter API v2, v1.1, OAuth, rate limits, and the gradual acceptance that you can't actually hack your way around free-tier constraints]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[api]]></category>
+      <category><![CDATA[twitter]]></category>
+      <category><![CDATA[debugging]]></category>
+      <category><![CDATA[technical-debt]]></category>
+    </item>
     <item>
       <title><![CDATA[LLMs Love Markdown. CMSs Love Databases. I Built a WordPress Bridge Nobody Should Need.]]></title>
       <link>https://augustinchan.dev/posts/2025-11-07-wordpress-rest-api-siteground-security-ssh-wpcli</link>
