@@ -6,7 +6,7 @@
 6:I[2778,["280","static/chunks/280-69c0d36265f10a04.js","966","static/chunks/966-ee27a4e0d213c4d8.js","177","static/chunks/app/layout-b368617ff2059f6d.js"],"Analytics"]
 b:I[1735,[],""]
 :HL["/_next/static/css/88b1132479e2b62f.css","style"]
-0:{"P":null,"b":"WmCoUxed65XnuyB_2f12P","p":"","c":["","posts","2025-11-18-proust-multimodel-comparison"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","2025-11-18-proust-multimodel-comparison","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/88b1132479e2b62f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=IBM+Plex+Mono:wght@400;700&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"suppressHydrationWarning":true,"children":["$","$L2",null,{"defaultTheme":"default","children":[["$","div",null,{"style":{"maxWidth":"var(--container-max-width, 1000px)","margin":"0 auto","padding":"var(--container-padding, 1rem)"},"children":[["$","header",null,{"style":{"borderBottom":"2px solid var(--color-border-strong, #333)","paddingBottom":"1rem","marginBottom":"2rem"},"children":["$","nav",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap","gap":"1rem"},"children":[["$","div",null,{"children":[["$","$L3",null,{"href":"/","style":{"fontSize":"1.4rem","fontWeight":"bold","textDecoration":"none","color":"var(--color-text-primary, #333)"},"children":"Augustin Chan"}],["$","div",null,{"style":{"marginTop":"0.5rem","color":"var(--color-text-secondary, #555)"},"children":"Building systems that reason"}]]}],["$","div",null,{"style":{"display":"flex","gap":"1.5rem","flexWrap":"wrap"},"children":[["$","$L3",null,{"href":"/","style":{"textDecoration":"none","color":"var(--color-text-muted, #666)"},"children":"Home"}],["$","$L3",null,{"href":"/about","style":{"textDecoration":"none","color":"var(--color-text-muted, #666)"},"children":"About"}],["$","$L3",null,{"href":"/blog","style":{"textDecoration":"none","color":"var(--color-text-muted, #666)"},"children":"Blog"}],["$","a",null,{"href":"https://8bitoracle.ai","target":"_blank","rel":"noopener noreferrer","style":{"textDecoration":"none","color":"var(--color-text-muted, #666)"},"children":"8-Bit Oracle"}]]}]]}]}],["$","main",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"borderTop":"1px solid var(--color-border-default, #ddd)","paddingTop":"2rem","marginTop":"4rem","textAlign":"center","color":"var(--color-text-muted, #666)"},"children":[["$","div",null,{"children":"© 2025 Augustin Chan aug@digitalrain.studio"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":["$","a",null,{"href":"/rss.xml","style":{"color":"var(--color-text-muted, #666)","textDecoration":"none"},"children":"RSS Feed"}]}]]}]]}],null,["$","$L6",null,{}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              // Service worker cleanup for legacy site versions\n              if ('serviceWorker' in navigator) {\n                navigator.serviceWorker.getRegistrations().then(function(registrations) {\n                  for(let registration of registrations) {\n                    registration.unregister();\n                  }\n                });\n\n                // Register cleanup service worker\n                navigator.serviceWorker.register('/sw.js').then(function(registration) {\n                  console.log('Cleanup SW registered');\n                }).catch(function(error) {\n                  console.log('Cleanup SW registration failed');\n                });\n              }\n            "}}]]}]}]]}]]}],{"children":["posts","$L7",{"children":[["slug","2025-11-18-proust-multimodel-comparison","d"],"$L8",{"children":["__PAGE__","$L9",{},null,false]},null,false]},null,false]},null,false],"$La",false]],"m":"$undefined","G":["$b",[]],"s":false,"S":true}
+0:{"P":null,"b":"Dy79s8NvPA9FDNfv3hETR","p":"","c":["","posts","2025-11-18-proust-multimodel-comparison"],"i":false,"f":[[["",{"children":["posts",{"children":[["slug","2025-11-18-proust-multimodel-comparison","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/88b1132479e2b62f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=IBM+Plex+Mono:wght@400;700&display=swap","rel":"stylesheet"}]]}],["$","body",null,{"suppressHydrationWarning":true,"children":["$","$L2",null,{"defaultTheme":"default","children":[["$","div",null,{"style":{"maxWidth":"var(--container-max-width, 1000px)","margin":"0 auto","padding":"var(--container-padding, 1rem)"},"children":[["$","header",null,{"style":{"borderBottom":"2px solid var(--color-border-strong, #333)","paddingBottom":"1rem","marginBottom":"2rem"},"children":["$","nav",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap","gap":"1rem"},"children":[["$","div",null,{"children":[["$","$L3",null,{"href":"/","style":{"fontSize":"1.4rem","fontWeight":"bold","textDecoration":"none","color":"var(--color-text-primary, #333)"},"children":"Augustin Chan"}],["$","div",null,{"style":{"marginTop":"0.5rem","color":"var(--color-text-secondary, #555)"},"children":"Building systems that reason"}]]}],["$","div",null,{"style":{"display":"flex","gap":"1.5rem","flexWrap":"wrap"},"children":[["$","$L3",null,{"href":"/","style":{"textDecoration":"none","color":"var(--color-text-muted, #666)"},"children":"Home"}],["$","$L3",null,{"href":"/about","style":{"textDecoration":"none","color":"var(--color-text-muted, #666)"},"children":"About"}],["$","$L3",null,{"href":"/blog","style":{"textDecoration":"none","color":"var(--color-text-muted, #666)"},"children":"Blog"}],["$","a",null,{"href":"https://8bitoracle.ai","target":"_blank","rel":"noopener noreferrer","style":{"textDecoration":"none","color":"var(--color-text-muted, #666)"},"children":"8-Bit Oracle"}]]}]]}]}],["$","main",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"style":{"borderTop":"1px solid var(--color-border-default, #ddd)","paddingTop":"2rem","marginTop":"4rem","textAlign":"center","color":"var(--color-text-muted, #666)"},"children":[["$","div",null,{"children":"© 2025 Augustin Chan aug@digitalrain.studio"}],["$","div",null,{"style":{"marginTop":"0.5rem"},"children":["$","a",null,{"href":"/rss.xml","style":{"color":"var(--color-text-muted, #666)","textDecoration":"none"},"children":"RSS Feed"}]}]]}]]}],null,["$","$L6",null,{}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              // Service worker cleanup for legacy site versions\n              if ('serviceWorker' in navigator) {\n                navigator.serviceWorker.getRegistrations().then(function(registrations) {\n                  for(let registration of registrations) {\n                    registration.unregister();\n                  }\n                });\n\n                // Register cleanup service worker\n                navigator.serviceWorker.register('/sw.js').then(function(registration) {\n                  console.log('Cleanup SW registered');\n                }).catch(function(error) {\n                  console.log('Cleanup SW registration failed');\n                });\n              }\n            "}}]]}]}]]}]]}],{"children":["posts","$L7",{"children":[["slug","2025-11-18-proust-multimodel-comparison","d"],"$L8",{"children":["__PAGE__","$L9",{},null,false]},null,false]},null,false]},null,false],"$La",false]],"m":"$undefined","G":["$b",[]],"s":false,"S":true}
 d:I[3448,[],"OutletBoundary"]
 f:I[9425,[],"AsyncMetadataOutlet"]
 11:I[3448,[],"ViewportBoundary"]
@@ -17,7 +17,7 @@ f:I[9425,[],"AsyncMetadataOutlet"]
 9:["$","$1","c",{"children":["$Lc",null,["$","$Ld",null,{"children":["$Le",["$","$Lf",null,{"promise":"$@10"}]]}]]}]
 a:["$","$1","h",{"children":[null,[["$","$L11",null,{"children":"$L12"}],null],["$","$L13",null,{"children":["$","div",null,{"hidden":true,"children":["$","$14",null,{"fallback":null,"children":"$L15"}]}]}]]}]
 17:I[858,["97","static/chunks/102969c4-027f78e63b4c0867.js","28","static/chunks/64d1c0c4-88da8c618cd857b9.js","280","static/chunks/280-69c0d36265f10a04.js","940","static/chunks/940-3ec01a4824afc309.js","858","static/chunks/app/posts/%5Bslug%5D/page-e21f2099adbaafa8.js"],"default",1]
-16:T47e,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Testing Twelve AI Image Models with Marcel Proust's Madeleine (Or: How We Chose Hunyuan for Hexagram 24)","description":"Upgrading 8-Bit Oracle's Hexagram 24: Return with Proust's famous involuntary memory scene, then systematically testing 12 diverse AI image models through fal.ai to find which one actually captures that precise moment when past and present collapse together.","datePublished":"2025-11-18T00:00:00.000Z","dateModified":"2025-11-18T00:00:00.000Z","author":{"@type":"Person","name":"Augustin Chan","url":"https://augustinchan.dev","sameAs":["https://x.com/augchan42","https://github.com/augchan42"]},"publisher":{"@type":"Person","name":"Augustin Chan","url":"https://augustinchan.dev"},"url":"https://augustinchan.dev/posts/2025-11-18-proust-multimodel-comparison","mainEntityOfPage":{"@type":"WebPage","@id":"https://augustinchan.dev/posts/2025-11-18-proust-multimodel-comparison"},"image":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg","keywords":["ai","image-generation","8-bit-oracle","tech-noir","proust","testing","architecture"],"timeRequired":"PT13M"}18:T5e3c,
+16:T47e,{"@context":"https://schema.org","@type":"BlogPosting","headline":"Testing Twelve AI Image Models with Marcel Proust's Madeleine (Or: How We Chose Hunyuan for Hexagram 24)","description":"Upgrading 8-Bit Oracle's Hexagram 24: Return with Proust's famous involuntary memory scene, then systematically testing 12 diverse AI image models through fal.ai to find which one actually captures that precise moment when past and present collapse together.","datePublished":"2025-11-18T00:00:00.000Z","dateModified":"2025-11-18T00:00:00.000Z","author":{"@type":"Person","name":"Augustin Chan","url":"https://augustinchan.dev","sameAs":["https://x.com/augchan42","https://github.com/augchan42"]},"publisher":{"@type":"Person","name":"Augustin Chan","url":"https://augustinchan.dev"},"url":"https://augustinchan.dev/posts/2025-11-18-proust-multimodel-comparison","mainEntityOfPage":{"@type":"WebPage","@id":"https://augustinchan.dev/posts/2025-11-18-proust-multimodel-comparison"},"image":"https://augustinchan.dev/img/Xrn0Id68_400x400.jpg","keywords":["ai","image-generation","8-bit-oracle","tech-noir","proust","testing","architecture"],"timeRequired":"PT14M"}18:T67ac,
 Here's the thing about upgrading a hexagram commentary: you want an image that captures the *essence* of the concept, not just a literal representation. Hexagram 24 is **Return** (復, *fù*)—the idea of cyclical patterns, things coming back around, the winter solstice when yang energy begins its return after maximum darkness. It's about renewal, natural rhythms, the inevitable return of what was temporarily absent.
 
 And there's no better literary embodiment of "return" than Marcel Proust's madeleine moment from *In Search of Lost Time*—that famous scene where tasting a tea-soaked madeleine cake triggers an involuntary flood of childhood memories. The past doesn't just come back; it *crashes* into the present with sensory immediacy, collapsing time itself[^1].
@@ -44,128 +44,140 @@ The test was simple: send this exact prompt to 12 different models via fal.ai, l
 
 We tested across diverse architectures to see how different approaches handle complex narrative scenes:
 
-1. **FLUX.1 [dev]** - Flow Transformer (12B params)
-2. **Recraft V3** - Proprietary SOTA
-3. **Stable Diffusion 3.5 Large** - MMDiT (Multimodal Diffusion Transformer)
-4. **Imagen 4** - Google's Proprietary Diffusion
-5. **Ideogram V2** - Typography Expert
-6. **HiDream I1 Full** - Chinese Foundation Model (17B params)
-7. **Hunyuan Image v3** - Tencent Proprietary ⭐
-8. **DeepSeek Janus-Pro** - Autoregressive Multimodal
-9. **CogView4** - Zhipu AI / Tsinghua
-10. **ByteDance SeeDream V3**
-11. **Bria Fibo** - Commercial-safe, Licensed
-12. **Wan 2.5 Preview** - Next-gen Architecture
+1. **FLUX.1 [dev]** - 12B rectified flow transformer (open weights, non-commercial)
+2. **Recraft V3** - Proprietary SOTA-level (photorealism + text)
+3. **Stable Diffusion 3.5 Large** - MMDiT text-to-image (≈8.1B params)
+4. **Imagen 4** - Google proprietary diffusion (Vertex AI)
+5. **Ideogram V2** - Frontier text-to-image (strong typography/design)
+6. **HiDream I1 Full** - 17B open-source Chinese image foundation model
+7. **Hunyuan Image 3.0** - Tencent open-source native multimodal AR MoE ⭐
+8. **DeepSeek Janus-Pro** - Autoregressive multimodal (vision + generation)
+9. **CogView4** - Zhipu AI/Tsinghua open-source (6B, Chinese text capable)
+10. **ByteDance Seedream V3** - Bilingual high-res text-to-image
+11. **Bria FIBO** - JSON-native, licensed-data, commercial-safe
+12. **Wan 2.5 Preview** - Alibaba text/image-to-video (plus T2I variant)
 
 Testing duration: ~5 minutes total (333 seconds). Success rate: 12/12 (100%). Average generation time: 27.8s. Now let's see what they actually produced.
 
 ## The Results (A Gallery of Interpretations)
 
 ### FLUX.1 [dev] - Black Forest Labs
+**Architecture:** 12B rectified flow transformer (open weights, non-commercial)
 **Generation Time:** 6.0s (fastest) | **File Size:** 142 KB
 
-Flow Transformer architecture delivering the fastest generation time while maintaining clean, artistic composition. The phosphor green thought bubble contains castle/church architecture with excellent contrast against the dark background. Very stylized—almost illustration-like rather than photorealistic. The memory bubble is clear and well-defined, but Proust's expression is more contemplative than surprised, missing that specific "involuntary memory cascade" moment. The speed-to-quality ratio here is impressive—12B parameters generating coherent narrative scenes in 6 seconds.
+Rectified flow transformer architecture delivering the fastest generation time while maintaining clean, artistic composition. The phosphor green thought bubble contains castle/church architecture with excellent contrast against the dark background. Very stylized—almost illustration-like rather than photorealistic. The memory bubble is clear and well-defined, but Proust's expression is more contemplative than surprised, missing that specific "involuntary memory cascade" moment. The speed-to-quality ratio here is impressive—12B parameters generating coherent narrative scenes in 6 seconds.
 
 ![FLUX.1 dev](/proust/proust-portrait-flux-dev-2025-11-17T09-38-20.png)
 
 ---
 
 ### Recraft V3
+**Architecture:** Proprietary SOTA-level (photorealism + text rendering specialist)
 **Generation Time:** 12.9s | **File Size:** 318 KB | **Tokens:** 112 (simplified from 272)
 
-Had to use a simplified 447-character prompt because Recraft enforces a 1000-character limit and our detailed prompt exceeded that—reducing from 272 tokens down to 112 tokens (59% reduction). Despite this constraint, the SOTA architecture produced highly photorealistic results with exceptional detail. The memory bubble rendered as a vintage illustration/engraving style—which is actually brilliant, suggesting old photographs or children's book illustrations. Unique dual madeleine composition (one whole, one being eaten). The fact that Recraft achieved this quality with *half* the narrative detail speaks to architectural sophistication, but we still lost specificity in the simplification.
+Had to use a simplified 447-character prompt because Recraft enforces a 1000-character limit and our detailed prompt exceeded that—reducing from 272 tokens down to 112 tokens (59% reduction). Despite this constraint, Recraft's SOTA-level architecture (which tops the Artificial Analysis benchmark for photorealism and text rendering) produced highly photorealistic results with exceptional detail. The memory bubble rendered as a vintage illustration/engraving style—which is actually brilliant, suggesting old photographs or children's book illustrations. Unique dual madeleine composition (one whole, one being eaten). The fact that Recraft achieved this quality with *half* the narrative detail speaks to architectural sophistication, but we still lost specificity in the simplification.
 
 ![Recraft V3](/proust/proust-portrait-recraft-v3-simplified-2025-11-17T10-05-49.png)
 
 ---
 
 ### Stable Diffusion 3.5 Large - Stability AI
+**Architecture:** MMDiT text-to-image (≈8.1B params)
 **Generation Time:** 10.9s | **File Size:** 267 KB | **Tokens:** 272 (CLIP saw only 77)
 
-**Warning received:** CLIP token truncation—our 272-token prompt exceeded CLIP's 77-token limit (only 28% of instructions encoded), then got truncated again at T5's 256-token limit. This is MMDiT (Multimodal Diffusion Transformer) architecture hitting hard limits. Despite seeing less than a third of the detailed prompt through CLIP, SD 3.5 produced a good balance of detail and coherence in just 10.9s—competitive speed with Recraft but working with even less information. The thought bubble is there, the tech-noir aesthetic is mostly preserved, but there's a sense of "making do" with truncated instructions. This is architectural constraint showing through in output quality.
+**Warning received:** CLIP token truncation—our 272-token prompt exceeded CLIP's 77-token limit (only 28% of instructions encoded), then got truncated again at T5's 256-token limit. This is the Multimodal Diffusion Transformer (MMDiT) architecture hitting hard limits. Despite seeing less than a third of the detailed prompt through CLIP, SD 3.5 produced a good balance of detail and coherence in just 10.9s—competitive speed with Recraft but working with even less information. The thought bubble is there, the tech-noir aesthetic is mostly preserved, but there's a sense of "making do" with truncated instructions. This is architectural constraint showing through in output quality.
 
 ![SD 3.5 Large](/proust/proust-portrait-sd35-large-2025-11-17T09-38-20.png)
 
 ---
 
 ### Imagen 4 - Google
+**Architecture:** Proprietary diffusion (Vertex AI)
 **Generation Time:** 24.7s | **File Size:** 1470 KB
 
-Google's proprietary diffusion architecture taking its time to render highly realistic detail. The thought bubble shows garden scenes with a boy silhouette and church steeple bathed in amber/golden light. More dimensional and naturalistic than most—feels like a film still from an actual movie. The warmth of the memory fragments contrasts beautifully with the cooler tech-noir palette. The 24.7s generation time reflects the architectural focus on photorealism and compositional complexity. But (and this matters) the expression is serene rather than startled, missing that precise instant of recognition.
+Google DeepMind's proprietary diffusion architecture taking its time to render highly realistic detail. The thought bubble shows garden scenes with a boy silhouette and church steeple bathed in amber/golden light. More dimensional and naturalistic than most—feels like a film still from an actual movie. The warmth of the memory fragments contrasts beautifully with the cooler tech-noir palette. The 24.7s generation time reflects the architectural focus on photorealism and compositional complexity. But (and this matters) the expression is serene rather than startled, missing that precise instant of recognition.
 
 ![Imagen 4](/proust/proust-portrait-imagen4-2025-11-17T09-38-20.png)
 
 ---
 
 ### Ideogram V2
+**Architecture:** Frontier text-to-image (strong typography/graphic design)
 **Generation Time:** 32.6s | **File Size:** 1689 KB
 
-Ideogram is known for typography expertise, which doesn't directly apply to portraiture, but the clean execution and strong contrast are evident—that same precision that renders text cleanly translates to well-defined edges and compositional clarity. Solid technical rendering at 32.6s. The phosphor green pops nicely. But again, we're missing that emotional specificity—the face reads as "person eating cake and thinking about things" rather than "person experiencing involuntary memory cascade."
+Ideogram 2.0's frontier text-to-image architecture with typography expertise doesn't directly apply to portraiture, but the clean execution and strong contrast are evident—that same precision that renders text cleanly translates to well-defined edges and compositional clarity. Solid technical rendering at 32.6s. The phosphor green pops nicely. But again, we're missing that emotional specificity—the face reads as "person eating cake and thinking about things" rather than "person experiencing involuntary memory cascade."
 
 ![Ideogram V2](/proust/proust-portrait-ideogram-v2-2025-11-17T09-38-20.png)
 
 ---
 
 ### HiDream I1 Full - HiDream
+**Architecture:** 17B open-source Chinese image foundation model
 **Generation Time:** 20.1s | **File Size:** 189 KB
 
-Chinese foundation model with 17B parameters delivering impressive compression efficiency—189 KB for a complex narrative scene suggests sophisticated encoding. The 20.1s generation time is mid-range despite the parameter count. The tech-noir aesthetic is present but muted. Proust looks appropriately contemplative, but the memory bubble is less defined than we'd hoped. Good technical execution, but not quite capturing the narrative moment.
+Open-source Chinese image foundation model with 17B parameters delivering impressive compression efficiency—189 KB for a complex narrative scene suggests sophisticated encoding. The 20.1s generation time is mid-range despite the parameter count. The tech-noir aesthetic is present but muted. Proust looks appropriately contemplative, but the memory bubble is less defined than we'd hoped. Good technical execution, but not quite capturing the narrative moment.
 
 ![HiDream I1](/proust/proust-portrait-hidream-i1-2025-11-17T09-38-20.png)
 
 ---
 
-### Hunyuan Image v3 - Tencent ⭐ [WINNER]
+### Hunyuan Image 3.0 - Tencent ⭐ [WINNER]
+**Architecture:** Open-source native multimodal autoregressive MoE (80B total params, ~13B active)
 **Generation Time:** 22.8s | **File Size:** 1.6 MB
 
 **Selected for Production Use**
 
-This is the one. Tencent's proprietary diffusion architecture taking 22.8s—not the fastest, but the most *precise*. Very photorealistic with natural window lighting from the left creating depth and dimension. The thought bubble contains flowers (hawthorns—a direct Proust reference if you know the book), boy silhouette, and church steeple. But what sealed the decision was the *expression*: eyes widening slightly, contemplative gaze upward, mouth slightly parted—that precise instant where past and present collapse together. Not "remembering" (active, deliberate), but "being remembered to" (passive, involuntary). That's the Return hexagram in facial form. The extra seconds Hunyuan took compared to faster models were spent on this exact kind of emotional nuance.
+This is the one. Tencent's open-source native multimodal autoregressive Mixture-of-Experts architecture taking 22.8s—not the fastest, but the most *precise*. Very photorealistic with natural window lighting from the left creating depth and dimension. The thought bubble contains flowers (hawthorns—a direct Proust reference if you know the book), boy silhouette, and church steeple. But what sealed the decision was the *expression*: eyes widening slightly, contemplative gaze upward, mouth slightly parted—that precise instant where past and present collapse together. Not "remembering" (active, deliberate), but "being remembered to" (passive, involuntary). That's the Return hexagram in facial form. The extra seconds Hunyuan took compared to faster models were spent on this exact kind of emotional nuance.
 
 ![Hunyuan v3](/proust/proust-portrait-hunyuan-v3-2025-11-17T09-38-20.png)
 
 ---
 
 ### DeepSeek Janus-Pro
+**Architecture:** Autoregressive multimodal (vision + generation, 1B/7B variants)
 **Generation Time:** 60.4s (slowest) | **File Size:** 191 KB
 
-Completely different interpretation—and revealing architectural differences through generation time. At 60.4 seconds, Janus-Pro is the slowest model we tested, reflecting the fundamental difference of autoregressive architecture vs diffusion models. Instead of a detailed thought bubble, Janus-Pro rendered a minimalist green halo behind Proust's head—almost religious iconography rather than tech-noir memory visualization. More painterly/stylized portrait than photorealistic. Interesting aesthetic choice, but not what we were going for. This is autoregressive architecture *thinking* differently—both in how it processes the prompt (sequentially vs in parallel) and in what it produces. The minute-long generation time is the architecture showing itself.
+Completely different interpretation—and revealing architectural differences through generation time. At 60.4 seconds, Janus-Pro is the slowest model we tested, reflecting the fundamental difference of DeepSeek's novel autoregressive framework (which unifies multimodal understanding and generation) vs diffusion models. Instead of a detailed thought bubble, Janus-Pro rendered a minimalist green halo behind Proust's head—almost religious iconography rather than tech-noir memory visualization. More painterly/stylized portrait than photorealistic. Interesting aesthetic choice, but not what we were going for. This is autoregressive architecture *thinking* differently—both in how it processes the prompt (sequentially vs in parallel) and in what it produces. The minute-long generation time is the architecture showing itself.
 
 ![Janus-Pro](/proust/proust-portrait-janus-pro-2025-11-17T09-38-20.png)
 
 ---
 
 ### CogView4 - Zhipu AI / Tsinghua
+**Architecture:** Open-source text-to-image (6B, Chinese text capable, Apache-2.0)
 **Generation Time:** 64.8s (slowest) | **File Size:** 196 KB
 
-Another Chinese model, and the absolute slowest at 64.8 seconds—even longer than Janus-Pro. The extended generation time likely reflects heavy computation for the stylized aesthetic CogView4 specializes in. Compact file size (196 KB) suggests aggressive compression post-generation. The tech-noir elements are there—phosphor green, grain, contrast—but the overall composition feels more illustrative than cinematic. Good technical output, but missing narrative weight. The architectural trade-off here is clear: stylization depth costs generation time.
+Zhipu AI's open-source text-to-image model—the first open-source model capable of generating Chinese characters in images. The absolute slowest at 64.8 seconds—even longer than Janus-Pro. The extended generation time likely reflects heavy computation for the stylized aesthetic CogView4 specializes in. Compact file size (196 KB) suggests aggressive compression post-generation. The tech-noir elements are there—phosphor green, grain, contrast—but the overall composition feels more illustrative than cinematic. Good technical output, but missing narrative weight. The architectural trade-off here is clear: stylization depth costs generation time.
 
 ![CogView4](/proust/proust-portrait-cogview4-2025-11-17T09-38-20.png)
 
 ---
 
-### ByteDance SeeDream V3 (Best Thought Bubble Award)
+### ByteDance Seedream V3 (Best Thought Bubble Award)
+**Architecture:** Bilingual (EN/ZH) high-res text-to-image
 **Generation Time:** 9.4s (second fastest) | **File Size:** 216 KB
 
-ByteDance's interpretation demonstrating excellent speed/quality ratio—at 9.4 seconds, this is the second-fastest generation behind only FLUX, yet with competitive photorealistic output. The architectural efficiency is impressive: compact 216 KB file size, sub-10-second generation, solid detail. The execution is technically proficient across the board, but (and this is the theme across many models) the expression doesn't quite hit that involuntary memory moment. Emotionally neutral. When you're trying to visualize a specific psychological state, speed and technical proficiency aren't enough—but SeeDream's architecture shows you don't have to sacrifice much speed to get quality.
+ByteDance's Seedream V3—a bilingual (English/Chinese) high-res text-to-image model—demonstrating excellent speed/quality ratio. At 9.4 seconds, this is the second-fastest generation behind only FLUX, yet with competitive photorealistic output. The architectural efficiency is impressive: compact 216 KB file size, sub-10-second generation, solid detail. The execution is technically proficient across the board, but (and this is the theme across many models) the expression doesn't quite hit that involuntary memory moment. Emotionally neutral. When you're trying to visualize a specific psychological state, speed and technical proficiency aren't enough—but Seedream's architecture shows you don't have to sacrifice much speed to get quality.
 
 ![SeeDream V3](/proust/proust-portrait-seedream-v3-2025-11-17T09-38-20.png)
 
 ---
 
-### Bria Fibo
+### Bria FIBO
+**Architecture:** JSON-native, licensed-data, commercial-safe controllable text-to-image
 **Generation Time:** 30.1s | **File Size:** 1.7 MB
 
-Commercial-safe generation with licensing compliance at 30.1 seconds. This matters if you're shipping commercial products—Bria trained on licensed datasets, avoiding the copyright gray areas other models swim in. The architectural focus on legal compliance doesn't seem to impact generation time significantly (mid-range at 30s). The output is clean, professional, appropriate. But "appropriate" is rarely the goal for tech-noir aesthetic work. We need *specific*, not *safe*.
+Commercial-safe generation with licensing compliance at 30.1 seconds. Bria FIBO is open-source but trained exclusively on licensed data, avoiding the copyright gray areas other models swim in—pitched specifically for safe commercial use with JSON-native fine-grained controllability. The architectural focus on legal compliance doesn't seem to impact generation time significantly (mid-range at 30s). The output is clean, professional, appropriate. But "appropriate" is rarely the goal for tech-noir aesthetic work. We need *specific*, not *safe*.
 
 ![Bria Fibo](/proust/proust-portrait-bria-fibo-2025-11-17T09-38-20.png)
 
 ---
 
 ### Wan 2.5 Preview
+**Architecture:** Alibaba text/image-to-video (with companion text-to-image variant)
 **Generation Time:** 34.3s | **File Size:** 1.7 MB
 
-Next-generation architecture preview running at 34.3 seconds—mid-range despite being labeled "next-gen." Large file size (1.7 MB) suggests the architecture prioritizes detail over compression. The output is technically impressive—detailed, coherent, aesthetically consistent. But again, we're optimizing for emotional precision, not technical perfection. The expression is good. It's just not *the* expression. "Next-gen" in architecture doesn't necessarily mean faster or emotionally smarter.
+Alibaba's Wan 2.5—primarily positioned as a text/image-to-video model with synchronized audio and cinematic output, but also available as a text-to-image variant. Running at 34.3 seconds—mid-range despite being labeled "next-gen." Large file size (1.7 MB) suggests the architecture prioritizes detail over compression. The output is technically impressive—detailed, coherent, aesthetically consistent. But again, we're optimizing for emotional precision, not technical perfection. The expression is good. It's just not *the* expression. "Next-gen" in architecture doesn't necessarily mean faster or emotionally smarter.
 
 ![Wan 2.5](/proust/proust-portrait-wan-25-2025-11-17T09-38-20.png)
 
@@ -175,17 +187,17 @@ Next-generation architecture preview running at 34.3 seconds—mid-range despite
 
 Generation time isn't just a performance metric—it's architectural fingerprinting. The spread from 6.0s to 64.8s reveals fundamental differences in how these models process complex narrative prompts:
 
-**Fastest (< 10s): Optimized Diffusion**
-- **FLUX.1 dev** (6.0s) - Flow Transformer optimized for speed
-- **SeeDream V3** (9.4s) - ByteDance's efficient proprietary architecture
+**Fastest (< 10s): Optimized Architectures**
+- **FLUX.1 dev** (6.0s) - 12B rectified flow transformer
+- **Seedream V3** (9.4s) - ByteDance bilingual high-res model
 
 **Fast (10-15s): Constrained But Quick**
 - **SD 3.5 Large** (10.9s) - MMDiT with token truncation
 - **Recraft V3** (12.9s) - SOTA with simplified prompt (112 tokens vs 272)
 
 **Medium (20-35s): Quality Over Speed**
-- **HiDream I1** (20.1s), **Hunyuan v3** (22.8s), **Imagen 4** (24.7s)
-- **Bria Fibo** (30.1s), **Ideogram V2** (32.6s), **Wan 2.5** (34.3s)
+- **HiDream I1** (20.1s - 17B open-source), **Hunyuan 3.0** (22.8s - 80B MoE), **Imagen 4** (24.7s - Google proprietary)
+- **Bria FIBO** (30.1s - licensed-data), **Ideogram V2** (32.6s), **Wan 2.5** (34.3s)
 
 **Slow (> 60s): Architectural Difference, Not Optimization**
 - **Janus-Pro** (60.4s) - Autoregressive (sequential token generation)
@@ -203,17 +215,19 @@ Testing 12 models revealed clear patterns in how different architectures handle 
 
 **MMDiT (SD 3.5):** Fast at 10.9s despite prompt truncation challenges. CLIP's 77-token limit is a real constraint for detailed prompts—only saw 28% of instructions but still produced coherent output.
 
-**Proprietary Diffusion (Imagen, Hunyuan):** Highly photorealistic with natural lighting. Mid-range speed (22-25s). Best at capturing subtle facial expressions. The extra seconds translate to emotional nuance.
+**Proprietary Diffusion (Imagen):** Highly photorealistic with natural lighting. Mid-range speed (24.7s). Strong compositional complexity.
+
+**Open-Source Autoregressive MoE (Hunyuan 3.0):** Native multimodal AR with 80B total params (~13B active). Mid-range speed (22.8s). Best at capturing subtle facial expressions—the extra seconds translate to emotional nuance.
 
 **Autoregressive (Janus-Pro):** Completely different minimalist interpretation—shows how architectural choices fundamentally shape output style. 10x slower (60.4s) due to sequential token generation vs parallel diffusion.
 
 **Typography-focused (Ideogram, Recraft):** Excellent detail and clarity. Recraft fast despite 1000-character limit requiring 59% prompt reduction (272→112 tokens). Ideogram slower (32.6s), likely precision-focused.
 
-**Chinese Models (HiDream, Hunyuan, SeeDream, CogView4):** Dramatic diversity. SeeDream is 2nd fastest overall (9.4s), CogView4 is slowest (64.8s). Not a monolithic category—architectural approaches vary wildly. Generally efficient file sizes (189-216 KB for fast models).
+**Chinese Models (HiDream, Hunyuan, Seedream, CogView4):** Dramatic diversity in both architecture and performance. Seedream (ByteDance, bilingual) is 2nd fastest overall (9.4s). CogView4 (Zhipu AI, first to handle Chinese text generation) is slowest (64.8s). HiDream (17B open-source) and Hunyuan (80B MoE, open-source) in mid-range. Not a monolithic category—architectural approaches vary wildly. Generally efficient file sizes (189-216 KB for fast models).
 
 **File Size Clusters:**
-- Compact (142-268 KB): FLUX dev, SD 3.5, HiDream, Janus-Pro, CogView4, SeeDream
-- Large (1.5-1.7 MB): Recraft V3, Imagen 4, Ideogram V2, Hunyuan v3, Bria Fibo, Wan 2.5
+- Compact (142-268 KB): FLUX dev, SD 3.5, HiDream, Janus-Pro, CogView4, Seedream
+- Large (1.5-1.7 MB): Recraft V3, Imagen 4, Ideogram V2, Hunyuan 3.0, Bria FIBO, Wan 2.5
 
 **Prompt Handling:**
 - Recraft V3: 1000-character hard limit
@@ -266,7 +280,7 @@ This systematic approach meant we could compare apples-to-apples: same prompt, s
 
 **Speed reveals architecture.** The 10.8x difference between FLUX (6.0s) and CogView4 (64.8s) isn't about optimization—it's about fundamentally different computation approaches. Autoregressive (sequential) vs diffusion (parallel) vs stylization-heavy models each have characteristic speed signatures. Generation time is architectural fingerprinting.
 
-**Chinese models are underrated and diverse.** HiDream, Hunyuan, CogView4, SeeDream—these aren't a monolithic category. SeeDream is 2nd fastest overall (9.4s). CogView4 is slowest (64.8s). Hunyuan won outright for emotional precision. The AI image generation landscape is more diverse than "DALL-E vs Midjourney vs Stable Diffusion."
+**Chinese models are underrated and diverse.** HiDream, Hunyuan, CogView4, Seedream—these aren't a monolithic category. Seedream is 2nd fastest overall (9.4s). CogView4 is slowest (64.8s). Hunyuan (open-source 80B MoE) won outright for emotional precision. The AI image generation landscape is more diverse than "DALL-E vs Midjourney vs Stable Diffusion."
 
 **Testing takes time but prevents regret.** ~5.6 minutes of generation time, maybe an hour of analysis. But now we *know* Hunyuan is the right choice, not just a guess. When you're shipping to production, "probably good enough" isn't good enough.
 
@@ -276,7 +290,7 @@ We upgraded Hexagram 24: Return in [8-Bit Oracle](https://app.8bitoracle.ai/en/h
 
 But we needed the *image* to match the concept. So we tested 12 diverse AI image generation models with the same detailed prompt: Proust eating the madeleine, tech-noir aesthetic, phosphor green thought bubble with childhood memories, that precise instant where past and present collapse together.
 
-After systematic testing via fal.ai (100% success rate, all outputs logged to database), we chose **Tencent's Hunyuan Image v3**—not because it was fastest (it wasn't), not because it produced the smallest file (it didn't), but because it captured the exact expression we needed: eyes widening, contemplative upward gaze, that moment of involuntary memory returning.
+After systematic testing via fal.ai (100% success rate, all outputs logged to database), we chose **Tencent's open-source Hunyuan Image 3.0**—not because it was fastest (it wasn't), not because it produced the smallest file (it didn't), but because it captured the exact expression we needed: eyes widening, contemplative upward gaze, that moment of involuntary memory returning.
 
 Speed doesn't matter when you're generating a production asset once. File size doesn't matter when the image loads once and gets cached. What matters is *correctness*—not technical correctness, but narrative correctness. Getting the face right. Getting the emotion right. Getting the Return right.
 
@@ -288,15 +302,17 @@ Rendered in phosphor green on deep black, with 1970s film grain, because tech-no
 
 **Technical Specifications:**
 - **Service:** fal.ai Model APIs
-- **Models Tested:** 12 (FLUX, Recraft, SD 3.5, Imagen 4, Ideogram, HiDream, Hunyuan, Janus-Pro, CogView4, SeeDream, Bria Fibo, Wan 2.5)
+- **Models Tested:** 12 diverse architectures
+  - Open-source: FLUX.1 dev, SD 3.5 Large, HiDream I1, Hunyuan 3.0, Janus-Pro, CogView4, Bria FIBO
+  - Proprietary: Recraft V3, Imagen 4, Ideogram V2, Seedream V3, Wan 2.5
 - **Success Rate:** 100% (12/12)
 - **Total Generation Time:** 333 seconds (~5.6 minutes)
 - **Average Generation Time:** 27.8s
 - **Median Generation Time:** 23.8s
-- **Fastest Model:** FLUX.1 dev (6.0s)
-- **Slowest Model:** CogView4 (64.8s)
+- **Fastest Model:** FLUX.1 dev - 12B rectified flow transformer (6.0s)
+- **Slowest Model:** CogView4 - 6B open-source (64.8s)
 - **Speed Range:** 10.8x difference
-- **Selected Model:** Hunyuan Image v3 (Tencent Proprietary Diffusion)
+- **Selected Model:** Hunyuan Image 3.0 (Tencent open-source native multimodal AR MoE, 80B total / ~13B active)
 - **Winner Generation Time:** 22.8s
 - **Winner File Size:** 1.6 MB
 - **Database Logging:** All requests logged to `ai_provider_requests` Supabase table
@@ -307,7 +323,7 @@ Rendered in phosphor green on deep black, with 1970s film grain, because tech-no
 ---
 
 [^1]: The full scene: Proust dips a madeleine into lime-blossom tea, tastes it, and suddenly—without conscious effort, without warning—his entire childhood in Combray floods back with vivid sensory detail. Not just memories *of* the past, but the past itself, fully present, as real as the moment he's currently in. This is what he calls "involuntary memory"—memory that returns on its own terms, triggered by sensation rather than conscious recall. The entire seven-volume *In Search of Lost Time* unfolds from this single moment of return. Which makes it probably the most consequential pastry in literary history.
-c:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$16"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://augustinchan.dev\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://augustinchan.dev/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Testing Twelve AI Image Models with Marcel Proust's Madeleine (Or: How We Chose Hunyuan for Hexagram 24)\",\"item\":\"https://augustinchan.dev/posts/2025-11-18-proust-multimodel-comparison\"}]}"}}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2rem"},"children":[["$","h1",null,{"style":{"fontSize":"2em","marginBottom":"0.5rem","color":"var(--color-text-primary, #333)"},"children":"Testing Twelve AI Image Models with Marcel Proust's Madeleine (Or: How We Chose Hunyuan for Hexagram 24)"}],["$","div",null,{"style":{"color":"var(--color-text-muted, #666)","fontSize":"1em","marginBottom":"1rem"},"children":["November 18, 2025",[" • ",13," min read"]]}],["$","p",null,{"style":{"fontSize":"1.1em","color":"var(--color-text-secondary, #555)","fontStyle":"italic","marginBottom":"2rem"},"children":"Upgrading 8-Bit Oracle's Hexagram 24: Return with Proust's famous involuntary memory scene, then systematically testing 12 diverse AI image models through fal.ai to find which one actually captures that precise moment when past and present collapse together."}]]}],["$","$L17",null,{"content":"$18"}],"$L19"]}]]
+c:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$16"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://augustinchan.dev\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://augustinchan.dev/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Testing Twelve AI Image Models with Marcel Proust's Madeleine (Or: How We Chose Hunyuan for Hexagram 24)\",\"item\":\"https://augustinchan.dev/posts/2025-11-18-proust-multimodel-comparison\"}]}"}}],["$","article",null,{"children":[["$","header",null,{"style":{"marginBottom":"2rem"},"children":[["$","h1",null,{"style":{"fontSize":"2em","marginBottom":"0.5rem","color":"var(--color-text-primary, #333)"},"children":"Testing Twelve AI Image Models with Marcel Proust's Madeleine (Or: How We Chose Hunyuan for Hexagram 24)"}],["$","div",null,{"style":{"color":"var(--color-text-muted, #666)","fontSize":"1em","marginBottom":"1rem"},"children":["November 18, 2025",[" • ",14," min read"]]}],["$","p",null,{"style":{"fontSize":"1.1em","color":"var(--color-text-secondary, #555)","fontStyle":"italic","marginBottom":"2rem"},"children":"Upgrading 8-Bit Oracle's Hexagram 24: Return with Proust's famous involuntary memory scene, then systematically testing 12 diverse AI image models through fal.ai to find which one actually captures that precise moment when past and present collapse together."}]]}],["$","$L17",null,{"content":"$18"}],"$L19"]}]]
 19:["$","aside",null,{"style":{"marginTop":"4rem","paddingTop":"2rem","borderTop":"2px solid var(--color-border-default, #ddd)"},"children":[["$","h2",null,{"style":{"fontSize":"1.5em","marginBottom":"1.5rem","color":"var(--color-text-primary, #333)"},"children":"Related Posts"}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","gap":"var(--card-gap, 1.5rem)"},"children":[["$","article","2025-11-10-twitter-api-hell",{"style":{"padding":"1.25rem","border":"1px solid var(--color-border-default, #ddd)","borderRadius":"var(--border-radius, 8px)","backgroundColor":"var(--color-background-surface, #fafafa)","transition":"var(--transition, all 0.2s ease)"},"children":[["$","$L3",null,{"href":"/posts/2025-11-10-twitter-api-hell","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"var(--color-text-primary, #333)"},"children":"On Going Legit on Twitter/X (Or: How I Learned to Stop Scraping and Love the Rate Limit)"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"var(--color-text-secondary, #555)","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"A three-day journey through Twitter API v2, v1.1, OAuth, rate limits, and the gradual acceptance that you can't actually hack your way around free-tier constraints"}],["$","div",null,{"style":{"fontSize":"var(--font-size-small, 0.85em)","color":"var(--color-text-muted, #666)","marginTop":"0.5rem"},"children":"November 10, 2025"}]]}],["$","article","2025-11-07-wordpress-rest-api-siteground-security-ssh-wpcli",{"style":{"padding":"1.25rem","border":"1px solid var(--color-border-default, #ddd)","borderRadius":"var(--border-radius, 8px)","backgroundColor":"var(--color-background-surface, #fafafa)","transition":"var(--transition, all 0.2s ease)"},"children":[["$","$L3",null,{"href":"/posts/2025-11-07-wordpress-rest-api-siteground-security-ssh-wpcli","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"var(--color-text-primary, #333)"},"children":"LLMs Love Markdown. CMSs Love Databases. I Built a WordPress Bridge Nobody Should Need."}],["$","p",null,{"style":{"fontSize":"0.95em","color":"var(--color-text-secondary, #555)","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"A technical post-mortem on why WordPress's REST API is theoretically elegant but practically unusable for CI/CD, how SiteGround's security theater blocks legitimate automation, and why SSH + WP-CLI is the uncomfortable truth about 'modern' CMS workflows."}],["$","div",null,{"style":{"fontSize":"var(--font-size-small, 0.85em)","color":"var(--color-text-muted, #666)","marginTop":"0.5rem"},"children":"November 7, 2025"}]]}],["$","article","2025-10-28-binary-calendar-hexagram-simplicity",{"style":{"padding":"1.25rem","border":"1px solid var(--color-border-default, #ddd)","borderRadius":"var(--border-radius, 8px)","backgroundColor":"var(--color-background-surface, #fafafa)","transition":"var(--transition, all 0.2s ease)"},"children":[["$","$L3",null,{"href":"/posts/2025-10-28-binary-calendar-hexagram-simplicity","style":{"fontSize":"1.1em","fontWeight":"bold","textDecoration":"none","color":"var(--color-text-primary, #333)"},"children":"The Daily Hexagram: A Journey from Complexity to Simplicity"}],["$","p",null,{"style":{"fontSize":"0.95em","color":"var(--color-text-secondary, #555)","margin":"0.5rem 0 0 0","lineHeight":"1.5"},"children":"How we learned to stop worrying and love the binary calendar. On deleting databases, removing cron jobs, and discovering that the oracle was encoded in the date all along."}],["$","div",null,{"style":{"fontSize":"var(--font-size-small, 0.85em)","color":"var(--color-text-muted, #666)","marginTop":"0.5rem"},"children":"October 28, 2025"}]]}]]}]]}]
 12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 e:null
