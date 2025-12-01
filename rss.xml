@@ -7,7 +7,7 @@
     <link>https://augustinchan.dev</link>
     <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Nov 2025 05:56:49 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 01 Dec 2025 15:37:26 GMT</lastBuildDate>
     <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Next.js</generator>
     <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
@@ -18,6 +18,21 @@
       <title>Augustin Chan</title>
       <link>https://augustinchan.dev</link>
     </image>
+    <item>
+      <title><![CDATA[Why I Open-Sourced a Deterministic I-Ching Engine (Or: The Smallest Verifiable Compute You Can Build)]]></title>
+      <link>https://augustinchan.dev/posts/2025-12-01-seeded-iching-engine</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-12-01-seeded-iching-engine</guid>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Extracting the deterministic core of 8-Bit Oracle into a standalone library, and why 'same seed, same hexagram, every time' matters more than you'd think for decentralized AI.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[open-source]]></category>
+      <category><![CDATA[prng]]></category>
+      <category><![CDATA[determinism]]></category>
+      <category><![CDATA[verifiable-compute]]></category>
+      <category><![CDATA[i-ching]]></category>
+      <category><![CDATA[ethereum]]></category>
+      <category><![CDATA[decentralized-ai]]></category>
+    </item>
     <item>
       <title><![CDATA[Testing Twelve AI Image Models with Marcel Proust's Madeleine (Or: How We Chose Hunyuan for Hexagram 24)]]></title>
       <link>https://augustinchan.dev/posts/2025-11-18-proust-multimodel-comparison</link>
