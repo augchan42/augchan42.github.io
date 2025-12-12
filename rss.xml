@@ -7,7 +7,7 @@
     <link>https://augustinchan.dev</link>
     <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Dec 2025 08:25:29 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 18:31:00 GMT</lastBuildDate>
     <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Next.js</generator>
     <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
@@ -18,6 +18,17 @@
       <title>Augustin Chan</title>
       <link>https://augustinchan.dev</link>
     </image>
+    <item>
+      <title><![CDATA[Vibe-Coded Evals with LLM-as-a-Judge]]></title>
+      <link>https://augustinchan.dev/posts/2025-12-13-vibe-coded-evals-llm-as-judge</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2025-12-13-vibe-coded-evals-llm-as-judge</guid>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Using Claude Code and OpenRouter infrastructure to rapidly build model evaluations with Claude Opus 4.5 as the judge]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[ai]]></category>
+      <category><![CDATA[evals]]></category>
+      <category><![CDATA[llm]]></category>
+    </item>
     <item>
       <title><![CDATA[Why I Open-Sourced a Deterministic I-Ching Engine (Or: The Smallest Verifiable Compute You Can Build)]]></title>
       <link>https://augustinchan.dev/posts/2025-12-01-seeded-iching-engine</link>
