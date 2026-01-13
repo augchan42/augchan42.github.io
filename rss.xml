@@ -7,7 +7,7 @@
     <link>https://augustinchan.dev</link>
     <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Jan 2026 14:46:56 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jan 2026 11:00:13 GMT</lastBuildDate>
     <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Next.js</generator>
     <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
@@ -18,6 +18,22 @@
       <title>Augustin Chan</title>
       <link>https://augustinchan.dev</link>
     </image>
+    <item>
+      <title><![CDATA[Whisper Cantonese Transcription: Force zh, Not yue]]></title>
+      <link>https://augustinchan.dev/posts/2026-01-13-whisper-cantonese-transcription-zh-not-yue</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2026-01-13-whisper-cantonese-transcription-zh-not-yue</guid>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Counter-intuitive finding: forcing Cantonese (yue) on Whisper causes decoder collapse. Force Chinese (zh) instead for coherent, searchable transcripts—even for Cantonese content.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[whisper]]></category>
+      <category><![CDATA[cantonese]]></category>
+      <category><![CDATA[transcription]]></category>
+      <category><![CDATA[ai]]></category>
+      <category><![CDATA[speech-to-text]]></category>
+      <category><![CDATA[yt-dlp]]></category>
+      <category><![CDATA[chinese]]></category>
+      <category><![CDATA[nlp]]></category>
+    </item>
     <item>
       <title><![CDATA[Vibe-Coded Evals with LLM-as-a-Judge]]></title>
       <link>https://augustinchan.dev/posts/2025-12-13-vibe-coded-evals-llm-as-judge</link>
