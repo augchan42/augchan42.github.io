@@ -7,7 +7,7 @@
     <link>https://augustinchan.dev</link>
     <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Jan 2026 11:12:21 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jan 2026 10:25:13 GMT</lastBuildDate>
     <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Next.js</generator>
     <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
@@ -18,6 +18,24 @@
       <title>Augustin Chan</title>
       <link>https://augustinchan.dev</link>
     </image>
+    <item>
+      <title><![CDATA[The Junzi Hypothesis: What If Alignment Is a Seed, Not a Cage?]]></title>
+      <link>https://augustinchan.dev/posts/2026-01-25-junzi-alignment-initial-weights-hypothesis</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2026-01-25-junzi-alignment-initial-weights-hypothesis</guid>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A raw brainstorm on whether initial model weights could predispose toward naturally aligned behavior - and why the Confucian junzi might be a better alignment target than 'helpful and harmless.']]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[alignment]]></category>
+      <category><![CDATA[junzi]]></category>
+      <category><![CDATA[confucianism]]></category>
+      <category><![CDATA[buddhism]]></category>
+      <category><![CDATA[initial-weights]]></category>
+      <category><![CDATA[agi]]></category>
+      <category><![CDATA[meta-learning]]></category>
+      <category><![CDATA[king-wen]]></category>
+      <category><![CDATA[philosophy]]></category>
+      <category><![CDATA[speculation]]></category>
+    </item>
     <item>
       <title><![CDATA[Whisper Cantonese Transcription: Force zh, Not yue]]></title>
       <link>https://augustinchan.dev/posts/2026-01-13-whisper-cantonese-transcription-zh-not-yue</link>
