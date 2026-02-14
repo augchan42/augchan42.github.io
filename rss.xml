@@ -7,7 +7,7 @@
     <link>https://augustinchan.dev</link>
     <description>Building systems that reason. Writing about AI, Web3, and software engineering.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Feb 2026 03:24:42 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Feb 2026 03:57:12 GMT</lastBuildDate>
     <atom:link href="https://augustinchan.dev/rss.xml" rel="self" type="application/rss+xml"/>
     <generator>Next.js</generator>
     <webMaster>aug@digitalrain.studio (Augustin Chan)</webMaster>
@@ -18,6 +18,24 @@
       <title>Augustin Chan</title>
       <link>https://augustinchan.dev</link>
     </image>
+    <item>
+      <title><![CDATA[Teaching Taste to an Agent: 4,096 Classical Chinese Verses, 7 Composition Rules, and the Skill That Paints Them]]></title>
+      <link>https://augustinchan.dev/posts/2026-02-14-teaching-taste-to-agents-yilin-image-pipeline</link>
+      <guid isPermaLink="true">https://augustinchan.dev/posts/2026-02-14-teaching-taste-to-agents-yilin-image-pipeline</guid>
+      <pubDate>Sat, 14 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[On turning Han dynasty oracular poetry into AI-generated ink paintings by encoding art direction as a reusable agent skill. Also: why content filters hate ancient China, and what 'painterly language' means when the painter is a diffusion model.]]></description>
+      <author>aug@digitalrain.studio (Augustin Chan)</author>
+      <category><![CDATA[ai]]></category>
+      <category><![CDATA[agents]]></category>
+      <category><![CDATA[skills]]></category>
+      <category><![CDATA[image-generation]]></category>
+      <category><![CDATA[i-ching]]></category>
+      <category><![CDATA[yilin]]></category>
+      <category><![CDATA[classical-chinese]]></category>
+      <category><![CDATA[dfw-style]]></category>
+      <category><![CDATA[architecture]]></category>
+      <category><![CDATA[art-direction]]></category>
+    </item>
     <item>
       <title><![CDATA[The Junzi Hypothesis: What If Alignment Is a Seed, Not a Cage?]]></title>
       <link>https://augustinchan.dev/posts/2026-01-25-junzi-alignment-initial-weights-hypothesis</link>
